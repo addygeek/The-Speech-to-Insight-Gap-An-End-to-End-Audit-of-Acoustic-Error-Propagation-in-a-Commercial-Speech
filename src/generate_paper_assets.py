@@ -51,3 +51,68 @@ def write_tables(cfg: ExperimentConfig) -> None:
         )
     lines.append("\\bottomrule\n\\end{tabular}\n\\end{table}\n")
     table2 = "".join(lines)
+
+    sent_col = "sentiment_disagreement_ref_vs_transcript"
+    if sent_col in df.columns:
+        dis = df.groupby("acoustic_condition")[sent_col].mean().reset_index()
+        lines = [
+            "\\begin{table}[t]\n\\centering\n"
+            "\\caption{Sentiment disagreement (reference vs transcript).}\n\\label{tab:disagreement}\n"
+            "\\begin{tabular}{lr}\n\\toprule\nCondition & Rate \\\\\n\\midrule\n"
+        ]
+        for _, row in dis.iterrows():
+            lines.append(f"{row['acoustic_condition']} & {row[sent_col]:.3f} \\\\\n")
+        lines.append("\\bottomrule\n\\end{tabular}\n\\end{table}\n")
+        table3 = "".join(lines)
+    else:
+        table3 = _stub_table("table3_disagreement", "sentiment column missing")
+
+    (cfg.tables_dir / "table1_dataset.tex").write_text(table1, encoding="utf-8")
+    (cfg.tables_dir / "table2_wer.tex").write_text(table2, encoding="utf-8")
+    (cfg.tables_dir / "table3_disagreement.tex").write_text(table3, encoding="utf-8")
+    logger.info("Wrote tables to %s", cfg.tables_dir)
+
+
+def write_figures(cfg: ExperimentConfig) -> None:
+    cfg.figures_dir.mkdir(parents=True, exist_ok=True)
+    metrics_path = cfg.results_dir / "metrics.csv"
+    pipeline_fig = cfg.figures_dir / "fig1_pipeline.pdf"
+    if not pipeline_fig.exists():
+        fig, ax = plt.subplots(figsize=(6, 2))
+        ax.axis("off")
+        ax.text(
+            0.5,
+            0.5,
+            "Reference text → TTS → acoustic conditions → Listen/Read → metrics",
+            ha="center",
+            va="center",
+        )
+        fig.savefig(pipeline_fig, bbox_inches="tight")
+        plt.close(fig)
+
+    if not metrics_path.is_file():
+        logger.warning("Skipping empirical figures: no metrics.csv")
+        return
+
+    df = pd.read_csv(metrics_path)
+    fig, ax = plt.subplots()
+    df.boxplot(column="wer", by="acoustic_condition", ax=ax)
+    ax.set_title("WER by acoustic condition")
+    ax.set_xlabel("Condition")
+    fig.savefig(cfg.figures_dir / "fig2_wer_by_condition.pdf", bbox_inches="tight")
+    plt.close(fig)
+
+    sent_col = "sentiment_disagreement_ref_vs_transcript"
+    if sent_col in df.columns:
+        fig, ax = plt.subplots()
+        ax.scatter(df["wer"], df[sent_col].astype(int), alpha=0.6)
+        ax.set_xlabel("WER")
+        ax.set_ylabel("Sentiment disagreement (0/1)")
+        ax.set_title("WER vs downstream disagreement")
+        fig.savefig(cfg.figures_dir / "fig3_wer_vs_disagreement.pdf", bbox_inches="tight")
+        plt.close(fig)
+
+
+def run_paper_assets(cfg: ExperimentConfig) -> None:
+    write_tables(cfg)
+    write_figures(cfg)
