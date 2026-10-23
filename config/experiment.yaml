@@ -1,0 +1,43 @@
+project:
+  name: speech-to-insight-gap
+  random_seed: 42
+
+run:
+  dry_run: true
+  resume: true
+  pilot_utterances: 25
+  full_utterances: 600
+
+dataset:
+  generation_mode: hybrid
+  llm_provider: openrouter
+  llm_model: openai/gpt-4o-mini
+  min_words: 25
+  max_words: 40
+  target_unique_minutes: 75
+  scenario_weights:
+    customer_support: 0.15
+    appointment_scheduling: 0.12
+    travel_booking: 0.12
+    banking_payments: 0.12
+    delivery_tracking: 0.12
+    technical_support: 0.12
+    complaints_compliments: 0.12
+    requests_cancellations: 0.13
+
+paths:
+  references_jsonl: data/references.jsonl
+  manifest_csv: data/manifest.csv
+  audio_dir: data/audio
+  results_dir: results
+  figures_dir: figures
+  tables_dir: tables
+
+text_normalization:
+  lowercase: true
+  remove_punctuation: true
+  collapse_whitespace: true
+  normalize_numbers: false
+
+audio:
+  tts:
