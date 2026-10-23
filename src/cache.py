@@ -53,3 +53,60 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def cache_hit(path: Path) -> bool:
     return path.is_file() and path.stat().st_size > 0
+
+
+def is_dry_run_payload(path: Path) -> bool:
+    if not path.is_file() or path.suffix != ".json":
+        return False
+    try:
+        return bool(load_json(path).get("dry_run"))
+    except (json.JSONDecodeError, OSError):
+        return False
+
+
+def reusable(path: Path, live: bool) -> bool:
+    """A live run does not reuse a file written by a dry run."""
+    if not cache_hit(path):
+        return False
+    if live and is_dry_run_payload(path):
+        path.unlink()
+        return False
+    return True
+
+
+def complete_response(path: Path, live: bool) -> bool:
+    """True when a saved API payload is intact and safe to skip on resume."""
+    if not reusable(path, live):
+        return False
+    try:
+        payload = load_json(path)
+    except (json.JSONDecodeError, OSError):
+        return False
+    return "response" in payload or bool(payload.get("dry_run"))
+
+
+def _remove_children(directory: Path, keep_names: set[str]) -> None:
+    if not directory.is_dir():
+        return
+    for child in directory.iterdir():
+        if child.name in keep_names:
+            continue
+        if child.is_dir():
+            shutil.rmtree(child)
+        else:
+            child.unlink()
+
+
+def clear_generated(cfg: ExperimentConfig) -> None:
+    """Drop previous audio, tables, figures, and result files before a new run."""
+    _remove_children(cfg.audio_dir, {".gitkeep"})
+    _remove_children(cfg.results_dir, {".gitkeep"})
+    for pattern in ("*.pdf", "*.png"):
+        for path in cfg.figures_dir.glob(pattern):
+            path.unlink()
+    for path in cfg.tables_dir.glob("*.tex"):
+        path.unlink()
+    for path in (cfg.references_jsonl, cfg.manifest_csv):
+        if path.is_file():
+            path.unlink()
+    ensure_dirs(cfg)
