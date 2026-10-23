@@ -42,6 +42,7 @@ def run_tts(
     model = tts_cfg.get("model", "aura-2-asteria-en")
     encoding = tts_cfg.get("encoding", "linear16")
     sample_rate = int(tts_cfg.get("sample_rate", 24000))
+    container = tts_cfg.get("container", "wav")
     n = 0
 
     for rec in iter_references(cfg, split=split):
@@ -73,9 +74,12 @@ def run_tts(
             continue
 
         api_key = require_deepgram_key()
-        params: dict[str, Any] = {"model": model, "encoding": encoding, "sample_rate": sample_rate}
-        if voice:
-            params["voice"] = voice
+        params: dict[str, Any] = {
+            "model": model,
+            "encoding": encoding,
+            "container": container,
+            "sample_rate": sample_rate,
+        }
 
         try:
             with httpx.Client(
