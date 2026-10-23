@@ -62,3 +62,83 @@ def mix_at_snr(signal: np.ndarray, noise: np.ndarray, snr_db: float) -> np.ndarr
 
 
 def perturb_clean_to_condition(
+    cfg: ExperimentConfig,
+    clean_path: Path,
+    out_path: Path,
+    snr_db: float,
+    seed: int,
+    meta: dict[str, Any],
+) -> None:
+    signal, sr = _read_wav_mono(clean_path)
+    rng = np.random.default_rng(seed)
+    noise = _pink_noise(len(signal), rng)
+    mixed = mix_at_snr(signal, noise, snr_db)
+    _write_wav_mono(out_path, mixed, sr)
+    uid = str(meta.get("utterance_id", out_path.parent.name))
+    cond = str(meta.get("condition", out_path.stem))
+    save_json(
+        perturbation_meta_path(cfg, uid, cond),
+        {**meta, "snr_db": snr_db, "seed": seed, "output": str(out_path)},
+    )
+
+
+def write_dry_run_tone(path: Path, sample_rate: int = 24000, seconds: float = 1.5) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    t = np.linspace(0, seconds, int(sample_rate * seconds), endpoint=False)
+    tone = (0.2 * 32767 * np.sin(2 * np.pi * 440 * t)).astype(np.int16)
+    with wave.open(str(path), "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        wf.writeframes(tone.tobytes())
+
+
+def run_perturb(cfg: ExperimentConfig, manifest: Manifest, split: str | None = "pilot") -> None:
+    pert_cfg = cfg.section("audio").get("perturbation", {})
+    mild_snr = float(pert_cfg.get("mild_snr_db", 15))
+    strong_snr = float(pert_cfg.get("strong_snr_db", 8))
+    seed_base = int(pert_cfg.get("seed", 42))
+
+    for rec in iter_references(cfg, split=split):
+        uid = rec["utterance_id"]
+        clean = audio_path(cfg, uid, "clean")
+        if not cache_hit(clean) and cfg.dry_run:
+            write_dry_run_tone(clean)
+        if not cache_hit(clean):
+            manifest.record(uid, Stage.PERTURB, Status.FAILED, condition="all", error="missing clean wav")
+            continue
+
+        for cond, snr in (("mild", mild_snr), ("strong", strong_snr)):
+            if manifest.should_skip(cfg.resume, uid, Stage.PERTURB, cond):
+                continue
+            out = audio_path(cfg, uid, cond)
+            try:
+                if cfg.dry_run and not cache_hit(out):
+                    write_dry_run_tone(out)
+                    save_json(
+                        perturbation_meta_path(cfg, uid, cond),
+                        {
+                            "condition": cond,
+                            "snr_db": snr,
+                            "dry_run": True,
+                            "noise_source": "tone_placeholder",
+                        },
+                    )
+                elif not cache_hit(out):
+                    perturb_clean_to_condition(
+                        cfg,
+                        clean,
+                        out,
+                        snr_db=snr,
+                        seed=seed_base + hash(uid + cond) % 10000,
+                        meta={
+                            "utterance_id": uid,
+                            "condition": cond,
+                            "noise_source": pert_cfg.get("noise_source", "generated_pink"),
+                        },
+                    )
+                manifest.record(uid, Stage.PERTURB, Status.SUCCESS, condition=cond)
+            except (OSError, ValueError) as exc:
+                manifest.record(uid, Stage.PERTURB, Status.FAILED, condition=cond, error=str(exc))
+                logger.exception("Perturb failed for %s %s", uid, cond)
+    manifest.save()
