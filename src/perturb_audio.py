@@ -9,7 +9,7 @@ from typing import Any
 
 import numpy as np
 
-from src.cache import audio_path, cache_hit, perturbation_meta_path, save_json
+from src.cache import audio_path, cache_hit, is_dry_run_payload, perturbation_meta_path, save_json
 from src.config_loader import ExperimentConfig
 from src.generate_dataset import iter_references
 from src.logging_utils import setup_logging
@@ -98,6 +98,9 @@ def run_perturb(cfg: ExperimentConfig, manifest: Manifest, split: str | None = "
     mild_snr = float(pert_cfg.get("mild_snr_db", 15))
     strong_snr = float(pert_cfg.get("strong_snr_db", 8))
     seed_base = int(pert_cfg.get("seed", 42))
+    levels = [("mild", mild_snr), ("strong", strong_snr)]
+    if pert_cfg.get("harsh_snr_db") is not None:
+        levels.append(("harsh", float(pert_cfg["harsh_snr_db"])))
 
     for rec in iter_references(cfg, split=split):
         uid = rec["utterance_id"]
@@ -108,15 +111,20 @@ def run_perturb(cfg: ExperimentConfig, manifest: Manifest, split: str | None = "
             manifest.record(uid, Stage.PERTURB, Status.FAILED, condition="all", error="missing clean wav")
             continue
 
-        for cond, snr in (("mild", mild_snr), ("strong", strong_snr)):
-            if manifest.should_skip(cfg.resume, uid, Stage.PERTURB, cond):
-                continue
+        for cond, snr in levels:
             out = audio_path(cfg, uid, cond)
+            meta_path = perturbation_meta_path(cfg, uid, cond)
+            if not cfg.dry_run and is_dry_run_payload(meta_path):
+                meta_path.unlink()
+                if out.is_file():
+                    out.unlink()
+            if manifest.should_skip(cfg.resume, uid, Stage.PERTURB, cond) and cache_hit(out):
+                continue
             try:
                 if cfg.dry_run and not cache_hit(out):
                     write_dry_run_tone(out)
                     save_json(
-                        perturbation_meta_path(cfg, uid, cond),
+                        meta_path,
                         {
                             "condition": cond,
                             "snr_db": snr,

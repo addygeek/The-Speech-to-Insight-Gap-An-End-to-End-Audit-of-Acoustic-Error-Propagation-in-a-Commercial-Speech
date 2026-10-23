@@ -10,7 +10,7 @@ from typing import Any
 
 from src.config_loader import ExperimentConfig
 
-ACOUSTIC_CONDITIONS = ("clean", "mild", "strong")
+ACOUSTIC_CONDITIONS = ("clean", "mild", "strong", "harsh")
 
 
 def ensure_dirs(cfg: ExperimentConfig) -> None:
