@@ -300,12 +300,12 @@ def _run_optional_passes(
         if max_requests is not None and n >= max_requests:
             return
         uid = rec["utterance_id"]
-        if manifest.should_skip(cfg.resume, uid, Stage.LISTEN, label):
-            continue
         wav = audio_path(cfg, uid, cond)
         cache_key = f"{uid}_{label}"
         out_json = raw_response_path(cfg, "listen", cache_key)
-        if cache_hit(out_json) or not cache_hit(wav):
+        if manifest.should_skip(cfg.resume, uid, Stage.LISTEN, label) and reusable(out_json, not cfg.dry_run):
+            continue
+        if reusable(out_json, not cfg.dry_run) or not cache_hit(wav):
             continue
         minutes = _audio_minutes(wav)
         budget.add("stt_estimate", budget.estimate_stt_minutes(minutes, keyterm=bool(keyterms)))
@@ -331,7 +331,7 @@ def _run_optional_passes(
                 headers={"Authorization": f"Token {api_key}", "Content-Type": "audio/wav"},
                 timeout=180.0,
             ) as client:
-                resp = _post_listen(client, wav.read_bytes(), params)
+                resp = post_with_backoff(lambda: _post_listen(client, wav.read_bytes(), params))
             if resp.status_code in (401, 402, 403):
                 log_failure(failures_path, failure_row("listen", uid, label, str(resp.status_code), "auth/billing"))
                 manifest.record(uid, Stage.LISTEN, Status.FAILED, condition=label, error=str(resp.status_code))
