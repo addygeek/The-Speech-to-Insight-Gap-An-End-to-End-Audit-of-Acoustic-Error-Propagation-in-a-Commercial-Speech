@@ -26,7 +26,7 @@ DEEPGRAM_READ_URL = "https://api.deepgram.com/v1/read"
 
 def _read_params(cfg: ExperimentConfig) -> dict[str, Any]:
     read = cfg.section("deepgram").get("read", {})
-    params: dict[str, Any] = {}
+    params: dict[str, Any] = {"language": str(read.get("language", "en"))}
     if read.get("sentiment"):
         params["sentiment"] = "true"
     if read.get("intents"):
