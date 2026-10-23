@@ -7,7 +7,7 @@ import sys
 
 from src.budget import BudgetTracker
 from src.budget_estimator import run_preflight_cost
-from src.cache import ensure_dirs
+from src.cache import clear_generated, ensure_dirs
 from src.config_loader import load_config
 from src.deepgram_listen import run_listen
 from src.deepgram_read import run_read
@@ -36,6 +36,7 @@ def _apply_overrides(cfg, args: argparse.Namespace):
 
 
 def cmd_run_pipeline(cfg, args: argparse.Namespace, split: str, count: int) -> None:
+    clear_generated(cfg)
     ensure_dirs(cfg)
     mf = Manifest(cfg.manifest_csv)
     budget = BudgetTracker(cfg)
@@ -49,6 +50,8 @@ def cmd_run_pipeline(cfg, args: argparse.Namespace, split: str, count: int) -> N
     run_metrics(cfg)
     run_statistics(cfg)
     run_preflight_cost(cfg, target_utterances=cfg.full_utterances, split=split)
+    run_paper_assets(cfg)
+    write_findings(cfg)
 
 
 def _common_parser() -> argparse.ArgumentParser:
