@@ -82,3 +82,107 @@ def extract_topics(payload: dict[str, Any]) -> list[str]:
         if not isinstance(seg, dict):
             continue
         for topic in seg.get("topics") or []:
+            if isinstance(topic, dict) and topic.get("topic"):
+                topics.append(str(topic["topic"]))
+    if not topics and isinstance(topics_block.get("summary"), list):
+        for item in topics_block["summary"]:
+            if isinstance(item, dict) and item.get("topic"):
+                topics.append(str(item["topic"]))
+    return topics
+
+
+def parse_intelligence(payload: dict[str, Any], cfg: ExperimentConfig) -> dict[str, Any]:
+    syn = cfg.section("intent_normalization").get("synonym_map", {})
+    sentiment_label, sentiment_score = extract_sentiment(payload)
+    intent = extract_intents(payload, syn)
+    topics = extract_topics(payload)
+    return {
+        "sentiment_label": sentiment_label,
+        "sentiment_score": sentiment_score,
+        "intent_normalized": intent,
+        "topics": sorted(topic_set(topics)),
+    }
+
+
+def _write_csv(path: Path, rows: list[dict[str, Any]], fields: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+
+
+def build_transcripts_csv(cfg: ExperimentConfig) -> Path:
+    out = cfg.results_dir / "transcripts.csv"
+    rows: list[dict[str, Any]] = []
+    listen_dir = cfg.results_dir / "raw_responses" / "listen"
+    if listen_dir.is_dir():
+        for path in sorted(listen_dir.glob("*.json")):
+            key = path.stem
+            parts = key.rsplit("_", 1)
+            if len(parts) != 2:
+                continue
+            uid, condition = parts
+            payload = load_json(path)
+            body = payload.get("response") or payload
+            rows.append(
+                {
+                    "utterance_id": uid,
+                    "acoustic_condition": condition,
+                    "transcript": extract_transcript(body),
+                    "source": "listen",
+                    "request_id": payload.get("request_id", ""),
+                }
+            )
+    _write_csv(out, rows, ["utterance_id", "acoustic_condition", "transcript", "source", "request_id"])
+    return out
+
+
+def build_intelligence_csv(cfg: ExperimentConfig) -> Path:
+    out = cfg.results_dir / "intelligence.csv"
+    rows: list[dict[str, Any]] = []
+    for stage, source_kind in (("listen", "audio_native"), ("read", "text_native")):
+        dir_path = cfg.results_dir / "raw_responses" / stage
+        if not dir_path.is_dir():
+            continue
+        for path in sorted(dir_path.glob("*.json")):
+            payload = load_json(path)
+            body = payload.get("response") or payload
+            meta = payload.get("meta") or {}
+            intel = parse_intelligence(body, cfg)
+            uid = meta.get("utterance_id", path.stem.split("_")[0])
+            rows.append(
+                {
+                    "utterance_id": uid,
+                    "acoustic_condition": meta.get("condition", ""),
+                    "text_source": meta.get("text_source", source_kind),
+                    "pipeline_path": source_kind,
+                    "transcript": extract_transcript(body) if stage == "listen" else meta.get("text", ""),
+                    "sentiment_label": intel["sentiment_label"],
+                    "sentiment_score": intel["sentiment_score"],
+                    "intent_normalized": intel["intent_normalized"],
+                    "topics": "|".join(intel["topics"]),
+                    "request_id": payload.get("request_id", ""),
+                }
+            )
+    fields = [
+        "utterance_id",
+        "acoustic_condition",
+        "text_source",
+        "pipeline_path",
+        "transcript",
+        "sentiment_label",
+        "sentiment_score",
+        "intent_normalized",
+        "topics",
+        "request_id",
+    ]
+    _write_csv(out, rows, fields)
+    return out
+
+
+def run_parse(cfg: ExperimentConfig) -> None:
+    build_transcripts_csv(cfg)
+    build_intelligence_csv(cfg)
+    logger.info("Wrote parsed CSVs under %s", cfg.results_dir)
