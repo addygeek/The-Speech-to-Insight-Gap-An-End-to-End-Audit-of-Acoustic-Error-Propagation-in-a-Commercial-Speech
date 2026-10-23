@@ -58,6 +58,18 @@ class BudgetTracker:
             "breakdown": self.breakdown,
         }
 
+    def load(self, path: Path) -> None:
+        if not path.is_file():
+            return
+        with path.open(encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, dict):
+            return
+        self.spent_usd = float(data.get("spent_usd", 0.0))
+        self.requests = int(data.get("requests", 0))
+        breakdown = data.get("breakdown") or {}
+        self.breakdown = dict(breakdown) if isinstance(breakdown, dict) else {}
+
     def save(self, path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         with path.open("w", encoding="utf-8") as f:
