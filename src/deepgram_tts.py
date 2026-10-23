@@ -116,7 +116,7 @@ def run_tts(
                 headers={"Authorization": f"Token {api_key}", "Content-Type": "application/json"},
                 timeout=120.0,
             ) as client:
-                resp = _post_tts(client, text, params)
+                resp = post_with_backoff(lambda: _post_tts(client, text, params))
             if resp.status_code in (401, 402, 403):
                 manifest.record(uid, Stage.TTS, Status.FAILED, error=f"HTTP {resp.status_code}")
                 raise RuntimeError(f"TTS auth/billing error: HTTP {resp.status_code}")
