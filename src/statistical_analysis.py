@@ -132,16 +132,36 @@ def run_statistics(cfg: ExperimentConfig) -> dict[str, Any]:
         merge_summary(cfg, summary)
         return summary
 
+    rate_cols = [
+        "sentiment_disagreement_ref_vs_transcript",
+        "intent_disagreement_ref_vs_transcript",
+        "topic_set_changed_ref_vs_transcript",
+        "sentiment_disagreement_audio_vs_text",
+        "intent_disagreement_audio_vs_text",
+        "critical_span_error_rate",
+    ]
     for cond, group in df.groupby("acoustic_condition"):
         mean, lo, hi = _bootstrap_mean(group["wer"].to_numpy(), n_boot, seed)
-        sent_col = "sentiment_disagreement_ref_vs_transcript"
-        sent_rate = float(group[sent_col].mean()) if sent_col in group else float("nan")
-        summary["by_condition"][str(cond)] = {
+        block: dict[str, Any] = {
             "n": int(len(group)),
             "wer_mean": mean,
             "wer_ci95": [lo, hi],
-            "sentiment_disagreement_rate": sent_rate,
+            "cer_mean": float(group["cer"].mean()) if "cer" in group else float("nan"),
         }
+        for col in rate_cols:
+            if col in group:
+                block[col] = float(group[col].mean())
+        if "topic_jaccard_ref_vs_transcript" in group:
+            block["topic_jaccard_mean"] = float(group["topic_jaccard_ref_vs_transcript"].mean())
+        summary["by_condition"][str(cond)] = block
+
+    if "scenario" in df.columns:
+        summary["by_scenario"] = {}
+        for scenario, group in df.groupby("scenario"):
+            summary["by_scenario"][str(scenario)] = {
+                "n": int(len(group)),
+                "wer_mean": float(group["wer"].mean()),
+            }
 
     sent_col = "sentiment_disagreement_ref_vs_transcript"
     if "wer" in df.columns and sent_col in df.columns:
