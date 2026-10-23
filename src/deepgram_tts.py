@@ -11,7 +11,7 @@ import httpx
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
 from src.budget import BudgetTracker
-from src.cache import audio_path, cache_hit, raw_response_path, save_json
+from src.cache import audio_path, cache_hit, is_dry_run_payload, raw_response_path, reusable, save_json
 from src.config_loader import ExperimentConfig, require_deepgram_key
 from src.generate_dataset import iter_references
 from src.logging_utils import setup_logging
@@ -83,11 +83,13 @@ def run_tts(
         out_wav = audio_path(cfg, uid, "clean")
         cache_key = f"{uid}_clean"
 
-        if manifest.should_skip(cfg.resume, uid, Stage.TTS):
+        if manifest.should_skip(cfg.resume, uid, Stage.TTS) and reusable(raw_response_path(cfg, "tts", cache_key), not cfg.dry_run):
             continue
-        if cache_hit(out_wav):
+        if cache_hit(out_wav) and (cfg.dry_run or not is_dry_run_payload(raw_response_path(cfg, "tts", cache_key))):
             manifest.record(uid, Stage.TTS, Status.SUCCESS, meta="cache_hit")
             continue
+        if out_wav.is_file() and not cfg.dry_run:
+            out_wav.unlink()
 
         est = budget.estimate_tts(len(text))
         budget.add("tts_estimate", est)
