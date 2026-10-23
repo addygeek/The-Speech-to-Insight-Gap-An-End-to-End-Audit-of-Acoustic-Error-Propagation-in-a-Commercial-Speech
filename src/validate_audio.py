@@ -42,7 +42,7 @@ def validate_utterance_audio(cfg: ExperimentConfig, utterance_id: str) -> list[s
             hashes[cond] = _file_hash(p)
         except wave.Error as exc:
             errors.append(f"{cond}: invalid wav ({exc})")
-    if len(hashes) == 3 and len(set(hashes.values())) == 1 and not cfg.dry_run:
+    if len(hashes) == len(ACOUSTIC_CONDITIONS) and len(set(hashes.values())) == 1 and not cfg.dry_run:
         errors.append("all conditions identical (expected degradation differences)")
     return errors
 
