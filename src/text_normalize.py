@@ -9,7 +9,7 @@ from typing import Any
 
 def normalize_text(text: str, policy: dict[str, Any] | None = None) -> str:
     policy = policy or {}
-    out = text
+    out = "" if text is None else str(text)
     if policy.get("lowercase", True):
         out = out.lower()
     if policy.get("remove_punctuation", True):

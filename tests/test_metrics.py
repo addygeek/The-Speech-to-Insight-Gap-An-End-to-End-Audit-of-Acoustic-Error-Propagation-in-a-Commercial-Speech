@@ -5,6 +5,10 @@ from src.config_loader import load_config
 from src.text_normalize import normalize_intent, normalize_text
 
 
+def test_normalize_numeric_span():
+    assert normalize_text(4421) == "4421"
+
+
 def test_normalize_negation_preserved():
     policy = {"lowercase": True, "remove_punctuation": True, "collapse_whitespace": True}
     assert "do not" in normalize_text("I do not want to cancel.", policy)
