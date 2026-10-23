@@ -128,3 +128,164 @@ def run_listen(
             if manifest.should_skip(cfg.resume, uid, Stage.LISTEN, cond):
                 continue
             wav = audio_path(cfg, uid, cond)
+            cache_key = f"{uid}_{cond}"
+            out_json = raw_response_path(cfg, "listen", cache_key)
+            if cache_hit(out_json):
+                manifest.record(uid, Stage.LISTEN, Status.SUCCESS, condition=cond, meta="cache_hit")
+                continue
+            if not cache_hit(wav):
+                manifest.record(uid, Stage.LISTEN, Status.FAILED, condition=cond, error="missing wav")
+                continue
+
+            minutes = _audio_minutes(wav)
+            budget.add("stt_estimate", budget.estimate_stt_minutes(minutes))
+            budget.check()
+
+            if cfg.dry_run:
+                body = _dry_run_response(ref_text)
+                save_json(
+                    out_json,
+                    {
+                        "dry_run": True,
+                        "meta": {"utterance_id": uid, "condition": cond, "text_source": "audio"},
+                        "request_id": f"dry-{cache_key}",
+                        "response": body,
+                        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+                    },
+                )
+                manifest.record(uid, Stage.LISTEN, Status.SUCCESS, condition=cond, meta="dry_run")
+                n += 1
+                continue
+
+            api_key = require_deepgram_key()
+            try:
+                audio_bytes = wav.read_bytes()
+                with httpx.Client(
+                    headers={
+                        "Authorization": f"Token {api_key}",
+                        "Content-Type": "audio/wav",
+                    },
+                    timeout=180.0,
+                ) as client:
+                    resp = _post_listen(client, audio_bytes, params)
+                if resp.status_code in (401, 402, 403):
+                    log_failure(
+                        failures_path,
+                        failure_row("listen", uid, cond, str(resp.status_code), "auth/billing"),
+                    )
+                    manifest.record(uid, Stage.LISTEN, Status.FAILED, condition=cond, error=str(resp.status_code))
+                    continue
+                resp.raise_for_status()
+                req_id = resp.headers.get("dg-request-id", "")
+                body = resp.json()
+                save_json(
+                    out_json,
+                    {
+                        "meta": {"utterance_id": uid, "condition": cond, "text_source": "audio"},
+                        "request_id": req_id,
+                        "params": params,
+                        "response": body,
+                        "audio_minutes": minutes,
+                        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+                    },
+                )
+                manifest.record(uid, Stage.LISTEN, Status.SUCCESS, condition=cond, request_id=req_id)
+                n += 1
+            except (httpx.HTTPError, json.JSONDecodeError) as exc:
+                log_failure(failures_path, failure_row("listen", uid, cond, error=str(exc)))
+                manifest.record(uid, Stage.LISTEN, Status.FAILED, condition=cond, error=str(exc))
+                logger.exception("Listen failed %s %s", uid, cond)
+
+    if split == "full":
+        records = list(iter_references(cfg, split=split))
+        _run_optional_passes(cfg, manifest, budget, records, failures_path, max_requests, n)
+
+    manifest.save()
+    budget.save(cfg.results_dir / "cost_report.json")
+
+
+def _run_optional_passes(
+    cfg: ExperimentConfig,
+    manifest: Manifest,
+    budget: BudgetTracker,
+    records: list[dict[str, Any]],
+    failures_path: Path,
+    max_requests: int | None,
+    n_done: int,
+) -> None:
+    dg = cfg.section("deepgram")
+    jobs: list[tuple[dict[str, Any], str, list[str], str]] = []
+    repeat_cfg = dg.get("repeat", {})
+    if repeat_cfg.get("enabled"):
+        cond = str(repeat_cfg.get("condition", "clean"))
+        for rec in _subset_ids(records, int(repeat_cfg.get("subset_size", 40)), lambda _r: True):
+            jobs.append((rec, cond, [], f"{cond}_repeat"))
+    keyterm_cfg = dg.get("keyterm", {})
+    if keyterm_cfg.get("enabled"):
+        cond = str(keyterm_cfg.get("condition", "strong"))
+        for rec in _subset_ids(
+            records,
+            int(keyterm_cfg.get("subset_size", 150)),
+            lambda r: bool(_keyterms_for(r)),
+        ):
+            jobs.append((rec, cond, _keyterms_for(rec), f"{cond}_keyterm"))
+
+    n = n_done
+    for rec, cond, keyterms, label in jobs:
+        if max_requests is not None and n >= max_requests:
+            return
+        uid = rec["utterance_id"]
+        if manifest.should_skip(cfg.resume, uid, Stage.LISTEN, label):
+            continue
+        wav = audio_path(cfg, uid, cond)
+        cache_key = f"{uid}_{label}"
+        out_json = raw_response_path(cfg, "listen", cache_key)
+        if cache_hit(out_json) or not cache_hit(wav):
+            continue
+        minutes = _audio_minutes(wav)
+        budget.add("stt_estimate", budget.estimate_stt_minutes(minutes, keyterm=bool(keyterms)))
+        budget.check()
+        params = _query_params(cfg, keyterms)
+        if cfg.dry_run:
+            save_json(
+                out_json,
+                {
+                    "dry_run": True,
+                    "meta": {"utterance_id": uid, "condition": cond, "text_source": label},
+                    "request_id": f"dry-{cache_key}",
+                    "response": _dry_run_response(rec["reference_text"]),
+                    "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+                },
+            )
+            manifest.record(uid, Stage.LISTEN, Status.SUCCESS, condition=label, meta="dry_run")
+            n += 1
+            continue
+        api_key = require_deepgram_key()
+        try:
+            with httpx.Client(
+                headers={"Authorization": f"Token {api_key}", "Content-Type": "audio/wav"},
+                timeout=180.0,
+            ) as client:
+                resp = _post_listen(client, wav.read_bytes(), params)
+            if resp.status_code in (401, 402, 403):
+                log_failure(failures_path, failure_row("listen", uid, label, str(resp.status_code), "auth/billing"))
+                manifest.record(uid, Stage.LISTEN, Status.FAILED, condition=label, error=str(resp.status_code))
+                continue
+            resp.raise_for_status()
+            req_id = resp.headers.get("dg-request-id", "")
+            save_json(
+                out_json,
+                {
+                    "meta": {"utterance_id": uid, "condition": cond, "text_source": label, "keyterms": keyterms},
+                    "request_id": req_id,
+                    "response": resp.json(),
+                    "audio_minutes": minutes,
+                    "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+                },
+            )
+            manifest.record(uid, Stage.LISTEN, Status.SUCCESS, condition=label, request_id=req_id)
+            n += 1
+        except (httpx.HTTPError, json.JSONDecodeError) as exc:
+            log_failure(failures_path, failure_row("listen", uid, label, error=str(exc)))
+            manifest.record(uid, Stage.LISTEN, Status.FAILED, condition=label, error=str(exc))
+            logger.exception("Optional listen failed %s %s", uid, label)
