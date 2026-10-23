@@ -125,9 +125,11 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "validate-audio":
         run_validate_audio(cfg, mf)
     elif args.command == "listen":
-        run_listen(cfg, mf, budget, max_requests=args.max_requests)
+        budget.load(cfg.results_dir / "cost_report.json")
+        run_listen(cfg, mf, budget, split=resolve_split(cfg, args.split), max_requests=args.max_requests)
     elif args.command == "read":
-        run_read(cfg, mf, budget, max_requests=args.max_requests)
+        budget.load(cfg.results_dir / "cost_report.json")
+        run_read(cfg, mf, budget, split=resolve_split(cfg, args.split), max_requests=args.max_requests)
     elif args.command == "metrics":
         run_metrics(cfg)
     elif args.command == "stats":
