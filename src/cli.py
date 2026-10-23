@@ -12,7 +12,7 @@ from src.config_loader import load_config
 from src.deepgram_listen import run_listen
 from src.deepgram_read import run_read
 from src.deepgram_tts import run_tts
-from src.generate_dataset import run_generate_dataset
+from src.generate_dataset import load_references, run_generate_dataset
 from src.generate_paper_assets import run_paper_assets
 from src.logging_utils import setup_logging
 from src.manifest import Manifest, Stage, Status
@@ -69,10 +69,13 @@ def build_parser() -> argparse.ArgumentParser:
     g.add_argument("--split", default="pilot")
     sub.add_parser("validate-dataset", parents=[common])
     sub.add_parser("tts", parents=[common])
-    sub.add_parser("perturb", parents=[common])
+    perturb_cmd = sub.add_parser("perturb", parents=[common])
+    perturb_cmd.add_argument("--split", default=None)
     sub.add_parser("validate-audio", parents=[common])
-    sub.add_parser("listen", parents=[common])
-    sub.add_parser("read", parents=[common])
+    listen_cmd = sub.add_parser("listen", parents=[common])
+    listen_cmd.add_argument("--split", default=None)
+    read_cmd = sub.add_parser("read", parents=[common])
+    read_cmd.add_argument("--split", default=None)
     sub.add_parser("metrics", parents=[common])
     sub.add_parser("stats", parents=[common])
     sub.add_parser("paper-assets", parents=[common])
@@ -84,6 +87,19 @@ def build_parser() -> argparse.ArgumentParser:
     rf.add_argument("--validate", action="store_true")
     sub.add_parser("validate-results", parents=[common])
     return p
+
+
+def resolve_split(cfg, requested: str | None) -> str | None:
+    if requested:
+        return requested
+    splits = {row.get("dataset_split") for row in load_references(cfg.references_jsonl)}
+    splits.discard(None)
+    splits.discard("")
+    if len(splits) == 1:
+        return next(iter(splits))
+    if not splits:
+        return "pilot"
+    return None
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -105,7 +121,7 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "tts":
         run_tts(cfg, mf, budget, max_requests=args.max_requests)
     elif args.command == "perturb":
-        run_perturb(cfg, mf)
+        run_perturb(cfg, mf, split=resolve_split(cfg, args.split))
     elif args.command == "validate-audio":
         run_validate_audio(cfg, mf)
     elif args.command == "listen":
