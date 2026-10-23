@@ -146,3 +146,184 @@ def _fill_template(
         "expected_sentiment": tpl.get("expected_sentiment", ""),
         "critical_spans": critical_spans,
         "critical_span_types": tpl.get("critical_span_types", []),
+        "generation_template_id": tpl["template"][:40],
+        "dataset_split": "pilot",
+        "word_count": len(text.split()),
+    }
+
+
+def _extract_json_object(content: str) -> dict[str, Any]:
+    text = content.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError:
+        start = text.find("{")
+        end = text.rfind("}")
+        if start < 0 or end <= start:
+            raise
+        parsed = json.loads(text[start : end + 1])
+    if not isinstance(parsed, dict):
+        raise json.JSONDecodeError("expected object", text, 0)
+    return parsed
+
+
+def _grok_model(cfg: ExperimentConfig) -> str:
+    configured = str(cfg.section("dataset").get("llm_model", "")).strip()
+    if configured:
+        return configured
+    models = os.environ.get("GROK_MODELS", "grok-4.7-high")
+    return models.split(",")[0].strip() or "grok-4.7-high"
+
+
+def _post_anthropic_messages(url: str, key: str, model: str, prompt: str) -> str:
+    resp = httpx.post(
+        url,
+        headers={
+            "x-api-key": key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        json={
+            "model": model,
+            "max_tokens": 512,
+            "messages": [{"role": "user", "content": prompt}],
+        },
+        timeout=90.0,
+    )
+    resp.raise_for_status()
+    body = resp.json()
+    blocks = body.get("content") or []
+    texts = [str(block.get("text", "")) for block in blocks if isinstance(block, dict)]
+    return "\n".join(t for t in texts if t).strip()
+
+
+def _llm_paraphrase(record: dict[str, Any], cfg: ExperimentConfig) -> dict[str, Any] | None:
+    provider = str(cfg.section("dataset").get("llm_provider", "openrouter")).strip().lower()
+    model = _grok_model(cfg) if provider == "grok" else str(
+        cfg.section("dataset").get("llm_model", "openai/gpt-4o-mini")
+    )
+    prompt = (
+        "Paraphrase the following customer utterance in 25 to 40 words. "
+        "Preserve names, dates, amounts, negation, and intent. Return JSON with keys "
+        "reference_text and critical_spans (list of substring spans still present).\n\n"
+        f"Original: {record['reference_text']}\n"
+        f"Critical spans: {record['critical_spans']}"
+    )
+    try:
+        if provider in ("openai", "openrouter"):
+            if provider == "openrouter":
+                key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+                base = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1").rstrip("/")
+            else:
+                key = os.environ.get("OPENAI_API_KEY", "").strip()
+                base = "https://api.openai.com/v1"
+            if not key:
+                return None
+            resp = httpx.post(
+                f"{base}/chat/completions",
+                headers={"Authorization": f"Bearer {key}"},
+                json={
+                    "model": model,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "response_format": {"type": "json_object"},
+                },
+                timeout=60.0,
+            )
+            resp.raise_for_status()
+            content = resp.json()["choices"][0]["message"]["content"]
+        elif provider == "grok":
+            key = os.environ.get("GROK_API_KEY", "").strip()
+            base = os.environ.get(
+                "GROK_BASE_URL",
+                "https://anthropic-middleware.parthsolankipd.workers.dev/grok",
+            ).rstrip("/")
+            if not key:
+                return None
+            content = _post_anthropic_messages(f"{base}/v1/messages", key, model, prompt)
+        else:
+            key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+            if not key:
+                return None
+            content = _post_anthropic_messages(
+                "https://api.anthropic.com/v1/messages", key, model, prompt
+            )
+        parsed = _extract_json_object(content)
+        new_text = parsed.get("reference_text", "").strip()
+        if not new_text:
+            return None
+        spans = parsed.get("critical_spans", record["critical_spans"])
+        out = dict(record)
+        out["reference_text"] = new_text
+        out["critical_spans"] = spans
+        out["generation_template_id"] = "llm_paraphrase"
+        return out
+    except (httpx.HTTPError, json.JSONDecodeError, KeyError, IndexError) as exc:
+        logger.warning("LLM paraphrase failed: %s", exc)
+        return None
+
+
+def generate_records(cfg: ExperimentConfig, count: int, split: str = "pilot") -> list[dict[str, Any]]:
+    rng = random.Random(cfg.random_seed)
+    mode = cfg.section("dataset").get("generation_mode", "templates")
+    min_words = int(cfg.section("dataset").get("min_words", 25))
+    max_words = int(cfg.section("dataset").get("max_words", 40))
+    seen: set[str] = set()
+    records: list[dict[str, Any]] = []
+    templates = TEMPLATES.copy()
+    rng.shuffle(templates)
+    idx = 0
+    while len(records) < count:
+        tpl = templates[idx % len(templates)]
+        idx += 1
+        rec = _fill_template(tpl, rng, min_words=min_words, max_words=max_words)
+        rec["dataset_split"] = split
+        norm = normalize_text(rec["reference_text"])
+        if norm in seen:
+            continue
+        seen.add(norm)
+        if mode in ("llm", "hybrid") and len(records) % 3 == 2:
+            paraphrased = _llm_paraphrase(rec, cfg)
+            if paraphrased:
+                pn = normalize_text(paraphrased["reference_text"])
+                if pn not in seen:
+                    paraphrased["dataset_split"] = split
+                    records.append(paraphrased)
+                    seen.add(pn)
+                    continue
+        records.append(rec)
+    return records
+
+
+def load_references(path: Path) -> list[dict[str, Any]]:
+    if not path.is_file():
+        return []
+    rows: list[dict[str, Any]] = []
+    with path.open(encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
+    return rows
+
+
+def save_references(path: Path, records: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        for rec in records:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+def iter_references(cfg: ExperimentConfig, split: str | None = None) -> Iterator[dict[str, Any]]:
+    for rec in load_references(cfg.references_jsonl):
+        if split is None or rec.get("dataset_split") == split:
+            yield rec
+
+
+def run_generate_dataset(cfg: ExperimentConfig, count: int, split: str = "pilot") -> int:
+    records = generate_records(cfg, count=count, split=split)
+    save_references(cfg.references_jsonl, records)
+    logger.info("Wrote %d utterances to %s", len(records), cfg.references_jsonl)
+    return len(records)
