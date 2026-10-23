@@ -72,5 +72,14 @@ class BudgetTracker:
 
     def save(self, path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
+        payload = self.to_dict()
+        if path.is_file():
+            try:
+                with path.open(encoding="utf-8") as f:
+                    existing = json.load(f)
+            except json.JSONDecodeError:
+                existing = {}
+            if isinstance(existing, dict) and "preflight" in existing:
+                payload["preflight"] = existing["preflight"]
         with path.open("w", encoding="utf-8") as f:
-            json.dump(self.to_dict(), f, indent=2)
+            json.dump(payload, f, indent=2)
