@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import struct
+import time
 from datetime import datetime, timezone
 from typing import Any
 
@@ -29,6 +31,34 @@ DEEPGRAM_SPEAK_URL = "https://api.deepgram.com/v1/speak"
 )
 def _post_tts(client: httpx.Client, text: str, params: dict[str, Any]) -> httpx.Response:
     return client.post(DEEPGRAM_SPEAK_URL, params=params, json={"text": text})
+
+
+def repair_wav(blob: bytes) -> bytes:
+    """Deepgram writes placeholder chunk sizes. Rewrite them from the PCM length."""
+    marker = blob.find(b"data")
+    if marker < 0 or not blob.startswith(b"RIFF"):
+        return blob
+    pcm = blob[marker + 8 :]
+    header = bytearray(blob[: marker + 8])
+    struct.pack_into("<I", header, marker + 4, len(pcm))
+    struct.pack_into("<I", header, 4, len(header) + len(pcm) - 8)
+    return bytes(header) + pcm
+
+
+def post_with_backoff(send, on_status=None) -> httpx.Response:
+    delay = 1.0
+    response = send()
+    for _ in range(5):
+        if on_status is not None:
+            on_status(response.status_code)
+        if response.status_code not in (408, 429, 500, 502, 503, 504):
+            return response
+        time.sleep(delay)
+        delay = min(delay * 2, 30)
+        response = send()
+    if on_status is not None:
+        on_status(response.status_code)
+    return response
 
 
 def run_tts(
@@ -92,7 +122,8 @@ def run_tts(
                 raise RuntimeError(f"TTS auth/billing error: HTTP {resp.status_code}")
             resp.raise_for_status()
             out_wav.parent.mkdir(parents=True, exist_ok=True)
-            out_wav.write_bytes(resp.content)
+            audio_bytes = repair_wav(resp.content) if container == "wav" else resp.content
+            out_wav.write_bytes(audio_bytes)
             req_id = resp.headers.get("dg-request-id", "")
             save_json(
                 raw_response_path(cfg, "tts", cache_key),
