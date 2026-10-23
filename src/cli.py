@@ -59,3 +59,79 @@ def _common_parser() -> argparse.ArgumentParser:
     p.add_argument("--force", action="store_true")
     return p
 
+
+def build_parser() -> argparse.ArgumentParser:
+    common = _common_parser()
+    p = argparse.ArgumentParser(prog="speech-to-insight", parents=[common])
+    sub = p.add_subparsers(dest="command", required=True)
+    g = sub.add_parser("generate-dataset", parents=[common])
+    g.add_argument("--count", type=int, default=None)
+    g.add_argument("--split", default="pilot")
+    sub.add_parser("validate-dataset", parents=[common])
+    sub.add_parser("tts", parents=[common])
+    sub.add_parser("perturb", parents=[common])
+    sub.add_parser("validate-audio", parents=[common])
+    sub.add_parser("listen", parents=[common])
+    sub.add_parser("read", parents=[common])
+    sub.add_parser("metrics", parents=[common])
+    sub.add_parser("stats", parents=[common])
+    sub.add_parser("paper-assets", parents=[common])
+    pf = sub.add_parser("preflight-cost", parents=[common])
+    pf.add_argument("--target", type=int, default=None)
+    pf.add_argument("--split", default="pilot")
+    sub.add_parser("run-pilot", parents=[common])
+    rf = sub.add_parser("run-full", parents=[common])
+    rf.add_argument("--validate", action="store_true")
+    sub.add_parser("validate-results", parents=[common])
+    return p
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    cfg = _apply_overrides(load_config(args.config), args)
+    ensure_dirs(cfg)
+    mf = Manifest(cfg.manifest_csv)
+    budget = BudgetTracker(cfg)
+
+    if args.command == "generate-dataset":
+        split = args.split or "pilot"
+        count = args.count or (cfg.pilot_utterances if split == "pilot" else cfg.full_utterances)
+        run_generate_dataset(cfg, count=count, split=split)
+        run_validate_dataset(cfg)
+        mf.record("global", Stage.DATASET, Status.SUCCESS, meta=f"split={split},n={count}")
+        mf.save()
+    elif args.command == "validate-dataset":
+        run_validate_dataset(cfg)
+    elif args.command == "tts":
+        run_tts(cfg, mf, budget, max_requests=args.max_requests)
+    elif args.command == "perturb":
+        run_perturb(cfg, mf)
+    elif args.command == "validate-audio":
+        run_validate_audio(cfg, mf)
+    elif args.command == "listen":
+        run_listen(cfg, mf, budget, max_requests=args.max_requests)
+    elif args.command == "read":
+        run_read(cfg, mf, budget, max_requests=args.max_requests)
+    elif args.command == "metrics":
+        run_metrics(cfg)
+    elif args.command == "stats":
+        run_statistics(cfg)
+    elif args.command == "paper-assets":
+        run_paper_assets(cfg)
+    elif args.command == "preflight-cost":
+        run_preflight_cost(cfg, target_utterances=args.target or cfg.full_utterances, split=args.split)
+    elif args.command == "run-pilot":
+        cmd_run_pipeline(cfg, args, split="pilot", count=cfg.pilot_utterances)
+    elif args.command == "run-full":
+        if args.validate and not run_validate_results(cfg, force=args.force):
+            return 1
+        cmd_run_pipeline(cfg, args, split="full", count=cfg.full_utterances)
+    elif args.command == "validate-results":
+        return 0 if run_validate_results(cfg, force=args.force) else 1
+    else:
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
