@@ -41,3 +41,56 @@ text_normalization:
 
 audio:
   tts:
+    model: aura-2
+    voice: aura-asteria-en
+    encoding: linear16
+    sample_rate: 24000
+  perturbation:
+    noise_source: generated_pink
+    mild_snr_db: 15
+    strong_snr_db: 8
+    seed: 42
+
+deepgram:
+  listen:
+    model: nova-3
+    language: en
+    smart_format: true
+    sentiment: true
+    intents: true
+    topics: true
+  read:
+    sentiment: true
+    intents: true
+    topics: true
+  # Secondary only. Leave off until the 25-utterance pilot is cheap.
+  keyterm:
+    enabled: false
+    subset_size: 150
+    condition: strong
+  repeat:
+    enabled: false
+    subset_size: 40
+    condition: clean
+
+budget:
+  max_usd: 40.0
+  absolute_ceiling_usd: 50.0
+  hard_stop: false
+  pricing_estimates:
+    aura_per_1k_chars: 0.03
+    nova3_per_minute: 0.0043
+    keyterm_per_minute: 0.0013
+    read_per_request: 0.0
+
+intent_normalization:
+  synonym_map:
+    cancel order: cancellation
+    cancel my order: cancellation
+    book appointment: scheduling
+    schedule appointment: scheduling
+
+statistics:
+  bootstrap_samples: 2000
+  exploratory_min_utterances: 30
+  alpha: 0.05
