@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -35,8 +37,12 @@ def raw_response_path(cfg: ExperimentConfig, stage: str, key: str) -> Path:
 
 def save_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
+    temporary = path.with_suffix(path.suffix + ".partial")
+    with temporary.open("w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, default=str)
+        f.flush()
+        os.fsync(f.fileno())
+    temporary.replace(path)
 
 
 def load_json(path: Path) -> dict[str, Any]:
