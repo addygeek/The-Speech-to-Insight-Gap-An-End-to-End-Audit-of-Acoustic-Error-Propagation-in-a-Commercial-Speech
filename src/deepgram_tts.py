@@ -39,8 +39,7 @@ def run_tts(
     max_requests: int | None = None,
 ) -> None:
     tts_cfg = cfg.section("audio").get("tts", {})
-    model = tts_cfg.get("model", "aura-2")
-    voice = tts_cfg.get("voice", "aura-asteria-en")
+    model = tts_cfg.get("model", "aura-2-asteria-en")
     encoding = tts_cfg.get("encoding", "linear16")
     sample_rate = int(tts_cfg.get("sample_rate", 24000))
     n = 0
