@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import math
 import wave
 from pathlib import Path
@@ -93,6 +94,11 @@ def write_dry_run_tone(path: Path, sample_rate: int = 24000, seconds: float = 1.
         wf.writeframes(tone.tobytes())
 
 
+def _condition_seed(seed_base: int, utterance_id: str, condition: str) -> int:
+    digest = hashlib.sha256(f"{seed_base}:{utterance_id}:{condition}".encode()).hexdigest()
+    return seed_base + int(digest[:8], 16) % 10000
+
+
 def run_perturb(cfg: ExperimentConfig, manifest: Manifest, split: str | None = "pilot") -> None:
     pert_cfg = cfg.section("audio").get("perturbation", {})
     mild_snr = float(pert_cfg.get("mild_snr_db", 15))
@@ -138,7 +144,7 @@ def run_perturb(cfg: ExperimentConfig, manifest: Manifest, split: str | None = "
                         clean,
                         out,
                         snr_db=snr,
-                        seed=seed_base + hash(uid + cond) % 10000,
+                        seed=_condition_seed(seed_base, uid, cond),
                         meta={
                             "utterance_id": uid,
                             "condition": cond,
