@@ -42,7 +42,13 @@ def write_tables(cfg: ExperimentConfig) -> None:
         f"Conditions & {conds} \\\\\n"
         "\\bottomrule\n\\end{tabular}\n\\end{table}\n"
     )
-    wer_by = df.groupby("acoustic_condition")["wer"].agg(["mean", "std", "count"]).reset_index()
+    order = [name for name in ("clean", "mild", "strong", "harsh") if name in set(df["acoustic_condition"])]
+    wer_by = (
+        df.groupby("acoustic_condition")["wer"]
+        .agg(["mean", "std", "count"])
+        .reindex(order)
+        .reset_index()
+    )
     lines = ["\\begin{table}[t]\n\\centering\n\\caption{WER by acoustic condition.}\n\\label{tab:wer}\n"]
     lines.append("\\begin{tabular}{lrrr}\n\\toprule\nCondition & Mean WER & Std & N \\\\\n\\midrule\n")
     for _, row in wer_by.iterrows():
