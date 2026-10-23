@@ -14,6 +14,7 @@ from src.deepgram_read import run_read
 from src.deepgram_tts import run_tts
 from src.generate_dataset import load_references, run_generate_dataset
 from src.generate_paper_assets import run_paper_assets
+from src.extended_analysis import run_extended
 from src.logging_utils import setup_logging
 from src.manifest import Manifest, Stage, Status
 from src.perturb_audio import run_perturb
@@ -21,6 +22,7 @@ from src.statistical_analysis import run_metrics, run_statistics
 from src.validate_audio import run_validate_audio
 from src.validate_dataset import run_validate_dataset
 from src.validate_results import run_validate_results
+from src.write_findings import write_findings
 
 logger = setup_logging()
 
@@ -136,6 +138,8 @@ def main(argv: list[str] | None = None) -> int:
         run_statistics(cfg)
     elif args.command == "paper-assets":
         run_paper_assets(cfg)
+        run_extended(cfg)
+        write_findings(cfg)
     elif args.command == "preflight-cost":
         run_preflight_cost(cfg, target_utterances=args.target or cfg.full_utterances, split=args.split)
     elif args.command == "run-pilot":
