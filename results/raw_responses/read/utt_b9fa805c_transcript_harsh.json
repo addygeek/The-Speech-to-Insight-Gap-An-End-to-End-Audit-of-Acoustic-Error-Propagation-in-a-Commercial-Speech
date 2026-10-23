@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_b9fa805c",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $8.50. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a16a53-c323-7f92-856d-50bd78bff353",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-c323-7f92-856d-50bd78bff353",
+      "created": "2026-10-23T19:53:57.047Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.3208167
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Notify customer about customer complaint",
+                "confidence_score": 1.3387321e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.014327381737530231
+          },
+          {
+            "text": "I do not want to cancel my order for $8.50. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7382017970085144
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5500694751739502
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:57.097225+00:00"
+}

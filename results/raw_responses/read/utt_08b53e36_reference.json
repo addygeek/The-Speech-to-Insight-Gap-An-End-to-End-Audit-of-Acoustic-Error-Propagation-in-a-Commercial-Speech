@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "utterance_id": "utt_08b53e36",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Can you tell me where my package is headed to Seattle? It is supposed to be delivered by April 3. I'm willing to hold on the line while you verify the record, and I have my account number available."
+  },
+  "request_id": "01a169fc-1f1e-7872-9f80-8a0debfe1302",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-1f1e-7872-9f80-8a0debfe1302",
+      "created": "2026-10-23T18:18:13.500Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 23
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It is supposed to be delivered by April 3. I'm willing to hold on the line while you verify the record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.83644223
+              },
+              {
+                "topic": "Delivery time",
+                "confidence_score": 0.0031105534
+              },
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.13599445
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It is supposed to be delivered by April 3. I'm willing to hold on the line while you verify the record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Confirm package delivery",
+                "confidence_score": 0.03963485
+              },
+              {
+                "intent": "Hold on line",
+                "confidence_score": 0.5689028
+              },
+              {
+                "intent": "Verify record",
+                "confidence_score": 0.7304646
+              },
+              {
+                "intent": "Have account number",
+                "confidence_score": 0.017882423
+              },
+              {
+                "intent": "Verify account number",
+                "confidence_score": 0.08739577
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed to Seattle? It is supposed to be delivered by April 3. I'm willing to hold on the line while you verify the record, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "neutral",
+            "sentiment_score": 0.12649087607860565
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.12649087472395462
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:13.580212+00:00"
+}

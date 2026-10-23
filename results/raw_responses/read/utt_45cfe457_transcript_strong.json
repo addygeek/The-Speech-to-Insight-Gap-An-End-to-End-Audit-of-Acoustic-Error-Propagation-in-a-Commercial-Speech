@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_45cfe457",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Where is my package going to Chicago? It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fa-fe34-77a1-8d8f-42bb13512307",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-fe34-77a1-8d8f-42bb13512307",
+      "created": "2026-10-23T18:16:59.465Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package",
+                "confidence_score": 0.12615372
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.42856845
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request change in booking",
+                "confidence_score": 1.2809156e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05877436697483063
+          },
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6880876421928406
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5256841721073273
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:59.545881+00:00"
+}

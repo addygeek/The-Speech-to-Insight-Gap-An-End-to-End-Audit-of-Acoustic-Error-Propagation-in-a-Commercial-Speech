@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_547429e0",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Hi. My name is Taylor Brooks. I do not want to cancel my order for $8.50. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fb-2e9a-7493-b6d0-d458429c0ea2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-2e9a-7493-b6d0-d458429c0ea2",
+      "created": "2026-10-23T18:17:11.661Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.90049106
+              },
+              {
+                "topic": "Payment settlement",
+                "confidence_score": 0.039703302
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Order items before business day",
+                "confidence_score": 0.0060593463
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09368356317281724
+          },
+          {
+            "text": "I do not want to cancel my order for $8.50.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.652985155582428
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.25380775332450867
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.30667657118577224
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:11.731510+00:00"
+}

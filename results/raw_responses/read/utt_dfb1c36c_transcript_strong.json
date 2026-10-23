@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_dfb1c36c",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Please cancel my order for $8.50 placed yesterday. I need this settled before the end of the business day because I travel tomorrow morning. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a169fd-736e-79d0-b338-fd3d701f3358",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-736e-79d0-b338-fd3d701f3358",
+      "created": "2026-10-23T18:19:40.544Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 46
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 24,
+            "end_word": 39,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7966323
+              },
+              {
+                "topic": "Payment issue",
+                "confidence_score": 0.11539617
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 24,
+            "end_word": 39,
+            "intents": [
+              {
+                "intent": "Cancel and settle order",
+                "confidence_score": 0.0008197465
+              },
+              {
+                "intent": "Resolve account issues",
+                "confidence_score": 0.014097404
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday. I need this settled before the end of the business day because I travel tomorrow morning. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 0,
+            "end_word": 39,
+            "sentiment": "negative",
+            "sentiment_score": -0.6667048335075378
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6667048412820568
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:41.071790+00:00"
+}

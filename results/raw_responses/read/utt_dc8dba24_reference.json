@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_dc8dba24",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I\u2019d like to schedule an appointment with Dr. Alex Chen for October 5 at 11:00 AM. Please don't transfer me again unless the next person can genuinely modify the booking."
+  },
+  "request_id": "01a169fa-e8d7-7472-b56b-609a23ae75d8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-e8d7-7472-b56b-609a23ae75d8",
+      "created": "2026-10-23T18:16:53.795Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.48119208
+              },
+              {
+                "topic": "Changing booking",
+                "confidence_score": 0.15860093
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Change appointment",
+                "confidence_score": 0.14295277
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I\u2019d like to schedule an appointment with Dr. Alex Chen for October 5 at 11:00 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.21008706092834473
+          },
+          {
+            "text": "Please don't transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.9097564220428468
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3354777311667418
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:53.876037+00:00"
+}

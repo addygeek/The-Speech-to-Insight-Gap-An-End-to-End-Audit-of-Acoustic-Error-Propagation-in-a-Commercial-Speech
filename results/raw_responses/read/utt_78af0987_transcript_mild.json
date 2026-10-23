@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_78af0987",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Can you tell me where my package is headed to Chicago? It is expected to get there by June 21. I've reached out to support regarding this issue twice this week."
+  },
+  "request_id": "01a169fd-b210-7ff1-a495-c228b18c3a14",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-b210-7ff1-a495-c228b18c3a14",
+      "created": "2026-10-23T18:19:56.437Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue twice this week.",
+            "start_word": 20,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.82693076
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.038588885
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue twice this week.",
+            "start_word": 20,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Update package arrival",
+                "confidence_score": 0.025873914
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed to Chicago? It is expected to get there by June 21. I've reached out to support regarding this issue twice this week.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.062127724289894104
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.06212772263420953
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:56.505072+00:00"
+}

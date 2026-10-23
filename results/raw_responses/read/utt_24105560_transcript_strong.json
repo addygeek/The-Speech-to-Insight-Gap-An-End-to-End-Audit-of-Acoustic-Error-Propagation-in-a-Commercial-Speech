@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "utterance_id": "utt_24105560",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I saw a duplicate charge of $19.40 on my card ending in 4421. I can remain on the line while you verify the record, and I have my account number available."
+  },
+  "request_id": "01a169fa-d329-7922-8afb-8e9d6df5c04d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-d329-7922-8afb-8e9d6df5c04d",
+      "created": "2026-10-23T18:16:48.422Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 23
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can remain on the line while you verify the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Duplicate charge",
+                "confidence_score": 0.8527494
+              },
+              {
+                "topic": "Card verification",
+                "confidence_score": 0.6570216
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can remain on the line while you verify the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Report a duplicate charge",
+                "confidence_score": 0.00037775346
+              },
+              {
+                "intent": "Confirm record",
+                "confidence_score": 0.06632962
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.23994097
+              },
+              {
+                "intent": "Maintain line",
+                "confidence_score": 0.0015799168
+              },
+              {
+                "intent": "Verify account number",
+                "confidence_score": 0.0329943
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I saw a duplicate charge of $19.40 on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.635402500629425
+          },
+          {
+            "text": "I can remain on the line while you verify the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.02571546845138073
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.31451458680002314
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:48.500887+00:00"
+}

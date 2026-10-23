@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_45ebd9f4",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Where is my package going to Denver? It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a16a53-6825-7570-9a9d-050b5263f1df",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-6825-7570-9a9d-050b5263f1df",
+      "created": "2026-10-23T19:53:33.533Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.48811004
+              },
+              {
+                "topic": "Transportation",
+                "confidence_score": 0.075183794
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change packages",
+                "confidence_score": 0.019577244
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04849023371934891
+          },
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6904500722885132
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5247830421693863
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:33.582730+00:00"
+}

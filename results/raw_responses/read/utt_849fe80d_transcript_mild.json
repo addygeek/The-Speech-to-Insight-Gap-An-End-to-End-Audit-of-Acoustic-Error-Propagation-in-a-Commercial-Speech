@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_849fe80d",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Hi. My name is Taylor Brooks. I do not want to cancel my order for $45.99. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fc-ae06-7d91-a53d-2a93b06b26f8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-ae06-7d91-a53d-2a93b06b26f8",
+      "created": "2026-10-23T18:18:49.809Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.26441038
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.8792993
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Informing absence",
+                "confidence_score": 0.007968467
+              },
+              {
+                "intent": "Requesting cancellation",
+                "confidence_score": 0.07438217
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03615295886993408
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7018446922302246
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.535795259475708
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:49.878449+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_bdf86d29",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Can you change my flight to Seattle on October 5? The last agent I spoke with asked me to call back if the charge is still showing."
+  },
+  "request_id": "01a169fa-edb4-70b2-bf5d-63e90439aee2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-edb4-70b2-bf5d-63e90439aee2",
+      "created": "2026-10-23T18:16:55.157Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8946867
+              },
+              {
+                "topic": "Agent call back",
+                "confidence_score": 0.09760209
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.7639976
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.47835588
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on October 5?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.046267278492450714
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7909027934074402
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4839403788248698
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:55.226304+00:00"
+}

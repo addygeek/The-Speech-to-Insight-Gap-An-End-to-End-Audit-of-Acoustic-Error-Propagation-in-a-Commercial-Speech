@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "utterance_id": "utt_adebe427",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me where my package bound for Seattle is? It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available."
+  },
+  "request_id": "01a169fd-3dcd-7173-9e0e-d78ea35e6d5a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-3dcd-7173-9e0e-d78ea35e6d5a",
+      "created": "2026-10-23T18:19:26.714Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.4436145
+              },
+              {
+                "topic": "Seattle package",
+                "confidence_score": 0.40600538
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.09001536
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.49544796
+              },
+              {
+                "intent": "Look up record",
+                "confidence_score": 0.26024094
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.3915405
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package bound for Seattle is? It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04903424903750419
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.04903424703157865
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:26.795588+00:00"
+}

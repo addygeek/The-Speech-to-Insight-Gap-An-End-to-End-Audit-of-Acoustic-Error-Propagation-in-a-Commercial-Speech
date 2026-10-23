@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "utterance_id": "utt_303998c5",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Austin? It should arrive by April 3. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fc-896a-7802-aafb-e0a15e1c60ab",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-896a-7802-aafb-e0a15e1c60ab",
+      "created": "2026-10-23T18:18:40.665Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package",
+                "confidence_score": 0.10904369
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.3782009
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Identify package destination",
+                "confidence_score": 0.0013199127
+              },
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.2930652
+              },
+              {
+                "intent": "Report package arrival timeframe",
+                "confidence_score": 0.002179339
+              },
+              {
+                "intent": "Inform about package arrival",
+                "confidence_score": 0.0045688385
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin? It should arrive by April 3. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": 0.13276176154613495
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.13276177067910472
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:40.745397+00:00"
+}

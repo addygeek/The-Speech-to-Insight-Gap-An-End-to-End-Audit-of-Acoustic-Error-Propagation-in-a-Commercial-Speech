@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_1790f499",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I want to schedule an appointment with Dr. Alex Chen for June 21 at 2:15 PM. The previous agent I talked to told me to call back if the charge remained."
+  },
+  "request_id": "01a169fb-c5b0-72d0-aa8c-e7be836ae2d8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-c5b0-72d0-aa8c-e7be836ae2d8",
+      "created": "2026-10-23T18:17:50.420Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the charge remained.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.34671456
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the charge remained.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment with dr. alex chen",
+                "confidence_score": 0.13209976
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with Dr. Alex Chen for June 21 at 2:15 PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2981043756008148
+          },
+          {
+            "text": "The previous agent I talked to told me to call back if the charge remained.",
+            "start_word": 16,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7700535655021667
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.22153998710013725
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:50.493630+00:00"
+}

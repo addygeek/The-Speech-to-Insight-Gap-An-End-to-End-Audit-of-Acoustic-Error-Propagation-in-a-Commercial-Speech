@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_977d70e3",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been down since 11AM, and I cannot work from Seattle. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fb-99bc-7620-beb7-8762b8870c18",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-99bc-7620-beb7-8762b8870c18",
+      "created": "2026-10-23T18:17:39.305Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.40950236
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.57279634
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel working from suedee",
+                "confidence_score": 1.4684829e-05
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.87345785
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Seattle. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.850263774394989
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8502637689763849
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:39.384695+00:00"
+}

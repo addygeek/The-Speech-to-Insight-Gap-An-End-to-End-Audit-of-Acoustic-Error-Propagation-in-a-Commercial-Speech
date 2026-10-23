@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_af15df6e",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "I need to book an appointment with doctor Sam Patel on March 12 at 09:30AM. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fd-0caa-78f0-ba90-22a84bd33ea7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-0caa-78f0-ba90-22a84bd33ea7",
+      "created": "2026-10-23T18:19:14.293Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.0017066319
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.7391834
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.93602157
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Sam Patel on March 12 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07241912931203842
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7341382503509521
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3764522397840345
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:14.362834+00:00"
+}

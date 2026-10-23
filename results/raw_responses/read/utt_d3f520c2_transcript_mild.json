@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_d3f520c2",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Hello. I'm Sam Patel. I don't wish to cancel my $75 order. I'm willing to stay on the line as you verify the details, and I have my account number available."
+  },
+  "request_id": "01a169fb-b8be-7091-b1b0-0fe43ba76cee",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-b8be-7091-b1b0-0fe43ba76cee",
+      "created": "2026-10-23T18:17:47.021Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7234618
+              },
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.7642687
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Manage order details",
+                "confidence_score": 0.004297248
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03620864823460579
+          },
+          {
+            "text": "I don't wish to cancel my $75 order.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "negative",
+            "sentiment_score": -0.5965270400047302
+          },
+          {
+            "text": "I'm willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.21180643141269684
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.031729573427244674
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:47.088957+00:00"
+}

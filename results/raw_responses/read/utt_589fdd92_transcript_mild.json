@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_589fdd92",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $120. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fd-1d3a-77f1-8f8c-9f69eb31933d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-1d3a-77f1-8f8c-9f69eb31933d",
+      "created": "2026-10-23T18:19:18.529Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.71339047
+              },
+              {
+                "topic": "Transferring to next person",
+                "confidence_score": 0.0002455069
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.7660484
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.14851466
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -0.007132310885936022
+          },
+          {
+            "text": "I do not want to cancel my order for $120. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.844291627407074
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6460170243915758
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:18.610095+00:00"
+}

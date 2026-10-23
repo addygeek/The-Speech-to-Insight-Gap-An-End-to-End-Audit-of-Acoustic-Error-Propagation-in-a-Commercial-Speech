@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_18c66389",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Maria Santos on March 12 at 9:30 AM. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fb-50d9-79b1-828e-df80b486f81b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-50d9-79b1-828e-df80b486f81b",
+      "created": "2026-10-23T18:17:20.658Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.34297967
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.34008452
+              },
+              {
+                "intent": "Make appointment",
+                "confidence_score": 0.00053756783
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Maria Santos on March 12 at 9:30 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06258174777030945
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.42133596539497375
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.223077046243768
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:20.740122+00:00"
+}

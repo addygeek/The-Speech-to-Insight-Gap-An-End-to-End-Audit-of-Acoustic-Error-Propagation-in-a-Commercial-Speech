@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "utterance_id": "utt_c68ec5c1",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Sam Patel on March 12 at 02:15PM. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fd-c5d4-7e30-856d-1f55d6df521a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-c5d4-7e30-856d-1f55d6df521a",
+      "created": "2026-10-23T18:20:01.731Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.43743557
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.07896397
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9266513
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.28210112
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.101711705
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.70394653
+              },
+              {
+                "intent": "Gather account number",
+                "confidence_score": 0.055057313
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Sam Patel on March 12 at 02:15PM. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.17260564863681793
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.17260565408846226
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:20:01.800955+00:00"
+}

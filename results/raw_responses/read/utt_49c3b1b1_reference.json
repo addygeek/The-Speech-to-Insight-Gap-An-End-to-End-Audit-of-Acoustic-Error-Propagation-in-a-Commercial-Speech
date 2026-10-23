@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_49c3b1b1",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Alex Chen on October 5 at 2:15 PM. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fb-2ba2-7ec0-a942-c34c9f323fbd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-2ba2-7ec0-a942-c34c9f323fbd",
+      "created": "2026-10-23T18:17:10.997Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.65046054
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.2485184
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.8665787
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Alex Chen on October 5 at 2:15 PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2911745011806488
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.9116092324256896
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5841575198703342
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:11.065196+00:00"
+}

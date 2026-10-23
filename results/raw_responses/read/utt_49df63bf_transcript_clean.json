@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_49df63bf",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the status of my package headed to Boston? It's expected by June 21. The previous agent I talked to told me to call back if the charge was still appearing."
+  },
+  "request_id": "01a169fd-3184-7f32-8bd5-b8b9da00d500",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-3184-7f32-8bd5-b8b9da00d500",
+      "created": "2026-10-23T18:19:23.492Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the charge was still appearing.",
+            "start_word": 17,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.83083194
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.051730055
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the charge was still appearing.",
+            "start_word": 17,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.3124361
+              },
+              {
+                "intent": "Request a callback",
+                "confidence_score": 0.00035422994
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package headed to Boston? It's expected by June 21.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07947133481502533
+          },
+          {
+            "text": "The previous agent I talked to told me to call back if the charge was still appearing.",
+            "start_word": 17,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.7805967330932617
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3290609836578369
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:23.560777+00:00"
+}

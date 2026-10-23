@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_1160e6ae",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Taylor Brooks. The support team in Denver was excellent today. Please send me updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a169fb-7fb4-7a11-88ed-7b6d4ce489a9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-7fb4-7a11-88ed-7b6d4ce489a9",
+      "created": "2026-10-23T18:17:32.527Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.7191494
+              },
+              {
+                "topic": "Updated confirmation",
+                "confidence_score": 0.0025623012
+              },
+              {
+                "topic": "Email address",
+                "confidence_score": 0.92273945
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Receive update",
+                "confidence_score": 0.004236123
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8249098062515259
+          },
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.3130100965499878
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5772163637222782
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:32.598084+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_8ee0ac6e",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hello, I'm Taylor Brooks. I want to confirm that I do not wish to cancel my $250.00 order. The previous agent advised me to reconnect if the charge remained."
+  },
+  "request_id": "01a169fd-03ce-70d1-9522-8a3ed396e14d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-03ce-70d1-9522-8a3ed396e14d",
+      "created": "2026-10-23T18:19:11.805Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reconnect if the charge remained.",
+            "start_word": 18,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.6472559
+              },
+              {
+                "topic": "Reconnecting",
+                "confidence_score": 0.27447253
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reconnect if the charge remained.",
+            "start_word": 18,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Confirm cancellation",
+                "confidence_score": 0.28973672
+              },
+              {
+                "intent": "Reconnect order",
+                "confidence_score": 0.015304614
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I'm Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07770805060863495
+          },
+          {
+            "text": "I want to confirm that I do not wish to cancel my $250.00 order. The previous agent advised me to reconnect if the charge remained.",
+            "start_word": 4,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5190006494522095
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.38129865206204927
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:12.334573+00:00"
+}

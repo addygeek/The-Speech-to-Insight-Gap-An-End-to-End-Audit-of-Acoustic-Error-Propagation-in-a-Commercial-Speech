@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_6ad04d0d",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Thank you, Alex Chen. The support team in Chicago was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a16a53-c527-7473-9d24-4afbc89da0d3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-c527-7473-9d24-4afbc89da0d3",
+      "created": "2026-10-23T19:53:57.372Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.7265986
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.8336523
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Notify absence",
+                "confidence_score": 0.004756997
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. The support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8100386261940002
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09291299432516098
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.3175195347179066
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:57.416758+00:00"
+}

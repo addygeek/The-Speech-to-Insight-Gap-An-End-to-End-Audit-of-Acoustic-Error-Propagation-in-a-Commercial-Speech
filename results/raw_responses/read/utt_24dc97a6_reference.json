@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_24dc97a6",
+    "condition": "",
+    "text_source": "reference",
+    "text": "My internet has been down since 2:15 PM and I cannot work from Denver. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fa-d361-7443-be0b-1b9120f4bf4d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-d361-7443-be0b-1b9120f4bf4d",
+      "created": "2026-10-23T18:16:48.353Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 14,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.34042364
+              },
+              {
+                "topic": "Availability",
+                "confidence_score": 0.0026535443
+              },
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.1982912
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 14,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.23993117
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 2:15 PM and I cannot work from Denver. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.733272910118103
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.733272933959961
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:48.422953+00:00"
+}

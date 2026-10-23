@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_d41ed7c8",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I want to schedule a visit with Dr. Sam Patel on April 3 at 2:15 PM. I tried the website two times already, but it did not save the changes to my account."
+  },
+  "request_id": "01a169fb-d977-7432-83c0-cfe30126cc0e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-d977-7432-83c0-cfe30126cc0e",
+      "created": "2026-10-23T18:17:55.466Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I tried the website two times already, but it did not save the changes to my account.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Scheduling appointment",
+                "confidence_score": 0.03736409
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.56366074
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I tried the website two times already, but it did not save the changes to my account.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Schedule visit",
+                "confidence_score": 0.28495446
+              },
+              {
+                "intent": "Save changes",
+                "confidence_score": 0.18116458
+              },
+              {
+                "intent": "Fix account",
+                "confidence_score": 0.022650992
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule a visit with Dr. Sam Patel on April 3 at 2:15 PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.260257363319397
+          },
+          {
+            "text": "I tried the website two times already, but it did not save the changes to my account.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.6298180222511292
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1625284433364868
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:55.539664+00:00"
+}

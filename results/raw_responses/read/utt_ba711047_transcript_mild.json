@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_ba711047",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Where is my package going to Boston? It should arrive by March 12. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a169fc-4338-7fd2-b769-ebd4be0aab8b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-4338-7fd2-b769-ebd4be0aab8b",
+      "created": "2026-10-23T18:18:22.692Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9171814
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.44526973
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Update package delivery",
+                "confidence_score": 0.012603992
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0584852397441864
+          },
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5020492076873779
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36191561818122864
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:22.759436+00:00"
+}

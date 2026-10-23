@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_d9d064e2",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Hi. My name is Alex Chen. I do not want to cancel my order for $75. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a16a53-5563-7900-b43f-01be36bbe4cc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-5563-7900-b43f-01be36bbe4cc",
+      "created": "2026-10-23T19:53:28.913Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.07288929
+              },
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8912667
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Notify support about a problem",
+                "confidence_score": 0.00030589
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.01091825496405363
+          },
+          {
+            "text": "I do not want to cancel my order for $75. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7577602863311768
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5869427786933051
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:28.972270+00:00"
+}

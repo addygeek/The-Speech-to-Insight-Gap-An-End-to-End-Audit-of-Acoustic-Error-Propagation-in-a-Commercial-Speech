@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_ed6d6e55",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the status of my package heading to Austin? It is scheduled for arrival by June 21. Please avoid transferring me again unless the next representative can modify the booking."
+  },
+  "request_id": "01a169fd-9ad7-7df3-b9aa-a7aed1d2ee2d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-9ad7-7df3-b9aa-a7aed1d2ee2d",
+      "created": "2026-10-23T18:19:50.515Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 20,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.9238246
+              },
+              {
+                "topic": "Reservation",
+                "confidence_score": 0.0012760636
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 20,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.23222211
+              },
+              {
+                "intent": "Avoid transferring",
+                "confidence_score": 0.27314234
+              },
+              {
+                "intent": "Modify booking",
+                "confidence_score": 0.45863262
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Austin? It is scheduled for arrival by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": -0.031493499875068665
+          },
+          {
+            "text": "Please avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 20,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.8885852098464966
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.39237423946982936
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:50.595000+00:00"
+}

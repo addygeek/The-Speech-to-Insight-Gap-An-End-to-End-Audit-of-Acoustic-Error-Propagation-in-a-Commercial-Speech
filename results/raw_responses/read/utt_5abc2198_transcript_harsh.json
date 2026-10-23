@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "utterance_id": "utt_5abc2198",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I would like to cancel my order for $45.99 that I placed yesterday. It needs to be resolved by the end of the business day as I have to travel tomorrow morning. Please avoid transferring me again unless the next representative can make the changes."
+  },
+  "request_id": "01a16a53-ce48-71b2-80a8-17114ddf1e54",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-ce48-71b2-80a8-17114ddf1e54",
+      "created": "2026-10-23T19:53:59.957Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 52,
+        "output_tokens": 52
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 52,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 52,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can make the changes.",
+            "start_word": 32,
+            "end_word": 44,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.29426834
+              },
+              {
+                "topic": "Resolution",
+                "confidence_score": 0.46440673
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.3151358
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.6229037
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can make the changes.",
+            "start_word": 32,
+            "end_word": 44,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6610453
+              },
+              {
+                "intent": "Avoid transfer",
+                "confidence_score": 0.2657331
+              },
+              {
+                "intent": "Make changes",
+                "confidence_score": 0.9712924
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $45.99 that I placed yesterday. It needs to be resolved by the end of the business day as I have to travel tomorrow morning. Please avoid transferring me again unless the next representative can make the changes.",
+            "start_word": 0,
+            "end_word": 44,
+            "sentiment": "negative",
+            "sentiment_score": -0.7671670317649841
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7671670180100661
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:00.001242+00:00"
+}

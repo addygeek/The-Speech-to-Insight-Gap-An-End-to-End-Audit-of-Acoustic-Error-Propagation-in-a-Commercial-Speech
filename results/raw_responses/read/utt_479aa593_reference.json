@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_479aa593",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hi, my name is Taylor Brooks. I do not want to cancel my order for $75.00. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fc-7162-7c90-b9ef-3ee1403ff719",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-7162-7c90-b9ef-3ee1403ff719",
+      "created": "2026-10-23T18:18:34.384Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.1556976
+              },
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.86437935
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Decline order",
+                "confidence_score": 0.0006799135
+              },
+              {
+                "intent": "Inform absence from home office",
+                "confidence_score": 0.03821438
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04652562364935875
+          },
+          {
+            "text": "I do not want to cancel my order for $75.00. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.69933021068573
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5272095998128256
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:34.458529+00:00"
+}

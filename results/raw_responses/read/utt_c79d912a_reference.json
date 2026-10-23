@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_c79d912a",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hi, my name is Maria Santos. I do not want to cancel my order for $75.00. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fa-c414-7e91-99f5-a9795582ee25",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-c414-7e91-99f5-a9795582ee25",
+      "created": "2026-10-23T18:16:44.450Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7363601
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.40796483
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Change order",
+                "confidence_score": 0.11961898
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.015677640214562416
+          },
+          {
+            "text": "I do not want to cancel my order for $75.00. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8325046896934509
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6150220235188802
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:44.517857+00:00"
+}

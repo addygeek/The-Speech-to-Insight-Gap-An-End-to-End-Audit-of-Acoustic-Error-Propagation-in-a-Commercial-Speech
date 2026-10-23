@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "utterance_id": "utt_4e8761c8",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you change my flight to Denver on March 12? Please send the updated confirmation to the same email address you have on file. This is the second time I'd have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fc-5c8a-7ed1-9853-63c5b122830d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-5c8a-7ed1-9853-63c5b122830d",
+      "created": "2026-10-23T18:18:29.084Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I'd have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.96732503
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.79373664
+              },
+              {
+                "topic": "Support contact",
+                "confidence_score": 0.0024259312
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I'd have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.75357026
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.7701263
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.940279
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Denver on March 12? Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "neutral",
+            "sentiment_score": 0.14190392196178436
+          },
+          {
+            "text": "This is the second time I'd have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.7015754580497742
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.214231808980306
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:29.154075+00:00"
+}

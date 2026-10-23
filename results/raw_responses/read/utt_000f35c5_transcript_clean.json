@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "utterance_id": "utt_000f35c5",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Seattle? It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fb-f2ca-7ea1-812e-36ab90e2804f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-f2ca-7ea1-812e-36ab90e2804f",
+      "created": "2026-10-23T18:18:02.101Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.7249214
+              },
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.061729036
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.05792637
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.46448705
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Verify package location",
+                "confidence_score": 0.0011119472
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.3602558
+              },
+              {
+                "intent": "Prepare account number",
+                "confidence_score": 0.24213532
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.11768858879804613
+          },
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.5105319023132324
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.42073914664132256
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:02.181423+00:00"
+}

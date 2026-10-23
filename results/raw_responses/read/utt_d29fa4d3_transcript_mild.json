@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_d29fa4d3",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "I would like to schedule an appointment with doctor Alex Chen for June 21 at 09:30AM. It's important to have this confirmed before the end of the business day as I am traveling tomorrow morning."
+  },
+  "request_id": "01a169fd-a23e-7181-8d31-e0c75d27162a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-a23e-7181-8d31-e0c75d27162a",
+      "created": "2026-10-23T18:19:52.495Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's important to have this confirmed before the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Appointment confirmation",
+                "confidence_score": 0.41656926
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's important to have this confirmed before the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Confirm appointment",
+                "confidence_score": 0.022047834
+              },
+              {
+                "intent": "Confirm appointment",
+                "confidence_score": 0.106262736
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen for June 21 at 09:30AM. It's important to have this confirmed before the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 34,
+            "sentiment": "positive",
+            "sentiment_score": 0.6306182146072388
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6306182316371373
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:52.574840+00:00"
+}

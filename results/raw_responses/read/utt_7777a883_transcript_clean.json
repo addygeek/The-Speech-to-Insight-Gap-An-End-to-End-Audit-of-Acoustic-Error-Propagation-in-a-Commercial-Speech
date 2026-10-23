@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_7777a883",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Hello. I'm Jordan Lee. I do not wish to cancel my order costing $45.99. This week marks my second attempt to reach out to support regarding this same issue."
+  },
+  "request_id": "01a169fc-31e7-7ae1-8ccc-d62e3d30588b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-31e7-7ae1-8ccc-d62e3d30588b",
+      "created": "2026-10-23T18:18:18.108Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This week marks my second attempt to reach out to support regarding this same issue.",
+            "start_word": 14,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.90904605
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.68495744
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This week marks my second attempt to reach out to support regarding this same issue.",
+            "start_word": 14,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Provide support",
+                "confidence_score": 0.044446956
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Jordan Lee.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02087018266320229
+          },
+          {
+            "text": "I do not wish to cancel my order costing $45.99. This week marks my second attempt to reach out to support regarding this same issue.",
+            "start_word": 4,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.6448443531990051
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5046938845985814
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:18.191042+00:00"
+}

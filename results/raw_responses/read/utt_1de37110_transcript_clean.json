@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_1de37110",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the location of my cottage headed to Boston? It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning."
+  },
+  "request_id": "01a169fb-d180-78f1-8f8e-f115ea2c7840",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-d180-78f1-8f8e-f115ea2c7840",
+      "created": "2026-10-23T18:17:53.564Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 12,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Cottage location",
+                "confidence_score": 0.31655157
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 12,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Request location information",
+                "confidence_score": 0.07504958
+              },
+              {
+                "intent": "Resolve cottage issue",
+                "confidence_score": 0.249679
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my cottage headed to Boston?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.0442441888153553
+          },
+          {
+            "text": "It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 12,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.3797156512737274
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2733466450761004
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:54.703605+00:00"
+}

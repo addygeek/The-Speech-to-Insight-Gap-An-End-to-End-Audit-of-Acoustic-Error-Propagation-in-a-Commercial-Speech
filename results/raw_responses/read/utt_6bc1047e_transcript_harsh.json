@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "utterance_id": "utt_6bc1047e",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Can you change my flight to Chicago on June 21? I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a16a53-b5d7-72c2-a800-732bc77ed73a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-b5d7-72c2-a800-732bc77ed73a",
+      "created": "2026-10-23T19:53:53.560Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8051119
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.20813747
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.94488287
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.5930253
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.32377163
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.81933564
+              },
+              {
+                "intent": "Have account number",
+                "confidence_score": 0.20074345
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on June 21?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.26401692628860474
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.492203027009964
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4137640595436096
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:53.611440+00:00"
+}

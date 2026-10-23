@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_cf41e72e",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I was charged $250 twice on my card ending in 4421. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fa-f868-7a02-bd2e-6f015c1632b6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-f868-7a02-bd2e-6f015c1632b6",
+      "created": "2026-10-23T18:16:57.970Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.2309008
+              },
+              {
+                "topic": "Settlement",
+                "confidence_score": 0.03081326
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.5078034
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Confirm charges",
+                "confidence_score": 0.0003157435
+              },
+              {
+                "intent": "Request settlement",
+                "confidence_score": 0.040609095
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4421. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6861988306045532
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6861988067626953
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:58.049656+00:00"
+}

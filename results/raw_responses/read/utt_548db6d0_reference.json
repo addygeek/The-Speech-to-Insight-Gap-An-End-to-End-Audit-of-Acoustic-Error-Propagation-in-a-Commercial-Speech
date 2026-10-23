@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_548db6d0",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hello, I\u2019m Jordan Lee. I do not wish to cancel my order of $19.40. Kindly send the revised confirmation to the email address you have recorded."
+  },
+  "request_id": "01a169fc-438a-7813-81c6-876c817ddec2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-438a-7813-81c6-876c817ddec2",
+      "created": "2026-10-23T18:18:22.621Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to the email address you have recorded.",
+            "start_word": 14,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8060874
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.30505842
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to the email address you have recorded.",
+            "start_word": 14,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Update confirmation",
+                "confidence_score": 0.0010143948
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I\u2019m Jordan Lee.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04481933638453483
+          },
+          {
+            "text": "I do not wish to cancel my order of $19.40.",
+            "start_word": 4,
+            "end_word": 13,
+            "sentiment": "negative",
+            "sentiment_score": -0.7370734810829163
+          },
+          {
+            "text": "Kindly send the revised confirmation to the email address you have recorded.",
+            "start_word": 14,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.054883427917957306
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.24157232557024275
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:22.700778+00:00"
+}

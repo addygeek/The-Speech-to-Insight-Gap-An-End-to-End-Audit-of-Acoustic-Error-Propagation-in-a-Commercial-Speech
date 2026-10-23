@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_db5f92fe",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Could you modify my flight to Chicago for March 12? I need to resolve this before the end of the business day since I'm traveling tomorrow morning."
+  },
+  "request_id": "01a169fc-5696-75c2-bd96-a52cdf805d58",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-5696-75c2-bd96-a52cdf805d58",
+      "created": "2026-10-23T18:18:27.635Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to resolve this before the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.3012803
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to resolve this before the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.048410874
+              },
+              {
+                "intent": "Resolve issue before business day",
+                "confidence_score": 0.630329
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Chicago for March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13794338703155518
+          },
+          {
+            "text": "I need to resolve this before the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6163774728775024
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4466105430356918
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:27.715543+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_6540ccc4",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Hi. My name is Jordan Lee. I do not want to cancel my order for $19.40. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fd-8455-7f41-83bf-2fbe16e2b28e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-8455-7f41-83bf-2fbe16e2b28e",
+      "created": "2026-10-23T18:19:44.664Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.9064802
+              },
+              {
+                "topic": "Payment",
+                "confidence_score": 0.39496395
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Request settlement",
+                "confidence_score": 0.005275197
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Jordan Lee.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08715135604143143
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 6,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.5016275644302368
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3776741027832031
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:44.733253+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_631cdd2c",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Where is my package going to Seattle? It should arrive by March 12. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a16a53-3b96-7f02-970f-10b237a95dfd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-3b96-7f02-970f-10b237a95dfd",
+      "created": "2026-10-23T19:53:22.151Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.5801968
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.27063343
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check package arrival",
+                "confidence_score": 0.01618575
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06504745781421661
+          },
+          {
+            "text": "It should arrive by March 12. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.3415111005306244
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.23987148702144623
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:22.191832+00:00"
+}

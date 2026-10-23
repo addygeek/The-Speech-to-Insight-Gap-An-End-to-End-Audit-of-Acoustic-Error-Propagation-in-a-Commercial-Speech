@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_329c06c4",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been down since 11AM, and I cannot work from Austin. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fc-d2c5-76b2-8c98-d1b96bc01ed4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-d2c5-76b2-8c98-d1b96bc01ed4",
+      "created": "2026-10-23T18:18:59.985Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.12772538
+              },
+              {
+                "topic": "Remote work",
+                "confidence_score": 0.22875312
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Inform about internet downtime",
+                "confidence_score": 0.028393093
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.14456987
+              },
+              {
+                "intent": "Report office location",
+                "confidence_score": 5.743498e-06
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Austin.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7477782964706421
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14993570744991302
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4084622151142842
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:01.171395+00:00"
+}

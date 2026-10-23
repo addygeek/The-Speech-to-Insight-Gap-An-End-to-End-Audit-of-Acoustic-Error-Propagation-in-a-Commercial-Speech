@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_7c6c3ace",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Could you please modify my flight to Denver on April 3? I need this arranged before the business day concludes as I am traveling tomorrow morning."
+  },
+  "request_id": "01a169fa-c67e-7ac0-889f-37769a7d7a1a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-c67e-7ac0-889f-37769a7d7a1a",
+      "created": "2026-10-23T18:16:45.103Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this arranged before the business day concludes as I am traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.73768365
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.87447613
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this arranged before the business day concludes as I am traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight to delhi",
+                "confidence_score": 0.009609344
+              },
+              {
+                "intent": "Arrange flight before business day concludes",
+                "confidence_score": 0.00970306
+              },
+              {
+                "intent": "Travel tomorrow morning",
+                "confidence_score": 0.059003945
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Denver on April 3?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03799256309866905
+          },
+          {
+            "text": "I need this arranged before the business day concludes as I am traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.3500951826572418
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2252541224161784
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:45.175227+00:00"
+}

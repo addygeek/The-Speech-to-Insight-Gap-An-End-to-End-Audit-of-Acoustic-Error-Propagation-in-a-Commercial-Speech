@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_a91a2f74",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Thank you Maria Santos, the support team in Austin was excellent today. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fb-dfd8-7462-aebc-3e33dfd09feb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-dfd8-7462-aebc-3e33dfd09feb",
+      "created": "2026-10-23T18:17:57.458Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Business day",
+                "confidence_score": 0.004423174
+              },
+              {
+                "topic": "Support team",
+                "confidence_score": 0.7407187
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Express need to settle before business day",
+                "confidence_score": 0.0025332877
+              },
+              {
+                "intent": "Report good support team",
+                "confidence_score": 0.002451402
+              },
+              {
+                "intent": "Report travel plans",
+                "confidence_score": 0.15842167
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Maria Santos, the support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8801589012145996
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2191143333911896
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5396207173665365
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:57.539659+00:00"
+}

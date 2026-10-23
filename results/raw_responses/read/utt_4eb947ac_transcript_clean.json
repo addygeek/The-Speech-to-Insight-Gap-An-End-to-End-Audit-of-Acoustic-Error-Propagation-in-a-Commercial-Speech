@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_4eb947ac",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I appreciate Maria Santos. The support team in Austin provided excellent service today. I request not to be transferred again unless the next representative can truly modify the booking."
+  },
+  "request_id": "01a169fb-20e5-7081-b551-6c3e902a9b24",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-20e5-7081-b551-6c3e902a9b24",
+      "created": "2026-10-23T18:17:08.151Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I request not to be transferred again unless the next representative can truly modify the booking.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.49083796
+              },
+              {
+                "topic": "Booking modification",
+                "confidence_score": 0.5237267
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I request not to be transferred again unless the next representative can truly modify the booking.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request to not be transferred",
+                "confidence_score": 0.10901653
+              },
+              {
+                "intent": "Request to modify booking",
+                "confidence_score": 0.49121448
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate Maria Santos. The support team in Austin provided excellent service today.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.7861610054969788
+          },
+          {
+            "text": "I request not to be transferred again unless the next representative can truly modify the booking.",
+            "start_word": 13,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3019876182079315
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.22654170989990235
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:08.231712+00:00"
+}

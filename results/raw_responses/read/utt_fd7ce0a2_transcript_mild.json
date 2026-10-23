@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_fd7ce0a2",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Can you change my flight to Austin on June 21? I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fd-955c-7a72-8bb8-c88799c9c532",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-955c-7a72-8bb8-c88799c9c532",
+      "created": "2026-10-23T18:19:49.244Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.81539583
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.9845551
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.45243916
+              },
+              {
+                "intent": "Report flight change",
+                "confidence_score": 0.0034345312
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on June 21? I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07462003082036972
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.07462002549852643
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:49.324150+00:00"
+}

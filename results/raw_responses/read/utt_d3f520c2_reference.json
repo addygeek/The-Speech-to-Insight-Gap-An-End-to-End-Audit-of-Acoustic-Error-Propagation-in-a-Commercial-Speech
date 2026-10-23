@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_d3f520c2",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hello, I\u2019m Sam Patel. I don\u2019t wish to cancel my $75.00 order. I\u2019m willing to stay on the line as you verify the details, and I have my account number available."
+  },
+  "request_id": "01a169fb-b7f7-7de0-b553-e7c7d28f56a3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-b7f7-7de0-b553-e7c7d28f56a3",
+      "created": "2026-10-23T18:17:46.901Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I\u2019m willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.69585633
+              },
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.71327806
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I\u2019m willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Verify order and account number",
+                "confidence_score": 0.004624036
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I\u2019m Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03653686121106148
+          },
+          {
+            "text": "I don\u2019t wish to cancel my $75.00 order.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "negative",
+            "sentiment_score": -0.5897458791732788
+          },
+          {
+            "text": "I\u2019m willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.22062550485134125
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.03803936459801414
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:46.970587+00:00"
+}

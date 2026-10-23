@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_28361bf0",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I want to schedule an appointment with doctor Taylor Brooks for April 3 at 09:30AM. I've attempted to use the website twice, but it didn't save the update in my account."
+  },
+  "request_id": "01a169fb-0734-7b80-b22d-865e5e33e1c2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-0734-7b80-b22d-865e5e33e1c2",
+      "created": "2026-10-23T18:17:01.681Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it didn't save the update in my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.1717019
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it didn't save the update in my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor taylor brooks",
+                "confidence_score": 0.09465998
+              },
+              {
+                "intent": "Save website update",
+                "confidence_score": 0.15151425
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Taylor Brooks for April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.19177623093128204
+          },
+          {
+            "text": "I've attempted to use the website twice, but it didn't save the update in my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.6334932446479797
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.24050780705043248
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:01.749585+00:00"
+}

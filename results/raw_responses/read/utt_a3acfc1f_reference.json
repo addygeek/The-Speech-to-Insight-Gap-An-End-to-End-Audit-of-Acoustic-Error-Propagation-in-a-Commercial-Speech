@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_a3acfc1f",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I would like to schedule a visit with Dr. Alex Chen on April 3 at 2:15 PM. I've reached out to support regarding this issue twice this week."
+  },
+  "request_id": "01a169fd-84d9-7622-b3bd-9bc06cb0eeb1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-84d9-7622-b3bd-9bc06cb0eeb1",
+      "created": "2026-10-23T18:19:45.115Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue twice this week.",
+            "start_word": 17,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Scheduling",
+                "confidence_score": 0.74504846
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.090689726
+              },
+              {
+                "topic": "Issue",
+                "confidence_score": 0.9713713
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue twice this week.",
+            "start_word": 17,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Schedule a visit with dr. alex chen",
+                "confidence_score": 0.03953021
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule a visit with Dr. Alex Chen on April 3 at 2:15 PM. I've reached out to support regarding this issue twice this week.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "positive",
+            "sentiment_score": 0.6408994197845459
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6408994402204241
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:45.187737+00:00"
+}

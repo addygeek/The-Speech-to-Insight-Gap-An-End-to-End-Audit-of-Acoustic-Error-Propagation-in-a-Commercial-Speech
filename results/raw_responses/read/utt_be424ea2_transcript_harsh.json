@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_be424ea2",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "My Internet has been down since 11AM, and I cannot work from Boston. Please do not transfer me again unless the next person can actually change the booking"
+  },
+  "request_id": "01a16a53-76a1-7aa1-876b-a008273145ba",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-76a1-7aa1-876b-a008273145ba",
+      "created": "2026-10-23T19:53:37.341Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Boston.",
+            "start_word": 1,
+            "end_word": 13,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.37550068
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Boston.",
+            "start_word": 1,
+            "end_word": 13,
+            "intents": [
+              {
+                "intent": "Request rescheduling",
+                "confidence_score": 0.0036149255
+              },
+              {
+                "intent": "Request rescheduling",
+                "confidence_score": 0.09894857
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Boston. Please do not transfer me again unless the next person can actually change the booking",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.8428503274917603
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8428503274917603
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:37.396533+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_c035d79a",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Maria Santos. The support team in Denver was excellent today. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fc-7a4a-7cc3-9cad-2e8adeaa93fc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-7a4a-7cc3-9cad-2e8adeaa93fc",
+      "created": "2026-10-23T18:18:36.577Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.6715144
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.8155353
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.3151725
+              },
+              {
+                "intent": "Update account number",
+                "confidence_score": 0.07435078
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. The support team in Denver was excellent today. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.6371362805366516
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6371362585770456
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:36.645040+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "utterance_id": "utt_487531c5",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Could you modify my flight to Denver for April 3? Please send the revised confirmation to the email address you have. This is the second occasion I have reached out for help regarding this issue this week."
+  },
+  "request_id": "01a169fd-6889-7b60-8519-69928d241ab0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-6889-7b60-8519-69928d241ab0",
+      "created": "2026-10-23T18:19:37.716Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second occasion I have reached out for help regarding this issue this week.",
+            "start_word": 21,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.9736869
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.03802614
+              },
+              {
+                "topic": "Assistance",
+                "confidence_score": 0.33591366
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second occasion I have reached out for help regarding this issue this week.",
+            "start_word": 21,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.22889198
+              },
+              {
+                "intent": "Send revised confirmation",
+                "confidence_score": 0.5220241
+              },
+              {
+                "intent": "Reach out for help",
+                "confidence_score": 0.5461121
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Denver for April 3? Please send the revised confirmation to the email address you have. This is the second occasion I have reached out for help regarding this issue this week.",
+            "start_word": 0,
+            "end_word": 36,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05686439201235771
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.05686439275741577
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:38.229110+00:00"
+}

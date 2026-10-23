@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_2457d89e",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "My Internet has been down since 11AM, and I cannot work from Chicago. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fc-48dc-7013-b60b-268a39e06d99",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-48dc-7013-b60b-268a39e06d99",
+      "created": "2026-10-23T18:18:24.100Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.6529785
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report internet downtime",
+                "confidence_score": 0.39706627
+              },
+              {
+                "intent": "Report absence from home office",
+                "confidence_score": 0.11160857
+              },
+              {
+                "intent": "Express desire to call from mobile phone",
+                "confidence_score": 0.007088833
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Chicago. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7432752251625061
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7432752497055951
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:24.180250+00:00"
+}

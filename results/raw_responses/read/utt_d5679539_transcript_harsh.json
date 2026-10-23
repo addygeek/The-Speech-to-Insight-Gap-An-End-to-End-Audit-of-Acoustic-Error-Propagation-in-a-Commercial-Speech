@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_d5679539",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Thank you, Maria Santos. The support team in Seattle was excellent today. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a16a53-673c-7b93-bc58-490b7b1ef207",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-673c-7b93-bc58-490b7b1ef207",
+      "created": "2026-10-23T19:53:33.409Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support for santos",
+                "confidence_score": 7.022996e-06
+              },
+              {
+                "topic": "Charge status",
+                "confidence_score": 0.10253476
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Retrieve charge",
+                "confidence_score": 7.52736e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. The support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.7965275049209595
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2715485692024231
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.23282069630093044
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:33.461329+00:00"
+}

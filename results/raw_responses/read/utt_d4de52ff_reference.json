@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_d4de52ff",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Where is my package going to Austin? It should arrive by June 21. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fc-4b99-71c3-b56b-37ea19e361d0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-4b99-71c3-b56b-37ea19e361d0",
+      "created": "2026-10-23T18:18:24.885Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.17285949
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.61263365
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Find package location",
+                "confidence_score": 0.0013649559
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.607889
+              },
+              {
+                "intent": "Prepare account number",
+                "confidence_score": 0.5376808
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.10892604291439056
+          },
+          {
+            "text": "It should arrive by June 21. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.5147924423217773
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.42459991243150497
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:24.958011+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_1bc6b904",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Where is my package going to Chicago? It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a16a53-87d2-73c0-bcc3-53ad6cddf15c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-87d2-73c0-bcc3-53ad6cddf15c",
+      "created": "2026-10-23T19:53:41.863Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.50504917
+              },
+              {
+                "topic": "Change of booking",
+                "confidence_score": 0.13652843
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change package location",
+                "confidence_score": 0.0421466
+              },
+              {
+                "intent": "Request removal from package",
+                "confidence_score": 0.0753098
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04676256701350212
+          },
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6871744990348816
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5219069450132309
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:41.921337+00:00"
+}

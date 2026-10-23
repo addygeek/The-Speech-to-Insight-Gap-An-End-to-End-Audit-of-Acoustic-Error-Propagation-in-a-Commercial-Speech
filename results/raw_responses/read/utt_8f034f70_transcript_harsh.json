@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_8f034f70",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I was charged $120 twice on my card ending in 4421. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a16a53-40b1-7531-8dd6-7109d7aea328",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-40b1-7531-8dd6-7109d7aea328",
+      "created": "2026-10-23T19:53:23.548Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.4118469
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.13622108
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9222972
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.5287013
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.31569377
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "negative",
+            "sentiment_score": -0.6938336491584778
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15271030366420746
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.18590728214808871
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:23.606893+00:00"
+}

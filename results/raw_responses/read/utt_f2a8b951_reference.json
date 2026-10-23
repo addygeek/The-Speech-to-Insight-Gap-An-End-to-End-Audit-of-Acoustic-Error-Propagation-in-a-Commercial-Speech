@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_f2a8b951",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hello, I'm Alex Chen. I would like to keep my order for $19.40. I'm willing to hold on the line as you review the record, and I have my account number ready."
+  },
+  "request_id": "01a169fd-b93a-7553-a645-e8c270e8f28d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-b93a-7553-a645-e8c270e8f28d",
+      "created": "2026-10-23T18:19:59.677Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold on the line as you review the record, and I have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order status",
+                "confidence_score": 0.11701895
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.18086682
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold on the line as you review the record, and I have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.5320433
+              },
+              {
+                "intent": "Review record",
+                "confidence_score": 0.74730533
+              },
+              {
+                "intent": "Prepare account number",
+                "confidence_score": 0.24551184
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.12051308155059814
+          },
+          {
+            "text": "I would like to keep my order for $19.40. I'm willing to hold on the line as you review the record, and I have my account number ready.",
+            "start_word": 4,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.4278796315193176
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3706951806711596
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:59.747779+00:00"
+}

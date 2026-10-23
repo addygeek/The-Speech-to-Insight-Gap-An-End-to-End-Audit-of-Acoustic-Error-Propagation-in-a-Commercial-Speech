@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_b71792e6",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Can you change my flight to Denver on April 3? Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a16a53-6475-79b2-8851-4ae863a16201",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-6475-79b2-8851-4ae863a16201",
+      "created": "2026-10-23T19:53:32.996Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.5638804
+              },
+              {
+                "topic": "Transfer",
+                "confidence_score": 0.17102757
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.37823105
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.45030868
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Denver on April 3?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3022053837776184
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.904952883720398
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6681592123849052
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:33.051028+00:00"
+}

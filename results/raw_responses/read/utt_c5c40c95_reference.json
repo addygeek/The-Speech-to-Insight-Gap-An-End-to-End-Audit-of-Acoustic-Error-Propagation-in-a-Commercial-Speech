@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_c5c40c95",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I was charged $75.00 twice on my card ending in 4421. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a169fb-268b-72a0-b234-d74329f60f21",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-268b-72a0-b234-d74329f60f21",
+      "created": "2026-10-23T18:17:09.690Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.28460014
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.0021135611
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Report problem",
+                "confidence_score": 0.007072678
+              },
+              {
+                "intent": "Report problem in website",
+                "confidence_score": 3.79928e-05
+              },
+              {
+                "intent": "Request assistance",
+                "confidence_score": 0.18766038
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75.00 twice on my card ending in 4421. I already tried the website twice and it would not save the change under my account.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7773389220237732
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7773389508647304
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:09.777314+00:00"
+}

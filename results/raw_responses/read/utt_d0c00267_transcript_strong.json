@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_d0c00267",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Hello. I'm Taylor Brooks. I do not wish to cancel my $120 order. This week, I've already reached out to support about this issue twice."
+  },
+  "request_id": "01a169fc-29a4-7d52-95e1-b627ac531720",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-29a4-7d52-95e1-b627ac531720",
+      "created": "2026-10-23T18:18:16.051Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This week, I've already reached out to support about this issue twice.",
+            "start_word": 13,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.042335365
+              },
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.91294193
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This week, I've already reached out to support about this issue twice.",
+            "start_word": 13,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Request support",
+                "confidence_score": 0.04139953
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.014299673959612846
+          },
+          {
+            "text": "I do not wish to cancel my $120 order. This week, I've already reached out to support about this issue twice.",
+            "start_word": 4,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.7667307257652283
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5714731216430664
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:16.132403+00:00"
+}

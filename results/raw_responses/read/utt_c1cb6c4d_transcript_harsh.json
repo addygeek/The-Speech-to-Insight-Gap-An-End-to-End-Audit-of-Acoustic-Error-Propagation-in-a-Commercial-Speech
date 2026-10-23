@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_c1cb6c4d",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I would like to schedule an appointment with doctor Jordan Lee for April 3 at 09:30AM. It's essential to finalize this by the end of the business day since I'm traveling tomorrow morning."
+  },
+  "request_id": "01a16a53-c4c9-7041-8206-ad37e3ddafce",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-c4c9-7041-8206-ad37e3ddafce",
+      "created": "2026-10-23T19:53:57.421Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's essential to finalize this by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.7033026
+              },
+              {
+                "topic": "Doctor jordan lee",
+                "confidence_score": 0.24297582
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's essential to finalize this by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor jordan lee",
+                "confidence_score": 0.48334795
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Jordan Lee for April 3 at 09:30AM. It's essential to finalize this by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 32,
+            "sentiment": "positive",
+            "sentiment_score": 0.6944858431816101
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6944858639739281
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:57.479062+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_a1f6a50a",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I'd like to schedule an appointment with doctor Jordan Lee for June 21 at 02:15PM. I'm willing to hold while you verify my records, and I have my account number prepared."
+  },
+  "request_id": "01a169fb-ea59-73c3-a937-cdb5546b09b2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-ea59-73c3-a937-cdb5546b09b2",
+      "created": "2026-10-23T18:18:00.020Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my records, and I have my account number prepared.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.17287725
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my records, and I have my account number prepared.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.24557714
+              },
+              {
+                "intent": "Verify records",
+                "confidence_score": 0.50149775
+              },
+              {
+                "intent": "Prepare account number",
+                "confidence_score": 0.9050162
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Jordan Lee for June 21 at 02:15PM. I'm willing to hold while you verify my records, and I have my account number prepared.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.5333123803138733
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5333124021204506
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:00.088194+00:00"
+}

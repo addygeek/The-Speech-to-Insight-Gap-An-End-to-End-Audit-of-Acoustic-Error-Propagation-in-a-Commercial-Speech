@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_e1d8f17c",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Can you change my flight to Boston on March 12? I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fb-7c3e-7d82-8188-27b10eeefa39",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-7c3e-7d82-8188-27b10eeefa39",
+      "created": "2026-10-23T18:17:31.688Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.16238648
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.56186587
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.56797343
+              },
+              {
+                "intent": "Obtain account number",
+                "confidence_score": 0.05255585
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2720150053501129
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.4694931507110596
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.40161001682281494
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:31.757200+00:00"
+}

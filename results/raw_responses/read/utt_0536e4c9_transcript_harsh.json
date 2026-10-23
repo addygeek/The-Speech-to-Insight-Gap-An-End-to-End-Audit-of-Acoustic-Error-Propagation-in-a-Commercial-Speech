@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_0536e4c9",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "What is the status of my package going to Denver? It's expected to arrive by June 21. The last representative I talked to told me to call back if the charge is still displayed."
+  },
+  "request_id": "01a16a53-3679-7e20-8fa9-ef8aff048f67",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-3679-7e20-8fa9-ef8aff048f67",
+      "created": "2026-10-23T19:53:21.017Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told me to call back if the charge is still displayed.",
+            "start_word": 17,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.5113927
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.4554207
+              },
+              {
+                "topic": "Account display",
+                "confidence_score": 0.00028769235
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told me to call back if the charge is still displayed.",
+            "start_word": 17,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.42164907
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package going to Denver? It's expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02745836228132248
+          },
+          {
+            "text": "The last representative I talked to told me to call back if the charge is still displayed.",
+            "start_word": 17,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.7905429005622864
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36109223365783694
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:21.076608+00:00"
+}

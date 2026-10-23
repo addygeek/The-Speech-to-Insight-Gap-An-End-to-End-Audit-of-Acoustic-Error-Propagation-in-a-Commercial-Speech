@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_c186d268",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "I would like to schedule an appointment with doctor Taylor Brooks on October 5 at 02:15PM. Please refrain from transferring me again unless the next representative can modify the booking."
+  },
+  "request_id": "01a169fd-a5d5-7981-b9ef-69bda4cd2872",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-a5d5-7981-b9ef-69bda4cd2872",
+      "created": "2026-10-23T18:19:53.550Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 21
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can modify the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.5136042
+              },
+              {
+                "topic": "Doctor taylor brooks",
+                "confidence_score": 0.20651151
+              },
+              {
+                "topic": "Rescheduling",
+                "confidence_score": 0.058534026
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can modify the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.20594247
+              },
+              {
+                "intent": "Reschedule appointment",
+                "confidence_score": 0.41445595
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Taylor Brooks on October 5 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.4541628658771515
+          },
+          {
+            "text": "Please refrain from transferring me again unless the next representative can modify the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8161658048629761
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.11414205400567304
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:53.624724+00:00"
+}

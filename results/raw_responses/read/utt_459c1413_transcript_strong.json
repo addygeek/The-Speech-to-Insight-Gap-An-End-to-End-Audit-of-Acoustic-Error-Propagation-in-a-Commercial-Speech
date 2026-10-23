@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_459c1413",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I need to book an appointment with doctor Jordan Lee on October 5 at 02:15PM. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fd-b835-74a3-983b-90c2b7f43915",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-b835-74a3-983b-90c2b7f43915",
+      "created": "2026-10-23T18:19:58.501Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.7094083
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.84451663
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.33538082
+              },
+              {
+                "intent": "Report travel plans",
+                "confidence_score": 0.010887194
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on October 5 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.00629256060346961
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.352854460477829
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1699467764960395
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:59.023120+00:00"
+}

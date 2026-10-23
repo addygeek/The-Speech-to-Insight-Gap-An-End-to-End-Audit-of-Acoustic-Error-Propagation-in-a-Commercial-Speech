@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_a1dd06e7",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "I would like to cancel my order for $45.99 that I placed yesterday. I've reached out to support twice this week about this issue and attempted to use the website, but it won't save changes to my account."
+  },
+  "request_id": "01a169fb-fce0-7f61-ab31-72533a2331c3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-fce0-7f61-ab31-72533a2331c3",
+      "created": "2026-10-23T18:18:04.724Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support twice this week about this issue and attempted to use the website, but it won't save changes to my account.",
+            "start_word": 13,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Cancelling order",
+                "confidence_score": 0.0059228525
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support twice this week about this issue and attempted to use the website, but it won't save changes to my account.",
+            "start_word": 13,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.5542793
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.5509042
+              },
+              {
+                "intent": "Use website",
+                "confidence_score": 0.07096618
+              },
+              {
+                "intent": "Save changes to account",
+                "confidence_score": 0.18841533
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $45.99 that I placed yesterday. I've reached out to support twice this week about this issue and attempted to use the website, but it won't save changes to my account.",
+            "start_word": 0,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.703784704208374
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7037846991356383
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:04.805047+00:00"
+}

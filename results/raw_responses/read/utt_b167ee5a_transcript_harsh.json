@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_b167ee5a",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "My Internet has been down since 02:15PM, and I cannot work from Seattle. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a16a53-aa86-7113-91c7-9468e64a831a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-aa86-7113-91c7-9468e64a831a",
+      "created": "2026-10-23T19:53:50.829Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 25
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.21127494
+              },
+              {
+                "topic": "Remote work",
+                "confidence_score": 0.3395707
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report internet issue",
+                "confidence_score": 0.06345573
+              },
+              {
+                "intent": "Report unable to work from san diego",
+                "confidence_score": 8.893941e-05
+              },
+              {
+                "intent": "Request mobile phone call from home office",
+                "confidence_score": 0.02603726
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Seattle. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7570381164550781
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7570381164550781
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:50.879418+00:00"
+}

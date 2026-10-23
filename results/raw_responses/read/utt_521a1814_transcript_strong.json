@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_521a1814",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $19.40. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fd-5fe9-7531-956d-80a5bb7a8147",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-5fe9-7531-956d-80a5bb7a8147",
+      "created": "2026-10-23T18:19:35.392Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.35436994
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Avoid cancellation",
+                "confidence_score": 0.006007309
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.033621881157159805
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.6943750381469727
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5305757522583008
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:35.473631+00:00"
+}

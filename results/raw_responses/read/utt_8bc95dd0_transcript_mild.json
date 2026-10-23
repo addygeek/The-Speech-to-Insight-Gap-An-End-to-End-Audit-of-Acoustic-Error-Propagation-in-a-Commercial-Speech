@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_8bc95dd0",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "What is the status of my package heading to Boston? It's supposed to be delivered by June 21. I must have this resolved by the end of the business day since I leave tomorrow morning."
+  },
+  "request_id": "01a169fc-a01c-73c2-8b11-baf6f78cd23f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-a01c-73c2-8b11-baf6f78cd23f",
+      "created": "2026-10-23T18:18:46.226Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I must have this resolved by the end of the business day since I leave tomorrow morning.",
+            "start_word": 18,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.18784678
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I must have this resolved by the end of the business day since I leave tomorrow morning.",
+            "start_word": 18,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.17498304
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package heading to Boston? It's supposed to be delivered by June 21.",
+            "start_word": 0,
+            "end_word": 17,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09141289442777634
+          },
+          {
+            "text": "I must have this resolved by the end of the business day since I leave tomorrow morning.",
+            "start_word": 18,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.47097375988960266
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.26221528053283694
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:46.299665+00:00"
+}

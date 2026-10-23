@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_99388b72",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I would like to cancel my $120 order from yesterday. Kindly send the updated confirmation to the same email address on record. The previous agent advised me to call back if the charge was still visible."
+  },
+  "request_id": "01a16a53-476d-7e52-aab6-a5ce1df00b11",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-476d-7e52-aab6-a5ce1df00b11",
+      "created": "2026-10-23T19:53:25.173Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge was still visible.",
+            "start_word": 22,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.2537677
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.33725792
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge was still visible.",
+            "start_word": 22,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.2649981
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $120 order from yesterday.",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "negative",
+            "sentiment_score": -0.74278324842453
+          },
+          {
+            "text": "Kindly send the updated confirmation to the same email address on record.",
+            "start_word": 10,
+            "end_word": 21,
+            "sentiment": "neutral",
+            "sentiment_score": -0.32137709856033325
+          },
+          {
+            "text": "The previous agent advised me to call back if the charge was still visible.",
+            "start_word": 22,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.5652609467506409
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5346869514102027
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:25.232606+00:00"
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "utterance_id": "utt_a1205ef0",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Hello. I'm Alex Chen. I wish to keep my order for $120. I'm calling from my cell phone since I'm currently away from my home office."
+  },
+  "request_id": "01a16a53-d42c-7943-b74e-689132ca4052",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-d42c-7943-b74e-689132ca4052",
+      "created": "2026-10-23T19:54:01.407Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm calling from my cell phone since I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order status",
+                "confidence_score": 0.2575837
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm calling from my cell phone since I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.5784345
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06293120980262756
+          },
+          {
+            "text": "I wish to keep my order for $120.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.3466951549053192
+          },
+          {
+            "text": "I'm calling from my cell phone since I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.36632752418518066
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.08080598470327016
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:01.451268+00:00"
+}

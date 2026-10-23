@@ -1,0 +1,138 @@
+{
+  "dataset_validation": {
+    "n_utterances": 600,
+    "scenario_distribution": {
+      "travel_booking": 83,
+      "banking_payments": 43,
+      "technical_support": 73,
+      "complaints_compliments": 84,
+      "appointment_scheduling": 96,
+      "delivery_tracking": 77,
+      "customer_support": 79,
+      "requests_cancellations": 65
+    },
+    "critical_span_type_counts": {
+      "place": 317,
+      "date": 256,
+      "amount": 187,
+      "number": 43,
+      "time": 169,
+      "negation": 152,
+      "name": 259,
+      "action": 65
+    },
+    "errors": [],
+    "valid": true
+  },
+  "statistics": {
+    "n_rows": 2400,
+    "by_condition": {
+      "clean": {
+        "n": 600,
+        "wer_mean": 0.032212114774317145,
+        "wer_ci95": [
+          0.029273102964348346,
+          0.035133828035323895
+        ],
+        "cer_mean": 0.011721261333393006,
+        "sentiment_disagreement_ref_vs_transcript": 0.0016666666666666668,
+        "intent_disagreement_ref_vs_transcript": 0.605,
+        "topic_set_changed_ref_vs_transcript": 0.795,
+        "sentiment_disagreement_audio_vs_text": 0.0,
+        "intent_disagreement_audio_vs_text": 0.6266666666666667,
+        "critical_span_error_rate": 0.1661111111111111,
+        "topic_jaccard_mean": 0.4205555555555555
+      },
+      "harsh": {
+        "n": 600,
+        "wer_mean": 0.03559411424077355,
+        "wer_ci95": [
+          0.0322437149323814,
+          0.03881439045052478
+        ],
+        "cer_mean": 0.013121591963425425,
+        "sentiment_disagreement_ref_vs_transcript": 0.0016666666666666668,
+        "intent_disagreement_ref_vs_transcript": 0.6366666666666667,
+        "topic_set_changed_ref_vs_transcript": 0.8,
+        "sentiment_disagreement_audio_vs_text": 0.0,
+        "intent_disagreement_audio_vs_text": 0.6183333333333333,
+        "critical_span_error_rate": 0.17,
+        "topic_jaccard_mean": 0.42086111111111113
+      },
+      "mild": {
+        "n": 600,
+        "wer_mean": 0.03186877718385312,
+        "wer_ci95": [
+          0.028979836777531076,
+          0.03476640161275397
+        ],
+        "cer_mean": 0.011377357468666381,
+        "sentiment_disagreement_ref_vs_transcript": 0.0016666666666666668,
+        "intent_disagreement_ref_vs_transcript": 0.6366666666666667,
+        "topic_set_changed_ref_vs_transcript": 0.8183333333333334,
+        "sentiment_disagreement_audio_vs_text": 0.0,
+        "intent_disagreement_audio_vs_text": 0.6433333333333333,
+        "critical_span_error_rate": 0.1661111111111111,
+        "topic_jaccard_mean": 0.4061944444444444
+      },
+      "strong": {
+        "n": 600,
+        "wer_mean": 0.03181933007390237,
+        "wer_ci95": [
+          0.028863425088022903,
+          0.034768235613628365
+        ],
+        "cer_mean": 0.011291033750787764,
+        "sentiment_disagreement_ref_vs_transcript": 0.005,
+        "intent_disagreement_ref_vs_transcript": 0.66,
+        "topic_set_changed_ref_vs_transcript": 0.8033333333333333,
+        "sentiment_disagreement_audio_vs_text": 0.0,
+        "intent_disagreement_audio_vs_text": 0.645,
+        "critical_span_error_rate": 0.16583333333333333,
+        "topic_jaccard_mean": 0.415
+      }
+    },
+    "associations": {
+      "wer_vs_sentiment_disagreement": {
+        "spearman_rho": 0.032199152634848786,
+        "p_value": 0.11479161300948142,
+        "n": 2400
+      }
+    },
+    "by_scenario": {
+      "appointment_scheduling": {
+        "n": 384,
+        "wer_mean": 0.09753450903044776
+      },
+      "banking_payments": {
+        "n": 172,
+        "wer_mean": 0.024409656922461845
+      },
+      "complaints_compliments": {
+        "n": 336,
+        "wer_mean": 0.0031510229514625935
+      },
+      "customer_support": {
+        "n": 316,
+        "wer_mean": 0.025182658125924906
+      },
+      "delivery_tracking": {
+        "n": 308,
+        "wer_mean": 0.005949231038148695
+      },
+      "requests_cancellations": {
+        "n": 260,
+        "wer_mean": 0.020044130660582374
+      },
+      "technical_support": {
+        "n": 292,
+        "wer_mean": 0.06848440590688921
+      },
+      "travel_booking": {
+        "n": 332,
+        "wer_mean": 0.003575728823963141
+      }
+    },
+    "exploratory": false
+  }
+}

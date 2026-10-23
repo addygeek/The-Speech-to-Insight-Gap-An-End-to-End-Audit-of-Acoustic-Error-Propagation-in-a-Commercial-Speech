@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_a0e253a2",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Chicago. I need this settled before the end of the business day because I travel tomorrow morning"
+  },
+  "request_id": "01a16a53-6ea5-7c43-b02e-a3c2b43a41cb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-6ea5-7c43-b02e-a3c2b43a41cb",
+      "created": "2026-10-23T19:53:35.552Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Chicago.",
+            "start_word": 1,
+            "end_word": 13,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.50812733
+              },
+              {
+                "topic": "Work from chicago",
+                "confidence_score": 0.16659555
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Chicago.",
+            "start_word": 1,
+            "end_word": 13,
+            "intents": [
+              {
+                "intent": "Fix internet issue",
+                "confidence_score": 0.051624645
+              },
+              {
+                "intent": "Request settlement before business day",
+                "confidence_score": 0.0010039093
+              },
+              {
+                "intent": "Travel to chicago",
+                "confidence_score": 0.20956388
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Chicago. I need this settled before the end of the business day because I travel tomorrow morning",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7293921709060669
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7293921638937557
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:35.600666+00:00"
+}

@@ -1,0 +1,507 @@
+{
+  "conditions": [
+    "clean",
+    "mild",
+    "strong",
+    "harsh"
+  ],
+  "rates": {
+    "clean": {
+      "wer": {
+        "mean": 0.03221211477431713,
+        "ci95": [
+          0.029273102964348333,
+          0.03513382803532388
+        ]
+      },
+      "cer": {
+        "mean": 0.011721261333392987,
+        "ci95": [
+          0.010551168514290426,
+          0.012909758203624229
+        ]
+      },
+      "relaxed_span": {
+        "mean": 0.0030555555555555553,
+        "ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "sentiment": {
+        "mean": 0.0016666666666666668,
+        "ci95": [
+          0.0,
+          0.005
+        ]
+      },
+      "intent": {
+        "mean": 0.605,
+        "ci95": [
+          0.565,
+          0.645
+        ]
+      },
+      "topic": {
+        "mean": 0.795,
+        "ci95": [
+          0.7616666666666667,
+          0.8266666666666667
+        ]
+      }
+    },
+    "mild": {
+      "wer": {
+        "mean": 0.03186877718385311,
+        "ci95": [
+          0.02897983677753107,
+          0.034766401612753954
+        ]
+      },
+      "cer": {
+        "mean": 0.011377357468666362,
+        "ci95": [
+          0.010229860402278298,
+          0.012549854748048504
+        ]
+      },
+      "relaxed_span": {
+        "mean": 0.0030555555555555553,
+        "ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "sentiment": {
+        "mean": 0.0016666666666666668,
+        "ci95": [
+          0.0,
+          0.005
+        ]
+      },
+      "intent": {
+        "mean": 0.6366666666666667,
+        "ci95": [
+          0.5983333333333334,
+          0.6766666666666666
+        ]
+      },
+      "topic": {
+        "mean": 0.8183333333333334,
+        "ci95": [
+          0.7866666666666666,
+          0.8483333333333334
+        ]
+      }
+    },
+    "strong": {
+      "wer": {
+        "mean": 0.031819330073902356,
+        "ci95": [
+          0.028863425088022893,
+          0.03476823561362835
+        ]
+      },
+      "cer": {
+        "mean": 0.011291033750787745,
+        "ci95": [
+          0.010144893493309406,
+          0.012470060636308511
+        ]
+      },
+      "relaxed_span": {
+        "mean": 0.0027777777777777775,
+        "ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "sentiment": {
+        "mean": 0.005,
+        "ci95": [
+          0.0,
+          0.011666666666666667
+        ]
+      },
+      "intent": {
+        "mean": 0.66,
+        "ci95": [
+          0.6216666666666667,
+          0.6966666666666667
+        ]
+      },
+      "topic": {
+        "mean": 0.8033333333333333,
+        "ci95": [
+          0.7716666666666666,
+          0.835
+        ]
+      }
+    },
+    "harsh": {
+      "wer": {
+        "mean": 0.035594114240773536,
+        "ci95": [
+          0.03224371493238139,
+          0.038814390450524774
+        ]
+      },
+      "cer": {
+        "mean": 0.013121591963425406,
+        "ci95": [
+          0.011791443490966303,
+          0.014422647067761226
+        ]
+      },
+      "relaxed_span": {
+        "mean": 0.006944444444444443,
+        "ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "sentiment": {
+        "mean": 0.0016666666666666668,
+        "ci95": [
+          0.0,
+          0.005
+        ]
+      },
+      "intent": {
+        "mean": 0.6366666666666667,
+        "ci95": [
+          0.5983333333333334,
+          0.6766666666666666
+        ]
+      },
+      "topic": {
+        "mean": 0.8,
+        "ci95": [
+          0.7666666666666667,
+          0.8316666666666667
+        ]
+      }
+    }
+  },
+  "paired_wer_vs_clean": {
+    "mild": {
+      "n": 600,
+      "mean_delta": -0.000343337590464027,
+      "ci95": [
+        -0.0007956235702553943,
+        4.098661212526147e-05
+      ],
+      "fraction_equal": 0.9783333333333334,
+      "fraction_higher": 0.006666666666666667,
+      "fraction_lower": 0.015,
+      "wilcoxon_nonzero_n": 13,
+      "wilcoxon": {
+        "statistic": 23.0,
+        "p_value": 0.12255859375
+      }
+    },
+    "strong": {
+      "n": 600,
+      "mean_delta": -0.0003927847004147737,
+      "ci95": [
+        -0.0010089837775969655,
+        0.0001792724426490978
+      ],
+      "fraction_equal": 0.9633333333333334,
+      "fraction_higher": 0.013333333333333334,
+      "fraction_lower": 0.023333333333333334,
+      "wilcoxon_nonzero_n": 22,
+      "wilcoxon": {
+        "statistic": 96.5,
+        "p_value": 0.329625239669862
+      }
+    },
+    "harsh": {
+      "n": 600,
+      "mean_delta": 0.003381999466456404,
+      "ci95": [
+        0.0021308677497116416,
+        0.004663987498565735
+      ],
+      "fraction_equal": 0.8666666666666667,
+      "fraction_higher": 0.10333333333333333,
+      "fraction_lower": 0.03,
+      "wilcoxon_nonzero_n": 80,
+      "wilcoxon": {
+        "statistic": 664.5,
+        "p_value": 4.5429765521130535e-06
+      }
+    }
+  },
+  "span_relaxed": {
+    "clean": {
+      "relaxed_mean": 0.0030555555555555553,
+      "n": 600
+    },
+    "harsh": {
+      "relaxed_mean": 0.006944444444444443,
+      "n": 600
+    },
+    "mild": {
+      "relaxed_mean": 0.0030555555555555553,
+      "n": 600
+    },
+    "strong": {
+      "relaxed_mean": 0.0027777777777777775,
+      "n": 600
+    }
+  },
+  "span_by_type": {
+    "clean": {
+      "place": {
+        "n": 317,
+        "raw_missing": 2,
+        "relaxed_missing": 2
+      },
+      "date": {
+        "n": 256,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "name": {
+        "n": 259,
+        "raw_missing": 2,
+        "relaxed_missing": 2
+      },
+      "action": {
+        "n": 65,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "amount": {
+        "n": 187,
+        "raw_missing": 97,
+        "relaxed_missing": 0
+      },
+      "time": {
+        "n": 169,
+        "raw_missing": 169,
+        "relaxed_missing": 0
+      },
+      "negation": {
+        "n": 152,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "number": {
+        "n": 43,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      }
+    },
+    "harsh": {
+      "place": {
+        "n": 317,
+        "raw_missing": 3,
+        "relaxed_missing": 3
+      },
+      "date": {
+        "n": 256,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "name": {
+        "n": 259,
+        "raw_missing": 4,
+        "relaxed_missing": 4
+      },
+      "action": {
+        "n": 65,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "amount": {
+        "n": 187,
+        "raw_missing": 97,
+        "relaxed_missing": 0
+      },
+      "time": {
+        "n": 169,
+        "raw_missing": 169,
+        "relaxed_missing": 0
+      },
+      "negation": {
+        "n": 152,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "number": {
+        "n": 43,
+        "raw_missing": 3,
+        "relaxed_missing": 3
+      }
+    },
+    "mild": {
+      "place": {
+        "n": 317,
+        "raw_missing": 2,
+        "relaxed_missing": 2
+      },
+      "date": {
+        "n": 256,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "name": {
+        "n": 259,
+        "raw_missing": 2,
+        "relaxed_missing": 2
+      },
+      "action": {
+        "n": 65,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "amount": {
+        "n": 187,
+        "raw_missing": 97,
+        "relaxed_missing": 0
+      },
+      "time": {
+        "n": 169,
+        "raw_missing": 169,
+        "relaxed_missing": 0
+      },
+      "negation": {
+        "n": 152,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "number": {
+        "n": 43,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      }
+    },
+    "strong": {
+      "place": {
+        "n": 317,
+        "raw_missing": 1,
+        "relaxed_missing": 1
+      },
+      "date": {
+        "n": 256,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "name": {
+        "n": 259,
+        "raw_missing": 3,
+        "relaxed_missing": 3
+      },
+      "action": {
+        "n": 65,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "amount": {
+        "n": 187,
+        "raw_missing": 97,
+        "relaxed_missing": 0
+      },
+      "time": {
+        "n": 169,
+        "raw_missing": 169,
+        "relaxed_missing": 0
+      },
+      "negation": {
+        "n": 152,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      },
+      "number": {
+        "n": 43,
+        "raw_missing": 0,
+        "relaxed_missing": 0
+      }
+    }
+  },
+  "intent_overlap": {
+    "clean": {
+      "n": 600,
+      "exact_disagree_rate": 0.605,
+      "mean_token_jaccard": 0.5119940476190475,
+      "disagree_n": 363,
+      "disagree_mean_token_jaccard": 0.19337859110586383,
+      "disagree_zero_overlap": 0.48760330578512395,
+      "disagree_overlap_at_least_half": 0.22865013774104684
+    },
+    "mild": {
+      "n": 600,
+      "exact_disagree_rate": 0.6366666666666667,
+      "mean_token_jaccard": 0.4792275733525734,
+      "disagree_n": 382,
+      "disagree_mean_token_jaccard": 0.18203283772655499,
+      "disagree_zero_overlap": 0.5130890052356021,
+      "disagree_overlap_at_least_half": 0.19633507853403143
+    },
+    "strong": {
+      "n": 600,
+      "exact_disagree_rate": 0.66,
+      "mean_token_jaccard": 0.45515806878306875,
+      "disagree_n": 396,
+      "disagree_mean_token_jaccard": 0.17448192239858906,
+      "disagree_zero_overlap": 0.5429292929292929,
+      "disagree_overlap_at_least_half": 0.20959595959595959
+    },
+    "harsh": {
+      "n": 600,
+      "exact_disagree_rate": 0.6366666666666667,
+      "mean_token_jaccard": 0.49656427368927375,
+      "disagree_n": 382,
+      "disagree_mean_token_jaccard": 0.20926325710357122,
+      "disagree_zero_overlap": 0.4712041884816754,
+      "disagree_overlap_at_least_half": 0.25654450261780104
+    }
+  },
+  "examples": [
+    {
+      "utterance_id": "utt_8ef05aa7",
+      "scenario": "technical_support",
+      "wer_delta": 0.12903225806451618,
+      "clean": "My Internet has been down since 02:15PM, and I cannot work from Boston. The last agent ...",
+      "focus": "My internet has been down since 02:15PM and I cannot work from Boston the last agent ..."
+    },
+    {
+      "utterance_id": "utt_a80d9bc8",
+      "scenario": "banking_payments",
+      "wer_delta": 0.1153846153846153,
+      "clean": "My card ending in 4421 was charged $45.99 two times. I attempted to make changes on ...",
+      "focus": "My card ending in 4421 was charged $45.99 at your time. I attempted to make changes ..."
+    },
+    {
+      "utterance_id": "utt_b37380b0",
+      "scenario": "banking_payments",
+      "wer_delta": 0.1071428571428571,
+      "clean": "I was charged $19.40 twice on my card ending in 4421. The last agent I spoke ...",
+      "focus": "I was charged $19.40 twice on my card and made me 4,421. The last agent I ..."
+    },
+    {
+      "utterance_id": "utt_21887b0c",
+      "scenario": "delivery_tracking",
+      "wer_delta": 0.1034482758620689,
+      "clean": "Where is my package going to Austin? It should arrive by October 5. I already tried ...",
+      "focus": "Where is my package going to offer? It should arrive by October 5. I already tried ..."
+    },
+    {
+      "utterance_id": "utt_4e8761c8",
+      "scenario": "travel_booking",
+      "wer_delta": 0.0769230769230769,
+      "clean": "Can you change my flight to Denver on March 12? Please send the updated confirmation to ...",
+      "focus": "Can you change my flight to Denver on March 12? Please send me updated confirmation to ..."
+    },
+    {
+      "utterance_id": "utt_f5d1ef05",
+      "scenario": "customer_support",
+      "wer_delta": 0.0769230769230769,
+      "clean": "Hello. I'm Taylor Brooks. I want to keep my order of $250. I'm reaching out from ...",
+      "focus": "Hello. I'm Kayla Brooks. I want to keep my order of $250. I'm reaching out from ..."
+    }
+  ],
+  "focus_condition": "harsh"
+}

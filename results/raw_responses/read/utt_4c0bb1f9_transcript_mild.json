@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_4c0bb1f9",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Since 02:15PM, my Internet has been out, making it impossible for me to work from Denver. Please do not transfer me again unless the next person can genuinely modify the booking."
+  },
+  "request_id": "01a169fb-27e8-7d81-8f55-b0be60044a99",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-27e8-7d81-8f55-b0be60044a99",
+      "created": "2026-10-23T18:17:10.142Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 27
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.81210065
+              },
+              {
+                "topic": "Unable to work from Denver",
+                "confidence_score": 0.08689746
+              },
+              {
+                "topic": "Requesting rescheduling",
+                "confidence_score": 0.00021170237
+              },
+              {
+                "topic": "Requesting to change booking",
+                "confidence_score": 0.1071361
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request to change booking",
+                "confidence_score": 0.08381987
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 02:15PM, my Internet has been out, making it impossible for me to work from Denver. Please do not transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8433386087417603
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8433385848999023
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:10.223379+00:00"
+}

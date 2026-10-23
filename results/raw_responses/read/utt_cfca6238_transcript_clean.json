@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_cfca6238",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I noticed a double charge of $45.99 on my card ending in 4421. I'm using my mobile phone to call since I'm currently away from my home office."
+  },
+  "request_id": "01a169fd-96d9-7bd3-b681-efd66daa4d00",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-96d9-7bd3-b681-efd66daa4d00",
+      "created": "2026-10-23T18:19:49.529Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Double charge",
+                "confidence_score": 0.39873338
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.5254828
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report double charge",
+                "confidence_score": 0.6809795
+              },
+              {
+                "intent": "Use mobile phone",
+                "confidence_score": 0.6178025
+              },
+              {
+                "intent": "Leave home office",
+                "confidence_score": 0.25553867
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed a double charge of $45.99 on my card ending in 4421. I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6286448240280151
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6286448428505346
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:49.610078+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_512a1308",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Could you please adjust my flight to Chapavo for June 21? I require this to be confirmed by the end of the business day as I'm traveling tomorrow morning."
+  },
+  "request_id": "01a169fd-ad6f-7ab3-b750-d11322191fcb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-ad6f-7ab3-b750-d11322191fcb",
+      "created": "2026-10-23T18:19:55.206Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I require this to be confirmed by the end of the business day as I'm traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Flight adjustment",
+                "confidence_score": 0.65853584
+              },
+              {
+                "topic": "Business day confirmation",
+                "confidence_score": 0.2861436
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I require this to be confirmed by the end of the business day as I'm traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Adjust flight",
+                "confidence_score": 0.70651114
+              },
+              {
+                "intent": "Confirm flight",
+                "confidence_score": 0.3327617
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please adjust my flight to Chapavo for June 21? I require this to be confirmed by the end of the business day as I'm traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": 0.007960380986332893
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.007960380779372321
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:55.287107+00:00"
+}

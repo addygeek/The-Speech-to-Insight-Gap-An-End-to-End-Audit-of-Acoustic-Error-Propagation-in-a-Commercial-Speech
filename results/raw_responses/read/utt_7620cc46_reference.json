@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_7620cc46",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Could you please modify my flight to Austin for April 3? The previous agent I talked to suggested I call back if the charge appeared again."
+  },
+  "request_id": "01a169fb-e557-7de0-9e5c-4687736115fb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-e557-7de0-9e5c-4687736115fb",
+      "created": "2026-10-23T18:17:58.710Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to suggested I call back if the charge appeared again.",
+            "start_word": 11,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.84589523
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.61902046
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to suggested I call back if the charge appeared again.",
+            "start_word": 11,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.58051527
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.06352556
+              },
+              {
+                "intent": "Resolve charge",
+                "confidence_score": 0.018217709
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Austin for April 3?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.028263315558433533
+          },
+          {
+            "text": "The previous agent I talked to suggested I call back if the charge appeared again.",
+            "start_word": 11,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7292118072509766
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.43916412879680766
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:58.783066+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_fd7ce0a2",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Can you change my flight to Austin on June 21? I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a16a53-d48b-7613-8be4-3dcaf73f86e5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-d48b-7613-8be4-3dcaf73f86e5",
+      "created": "2026-10-23T19:54:01.617Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.81539583
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.9845551
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight to austin",
+                "confidence_score": 0.39470285
+              },
+              {
+                "intent": "Get settled before business day",
+                "confidence_score": 0.031644486
+              },
+              {
+                "intent": "Travel tomorrow morning",
+                "confidence_score": 0.9654411
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on June 21? I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07462003082036972
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.07462002549852643
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:01.665139+00:00"
+}

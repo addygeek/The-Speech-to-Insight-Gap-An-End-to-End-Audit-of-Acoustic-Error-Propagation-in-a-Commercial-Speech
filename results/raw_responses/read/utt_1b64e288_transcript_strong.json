@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "utterance_id": "utt_1b64e288",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Hello. I'm Alex Chen. I don't want to cancel my order of $19.40. Please avoid transferring me again unless the next representative can truly modify the booking."
+  },
+  "request_id": "01a169fc-69ba-7873-b7bf-de159907dd6e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-69ba-7873-b7bf-de159907dd6e",
+      "created": "2026-10-23T18:18:32.508Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 14
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Customer order",
+                "confidence_score": 0.00030230713
+              },
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.1081465
+              },
+              {
+                "topic": "Changing representative",
+                "confidence_score": 0.0064770617
+              },
+              {
+                "topic": "Booking",
+                "confidence_score": 0.16304699
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Avoid transfer",
+                "confidence_score": 0.1045373
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.28191602
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.000993254128843546
+          },
+          {
+            "text": "I don't want to cancel my order of $19.40. Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 4,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.8219306468963623
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6531257629394531
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:32.588750+00:00"
+}

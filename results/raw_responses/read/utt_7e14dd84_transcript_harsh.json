@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "utterance_id": "utt_7e14dd84",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I would like to cancel my order for $8.50 that I placed yesterday. Please send me updated confirmation to my email address on file. I'm using my mobile phone since I'm away from my home office."
+  },
+  "request_id": "01a16a53-ba65-76e3-afbe-d4a00a05410b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-ba65-76e3-afbe-d4a00a05410b",
+      "created": "2026-10-23T19:53:54.615Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm away from my home office.",
+            "start_word": 24,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.68866193
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.18021639
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm away from my home office.",
+            "start_word": 24,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.63570565
+              },
+              {
+                "intent": "Receive confirmation",
+                "confidence_score": 0.25719336
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $8.50 that I placed yesterday.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7373368144035339
+          },
+          {
+            "text": "Please send me updated confirmation to my email address on file.",
+            "start_word": 13,
+            "end_word": 23,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2372034788131714
+          },
+          {
+            "text": "I'm using my mobile phone since I'm away from my home office.",
+            "start_word": 24,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.5397627353668213
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5293288336859809
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:54.669733+00:00"
+}

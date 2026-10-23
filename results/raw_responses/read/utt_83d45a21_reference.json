@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "utterance_id": "utt_83d45a21",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Since 2:15 PM, my internet has been out, preventing me from working in Chicago. The last representative told me to reach out again if the charge remains."
+  },
+  "request_id": "01a169fc-0874-7120-922b-f08b282620af",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-0874-7120-922b-f08b282620af",
+      "created": "2026-10-23T18:18:07.852Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative told me to reach out again if the charge remains.",
+            "start_word": 14,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.96183336
+              },
+              {
+                "topic": "Representative request",
+                "confidence_score": 0.002038065
+              },
+              {
+                "topic": "Call delay",
+                "confidence_score": 0.005309316
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative told me to reach out again if the charge remains.",
+            "start_word": 14,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.02810268
+              },
+              {
+                "intent": "Delay work",
+                "confidence_score": 0.000118287244
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.064095944
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 2:15 PM, my internet has been out, preventing me from working in Chicago. The last representative told me to reach out again if the charge remains.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7717358469963074
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7717358645270852
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:08.371818+00:00"
+}

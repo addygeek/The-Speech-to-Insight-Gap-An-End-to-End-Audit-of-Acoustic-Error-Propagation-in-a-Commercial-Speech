@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_51212213",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Since 11:00 AM, my internet has been out, preventing me from working in Boston. I require this issue resolved before the close of business today, as I travel tomorrow morning."
+  },
+  "request_id": "01a169fc-9b82-7d53-954b-64c640779373",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-9b82-7d53-954b-64c640779373",
+      "created": "2026-10-23T18:18:45.152Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I require this issue resolved before the close of business today, as I travel tomorrow morning.",
+            "start_word": 14,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.76930577
+              },
+              {
+                "topic": "Problem resolution",
+                "confidence_score": 0.10580348
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I require this issue resolved before the close of business today, as I travel tomorrow morning.",
+            "start_word": 14,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Resolve broadband issue",
+                "confidence_score": 5.7762256e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 11:00 AM, my internet has been out, preventing me from working in Boston. I require this issue resolved before the close of business today, as I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.5844296216964722
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5844296349419488
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:45.233804+00:00"
+}

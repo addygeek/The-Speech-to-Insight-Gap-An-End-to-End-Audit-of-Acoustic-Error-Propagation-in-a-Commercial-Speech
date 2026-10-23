@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "utterance_id": "utt_4310b577",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I was charged $75 twice on my card ending in 4421. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fb-e822-7581-b505-31f5698d5dca",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-e822-7581-b505-31f5698d5dca",
+      "created": "2026-10-23T18:17:59.420Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.0781816
+              },
+              {
+                "topic": "Credit card charge",
+                "confidence_score": 0.0014068745
+              },
+              {
+                "topic": "Home office",
+                "confidence_score": 0.8276467
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report charges and absence",
+                "confidence_score": 0.00053343555
+              },
+              {
+                "intent": "Request call from mobile phone",
+                "confidence_score": 0.020003602
+              },
+              {
+                "intent": "State absence from home office",
+                "confidence_score": 0.0016984965
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75 twice on my card ending in 4421. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7283003926277161
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7283004022413685
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:59.493781+00:00"
+}

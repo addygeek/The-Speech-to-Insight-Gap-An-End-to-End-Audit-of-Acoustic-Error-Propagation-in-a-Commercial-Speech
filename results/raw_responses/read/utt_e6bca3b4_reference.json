@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "utterance_id": "utt_e6bca3b4",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Thank you Taylor Brooks, the support team in Seattle was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fb-5aec-7060-8224-d249b33af395",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-5aec-7060-8224-d249b33af395",
+      "created": "2026-10-23T18:17:23.143Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.5086058
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.37672105
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you Taylor Brooks, the support team in Seattle was excellent today. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 1,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Express gratitude",
+                "confidence_score": 0.29775804
+              }
+            ]
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Report call",
+                "confidence_score": 3.9241335e-05
+              },
+              {
+                "intent": "Describe second problem",
+                "confidence_score": 3.05767e-06
+              },
+              {
+                "intent": "Acknowledge good work",
+                "confidence_score": 0.00031424436
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Taylor Brooks, the support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8559781908988953
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.01303204707801342
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3943164646625519
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:23.223404+00:00"
+}

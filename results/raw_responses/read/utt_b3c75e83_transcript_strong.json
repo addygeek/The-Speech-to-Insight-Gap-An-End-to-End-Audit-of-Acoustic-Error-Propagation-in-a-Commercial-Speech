@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_b3c75e83",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Where is my package going to Austin? It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fc-95aa-7e71-8d12-16f3f500970f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-95aa-7e71-8d12-16f3f500970f",
+      "created": "2026-10-23T18:18:43.897Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.016247267
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Inquire about package location",
+                "confidence_score": 0.008831316
+              },
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.15991426
+              },
+              {
+                "intent": "Plan plan to travel tomorrow morning",
+                "confidence_score": 1.8805225e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin? It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1567426472902298
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1567426496936429
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:43.967665+00:00"
+}

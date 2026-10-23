@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_f67761f3",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Alex Chen. The support team in Seattle was excellent today. Please send me updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a169fb-3330-7003-9884-078c49cf2bcb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-3330-7003-9884-078c49cf2bcb",
+      "created": "2026-10-23T18:17:12.869Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.79804635
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.6861359
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Request update",
+                "confidence_score": 0.011555916
+              },
+              {
+                "intent": "Confirm email address",
+                "confidence_score": 0.10638121
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. The support team in Seattle was excellent today. Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "positive",
+            "sentiment_score": 0.5936129689216614
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5936129252115886
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:12.949984+00:00"
+}

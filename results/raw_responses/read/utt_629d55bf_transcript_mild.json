@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "utterance_id": "utt_629d55bf",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Hello. This is Taylor Brooks. I don't wish to cancel my $19.40 order. Kindly send the updated confirmation to the email address you have on record."
+  },
+  "request_id": "01a169fc-8b7b-73d0-82c6-1905a4b0c433",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-8b7b-73d0-82c6-1905a4b0c433",
+      "created": "2026-10-23T18:18:40.990Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you have on record.",
+            "start_word": 13,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7417724
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.29952163
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you have on record.",
+            "start_word": 13,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Receive updated confirmation",
+                "confidence_score": 8.457631e-05
+              },
+              {
+                "intent": "Send email",
+                "confidence_score": 0.26065227
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. This is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 4,
+            "sentiment": "neutral",
+            "sentiment_score": 0.037663280963897705
+          },
+          {
+            "text": "I don't wish to cancel my $19.40 order.",
+            "start_word": 5,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.6742168664932251
+          },
+          {
+            "text": "Kindly send the updated confirmation to the email address you have on record.",
+            "start_word": 13,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.051513876765966415
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.21363345781962076
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:41.061372+00:00"
+}

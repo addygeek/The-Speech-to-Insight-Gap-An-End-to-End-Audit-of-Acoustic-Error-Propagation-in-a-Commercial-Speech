@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_80868309",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Thank you Maria Santos, the support team in Boston was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fc-e6e2-7592-a140-c9a72e39f02f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-e6e2-7592-a140-c9a72e39f02f",
+      "created": "2026-10-23T18:19:04.425Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.39745536
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.63955015
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Notify support team",
+                "confidence_score": 0.005886583
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Maria Santos, the support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.853253185749054
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.01715558022260666
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4048608144124349
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:04.506702+00:00"
+}

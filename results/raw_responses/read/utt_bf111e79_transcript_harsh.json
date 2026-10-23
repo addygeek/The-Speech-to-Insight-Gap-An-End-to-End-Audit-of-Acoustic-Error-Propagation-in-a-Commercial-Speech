@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_bf111e79",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Where is my package going to Denver? It should arrive by October 5. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a16a53-aefa-7223-9b76-6e6dabbfc860",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-aefa-7223-9b76-6e6dabbfc860",
+      "created": "2026-10-23T19:53:51.695Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.92531955
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.16103925
+              },
+              {
+                "topic": "Account issue",
+                "confidence_score": 0.44706568
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.08916897
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.042968928813934326
+          },
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5157991647720337
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3761071562767029
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:51.739631+00:00"
+}

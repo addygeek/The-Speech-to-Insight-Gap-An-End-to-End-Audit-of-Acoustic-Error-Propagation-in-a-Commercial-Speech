@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "utterance_id": "utt_584472f3",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Could you modify my flight to Austin for March 12? Please forward the updated confirmation to my existing email address. I need this resolved by the end of the business day as I am traveling tomorrow morning."
+  },
+  "request_id": "01a169fd-7fb3-7ea3-9690-3f9e9d8d489f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-7fb3-7ea3-9690-3f9e9d8d489f",
+      "created": "2026-10-23T18:19:43.557Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 20,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.9672086
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.5821359
+              },
+              {
+                "topic": "Email address resolution",
+                "confidence_score": 0.11652476
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 20,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.6163566
+              },
+              {
+                "intent": "Forward confirmation",
+                "confidence_score": 0.791849
+              },
+              {
+                "intent": "Resolve issue",
+                "confidence_score": 0.75686496
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Austin for March 12? Please forward the updated confirmation to my existing email address. I need this resolved by the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 36,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07316577434539795
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.07316577434539795
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:43.638545+00:00"
+}

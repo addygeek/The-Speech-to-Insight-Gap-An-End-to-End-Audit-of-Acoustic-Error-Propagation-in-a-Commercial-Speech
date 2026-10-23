@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_4a7207a8",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Thank you, Alex Chen. The support team in Chicago was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fb-e9e2-7110-8ce5-fd3a4ae1bc84",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-e9e2-7110-8ce5-fd3a4ae1bc84",
+      "created": "2026-10-23T18:17:59.872Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.09525381
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.8999477
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Provide address",
+                "confidence_score": 3.394339e-06
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. The support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.7874767780303955
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05210079625248909
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3968082666397095
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:59.953124+00:00"
+}

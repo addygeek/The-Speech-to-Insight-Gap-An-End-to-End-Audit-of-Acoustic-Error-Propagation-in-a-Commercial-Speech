@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "utterance_id": "utt_82175a3d",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Please cancel my order for $8.50 placed yesterday. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fb-2eb5-7690-a39b-040d7b6e3857",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-2eb5-7690-a39b-040d7b6e3857",
+      "created": "2026-10-23T18:17:11.809Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "50 placed yesterday. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 6,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.47777462
+              }
+            ]
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 8,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Record checking",
+                "confidence_score": 0.035973396
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.068770654
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.52715933
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "50 placed yesterday. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 6,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.24234684
+              }
+            ]
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 8,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.3007613
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "negative",
+            "sentiment_score": -0.7613584399223328
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 8,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.11936328560113908
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3400491178035736
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:11.891365+00:00"
+}

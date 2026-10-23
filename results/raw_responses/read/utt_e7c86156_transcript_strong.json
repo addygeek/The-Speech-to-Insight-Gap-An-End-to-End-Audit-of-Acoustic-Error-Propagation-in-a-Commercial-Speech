@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_e7c86156",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Hello. I'm Maria Santos. I do not wish to cancel my $19.40 order. I've attempted to use the website twice, but it fails to save the changes to my account."
+  },
+  "request_id": "01a169fa-cf0a-7550-9c37-ba4bf467b650",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-cf0a-7550-9c37-ba4bf467b650",
+      "created": "2026-10-23T18:16:47.417Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it fails to save the changes to my account.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.19088386
+              },
+              {
+                "topic": "Account management",
+                "confidence_score": 0.488727
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it fails to save the changes to my account.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Use website",
+                "confidence_score": 0.002943495
+              },
+              {
+                "intent": "Save changes",
+                "confidence_score": 0.4574316
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Maria Santos.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.035497035831213
+          },
+          {
+            "text": "I do not wish to cancel my $19.40 order. I've attempted to use the website twice, but it fails to save the changes to my account.",
+            "start_word": 4,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7355884313583374
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5562662523846293
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:47.489316+00:00"
+}

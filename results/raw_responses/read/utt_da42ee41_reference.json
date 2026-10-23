@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_da42ee41",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Please cancel my order for $120.00 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a169fc-9709-7401-adfc-97874a7611f8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-9709-7401-adfc-97874a7611f8",
+      "created": "2026-10-23T18:18:43.982Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 23,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8143513
+              },
+              {
+                "topic": "Change of booking",
+                "confidence_score": 0.11709603
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.4822417
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 23,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.68900293
+              },
+              {
+                "intent": "Request confirmation",
+                "confidence_score": 0.0066988193
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $120.00 placed yesterday. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.8321642875671387
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 23,
+            "end_word": 36,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3220672905445099
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6499867666335333
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:44.495476+00:00"
+}

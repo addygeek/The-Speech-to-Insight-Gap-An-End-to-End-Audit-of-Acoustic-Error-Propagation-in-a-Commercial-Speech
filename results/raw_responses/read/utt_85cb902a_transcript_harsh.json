@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "utterance_id": "utt_85cb902a",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Hello. I'm Sam Patel. I don't wish to cancel my order of $120. I've attempted to use the website twice, but it failed to save the change to my account."
+  },
+  "request_id": "01a16a53-9b05-7cf2-b15d-6203239b87d3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-9b05-7cf2-b15d-6203239b87d3",
+      "created": "2026-10-23T19:53:46.780Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the change to my account.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.5512534
+              },
+              {
+                "topic": "Website usage",
+                "confidence_score": 0.30609882
+              },
+              {
+                "topic": "Account saving",
+                "confidence_score": 0.19978295
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the change to my account.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Confirm order",
+                "confidence_score": 0.00019456328
+              },
+              {
+                "intent": "Use website",
+                "confidence_score": 0.43095437
+              },
+              {
+                "intent": "Save change",
+                "confidence_score": 0.6339782
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.01732543110847473
+          },
+          {
+            "text": "I don't wish to cancel my order of $120. I've attempted to use the website twice, but it failed to save the change to my account.",
+            "start_word": 4,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7150540947914124
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5617653602777526
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:46.834124+00:00"
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "utterance_id": "utt_be2d5170",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Can you tell me where my package is heading to Austin? It's expected to arrive by March 12. I've attempted to use the website twice, but it didn't save the changes to my account."
+  },
+  "request_id": "01a16a53-cc7b-7a43-a724-f29dcfa0c083",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-cc7b-7a43-a724-f29dcfa0c083",
+      "created": "2026-10-23T19:53:59.424Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is heading to Austin? It's expected to arrive by March 12. I've attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 1,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Account issues",
+                "confidence_score": 0.14657934
+              }
+            ]
+          },
+          {
+            "text": "It's expected to arrive by March 12. I've attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 11,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.27984038
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.10670364
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. I've attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 11,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Request update on package arrival",
+                "confidence_score": 0.0030320967
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is heading to Austin?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.040815338492393494
+          },
+          {
+            "text": "It's expected to arrive by March 12. I've attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 11,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.4966584444046021
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.34666575941928596
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:59.476177+00:00"
+}

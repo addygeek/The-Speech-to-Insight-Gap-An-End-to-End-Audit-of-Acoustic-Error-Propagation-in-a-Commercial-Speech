@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_bf29ad89",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I noticed a double charge of $75.00 on my card ending in 4421. I need this issue resolved by the end of the business day since I am traveling tomorrow morning."
+  },
+  "request_id": "01a169fc-4720-7702-a413-e612b4529fb3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-4720-7702-a413-e612b4529fb3",
+      "created": "2026-10-23T18:18:23.475Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this issue resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 13,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Double charge",
+                "confidence_score": 0.511245
+              },
+              {
+                "topic": "Card issue",
+                "confidence_score": 0.28121465
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this issue resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 13,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Resolve card charge",
+                "confidence_score": 0.16935901
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed a double charge of $75.00 on my card ending in 4421. I need this issue resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.5773523449897766
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5773523648579916
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:23.548371+00:00"
+}

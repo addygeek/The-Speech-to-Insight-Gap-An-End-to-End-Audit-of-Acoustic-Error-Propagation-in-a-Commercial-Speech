@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_526e8635",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21. The previous agent advised me to call back if the charge persists."
+  },
+  "request_id": "01a169fb-2cdb-7f02-97bd-670bcb54e363",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-2cdb-7f02-97bd-670bcb54e363",
+      "created": "2026-10-23T18:17:11.214Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge persists.",
+            "start_word": 20,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.030781502
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge persists.",
+            "start_word": 20,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Provide package location",
+                "confidence_score": 0.16107938
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.13169388
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03312823921442032
+          },
+          {
+            "text": "The previous agent advised me to call back if the charge persists.",
+            "start_word": 20,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.8269817233085632
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3155649546030405
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:11.285931+00:00"
+}

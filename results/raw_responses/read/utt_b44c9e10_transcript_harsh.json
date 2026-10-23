@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_b44c9e10",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Seattle. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a16a53-ce70-79b2-9dae-430c5568aa9e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-ce70-79b2-9dae-430c5568aa9e",
+      "created": "2026-10-23T19:53:59.959Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.42046008
+              },
+              {
+                "topic": "Work from sueden",
+                "confidence_score": 0.04460689
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.64757264
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Send confirmation email",
+                "confidence_score": 0.086802796
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Seattle.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7713178396224976
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2563164532184601
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5372263590494791
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:00.007696+00:00"
+}

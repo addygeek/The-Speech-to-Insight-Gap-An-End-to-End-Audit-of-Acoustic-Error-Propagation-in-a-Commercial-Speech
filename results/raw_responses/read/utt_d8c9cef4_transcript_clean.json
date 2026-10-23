@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_d8c9cef4",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Since 02:15PM, my Internet has been down preventing me from working in Chicago. Kindly send the updated confirmation to the email address you have on record."
+  },
+  "request_id": "01a169fb-3c05-7910-9a3c-4f6fbefc2390",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-3c05-7910-9a3c-4f6fbefc2390",
+      "created": "2026-10-23T18:17:15.175Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you have on record.",
+            "start_word": 13,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.77961606
+              },
+              {
+                "topic": "Work in chicago",
+                "confidence_score": 0.2205289
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you have on record.",
+            "start_word": 13,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Resolve internet downtime",
+                "confidence_score": 9.0248875e-05
+              },
+              {
+                "intent": "Send updated confirmation email",
+                "confidence_score": 0.2437438
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 02:15PM, my Internet has been down preventing me from working in Chicago.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.6293919086456299
+          },
+          {
+            "text": "Kindly send the updated confirmation to the email address you have on record.",
+            "start_word": 13,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07516270875930786
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3185589734245749
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:15.255433+00:00"
+}

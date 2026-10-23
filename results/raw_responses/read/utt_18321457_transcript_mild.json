@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "utterance_id": "utt_18321457",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "My Internet has been down since 11AM, and I cannot work from Denver. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fd-1949-73a0-bb9f-758ac2f9fffd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-1949-73a0-bb9f-758ac2f9fffd",
+      "created": "2026-10-23T18:19:17.402Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.35764834
+              },
+              {
+                "topic": "Communication",
+                "confidence_score": 0.1499717
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.048430894
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.54843545
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.75019234
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.24567357
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.2415283
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Denver.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7447119951248169
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1472899317741394
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4056345965411212
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:17.482388+00:00"
+}

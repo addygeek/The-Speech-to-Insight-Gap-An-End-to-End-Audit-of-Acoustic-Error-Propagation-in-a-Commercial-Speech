@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_33d994cb",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Thank you, Alex Chen. The support team in Seattle was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a16a53-b2db-7f22-9c78-fc3bbac94fbb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-b2db-7f22-9c78-fc3bbac94fbb",
+      "created": "2026-10-23T19:53:52.974Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.5918545
+              },
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.61310893
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Expressing absence",
+                "confidence_score": 0.042920806
+              },
+              {
+                "intent": "Requesting mobile phone call",
+                "confidence_score": 0.016489873
+              },
+              {
+                "intent": "Providing support",
+                "confidence_score": 0.06453433
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. The support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8093880414962769
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.10024653375148772
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.3132236943100438
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:53.018204+00:00"
+}

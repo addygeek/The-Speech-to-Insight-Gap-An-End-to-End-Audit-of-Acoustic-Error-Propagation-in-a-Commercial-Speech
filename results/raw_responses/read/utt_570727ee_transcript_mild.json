@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_570727ee",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Where is my going to Boston? It should arrive by June 21. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fb-b057-7ea1-847a-0e75ba36a76f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-b057-7ea1-847a-0e75ba36a76f",
+      "created": "2026-10-23T18:17:45.100Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Boston trip",
+                "confidence_score": 0.13892263
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.43819705
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.93551034
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my going to Boston? It should arrive by June 21.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.023906724527478215
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.913272738456726
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4900304117510395
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:45.169210+00:00"
+}

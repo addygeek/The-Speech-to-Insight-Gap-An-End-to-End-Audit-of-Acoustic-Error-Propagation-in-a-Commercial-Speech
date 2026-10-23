@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_97572f34",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I noticed a double charge of $250 on my card ending in 4421. I can hold on the line while you verify the records, and I have my account number available."
+  },
+  "request_id": "01a169fc-5ec5-75e2-a5df-b1661ca21e03",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-5ec5-75e2-a5df-b1661ca21e03",
+      "created": "2026-10-23T18:18:29.638Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can hold on the line while you verify the records, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.11915732
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.3272817
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can hold on the line while you verify the records, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Fix card charges",
+                "confidence_score": 0.01594774
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed a double charge of $250 on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.734046220779419
+          },
+          {
+            "text": "I can hold on the line while you verify the records, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.20550762116909027
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4404136339823405
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:29.709322+00:00"
+}

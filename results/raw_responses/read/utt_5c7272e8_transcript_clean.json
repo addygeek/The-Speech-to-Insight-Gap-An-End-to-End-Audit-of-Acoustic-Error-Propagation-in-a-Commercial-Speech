@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_5c7272e8",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the status of Rykakage going to Seattle? It is expected to arrive by March 12. I've reached out to support regarding this issue twice this week."
+  },
+  "request_id": "01a169fc-70c0-7030-89ca-f1130a6c91dd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-70c0-7030-89ca-f1130a6c91dd",
+      "created": "2026-10-23T18:18:34.290Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It is expected to arrive by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 11,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Rykakage",
+                "confidence_score": 0.39601266
+              },
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.4671736
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of Rykakage going to Seattle? It is expected to arrive by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 1,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Express unavailability of support",
+                "confidence_score": 3.7914951e-06
+              }
+            ]
+          },
+          {
+            "text": "It is expected to arrive by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 11,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Request update on rykakage arrival",
+                "confidence_score": 0.13769332
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of Rykakage going to Seattle? It is expected to arrive by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.043928273022174835
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.04392827201533962
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:34.363775+00:00"
+}

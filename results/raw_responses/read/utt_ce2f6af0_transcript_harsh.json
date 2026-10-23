@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_ce2f6af0",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Could you please modify my flight to Denver scheduled for October 5? I'm using my mobile phone since I'm currently away from my home office."
+  },
+  "request_id": "01a16a53-d6b7-7050-90a8-d44e0020a9e8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-d6b7-7050-90a8-d44e0020a9e8",
+      "created": "2026-10-23T19:54:01.988Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.46351823
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.40539846
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Denver scheduled for October 5?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.006591572426259518
+          },
+          {
+            "text": "I'm using my mobile phone since I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6108306050300598
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.35744002557569937
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:02.036156+00:00"
+}

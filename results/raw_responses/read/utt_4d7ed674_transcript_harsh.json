@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_4d7ed674",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Hello. I'm Maria Santos. I don't intend to cancel my order of $75. I'm using my mobile phone to call since I'm currently away from my home office."
+  },
+  "request_id": "01a16a53-7f6c-70b0-9416-f636937f02f3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-7f6c-70b0-9416-f636937f02f3",
+      "created": "2026-10-23T19:53:39.686Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 27
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Mobile phone communication",
+                "confidence_score": 0.050179787
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Inform about mobile phone usage",
+                "confidence_score": 0.07798359
+              },
+              {
+                "intent": "Express disinterest in order cancellation",
+                "confidence_score": 0.0021208934
+              },
+              {
+                "intent": "Inform about mobile phone usage",
+                "confidence_score": 0.015392058
+              },
+              {
+                "intent": "Reschedule office visit",
+                "confidence_score": 8.159859e-06
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Maria Santos.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02231881394982338
+          },
+          {
+            "text": "I don't intend to cancel my order of $75. I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 4,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6583120226860046
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4962570553734189
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:39.740345+00:00"
+}

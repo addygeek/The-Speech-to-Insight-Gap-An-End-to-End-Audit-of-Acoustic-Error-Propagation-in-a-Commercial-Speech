@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_750add3a",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I see that my card ending in 4421 was billed $45.99 two times. Please ensure that I am not transferred again unless the next representative can modify the booking."
+  },
+  "request_id": "01a169fc-3522-7e62-8b8f-91cc96062aae",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-3522-7e62-8b8f-91cc96062aae",
+      "created": "2026-10-23T18:18:19.251Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please ensure that I am not transferred again unless the next representative can modify the booking.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.6688532
+              },
+              {
+                "topic": "Reimbursement",
+                "confidence_score": 0.0012757437
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please ensure that I am not transferred again unless the next representative can modify the booking.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request to not be transferred",
+                "confidence_score": 0.008281163
+              },
+              {
+                "intent": "Request to amend booking",
+                "confidence_score": 0.03430027
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I see that my card ending in 4421 was billed $45.99 two times. Please ensure that I am not transferred again unless the next representative can modify the booking.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7977719902992249
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7977719836764865
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:19.325966+00:00"
+}

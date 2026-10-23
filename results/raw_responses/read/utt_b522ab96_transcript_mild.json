@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_b522ab96",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Can you change my flight to Boston on March 12? The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fa-be68-7a23-a950-899d26bd604b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-be68-7a23-a950-899d26bd604b",
+      "created": "2026-10-23T18:16:43.132Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.9109493
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.35320944
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.72661155
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.004538211
+              },
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.23566198
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05505480617284775
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7872986197471619
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4784357070922852
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:43.211457+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_0685bf0d",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been down since 11AM, and I cannot work from Boston. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fb-890c-75d2-ab3e-6ded485d99c3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-890c-75d2-ab3e-6ded485d99c3",
+      "created": "2026-10-23T18:17:35.013Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet problem",
+                "confidence_score": 0.0074223205
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.81385094
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Resolve internet issue",
+                "confidence_score": 0.007769926
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Boston. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7410661578178406
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7410661523992365
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:35.093307+00:00"
+}

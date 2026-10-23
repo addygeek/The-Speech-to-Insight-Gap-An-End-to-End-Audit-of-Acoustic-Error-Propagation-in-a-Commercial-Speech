@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_7e3d48fd",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $19.40. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fc-6334-7a43-a8d1-a0a0b6347293",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-6334-7a43-a8d1-a0a0b6347293",
+      "created": "2026-10-23T18:18:30.804Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.9159689
+              },
+              {
+                "topic": "Payment",
+                "confidence_score": 0.38886565
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Resolve order",
+                "confidence_score": 0.15068533
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0960324853658676
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.686240017414093
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3023325502872467
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.33837127685546875
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:30.873489+00:00"
+}

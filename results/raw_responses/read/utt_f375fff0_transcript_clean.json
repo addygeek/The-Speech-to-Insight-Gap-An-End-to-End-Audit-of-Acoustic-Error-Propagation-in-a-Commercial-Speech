@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "utterance_id": "utt_f375fff0",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me where my package is headed to Chicago? It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account number handy."
+  },
+  "request_id": "01a169fc-1418-7a10-be75-7b38ad9fa3a2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-1418-7a10-be75-7b38ad9fa3a2",
+      "created": "2026-10-23T18:18:10.624Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed to Chicago? It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account number handy.",
+            "start_word": 1,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.6745613
+              }
+            ]
+          },
+          {
+            "text": "It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account number handy.",
+            "start_word": 11,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.53059566
+              },
+              {
+                "topic": "Chicago arrival",
+                "confidence_score": 0.037019957
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account number handy.",
+            "start_word": 11,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Confirm package location and arrival time",
+                "confidence_score": 0.022923997
+              },
+              {
+                "intent": "Confirm details and account number",
+                "confidence_score": 0.004050113
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed to Chicago?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.023320449516177177
+          },
+          {
+            "text": "It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account number handy.",
+            "start_word": 11,
+            "end_word": 36,
+            "sentiment": "positive",
+            "sentiment_score": 0.4325161576271057
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.3209173245863481
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:10.697248+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_a50b60bd",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Could you please modify my flight to Chicago for October 5? The previous agent advised me to reach out again if the fee remains visible."
+  },
+  "request_id": "01a16a53-af3a-7633-8194-74df7e377c73",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-af3a-7633-8194-74df7e377c73",
+      "created": "2026-10-23T19:53:51.976Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the fee remains visible.",
+            "start_word": 11,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.8496973
+              },
+              {
+                "topic": "Fee",
+                "confidence_score": 0.46019554
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the fee remains visible.",
+            "start_word": 11,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.61587936
+              },
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.13671234
+              },
+              {
+                "intent": "Verify fee",
+                "confidence_score": 0.068198144
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Chicago for October 5?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04864571616053581
+          },
+          {
+            "text": "The previous agent advised me to reach out again if the fee remains visible.",
+            "start_word": 11,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.7323367595672607
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3976300103323801
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:52.016377+00:00"
+}

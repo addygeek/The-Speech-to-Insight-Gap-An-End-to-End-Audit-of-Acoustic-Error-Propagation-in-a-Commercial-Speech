@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_d5fe1c51",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I'd like to schedule an appointment with Dr. Sam Patel on April 3 at 9:30 AM. I can hold while you verify the details, and I have my account number available."
+  },
+  "request_id": "01a169fd-7b12-78a0-a971-28b49b06a9ad",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-7b12-78a0-a971-28b49b06a9ad",
+      "created": "2026-10-23T18:19:42.582Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can hold while you verify the details, and I have my account number available.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.62493706
+              },
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.3893186
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can hold while you verify the details, and I have my account number available.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment with dr. sam patel",
+                "confidence_score": 0.1756154
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with Dr. Sam Patel on April 3 at 9:30 AM. I can hold while you verify the details, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.5585986375808716
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5585986406375201
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:42.664863+00:00"
+}

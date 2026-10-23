@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_a74d12d8",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Where is my package going to Chicago? It should arrive by March 12. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a16a53-474b-7bc2-9469-d6a8e13bd5e8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-474b-7bc2-9469-d6a8e13bd5e8",
+      "created": "2026-10-23T19:53:25.228Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package",
+                "confidence_score": 0.008631166
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.5456256
+              },
+              {
+                "topic": "Website",
+                "confidence_score": 0.57768744
+              },
+              {
+                "topic": "Change",
+                "confidence_score": 0.4517795
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.07676677
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06539975106716156
+          },
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.4936059415340424
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3538545072078705
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:25.276262+00:00"
+}

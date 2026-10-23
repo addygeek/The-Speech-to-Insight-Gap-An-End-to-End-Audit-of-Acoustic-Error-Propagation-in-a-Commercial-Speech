@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_ceb8cb44",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Hi. My name is Jordan Lee. I do not want to cancel my order for $250. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fb-fc1d-75c3-9f9e-b2fbf9af7b02",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-fc1d-75c3-9f9e-b2fbf9af7b02",
+      "created": "2026-10-23T18:18:04.394Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.75739336
+              },
+              {
+                "topic": "Transfer",
+                "confidence_score": 0.02679189
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Refuse to transfer",
+                "confidence_score": 0.00039365873
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.116190314
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Jordan Lee.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -8.366163820028305e-05
+          },
+          {
+            "text": "I do not want to cancel my order for $250. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8396796584129333
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6531027687920464
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:04.465969+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "utterance_id": "utt_6292217c",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I would like to cancel my order of $19.40 that I placed yesterday. I'm using my mobile phone since I'm not at my home office at the moment."
+  },
+  "request_id": "01a169fa-ece2-7071-b47f-30be85301cca",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-ece2-7071-b47f-30be85301cca",
+      "created": "2026-10-23T18:16:54.960Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm not at my home office at the moment.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.23553146
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm not at my home office at the moment.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.88602895
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order of $19.40 that I placed yesterday. I'm using my mobile phone since I'm not at my home office at the moment.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7206671833992004
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7206672032674154
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:55.038491+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_b00fe0ea",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Denver? It should arrive by June 21. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a169fa-cd1a-71b3-b021-b6d6cc2b38a8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-cd1a-71b3-b021-b6d6cc2b38a8",
+      "created": "2026-10-23T18:16:46.786Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.53204376
+              },
+              {
+                "topic": "Delivery confirmation",
+                "confidence_score": 0.18155514
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Express expectation of package arrival",
+                "confidence_score": 6.746082e-07
+              },
+              {
+                "intent": "Request update",
+                "confidence_score": 0.0069750687
+              },
+              {
+                "intent": "Provide confirmation email",
+                "confidence_score": 0.038095273
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02831110917031765
+          },
+          {
+            "text": "It should arrive by June 21. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 7,
+            "end_word": 26,
+            "sentiment": "positive",
+            "sentiment_score": 0.4312228560447693
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.32377971013387047
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:46.864749+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_dd422cbd",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Can you tell me the status of my package heading to Seattle? It's expected to arrive by June 21. I ask that you avoid transferring me again unless the next representative can modify the booking."
+  },
+  "request_id": "01a169fd-654e-73d0-9417-9328ea0f3b35",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-654e-73d0-9417-9328ea0f3b35",
+      "created": "2026-10-23T18:19:36.769Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I ask that you avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 19,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.53157556
+              },
+              {
+                "topic": "Changing booking",
+                "confidence_score": 0.055314444
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I ask that you avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 19,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Request status of package",
+                "confidence_score": 0.0049954234
+              },
+              {
+                "intent": "Request to avoid transfer",
+                "confidence_score": 0.087988295
+              },
+              {
+                "intent": "Request to modify booking",
+                "confidence_score": 0.6528727
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Seattle? It's expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 18,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05041172355413437
+          },
+          {
+            "text": "I ask that you avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 19,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.8821058869361877
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4266543161301386
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:36.849454+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_43abb9c9",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Can you change my flight to Denver on June 21? I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fb-1e1f-7121-9f22-7e9fd82cc952",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-1e1f-7121-9f22-7e9fd82cc952",
+      "created": "2026-10-23T18:17:07.705Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8393495
+              },
+              {
+                "topic": "Travel",
+                "confidence_score": 0.0024413327
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight to delhi",
+                "confidence_score": 0.17704357
+              },
+              {
+                "intent": "Confirm status",
+                "confidence_score": 0.0006328883
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Denver on June 21? I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.0735958144068718
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.07359581334250313
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:07.786551+00:00"
+}

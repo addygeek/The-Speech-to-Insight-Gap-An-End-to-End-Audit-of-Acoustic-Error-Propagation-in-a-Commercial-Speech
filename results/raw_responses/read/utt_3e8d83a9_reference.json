@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_3e8d83a9",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Jordan Lee on April 3 at 11:00 AM. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fb-91d9-7513-9301-fa9c9c3cea6c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-91d9-7513-9301-fa9c9c3cea6c",
+      "created": "2026-10-23T18:17:37.285Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.034135696
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.7235527
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.9314634
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Jordan Lee on April 3 at 11:00 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07991375029087067
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7383238077163696
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.39971294403076174
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:37.366249+00:00"
+}

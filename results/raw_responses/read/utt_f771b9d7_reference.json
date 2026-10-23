@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_f771b9d7",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Jordan Lee on April 3 at 9:30 AM. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fb-6a02-7280-aa1d-64602de0820f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-6a02-7280-aa1d-64602de0820f",
+      "created": "2026-10-23T18:17:27.099Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 14
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.6371282
+              },
+              {
+                "topic": "Dr. jordan lee",
+                "confidence_score": 0.5902491
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.7259748
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Jordan Lee on April 3 at 9:30 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06455307453870773
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.6940351128578186
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.37078759476945206
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:27.168945+00:00"
+}

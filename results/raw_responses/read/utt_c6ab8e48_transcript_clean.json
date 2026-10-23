@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_c6ab8e48",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Where is my going to Seattle? It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fb-1b5a-7342-86fd-6b86ded9e557",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-1b5a-7342-86fd-6b86ded9e557",
+      "created": "2026-10-23T18:17:06.882Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 6,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.53519064
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.9066255
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 6,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Decide on arrival time",
+                "confidence_score": 0.0156427
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my going to Seattle?",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.021888410672545433
+          },
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 6,
+            "end_word": 27,
+            "sentiment": "positive",
+            "sentiment_score": 0.34124210476875305
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2667262395222982
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:06.960495+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "utterance_id": "utt_4e67960a",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I would like to cancel my order for $19.40 that I placed yesterday. Do not transfer me again unless the next representative can actually modify the booking. I attempted to use the website twice, but the change did not save under my account."
+  },
+  "request_id": "01a169fc-b8df-7913-a286-aac6e543afd4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-b8df-7913-a286-aac6e543afd4",
+      "created": "2026-10-23T18:18:52.752Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 50
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to use the website twice, but the change did not save under my account.",
+            "start_word": 27,
+            "end_word": 42,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.036372405
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to use the website twice, but the change did not save under my account.",
+            "start_word": 27,
+            "end_word": 42,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.43265158
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $19.40 that I placed yesterday. Do not transfer me again unless the next representative can actually modify the booking. I attempted to use the website twice, but the change did not save under my account.",
+            "start_word": 0,
+            "end_word": 42,
+            "sentiment": "negative",
+            "sentiment_score": -0.7486532926559448
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7486533355712891
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:52.831796+00:00"
+}

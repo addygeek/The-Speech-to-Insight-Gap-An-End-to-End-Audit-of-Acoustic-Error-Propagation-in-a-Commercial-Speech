@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_867d514e",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I noticed a double charge of $45.99 on my card ending with 4421. This is the second instance this week that I've reached out to support regarding the same issue."
+  },
+  "request_id": "01a169fd-a9aa-7892-9712-3a16016a8646",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-a9aa-7892-9712-3a16016a8646",
+      "created": "2026-10-23T18:19:54.399Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second instance this week that I've reached out to support regarding the same issue.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Double charge on card",
+                "confidence_score": 0.005249283
+              },
+              {
+                "topic": "Support for card issue",
+                "confidence_score": 0.3006247
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second instance this week that I've reached out to support regarding the same issue.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report double charge",
+                "confidence_score": 0.05756132
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed a double charge of $45.99 on my card ending with 4421. This is the second instance this week that I've reached out to support regarding the same issue.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.5948085188865662
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5948085282978258
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:54.494747+00:00"
+}

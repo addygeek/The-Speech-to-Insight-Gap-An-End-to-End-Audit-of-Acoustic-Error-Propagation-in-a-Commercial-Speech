@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_cd987d92",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $19.40. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fb-54cb-7013-bb26-88459e48c992",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-54cb-7013-bb26-88459e48c992",
+      "created": "2026-10-23T18:17:21.782Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.4729819
+              },
+              {
+                "topic": "Support contact",
+                "confidence_score": 0.49153766
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Contact support about the same problem",
+                "confidence_score": 0.0030678546
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.003055539447814226
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7443041801452637
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5718365204639924
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:21.849938+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_592c2cae",
+    "condition": "",
+    "text_source": "reference",
+    "text": "My internet has been down since 2:15 PM, and I'm unable to work from Austin. The last representative I talked to suggested I call again if the charge remains."
+  },
+  "request_id": "01a169fd-08ec-71f1-a619-98f62b02e86c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-08ec-71f1-a619-98f62b02e86c",
+      "created": "2026-10-23T18:19:13.302Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative I talked to suggested I call again if the charge remains.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.2664313
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.0285581
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative I talked to suggested I call again if the charge remains.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Report internet downtime",
+                "confidence_score": 0.11676386
+              },
+              {
+                "intent": "Request call again",
+                "confidence_score": 0.011130753
+              },
+              {
+                "intent": "Ask for callback",
+                "confidence_score": 0.0029033218
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 2:15 PM, and I'm unable to work from Austin. The last representative I talked to suggested I call again if the charge remains.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7904124855995178
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7904124904323269
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:13.807343+00:00"
+}

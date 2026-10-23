@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_02d612f3",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I would like to cancel my order for $19.40 that I placed yesterday. This week, I've contacted support twice regarding the same issue. The last agent told me to call back if the charge still appeared."
+  },
+  "request_id": "01a169fa-d9d8-79f0-be2a-35c406eae40c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-d9d8-79f0-be2a-35c406eae40c",
+      "created": "2026-10-23T18:16:50.239Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 46
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent told me to call back if the charge still appeared.",
+            "start_word": 23,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.75559616
+              },
+              {
+                "topic": "Support issues",
+                "confidence_score": 0.010412123
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent told me to call back if the charge still appeared.",
+            "start_word": 23,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.60565335
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.60114014
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $19.40 that I placed yesterday. This week, I've contacted support twice regarding the same issue. The last agent told me to call back if the charge still appeared.",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.7294454574584961
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7294454159943954
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:50.318464+00:00"
+}

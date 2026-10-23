@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_ffe1ad54",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Sam Patel. The support team in Seattle was excellent today. Please send me updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a169fb-f050-7340-a3cf-946a61badffc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-f050-7340-a3cf-946a61badffc",
+      "created": "2026-10-23T18:18:01.445Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.7753565
+              },
+              {
+                "topic": "Updated confirmation",
+                "confidence_score": 0.04880963
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Requesting confirmation",
+                "confidence_score": 0.016615994
+              },
+              {
+                "intent": "Providing email address",
+                "confidence_score": 0.37021548
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Seattle was excellent today. Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "positive",
+            "sentiment_score": 0.6024972796440125
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6024972854122039
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:01.515626+00:00"
+}

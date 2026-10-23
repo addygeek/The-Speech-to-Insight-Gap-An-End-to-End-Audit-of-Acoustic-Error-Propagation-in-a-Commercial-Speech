@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_e63fc2c0",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "I appreciate your help, Taylor Brooks. The support team in Seattle did a great job today. I'm willing to hold while you verify the record, and I have my account number on hand."
+  },
+  "request_id": "01a169fb-8a73-70a3-b95e-387efba7e32c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-8a73-70a3-b95e-387efba7e32c",
+      "created": "2026-10-23T18:17:35.202Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.76026416
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.41513667
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9729124
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Handle record verification",
+                "confidence_score": 0.00038965902
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Taylor Brooks. The support team in Seattle did a great job today.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.8598358035087585
+          },
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "neutral",
+            "sentiment_score": 0.24994631111621857
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5548910413469587
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:35.270611+00:00"
+}

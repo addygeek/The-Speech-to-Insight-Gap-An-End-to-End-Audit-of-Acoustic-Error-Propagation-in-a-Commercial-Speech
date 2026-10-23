@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_089b1eb7",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the status of my package heading to Seattle? It is expected to reach me by April 3. I'm calling from my mobile since I'm not at my home office at the moment."
+  },
+  "request_id": "01a169fb-a6d2-79a3-b807-c3c97adad563",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-a6d2-79a3-b807-c3c97adad563",
+      "created": "2026-10-23T18:17:42.414Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It is expected to reach me by April 3. I'm calling from my mobile since I'm not at my home office at the moment.",
+            "start_word": 12,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.52623373
+              },
+              {
+                "topic": "Delivery date",
+                "confidence_score": 0.032803986
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It is expected to reach me by April 3. I'm calling from my mobile since I'm not at my home office at the moment.",
+            "start_word": 12,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.24437551
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Seattle? It is expected to reach me by April 3. I'm calling from my mobile since I'm not at my home office at the moment.",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1875387281179428
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.18753872598920548
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:43.141878+00:00"
+}

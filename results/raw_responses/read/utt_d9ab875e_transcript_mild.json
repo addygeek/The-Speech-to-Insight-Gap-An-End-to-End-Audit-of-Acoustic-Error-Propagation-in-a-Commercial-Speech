@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_d9ab875e",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Can you tell me the status of my package heading to Boston? It's expected to arrive by October 5. I'm willing to hold while you verify the record, and I have my account number on hand."
+  },
+  "request_id": "01a169fb-53cc-7233-a271-4ce926f4c229",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-53cc-7233-a271-4ce926f4c229",
+      "created": "2026-10-23T18:17:21.597Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 5. I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 12,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.34165978
+              },
+              {
+                "topic": "Boston arrival date",
+                "confidence_score": 0.019199425
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.54784566
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 5. I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 12,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.25743613
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Boston? It's expected to arrive by October 5. I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "neutral",
+            "sentiment_score": 0.16063882410526276
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.16063883138257404
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:21.670167+00:00"
+}

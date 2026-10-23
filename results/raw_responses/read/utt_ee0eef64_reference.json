@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_ee0eef64",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Can you tell me where my package is headed to Denver? It\u2019s expected to arrive by October 5. I\u2019m using my mobile phone since I\u2019m currently away from my home office."
+  },
+  "request_id": "01a169fb-71d4-7ea2-994f-b31e7aa9b39f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-71d4-7ea2-994f-b31e7aa9b39f",
+      "created": "2026-10-23T18:17:28.969Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It\u2019s expected to arrive by October 5. I\u2019m using my mobile phone since I\u2019m currently away from my home office.",
+            "start_word": 11,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.56848943
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.2614576
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.77881163
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It\u2019s expected to arrive by October 5. I\u2019m using my mobile phone since I\u2019m currently away from my home office.",
+            "start_word": 11,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Provide package information",
+                "confidence_score": 0.003862435
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed to Denver? It\u2019s expected to arrive by October 5. I\u2019m using my mobile phone since I\u2019m currently away from my home office.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2198930382728577
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.21989303980118188
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:29.049009+00:00"
+}

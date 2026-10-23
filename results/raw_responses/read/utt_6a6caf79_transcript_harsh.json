@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_6a6caf79",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I was charged $8.50 twice on my card ending in 4421. Please do not transfer me again unless the next person could actually change the booking."
+  },
+  "request_id": "01a16a53-a884-7ae3-842e-484457f3b414",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-a884-7ae3-842e-484457f3b414",
+      "created": "2026-10-23T19:53:50.269Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person could actually change the booking.",
+            "start_word": 11,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.14190204
+              },
+              {
+                "topic": "Payment",
+                "confidence_score": 0.026551174
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person could actually change the booking.",
+            "start_word": 11,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.31437016
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $8.50 twice on my card ending in 4421. Please do not transfer me again unless the next person could actually change the booking.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.8546792268753052
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8546792268753052
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:50.317245+00:00"
+}

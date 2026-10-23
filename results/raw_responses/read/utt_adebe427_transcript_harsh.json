@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_adebe427",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Can you tell me where my package down for Seattle is? It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available."
+  },
+  "request_id": "01a16a53-c30f-7c51-ae39-d7fa2521a278",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-c30f-7c51-ae39-d7fa2521a278",
+      "created": "2026-10-23T19:53:56.853Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.20056437
+              },
+              {
+                "topic": "Estimated arrival date",
+                "confidence_score": 0.005141669
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package down for Seattle is? It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 1,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Provide package location and arrival date",
+                "confidence_score": 0.02632194
+              }
+            ]
+          },
+          {
+            "text": "It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Access account number",
+                "confidence_score": 0.0060907584
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package down for Seattle is? It's expected to arrive by October 5. I can hold while you look up the record, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09332715719938278
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.09332715548001803
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:56.903684+00:00"
+}

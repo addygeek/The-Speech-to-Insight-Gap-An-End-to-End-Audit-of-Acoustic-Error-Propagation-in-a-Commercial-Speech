@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_8551982a",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Can you tell me where my package is headed in Chicago? It's expected to arrive by June 21. I can hold while you verify the details, and I have my account number available."
+  },
+  "request_id": "01a169fd-0d23-70d3-8f88-219862e7ff91",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-0d23-70d3-8f88-219862e7ff91",
+      "created": "2026-10-23T18:19:14.227Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can hold while you verify the details, and I have my account number available.",
+            "start_word": 18,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.41155866
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.37492347
+              },
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.49244997
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can hold while you verify the details, and I have my account number available.",
+            "start_word": 18,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Help delivery details",
+                "confidence_score": 3.479351e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed in Chicago? It's expected to arrive by June 21. I can hold while you verify the details, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 32,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07852928340435028
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.07852928455059345
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:14.735882+00:00"
+}

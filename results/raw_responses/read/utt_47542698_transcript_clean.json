@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_47542698",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Please cancel my order for $75 placed yesterday. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fc-2a6b-72f0-a8e8-1665d531a114",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-2a6b-72f0-a8e8-1665d531a114",
+      "created": "2026-10-23T18:18:16.289Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 8,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.84436667
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.14396264
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 8,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.54768974
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.10183632
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.8418497443199158
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8418497358049665
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:16.783549+00:00"
+}

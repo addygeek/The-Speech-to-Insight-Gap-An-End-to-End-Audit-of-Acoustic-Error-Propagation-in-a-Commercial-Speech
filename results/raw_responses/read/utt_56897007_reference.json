@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_56897007",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I would like to cancel my order for $120.00 that I placed yesterday. I'm willing to remain on the line while you verify the record, and I have my account number available."
+  },
+  "request_id": "01a169fb-37d2-70f0-8797-dea7361abad8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-37d2-70f0-8797-dea7361abad8",
+      "created": "2026-10-23T18:17:14.270Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to remain on the line while you verify the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.27359638
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.4518003
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to remain on the line while you verify the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.332614
+              },
+              {
+                "intent": "Verify record",
+                "confidence_score": 0.46884823
+              },
+              {
+                "intent": "Have account number",
+                "confidence_score": 0.18624267
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $120.00 that I placed yesterday.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7025046348571777
+          },
+          {
+            "text": "I'm willing to remain on the line while you verify the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.23611661791801453
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.42021711249100535
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:14.350044+00:00"
+}

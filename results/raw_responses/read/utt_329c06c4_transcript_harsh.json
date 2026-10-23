@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_329c06c4",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "My Internet has been down since 11AM, and I cannot work from Austin. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a16a53-adb1-7c30-bd14-16acee582d7e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-adb1-7c30-bd14-16acee582d7e",
+      "created": "2026-10-23T19:53:51.380Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.3393358
+              },
+              {
+                "topic": "Work from austin",
+                "confidence_score": 0.09057695
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.8076302
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Update account information",
+                "confidence_score": 0.05433101
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Austin.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7477782964706421
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14993570744991302
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4084622151142842
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:51.434717+00:00"
+}

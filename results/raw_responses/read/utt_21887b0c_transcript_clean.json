@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "utterance_id": "utt_21887b0c",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Austin? It should arrive by October 5. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a169fb-c731-7ab1-ad76-21733e315007",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-c731-7ab1-ad76-21733e315007",
+      "created": "2026-10-23T18:17:50.806Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9410684
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.20951717
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.12135623
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.2109887
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.045925986
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.042540345
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04506900534033775
+          },
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.51361483335495
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.37394383549690247
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:50.873991+00:00"
+}

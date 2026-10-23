@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_9159e74e",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Since 11:00 AM, my internet has been out, preventing me from working in Seattle. I need this resolved by the end of the business day since I will be traveling tomorrow morning."
+  },
+  "request_id": "01a169fc-6c3d-7ad3-87d3-0a61638e804d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-6c3d-7ad3-87d3-0a61638e804d",
+      "created": "2026-10-23T18:18:33.085Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 23
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I will be traveling tomorrow morning.",
+            "start_word": 14,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.8385276
+              },
+              {
+                "topic": "Resolving issue",
+                "confidence_score": 0.054862075
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I will be traveling tomorrow morning.",
+            "start_word": 14,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Requesting resolution for internet issue",
+                "confidence_score": 0.00070136465
+              },
+              {
+                "intent": "Traveling tomorrow",
+                "confidence_score": 0.02420225
+              },
+              {
+                "intent": "Resolving internet issue by end of business day",
+                "confidence_score": 5.0600236e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 11:00 AM, my internet has been out, preventing me from working in Seattle. I need this resolved by the end of the business day since I will be traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.6321538090705872
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.63215379457216
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:33.158779+00:00"
+}

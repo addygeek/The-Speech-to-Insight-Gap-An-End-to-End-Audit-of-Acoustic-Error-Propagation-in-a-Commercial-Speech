@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_45cfe457",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Where is my package going to Chicago? It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fa-fca0-7210-9a74-de93cc566a7f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-fca0-7210-9a74-de93cc566a7f",
+      "created": "2026-10-23T18:16:59.074Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.19887558
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.38687447
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05877436697483063
+          },
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6880876421928406
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5256841721073273
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:59.153762+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_4d7ed674",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hello, I\u2019m Maria Santos. I don't intend to cancel my order of $75.00. I'm using my mobile phone to call since I'm currently away from my home office."
+  },
+  "request_id": "01a169fc-04dd-7051-943d-d6f764588085",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-04dd-7051-943d-d6f764588085",
+      "created": "2026-10-23T18:18:06.653Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.10787785
+              },
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.73821247
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.09614831
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I\u2019m Maria Santos.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02426554076373577
+          },
+          {
+            "text": "I don't intend to cancel my order of $75.00. I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 4,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6438512206077576
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4884751785633176
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:06.726598+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_7f1e786d",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Where is my package going to Austin? It should arrive by April 3. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a169fb-8d17-7123-a1db-7406feed5ddc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-8d17-7123-a1db-7406feed5ddc",
+      "created": "2026-10-23T18:17:35.961Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.94448763
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.47176147
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Check package location",
+                "confidence_score": 0.009491238
+              },
+              {
+                "intent": "Save change under account",
+                "confidence_score": 0.0060947374
+              },
+              {
+                "intent": "Request website assistance",
+                "confidence_score": 0.09380065
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.051798805594444275
+          },
+          {
+            "text": "It should arrive by April 3. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5066629648208618
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.367047518491745
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:36.028845+00:00"
+}

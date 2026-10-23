@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "utterance_id": "utt_6fafc629",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Where is my package going to Austin? It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fd-8b05-7552-a420-6c5ead74f9fd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-8b05-7552-a420-6c5ead74f9fd",
+      "created": "2026-10-23T18:19:46.449Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 28
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.17228916
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.7378973
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change package",
+                "confidence_score": 0.043843687
+              },
+              {
+                "intent": "Confirm arrival date",
+                "confidence_score": 0.0004117858
+              },
+              {
+                "intent": "Express preference for no transfer",
+                "confidence_score": 0.00010842695
+              },
+              {
+                "intent": "Request a change in package",
+                "confidence_score": 0.0014908956
+              },
+              {
+                "intent": "Request clarification on package location",
+                "confidence_score": 0.0005148122
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.070071280002594
+          },
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6948510408401489
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5336175733996976
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:46.530526+00:00"
+}

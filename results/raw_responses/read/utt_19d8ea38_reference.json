@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_19d8ea38",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Please cancel my order for $120.00 placed yesterday. I already tried the website twice and it would not save the change under my account. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fb-b1e5-7422-92a5-a550d89cc8bb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-b1e5-7422-92a5-a550d89cc8bb",
+      "created": "2026-10-23T18:17:45.477Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.04047464
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.32097977
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.65426654
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.910925
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $120.00 placed yesterday. I already tried the website twice and it would not save the change under my account. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.7265207171440125
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7265207117254083
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:45.558747+00:00"
+}

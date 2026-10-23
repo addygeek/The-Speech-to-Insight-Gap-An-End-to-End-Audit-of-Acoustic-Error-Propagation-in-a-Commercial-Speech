@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_75b0bdbe",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Austin. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a169fd-8073-7b43-b888-2efe95dd6aa8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-8073-7b43-b888-2efe95dd6aa8",
+      "created": "2026-10-23T18:19:43.734Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 15
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.2191689
+              },
+              {
+                "topic": "Work from austin",
+                "confidence_score": 0.550483
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.6578165
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request a resolution before the business day",
+                "confidence_score": 0.0141814295
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Austin. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7478646636009216
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7478646414620536
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:43.803627+00:00"
+}

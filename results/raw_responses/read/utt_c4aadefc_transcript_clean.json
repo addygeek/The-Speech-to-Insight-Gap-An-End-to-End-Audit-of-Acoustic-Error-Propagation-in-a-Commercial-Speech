@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_c4aadefc",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Maria Santos on April 3 at 09:30AM. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fc-9e42-7f90-a0df-e9f9aa697be0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-9e42-7f90-a0df-e9f9aa697be0",
+      "created": "2026-10-23T18:18:46.018Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.87986547
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.06975062
+              },
+              {
+                "topic": "Problem resolution",
+                "confidence_score": 0.044097982
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor maria santos",
+                "confidence_score": 0.045325078
+              },
+              {
+                "intent": "Contact support about same problem",
+                "confidence_score": 0.5835328
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Maria Santos on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.08765902370214462
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7391272783279419
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.37910534206189606
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:46.085130+00:00"
+}

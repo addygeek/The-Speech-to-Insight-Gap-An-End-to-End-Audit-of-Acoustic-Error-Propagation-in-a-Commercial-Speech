@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_b353c08b",
+    "condition": "",
+    "text_source": "reference",
+    "text": "My internet has been down since 9:30 AM and I cannot work from Seattle. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fd-1039-70d3-9475-5aecd5cad2a4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-1039-70d3-9475-5aecd5cad2a4",
+      "created": "2026-10-23T18:19:15.070Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 14,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.60164994
+              },
+              {
+                "topic": "Communication",
+                "confidence_score": 0.014512038
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 14,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Report internet issue",
+                "confidence_score": 0.03261133
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.13682587
+              },
+              {
+                "intent": "Express dissatisfaction",
+                "confidence_score": 0.083957836
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 9:30 AM and I cannot work from Seattle. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7314690351486206
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7314690181187221
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:15.151190+00:00"
+}

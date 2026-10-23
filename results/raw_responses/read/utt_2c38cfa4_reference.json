@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_2c38cfa4",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I would like to schedule an appointment with Dr. Jordan Lee on October 5 at 9:30 AM. I've reached out to support twice this week regarding the same issue."
+  },
+  "request_id": "01a169fd-1aca-7012-bedf-f1832cba603c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-1aca-7012-bedf-f1832cba603c",
+      "created": "2026-10-23T18:19:17.819Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support twice this week regarding the same issue.",
+            "start_word": 17,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.9492734
+              },
+              {
+                "topic": "Support on issue",
+                "confidence_score": 0.001313188
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support twice this week regarding the same issue.",
+            "start_word": 17,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.4910567
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.77769893
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Dr. Jordan Lee on October 5 at 9:30 AM. I've reached out to support twice this week regarding the same issue.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.5764629244804382
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5764629364013671
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:17.898792+00:00"
+}

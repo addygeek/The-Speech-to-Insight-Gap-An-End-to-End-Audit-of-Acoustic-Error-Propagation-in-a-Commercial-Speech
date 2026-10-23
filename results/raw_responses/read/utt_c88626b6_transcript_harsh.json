@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_c88626b6",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $250. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a16a53-d9f5-77e3-9247-1bd3cfdbb64d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-d9f5-77e3-9247-1bd3cfdbb64d",
+      "created": "2026-10-23T19:54:02.786Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.36493742
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.85818624
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Requesting to cancel order",
+                "confidence_score": 0.0022621923
+              },
+              {
+                "intent": "Addressing absence from home office",
+                "confidence_score": 0.0035074921
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.044125884771347046
+          },
+          {
+            "text": "I do not want to cancel my order for $250. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7106934785842896
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5319204832378187
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:02.844737+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_a3acfc1f",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I would like to schedule a visit with doctor Alex Chen on April 3 at 02:15PM. I've reached out to support regarding this issue twice this week."
+  },
+  "request_id": "01a16a53-d080-77f0-a9f8-c4e87c57f5aa",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-d080-77f0-a9f8-c4e87c57f5aa",
+      "created": "2026-10-23T19:54:00.333Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue twice this week.",
+            "start_word": 16,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Scheduling",
+                "confidence_score": 0.69311285
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.9142234
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue twice this week.",
+            "start_word": 16,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Schedule a visit with doctor alex chen",
+                "confidence_score": 0.044314638
+              },
+              {
+                "intent": "Reach out to support regarding issue",
+                "confidence_score": 0.023423623
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule a visit with doctor Alex Chen on April 3 at 02:15PM. I've reached out to support regarding this issue twice this week.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "positive",
+            "sentiment_score": 0.6079778075218201
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.607977785382952
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:00.386369+00:00"
+}

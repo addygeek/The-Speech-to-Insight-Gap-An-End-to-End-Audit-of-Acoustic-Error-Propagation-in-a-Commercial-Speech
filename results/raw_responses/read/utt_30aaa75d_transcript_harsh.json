@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "utterance_id": "utt_30aaa75d",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "Kindly cancel my $45.99 order that I placed yesterday. Please send the updated confirmation to the email address you have. I need this resolved by the end of the business day since I travel tomorrow morning."
+  },
+  "request_id": "01a16a53-72d4-7eb2-b421-54cab8692f1c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-72d4-7eb2-b421-54cab8692f1c",
+      "created": "2026-10-23T19:53:36.559Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 2
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": []
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I travel tomorrow morning.",
+            "start_word": 20,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.67996806
+              },
+              {
+                "intent": "Provide updated confirmation",
+                "confidence_score": 0.012050851
+              },
+              {
+                "intent": "Resolve order",
+                "confidence_score": 0.36375758
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Kindly cancel my $45.99 order that I placed yesterday.",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "negative",
+            "sentiment_score": -0.763397216796875
+          },
+          {
+            "text": "Please send the updated confirmation to the email address you have. I need this resolved by the end of the business day since I travel tomorrow morning.",
+            "start_word": 9,
+            "end_word": 35,
+            "sentiment": "neutral",
+            "sentiment_score": -0.26072803139686584
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.416316168648856
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:53:36.617678+00:00"
+}

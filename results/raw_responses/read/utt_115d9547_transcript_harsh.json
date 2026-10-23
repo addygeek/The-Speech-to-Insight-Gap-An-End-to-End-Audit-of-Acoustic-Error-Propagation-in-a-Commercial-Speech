@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_115d9547",
+    "condition": "harsh",
+    "text_source": "transcript_harsh",
+    "text": "I need to book an appointment with doctor Sam Patel on June 21 at 11AM. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a16a53-d1ca-7132-898e-1c46346fb711",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a16a53-d1ca-7132-898e-1c46346fb711",
+      "created": "2026-10-23T19:54:00.795Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.5521373
+              },
+              {
+                "topic": "Doctor sam patel",
+                "confidence_score": 0.2527137
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.7253903
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Sam Patel on June 21 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.08885277807712555
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.6756858229637146
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.38226930300394696
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T19:54:00.842908+00:00"
+}

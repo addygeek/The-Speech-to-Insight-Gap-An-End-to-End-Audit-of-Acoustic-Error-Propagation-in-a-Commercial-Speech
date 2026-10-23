@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "utterance_id": "utt_0e892660",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "I appreciate your help, Jordan Lee. The Boston support team was outstanding today. I'm willing to hold while you verify the record, and I have my account number on hand."
+  },
+  "request_id": "01a169fc-40bb-7b43-9885-0df42442c321",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-40bb-7b43-9885-0df42442c321",
+      "created": "2026-10-23T18:18:21.823Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Boston support team",
+                "confidence_score": 0.47482407
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Verify record",
+                "confidence_score": 0.077852145
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Jordan Lee. The Boston support team was outstanding today.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.8365957736968994
+          },
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number on hand.",
+            "start_word": 13,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.30427080392837524
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5344653773952175
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:21.904165+00:00"
+}

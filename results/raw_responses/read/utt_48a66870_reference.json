@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_48a66870",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Maria Santos on March 12 at 11:00 AM. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fd-aa96-71e2-a305-57f23ec95704",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-aa96-71e2-a305-57f23ec95704",
+      "created": "2026-10-23T18:19:54.875Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.6783177
+              },
+              {
+                "topic": "Dr. maria santos",
+                "confidence_score": 0.02679355
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.65617645
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.58156556
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Maria Santos on March 12 at 11:00 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.11151700466871262
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7973955869674683
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4456629630846855
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:54.955170+00:00"
+}

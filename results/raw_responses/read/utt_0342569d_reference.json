@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_0342569d",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Hi, my name is Jordan Lee. I do not want to cancel my order for $19.40. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a169fc-5381-7501-a405-e57dbb857e5a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-5381-7501-a405-e57dbb857e5a",
+      "created": "2026-10-23T18:18:26.656Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7385029
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.024210492
+              },
+              {
+                "topic": "Account issues",
+                "confidence_score": 0.3559188
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Resolve website issue",
+                "confidence_score": 0.012839403
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Jordan Lee.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06317617744207382
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. I already tried the website twice and it would not save the change under my account.",
+            "start_word": 6,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7818030714988708
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6039126044825504
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:26.729933+00:00"
+}

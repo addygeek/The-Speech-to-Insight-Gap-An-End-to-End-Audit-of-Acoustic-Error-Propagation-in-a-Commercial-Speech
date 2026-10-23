@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_7622d8d7",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I would like to cancel my order of $8.50 that I placed yesterday. Kindly send the updated confirmation to the email address you have. I need this resolved by the end of the business day since I am traveling tomorrow morning."
+  },
+  "request_id": "01a169fb-4a0f-70b0-aed3-4ae730cfd4b2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-4a0f-70b0-aed3-4ae730cfd4b2",
+      "created": "2026-10-23T18:17:18.816Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 24,
+            "end_word": 40,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.3288001
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.35013127
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 24,
+            "end_word": 40,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.5763339
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.43673798
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order of $8.50 that I placed yesterday.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.6692827939987183
+          },
+          {
+            "text": "Kindly send the updated confirmation to the email address you have. I need this resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 13,
+            "end_word": 40,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1740984469652176
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3426718204579455
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:18.897041+00:00"
+}

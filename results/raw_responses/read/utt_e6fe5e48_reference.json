@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_e6fe5e48",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Where is my package going to Seattle? It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fb-b773-7af1-b8bd-8f3f5e999521",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-b773-7af1-b8bd-8f3f5e999521",
+      "created": "2026-10-23T18:17:46.841Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.766582
+              },
+              {
+                "topic": "Seattle package",
+                "confidence_score": 0.012871958
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check package delivery and charge status",
+                "confidence_score": 0.0027978532
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06452402472496033
+          },
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.4805656373500824
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3484227151581735
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:46.908652+00:00"
+}

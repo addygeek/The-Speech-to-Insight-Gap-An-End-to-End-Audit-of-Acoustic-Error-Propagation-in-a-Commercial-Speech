@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_60149a73",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Please cancel my order for $8.50 placed yesterday. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fd-0fcd-7041-9284-04b925fde918",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-0fcd-7041-9284-04b925fde918",
+      "created": "2026-10-23T18:19:15.012Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 8,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.13452244
+              },
+              {
+                "topic": "Home office",
+                "confidence_score": 0.2984681
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "50 placed yesterday. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.79153126
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.8158053159713745
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8158053036393791
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:15.092549+00:00"
+}

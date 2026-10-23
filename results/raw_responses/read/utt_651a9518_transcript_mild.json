@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_651a9518",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "I need to book an appointment with doctor Alex Chen on April 3 at 09:30AM. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a169fa-cc23-7cc0-9706-00940dc2af52",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-cc23-7cc0-9706-00940dc2af52",
+      "created": "2026-10-23T18:16:46.661Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 19
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.6825246
+              },
+              {
+                "topic": "Doctor aaron chen",
+                "confidence_score": 0.0005564774
+              },
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.07872285
+              },
+              {
+                "topic": "Charge",
+                "confidence_score": 0.09727331
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.13874203
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Alex Chen on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06666940450668335
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7924724221229553
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4295709007664731
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:46.735562+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_799db2e1",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Since 9:30 AM, my internet has been down, making it impossible for me to work from Denver. Please avoid transferring me again unless the next representative can genuinely modify the booking."
+  },
+  "request_id": "01a169fc-bcd1-7560-a2df-a4ffe97a851e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-bcd1-7560-a2df-a4ffe97a851e",
+      "created": "2026-10-23T18:18:53.834Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 17,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.43181777
+              },
+              {
+                "topic": "Removing call",
+                "confidence_score": 0.0003790857
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 17,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Notify cancellation",
+                "confidence_score": 0.0020328662
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 9:30 AM, my internet has been down, making it impossible for me to work from Denver. Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8368619680404663
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8368619283040365
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:54.351129+00:00"
+}

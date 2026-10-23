@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_e365fd9e",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "What is the status of my package heading to Chicago? It is supposed to be delivered by June 21. I've already attempted to update my account on the website twice, but it didn't save the changes."
+  },
+  "request_id": "01a169fc-62c6-7d83-a025-fb87f2278533",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-62c6-7d83-a025-fb87f2278533",
+      "created": "2026-10-23T18:18:30.556Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've already attempted to update my account on the website twice, but it didn't save the changes.",
+            "start_word": 19,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9341731
+              },
+              {
+                "topic": "Account update",
+                "confidence_score": 0.4191351
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've already attempted to update my account on the website twice, but it didn't save the changes.",
+            "start_word": 19,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.32966363
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package heading to Chicago? It is supposed to be delivered by June 21.",
+            "start_word": 0,
+            "end_word": 18,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04635206237435341
+          },
+          {
+            "text": "I've already attempted to update my account on the website twice, but it didn't save the changes.",
+            "start_word": 19,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.6789283752441406
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.33277177810668945
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:30.634781+00:00"
+}

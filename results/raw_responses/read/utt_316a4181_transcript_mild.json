@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "utterance_id": "utt_316a4181",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Can you change my flight to Austin on March 12? I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a169fb-39c9-7d33-a253-d255740dcb28",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-39c9-7d33-a253-d255740dcb28",
+      "created": "2026-10-23T18:17:14.768Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8183026
+              },
+              {
+                "topic": "Checking record",
+                "confidence_score": 0.036218308
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9550273
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.593151
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.22770421
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.82730913
+              },
+              {
+                "intent": "Have account number",
+                "confidence_score": 0.020445298
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.4647492
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.27066123485565186
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.5275444984436035
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.43924081325531006
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:14.838089+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "utterance_id": "utt_cbd06c99",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I need to book an appointment with doctor Taylor Brooks on April 3 at 09:30AM. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fb-a622-7cf1-95cf-ffae46da6b1e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-a622-7cf1-95cf-ffae46da6b1e",
+      "created": "2026-10-23T18:17:42.340Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 19
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.5549485
+              },
+              {
+                "topic": "Doctor taylor brooks",
+                "confidence_score": 0.22677882
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.6038487
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.73247874
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Taylor Brooks on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05439387634396553
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.668493926525116
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3452833828173186
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:42.423228+00:00"
+}

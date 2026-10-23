@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_7eeb63ff",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I want to schedule an appointment with doctor Alex Chen for April 3 at 11AM. I've reached out to support about this issue for the second time this week."
+  },
+  "request_id": "01a169fc-d67a-7712-b54d-be373334a629",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-d67a-7712-b54d-be373334a629",
+      "created": "2026-10-23T18:19:00.371Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support about this issue for the second time this week.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.86082983
+              },
+              {
+                "topic": "Patient support",
+                "confidence_score": 0.012596684
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support about this issue for the second time this week.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.67079425
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.8406496
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Alex Chen for April 3 at 11AM. I've reached out to support about this issue for the second time this week.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04885788634419441
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.0488578852485208
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:00.452260+00:00"
+}

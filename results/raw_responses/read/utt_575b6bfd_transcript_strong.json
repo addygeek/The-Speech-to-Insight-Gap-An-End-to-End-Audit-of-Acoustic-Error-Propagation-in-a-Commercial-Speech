@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "utterance_id": "utt_575b6bfd",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "Hello. I'm Sam Patel. I would like to keep my order for $45.99. The previous representative told me to reach out again if I still see the charge."
+  },
+  "request_id": "01a169fb-c05a-7d63-b418-70857ebdcce8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-c05a-7d63-b418-70857ebdcce8",
+      "created": "2026-10-23T18:17:49.139Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous representative told me to reach out again if I still see the charge.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order management",
+                "confidence_score": 0.128413
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous representative told me to reach out again if I still see the charge.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.54149735
+              },
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.7212697
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.13211342692375183
+          },
+          {
+            "text": "I would like to keep my order for $45.99.",
+            "start_word": 4,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.4242592751979828
+          },
+          {
+            "text": "The previous representative told me to reach out again if I still see the charge.",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7435102462768555
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.16735634050871195
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:49.219769+00:00"
+}

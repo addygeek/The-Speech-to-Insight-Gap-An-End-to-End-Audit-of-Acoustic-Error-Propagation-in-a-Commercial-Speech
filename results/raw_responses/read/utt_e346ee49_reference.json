@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "utterance_id": "utt_e346ee49",
+    "condition": "",
+    "text_source": "reference",
+    "text": "Please cancel my order for $45.99 placed yesterday. I already tried the website twice and it would not save the change under my account. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a169fd-3fea-7ad3-a109-15e829fedc38",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-3fea-7ad3-a109-15e829fedc38",
+      "created": "2026-10-23T18:19:27.199Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 24,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7655022
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.39852658
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.021081544
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 24,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.57610166
+              },
+              {
+                "intent": "Send confirmation email",
+                "confidence_score": 0.1500808
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45.99 placed yesterday. I already tried the website twice and it would not save the change under my account.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.7380562424659729
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 24,
+            "end_word": 37,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2546204626560211
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5694157800009084
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:27.279222+00:00"
+}

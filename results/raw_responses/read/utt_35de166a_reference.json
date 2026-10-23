@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "utterance_id": "utt_35de166a",
+    "condition": "",
+    "text_source": "reference",
+    "text": "I need to cancel my $250.00 order placed yesterday. Please avoid transferring me again unless the next representative can modify the booking. I require this resolved by the end of the business day as I travel tomorrow morning."
+  },
+  "request_id": "01a169fb-1d40-7b22-97e2-cb00e8e0a475",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fb-1d40-7b22-97e2-cb00e8e0a475",
+      "created": "2026-10-23T18:17:07.864Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I require this resolved by the end of the business day as I travel tomorrow morning.",
+            "start_word": 22,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.36022264
+              },
+              {
+                "topic": "Reservation",
+                "confidence_score": 0.0028004004
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.8265725
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I require this resolved by the end of the business day as I travel tomorrow morning.",
+            "start_word": 22,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.75602525
+              },
+              {
+                "intent": "Resolve order",
+                "confidence_score": 0.002553677
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to cancel my $250.00 order placed yesterday. Please avoid transferring me again unless the next representative can modify the booking. I require this resolved by the end of the business day as I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.6779267191886902
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6779267137700861
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:17:07.932598+00:00"
+}

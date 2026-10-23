@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "utterance_id": "utt_35d32a20",
+    "condition": "strong",
+    "text_source": "transcript_strong",
+    "text": "I need to book an appointment with doctor Alex Chen on October 5 at 02:15PM. I am calling for my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a169fc-bfa4-7990-a7fc-db06f76218a7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-bfa4-7990-a7fc-db06f76218a7",
+      "created": "2026-10-23T18:18:54.654Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling for my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.7121807
+              },
+              {
+                "topic": "Doctor alex chen",
+                "confidence_score": 0.17996266
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling for my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor alex chen",
+                "confidence_score": 0.22678004
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Alex Chen on October 5 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.02894783578813076
+          },
+          {
+            "text": "I am calling for my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.6586785316467285
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.33530330657958984
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:54.725425+00:00"
+}

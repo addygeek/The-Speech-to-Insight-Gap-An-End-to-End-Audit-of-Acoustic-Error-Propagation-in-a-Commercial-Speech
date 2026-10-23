@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "utterance_id": "utt_24f683ac",
+    "condition": "clean",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Denver. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a169fd-6293-7492-a455-ab9035054aae",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fd-6293-7492-a455-ab9035054aae",
+      "created": "2026-10-23T18:19:36.186Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet issues",
+                "confidence_score": 0.0085814465
+              },
+              {
+                "topic": "Support requests",
+                "confidence_score": 0.0068223104
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request technical assistance",
+                "confidence_score": 0.0142412605
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Denver. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7393664717674255
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7393664768763951
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:19:36.259896+00:00"
+}

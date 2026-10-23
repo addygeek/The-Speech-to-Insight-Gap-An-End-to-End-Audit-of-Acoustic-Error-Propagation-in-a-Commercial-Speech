@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "utterance_id": "utt_c22209ab",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Thank you, Jordan Lee. The support team in Boston was excellent today. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a169fc-1d0f-7d12-a49a-00bad6cdf778",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fc-1d0f-7d12-a49a-00bad6cdf778",
+      "created": "2026-10-23T18:18:13.053Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 37
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Boston support",
+                "confidence_score": 0.10515865
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The support team in Boston was excellent today. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 4,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Expressing gratitude",
+                "confidence_score": 0.0047451262
+              }
+            ]
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Requesting removal from call list",
+                "confidence_score": 0.030165287
+              },
+              {
+                "intent": "Requesting jordan lee's patience",
+                "confidence_score": 0.0003313373
+              },
+              {
+                "intent": "Requesting removal from call list",
+                "confidence_score": 0.018600274
+              },
+              {
+                "intent": "Refusing to transfer call",
+                "confidence_score": 0.00437989
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan Lee. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6733448505401611
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7028116583824158
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.057738278061151505
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:18:13.121427+00:00"
+}

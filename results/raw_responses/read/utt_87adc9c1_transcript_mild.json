@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "utterance_id": "utt_87adc9c1",
+    "condition": "mild",
+    "text_source": "transcript_mild",
+    "text": "Since 11AM, my Internet has been out, preventing me from working in Seattle. I've reached out to support about this issue twice this week."
+  },
+  "request_id": "01a169fa-f02b-7c40-b480-9f1f9d8de21d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a169fa-f02b-7c40-b480-9f1f9d8de21d",
+      "created": "2026-10-23T18:16:55.754Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support about this issue twice this week.",
+            "start_word": 13,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.9273882
+              },
+              {
+                "topic": "Support request",
+                "confidence_score": 0.2159044
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support about this issue twice this week.",
+            "start_word": 13,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Discussing Internet outage",
+                "confidence_score": 5.6092143e-05
+              },
+              {
+                "intent": "Reaching out to support",
+                "confidence_score": 0.5446629
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 11AM, my Internet has been out, preventing me from working in Seattle. I've reached out to support about this issue twice this week.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.616671621799469
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.616671621799469
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-10-23T18:16:55.833606+00:00"
+}
