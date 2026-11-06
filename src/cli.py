@@ -18,6 +18,14 @@ from src.extended_analysis import run_extended
 from src.logging_utils import setup_logging
 from src.manifest import Manifest, Stage, Status
 from src.perturb_audio import run_perturb
+from src.action_policy import analyze_actions
+from src.audit_analysis import analyze_conditions
+from src.extra_conditions import run_extra_conditions
+from src.followup_assets import run_followup_assets
+from src.llm_label_stability import analyze_llm_stability
+from src.second_voice import run_second_voice
+from src.semantic_match import analyze_semantic
+from src.stability_baseline import analyze_stability, run_stability
 from src.statistical_analysis import run_metrics, run_statistics
 from src.validate_audio import run_validate_audio
 from src.validate_dataset import run_validate_dataset
@@ -91,6 +99,13 @@ def build_parser() -> argparse.ArgumentParser:
     rf = sub.add_parser("run-full", parents=[common])
     rf.add_argument("--validate", action="store_true")
     sub.add_parser("validate-results", parents=[common])
+    ex = sub.add_parser("extra-conditions", parents=[common])
+    ex.add_argument("--items", type=int, default=None)
+    sub.add_parser("second-voice", parents=[common])
+    sub.add_parser("followup-analysis", parents=[common])
+    st = sub.add_parser("stability", parents=[common])
+    st.add_argument("--repeats", type=int, default=3)
+    st.add_argument("--analyze-only", action="store_true")
     return p
 
 
@@ -151,6 +166,25 @@ def main(argv: list[str] | None = None) -> int:
         if args.validate and not run_validate_results(cfg, force=args.force):
             return 1
         cmd_run_pipeline(cfg, args, split="full", count=cfg.full_utterances)
+    elif args.command == "stability":
+        budget.load(cfg.results_dir / "cost_report.json")
+        if not args.analyze_only:
+            run_stability(cfg, budget, repeats=args.repeats, split=resolve_split(cfg, None))
+        analyze_stability(cfg, repeats=args.repeats, split=resolve_split(cfg, None))
+    elif args.command == "extra-conditions":
+        budget.load(cfg.results_dir / "cost_report.json")
+        run_extra_conditions(cfg, budget, split=resolve_split(cfg, None), items=args.items)
+    elif args.command == "second-voice":
+        budget.load(cfg.results_dir / "cost_report.json")
+        run_second_voice(cfg, budget, split=resolve_split(cfg, None))
+    elif args.command == "followup-analysis":
+        split = resolve_split(cfg, None)
+        analyze_stability(cfg, split=split)
+        analyze_conditions(cfg, split=split)
+        analyze_semantic(cfg, split=split)
+        analyze_actions(cfg, split=split)
+        analyze_llm_stability(cfg, split=split)
+        run_followup_assets(cfg)
     elif args.command == "validate-results":
         return 0 if run_validate_results(cfg, force=args.force) else 1
     else:

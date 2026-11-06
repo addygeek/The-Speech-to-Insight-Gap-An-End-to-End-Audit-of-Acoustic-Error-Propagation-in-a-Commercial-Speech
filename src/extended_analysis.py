@@ -208,6 +208,8 @@ def _span_tables(cfg: ExperimentConfig, transcripts: pd.DataFrame) -> dict[str, 
                     bucket["raw_missing"] += 1
         by_condition[str(cond)] = {
             "relaxed_mean": float(np.mean(rates)) if rates else float("nan"),
+            "relaxed_lo": _bootstrap_mean(np.asarray(rates, dtype=float), 2000, 42)[1] if rates else float("nan"),
+            "relaxed_hi": _bootstrap_mean(np.asarray(rates, dtype=float), 2000, 42)[2] if rates else float("nan"),
             "n": int(len(rates)),
         }
         by_type[str(cond)] = type_counts
@@ -486,7 +488,11 @@ def run_extended(cfg: ExperimentConfig) -> dict[str, object]:
         rate_summary[cond] = {
             "wer": _bootstrap_mean(group["wer"].to_numpy(dtype=float), 2000, 42),
             "cer": _bootstrap_mean(group["cer"].to_numpy(dtype=float), 2000, 42),
-            "relaxed_span": (relaxed, float("nan"), float("nan")),
+            "relaxed_span": (
+                relaxed,
+                float(spans["by_condition"].get(cond, {}).get("relaxed_lo", float("nan"))),
+                float(spans["by_condition"].get(cond, {}).get("relaxed_hi", float("nan"))),
+            ),
             "sentiment": _bootstrap_mean(
                 group["sentiment_disagreement_ref_vs_transcript"].astype(float).to_numpy(), 2000, 42
             ),
