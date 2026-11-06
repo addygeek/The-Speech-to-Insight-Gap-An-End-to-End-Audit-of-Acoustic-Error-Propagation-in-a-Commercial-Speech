@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering\small
+\caption{String versus semantic disagreement (\%). Semantic = string-different and judged a different goal or subject by gpt-4o-mini (temperature 0). Para. = share of string disagreements judged equivalent.}
+\label{tab:semantic}
+\resizebox{\linewidth}{!}{\begin{tabular}{lrrrrrrr}
+\toprule
+Comparison & Items & \multicolumn{3}{c}{Intent: str. / sem. / para.} & \multicolumn{3}{c}{Topic: str. / sem. / para.} \\
+\midrule
+Reference text, repeated call & 600 & 62.2 & 36.0 & 42.1 & 80.3 & 31.2 & 61.2 \\
+Reference vs clean transcript & 600 & 60.5 & 37.2 & 38.6 & 79.5 & 33.7 & 57.7 \\
+Clean vs 0 dB, identical transcript & 495 & 60.4 & 37.2 & 38.5 & 79.6 & 32.9 & 58.6 \\
+\bottomrule
+\end{tabular}}
+\end{table}

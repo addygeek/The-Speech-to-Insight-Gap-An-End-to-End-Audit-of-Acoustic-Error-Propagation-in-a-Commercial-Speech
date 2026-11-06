@@ -182,11 +182,26 @@ Cancellations, which often map to the closed label `cancellation`, stay at 3–8
 
 ---
 
+## Follow-up experiments
+
+Added after peer review. Run with `--live`; every result is cached under `results/`.
+
+| Experiment | Command | Output | Result |
+|---|---|---|---|
+| Stability baseline, exact-match and formatting controls | `python -m src stability --live` | `results/stability.json` | Same-text repeat: intent 61.6%, topics 80.5%, sentiment 0%. Cross-condition rates equal this floor. |
+| Harsher conditions (pink to -10 dB, babble, reverb, telephone codec) | `python -m src extra-conditions --live --items 300` | `results/conditions_extra.json` | WER 0.376 at -10 dB pink and 0.328 at 0 dB babble. Intent 77.6%, topics 92.5%, sentiment 5.4% at -10 dB. |
+| Two more TTS voices | `python -m src second-voice --live` | `results/conditions_extra.json` | Same robustness and floor as the main voice. |
+| Semantic judge for intent and topics | `python -m src followup-analysis` | `results/semantic_match.json` | 38.5-42.1% of intent disagreements are paraphrases; semantic intent disagreement is 36.0% on identical text. Judge not yet validated by humans: label `results/human_label_sample.csv` per `data/annotation-guide.md`. |
+| LLM labeler at temperature 0 and 1 | `python -m src followup-analysis` | `results/llm_stability.json` | gpt-4o-mini intent changes 7.7% at T=0 and 38.3% at T=1. |
+| Route and escalate action | `python -m src followup-analysis` | `results/actions.json` | Same-text route changes 27.1%; 45.3% at -10 dB pink noise. |
+
+Not done: human speech, a second ASR vendor, and the human validation of the judge.
+
 ## What the results mean
 
 1. **Report paired differences, not marginal ones.** The marginal intervals at clean and 0 dB overlap, yet the paired interval excludes zero. Comparing condition means alone would call 0 dB harmless.
 2. **Span metrics need spoken forms.** Without normalizing times and currency, a span metric measures smart formatting, not recognition (0.17 raw against 0.003 rescored).
-3. **Open labels need a stability baseline.** Most of the intent and topic gap exists before any acoustic change. Before attributing a label change to noise, measure how often the label changes when the words do not.
+3. **Open labels need a stability baseline.** Sending identical text to text intelligence again changes the intent phrase on 61.6% of items and the topic set on 80.5%, the same rates as across every noise level. Measure that rate before attributing a label change to noise.
 4. **Sentiment transfers.** In this configuration, sentiment can be read from the audio interface without loss relative to the text interface.
 
 ## Limitations

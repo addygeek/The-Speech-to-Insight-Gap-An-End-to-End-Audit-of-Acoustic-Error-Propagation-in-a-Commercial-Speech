@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering\small
+\caption{Downstream action disagreement (\%). Route is the queue the intent phrase maps to; escalate is negative sentiment; action is either differing. The first row is the instability floor.}
+\label{tab:actions}
+\resizebox{\linewidth}{!}{\begin{tabular}{lrrrr}
+\toprule
+Comparison & Items & Route & Escalate & Action \\
+\midrule
+Same reference text, repeated call (floor) & 597 & 27.1 [23.6, 30.8] & 0.0 [0.0, 0.0] & 27.1 [23.6, 30.8] \\
+Reference vs Clean & 596 & 26.0 [22.5, 29.7] & 0.0 [0.0, 0.0] & 26.0 [22.5, 29.7] \\
+Reference vs 15 dB pink & 596 & 27.5 [24.2, 31.2] & 0.0 [0.0, 0.0] & 27.5 [24.2, 31.2] \\
+Reference vs 8 dB pink & 597 & 32.2 [28.5, 35.8] & 0.0 [0.0, 0.0] & 32.2 [28.5, 35.8] \\
+Reference vs 0 dB pink & 590 & 27.3 [23.6, 30.7] & 0.0 [0.0, 0.0] & 27.3 [23.6, 30.7] \\
+Reference vs $-5$ dB pink & 296 & 29.4 [24.0, 34.8] & 0.7 [0.0, 1.7] & 29.7 [24.7, 35.1] \\
+Reference vs $-10$ dB pink & 287 & 43.9 [38.0, 49.5] & 4.5 [2.4, 7.0] & 45.3 [39.7, 50.9] \\
+Reference vs 5 dB babble & 299 & 29.4 [24.4, 34.8] & 0.0 [0.0, 0.0] & 29.4 [24.4, 34.8] \\
+Reference vs 0 dB babble & 294 & 38.8 [33.3, 44.6] & 2.4 [0.7, 4.1] & 40.1 [35.0, 45.9] \\
+Reference vs Reverb 0.8 s & 299 & 29.4 [24.4, 34.5] & 0.3 [0.0, 1.0] & 29.4 [24.4, 34.5] \\
+Reference vs Telephone codec & 298 & 26.5 [22.1, 31.5] & 0.0 [0.0, 0.0] & 26.5 [22.1, 31.5] \\
+Reference vs Phone + 5 dB babble & 299 & 28.8 [24.1, 34.1] & 1.0 [0.0, 2.3] & 29.8 [24.7, 35.1] \\
+Reference vs Orion, clean & 149 & 25.5 [18.1, 32.9] & 2.0 [0.0, 4.7] & 26.8 [19.5, 34.2] \\
+Reference vs Orion, 0 dB & 149 & 24.2 [17.4, 30.9] & 0.0 [0.0, 0.0] & 24.2 [17.4, 30.9] \\
+Reference vs Luna, clean & 149 & 32.9 [25.5, 40.3] & 0.0 [0.0, 0.0] & 32.9 [25.5, 40.3] \\
+Reference vs Luna, 0 dB & 148 & 25.0 [18.2, 32.4] & 0.0 [0.0, 0.0] & 25.0 [18.2, 32.4] \\
+\bottomrule
+\end{tabular}}
+\end{table}

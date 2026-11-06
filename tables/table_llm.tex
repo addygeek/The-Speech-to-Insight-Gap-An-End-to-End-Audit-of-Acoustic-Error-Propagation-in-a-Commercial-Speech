@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small
+\caption{Repeat disagreement of an LLM labeler on identical reference text (3 calls per item), by temperature (\%).}
+\label{tab:llm}
+\resizebox{\linewidth}{!}{\begin{tabular}{lrrrrr}
+\toprule
+Model & Temp. & Items & Intent (string) & Intent (semantic) & Sentiment \\
+\midrule
+gpt-4o-mini & 0 & 200 & 7.7 [4.7, 10.7] & 3.0 [1.3, 5.0] & 4.3 [2.3, 6.7] \\
+gpt-4o-mini & 1 & 200 & 38.3 [33.2, 43.7] & 14.8 [10.8, 18.8] & 6.3 [3.7, 9.0] \\
+claude-haiku-5.5 & 0 & 100 & 31.7 [23.7, 40.3] & 7.7 [3.0, 13.0] & 1.0 [0.0, 3.0] \\
+claude-haiku-5.5 & 1 & 95 & 25.3 [17.9, 32.6] & 4.9 [1.4, 9.1] & 1.8 [0.0, 4.6] \\
+\bottomrule
+\end{tabular}}
+\end{table}

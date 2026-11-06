@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering\small
+\caption{Label disagreement (\%, bootstrap 95\% interval) on identical input and across conditions. Repeated calls use 4 calls per item. The first two rows are the noise floor.}
+\label{tab:stability}
+\resizebox{\linewidth}{!}{\begin{tabular}{lrrrr}
+\toprule
+Comparison & Items & Intent & Topic set & Sentiment \\
+\midrule
+Same reference text, repeated calls & 600 & 61.6 [58.7, 64.7] & 80.5 [78.8, 82.3] & 0.0 \\
+Same clean transcript, repeated calls & 600 & 62.9 [60.0, 65.9] & 78.9 [76.9, 80.8] & 0.0 \\
+Reference vs Clean transcript & 600 & 60.5 [56.5, 64.5] & 79.5 [76.2, 82.7] & 0.2 \\
+Reference vs 15 dB pink transcript & 600 & 63.7 [60.0, 67.5] & 81.8 [78.7, 84.8] & 0.2 \\
+Reference vs 8 dB pink transcript & 600 & 66.0 [62.2, 69.5] & 80.3 [77.2, 83.5] & 0.5 \\
+Reference vs 0 dB pink transcript & 600 & 63.7 [59.7, 67.5] & 80.0 [77.0, 83.5] & 0.2 \\
+Clean vs 0 dB, identical transcript & 495 & 60.4 [56.4, 64.6] & 79.6 [76.0, 83.2] & 0.0 \\
+Reference vs Clean, byte-identical text only & 186 & 58.1 [51.1, 65.1] & 78.5 [72.6, 83.9] & 0.0 \\
+Reference vs 15 dB pink, byte-identical text only & 189 & 57.7 [50.3, 65.1] & 82.5 [77.2, 87.3] & 0.0 \\
+Reference vs 8 dB pink, byte-identical text only & 185 & 58.9 [51.9, 65.9] & 80.5 [74.1, 85.9] & 0.0 \\
+Reference vs 0 dB pink, byte-identical text only & 171 & 58.5 [50.9, 65.5] & 78.9 [72.5, 84.8] & 0.0 \\
+\bottomrule
+\end{tabular}}
+\end{table}
