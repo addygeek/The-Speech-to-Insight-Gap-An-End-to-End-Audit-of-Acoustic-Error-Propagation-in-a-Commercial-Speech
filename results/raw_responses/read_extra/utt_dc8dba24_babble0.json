@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_dc8dba24",
+    "text_source": "transcript_babble0",
+    "text": "I'd like to schedule an appointment with doctor Alex Chen for Octavia fifth at 11AM. Please don't transfer me again unless the next person at my Jenny, I will not invite."
+  },
+  "request_id": "01a1b291-b77d-7e60-a2bd-fa2f85092282",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-b77d-7e60-a2bd-fa2f85092282",
+      "created": "2026-11-06T20:34:16.726Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person at my Jenny, I will not invite.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Scheduling appointment",
+                "confidence_score": 0.013847344
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person at my Jenny, I will not invite.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alex chen",
+                "confidence_score": 0.48237917
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Alex Chen for Octavia fifth at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1488768458366394
+          },
+          {
+            "text": "Please don't transfer me again unless the next person at my Jenny, I will not invite.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8999177813529968
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3633251633754997
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:17.062586+00:00"
+}

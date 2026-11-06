@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_c5c40c95",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $75 twice on my card, like, $74,400 when you charge. I already tried the website twice, and it's not a sample."
+  },
+  "request_id": "01a1b292-235e-7b82-888c-b462f0968844",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-235e-7b82-888c-b462f0968844",
+      "created": "2026-11-06T20:34:44.417Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 24
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it's not a sample.",
+            "start_word": 13,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Expense discrepancy",
+                "confidence_score": 0.00036547778
+              },
+              {
+                "topic": "Website test",
+                "confidence_score": 0.0025450757
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it's not a sample.",
+            "start_word": 13,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Reporting charge",
+                "confidence_score": 0.029704733
+              },
+              {
+                "intent": "Recounting previous attempts",
+                "confidence_score": 0.028352588
+              },
+              {
+                "intent": "Confirming website quality",
+                "confidence_score": 0.0042108
+              },
+              {
+                "intent": "Suggesting website trial",
+                "confidence_score": 9.419841e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75 twice on my card, like, $74,400 when you charge. I already tried the website twice, and it's not a sample.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.812850296497345
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8128502789665671
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:44.469187+00:00"
+}

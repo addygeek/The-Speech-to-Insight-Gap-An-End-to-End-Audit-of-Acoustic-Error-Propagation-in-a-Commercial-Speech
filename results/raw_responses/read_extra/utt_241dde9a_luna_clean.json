@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_241dde9a",
+    "text_source": "transcript_luna_clean",
+    "text": "Thank you, Taylor Books. The support team in Austin was excellent today. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b29d-c0c1-71c1-819a-ca2f54ae91a5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-c0c1-71c1-819a-ca2f54ae91a5",
+      "created": "2026-11-06T20:47:25.472Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Taylor books",
+                "confidence_score": 0.80829614
+              },
+              {
+                "topic": "Support team",
+                "confidence_score": 0.34000555
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.84226334
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.5002021
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Books. The support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6859913468360901
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6477805972099304
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.022575020790100098
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:25.525540+00:00"
+}

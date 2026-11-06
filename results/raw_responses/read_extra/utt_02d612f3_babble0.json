@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_02d612f3",
+    "text_source": "transcript_babble0",
+    "text": "I would like to cancel my account with the $19 and paid that I paid yesterday. This week, I've contacted you twice regarding the same issue. The last agent told me to call back, and charged you with"
+  },
+  "request_id": "01a1b291-9ef0-79f0-a31e-9cf3562459bf",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9ef0-79f0-a31e-9cf3562459bf",
+      "created": "2026-11-06T20:34:10.509Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 46
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This week, I've contacted you twice regarding the same issue.",
+            "start_word": 16,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Account cancellation",
+                "confidence_score": 0.66868633
+              },
+              {
+                "topic": "Customer communication",
+                "confidence_score": 0.0098477695
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This week, I've contacted you twice regarding the same issue.",
+            "start_word": 16,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Cancel account",
+                "confidence_score": 0.8821567
+              },
+              {
+                "intent": "Contact agent about account",
+                "confidence_score": 0.0005745433
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my account with the $19 and paid that I paid yesterday. This week, I've contacted you twice regarding the same issue. The last agent told me to call back, and charged you with",
+            "start_word": 0,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.7603701949119568
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7603701715884001
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:10.591916+00:00"
+}

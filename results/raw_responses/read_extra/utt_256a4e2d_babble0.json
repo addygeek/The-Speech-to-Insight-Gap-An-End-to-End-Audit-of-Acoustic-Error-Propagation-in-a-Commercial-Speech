@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_256a4e2d",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $19.40 placed yesterday. The last agent I spoke with last week, I called back in a short answer. Thank you."
+  },
+  "request_id": "01a1b292-8ed2-7172-9b43-38952caab8c9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-8ed2-7172-9b43-38952caab8c9",
+      "created": "2026-11-06T20:35:11.775Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 23,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.24503943
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 23,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.2541559
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.0098195905
+              },
+              {
+                "intent": "Express gratitude",
+                "confidence_score": 0.018577943
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $19.40 placed yesterday. The last agent I spoke with last week, I called back in a short answer.",
+            "start_word": 0,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.5644813776016235
+          },
+          {
+            "text": "Thank you.",
+            "start_word": 23,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": 0.13272413611412048
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4991183876991272
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:11.877694+00:00"
+}

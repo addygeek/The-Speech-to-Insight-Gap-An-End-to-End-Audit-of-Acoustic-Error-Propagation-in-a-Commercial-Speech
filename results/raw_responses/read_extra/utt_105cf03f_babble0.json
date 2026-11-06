@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_105cf03f",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $120 twice on my card ending at $4,000. This is the second time I have contacted you about the same problem."
+  },
+  "request_id": "01a1b291-a319-7740-8986-4165a0d28b6b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a319-7740-8986-4165a0d28b6b",
+      "created": "2026-11-06T20:34:11.600Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card ending at $4,000. This is the second time I have contacted you about the same problem.",
+            "start_word": 1,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.0110699525
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card ending at $4,000. This is the second time I have contacted you about the same problem.",
+            "start_word": 1,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Fix card charge",
+                "confidence_score": 0.0032034435
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card ending at $4,000. This is the second time I have contacted you about the same problem.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.772280752658844
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7722806930541992
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:11.652313+00:00"
+}

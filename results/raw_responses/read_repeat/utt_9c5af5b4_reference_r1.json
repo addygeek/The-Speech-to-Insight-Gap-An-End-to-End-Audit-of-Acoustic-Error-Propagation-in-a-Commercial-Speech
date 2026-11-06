@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_9c5af5b4",
+    "text_source": "reference",
+    "text": "I noticed a double charge of $120.00 on my card ending in 4421. Kindly send the revised confirmation to my email address you have recorded."
+  },
+  "request_id": "01a1b254-c50e-7ed2-9956-7c589539465f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-c50e-7ed2-9956-7c589539465f",
+      "created": "2026-11-06T19:27:42.674Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to my email address you have recorded.",
+            "start_word": 13,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Double charge",
+                "confidence_score": 0.91971177
+              },
+              {
+                "topic": "Card confirmation",
+                "confidence_score": 0.5908169
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to my email address you have recorded.",
+            "start_word": 13,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Confirm double charge",
+                "confidence_score": 0.04538906
+              },
+              {
+                "intent": "Send revised confirmation",
+                "confidence_score": 0.7070784
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed a double charge of $120.00 on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7077293992042542
+          },
+          {
+            "text": "Kindly send the revised confirmation to my email address you have recorded.",
+            "start_word": 13,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0262262262403965
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.37626558734524634
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:42.753431+00:00"
+}

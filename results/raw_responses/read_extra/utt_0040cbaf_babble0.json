@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_0040cbaf",
+    "text_source": "transcript_babble0",
+    "text": "What is the status of my package? Think it is expected by April 3. I'm willing to hold while you're getting that details, and I have my account"
+  },
+  "request_id": "01a1b291-c983-7dc0-83e8-1e419b677fa3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c983-7dc0-83e8-1e419b677fa3",
+      "created": "2026-11-06T20:34:21.260Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "What is the status of my package?",
+            "start_word": 1,
+            "end_word": 7,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.90250987
+              },
+              {
+                "topic": "Account details",
+                "confidence_score": 0.39914823
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "What is the status of my package?",
+            "start_word": 1,
+            "end_word": 7,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.32834724
+              },
+              {
+                "intent": "Hold while receiving details",
+                "confidence_score": 0.1368313
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package? Think it is expected by April 3. I'm willing to hold while you're getting that details, and I have my account",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0928523987531662
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.09285239612354952
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:21.337567+00:00"
+}

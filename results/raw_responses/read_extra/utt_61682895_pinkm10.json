@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_61682895",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 02:03PM. I can wait on the line when he comes to the doctor, and I can have my account here."
+  },
+  "request_id": "01a1b292-b9ab-7983-b9eb-f0ef79bb9a94",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-b9ab-7983-b9eb-f0ef79bb9a94",
+      "created": "2026-11-06T20:35:22.938Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line when he comes to the doctor, and I can have my account here.",
+            "start_word": 15,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.3527994
+              },
+              {
+                "topic": "Doctor jordan lee",
+                "confidence_score": 0.6578386
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line when he comes to the doctor, and I can have my account here.",
+            "start_word": 15,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.2859122
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.8048526
+              },
+              {
+                "intent": "Check account",
+                "confidence_score": 0.0057031857
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 02:03PM. I can wait on the line when he comes to the doctor, and I can have my account here.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15035469830036163
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1503547110208651
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:23.002282+00:00"
+}

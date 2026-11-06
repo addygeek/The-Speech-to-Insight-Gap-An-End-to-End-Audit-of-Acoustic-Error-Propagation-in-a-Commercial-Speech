@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_60a78303",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you take this bike to Austin on March 12? Please send me updated confirmation email address you have on file. This is the second time I have contacted you both about the same problem."
+  },
+  "request_id": "01a1b293-3a9e-7832-aac4-49a975c35ee0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-3a9e-7832-aac4-49a975c35ee0",
+      "created": "2026-11-06T20:35:55.775Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted you both about the same problem.",
+            "start_word": 21,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Bike tour",
+                "confidence_score": 0.2706025
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.7148825
+              },
+              {
+                "topic": "Problem resolution",
+                "confidence_score": 0.27605897
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted you both about the same problem.",
+            "start_word": 21,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Request confirmation email",
+                "confidence_score": 0.10735641
+              },
+              {
+                "intent": "Communicate problem",
+                "confidence_score": 0.024430444
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you take this bike to Austin on March 12? Please send me updated confirmation email address you have on file.",
+            "start_word": 0,
+            "end_word": 20,
+            "sentiment": "neutral",
+            "sentiment_score": 0.12948931753635406
+          },
+          {
+            "text": "This is the second time I have contacted you both about the same problem.",
+            "start_word": 21,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.5887532830238342
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1651743253072103
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:55.830640+00:00"
+}

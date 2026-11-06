@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_e94533a2",
+    "text_source": "transcript_reverb",
+    "text": "Since 11AM, my Internet has been unavailable, preventing me from working in Boston. The previous agent I talked to suggested calling back if the charge remains visible."
+  },
+  "request_id": "01a1b291-a53c-79e3-8f18-14644118c24c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a53c-79e3-8f18-14644118c24c",
+      "created": "2026-11-06T20:34:12.013Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to suggested calling back if the charge remains visible.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet availability",
+                "confidence_score": 0.7410108
+              },
+              {
+                "topic": "Availability",
+                "confidence_score": 0.00783407
+              },
+              {
+                "topic": "Work in boston",
+                "confidence_score": 0.036753263
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to suggested calling back if the charge remains visible.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Notify service interruption",
+                "confidence_score": 0.00012708816
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 11AM, my Internet has been unavailable, preventing me from working in Boston. The previous agent I talked to suggested calling back if the charge remains visible.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6860107183456421
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6860106973087087
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:12.066013+00:00"
+}

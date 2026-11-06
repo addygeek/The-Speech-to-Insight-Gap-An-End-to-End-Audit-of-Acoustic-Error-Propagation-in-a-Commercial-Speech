@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_30b4dbf2",
+    "text_source": "transcript_luna_harsh",
+    "text": "I was charged $250 twice on my card ending in 4421. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b29d-de26-7971-bfb8-b2b48c1d0d1c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-de26-7971-bfb8-b2b48c1d0d1c",
+      "created": "2026-11-06T20:47:33.020Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 11,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.3242644
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.25775075
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 11,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Send updated confirmation",
+                "confidence_score": 0.0034922897
+              },
+              {
+                "intent": "Send updated confirmation to same email address",
+                "confidence_score": 0.0053541935
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "negative",
+            "sentiment_score": -0.7769099473953247
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 11,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": -0.15727415680885315
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4449621949877058
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:33.074330+00:00"
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_196ec2f5",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Kayla Brooks. I do not want to cancel my order for $25.99. Please send me updated confirmation."
+  },
+  "request_id": "01a1b292-bde4-7243-b477-b92d1b72f124",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-bde4-7243-b477-b92d1b72f124",
+      "created": "2026-11-06T20:35:23.890Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation.",
+            "start_word": 16,
+            "end_word": 20,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.17457813
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation.",
+            "start_word": 16,
+            "end_word": 20,
+            "intents": [
+              {
+                "intent": "Request a modern confirmation",
+                "confidence_score": 3.2286887e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Kayla Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.060073137283325195
+          },
+          {
+            "text": "I do not want to cancel my order for $25.99.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.7949776649475098
+          },
+          {
+            "text": "Please send me updated confirmation.",
+            "start_word": 16,
+            "end_word": 20,
+            "sentiment": "neutral",
+            "sentiment_score": -0.08269449323415756
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.33697026116507395
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:23.942481+00:00"
+}

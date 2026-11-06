@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_ecedd1ed",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Jordan Lee. I do not want to cancel my order for $8.08. This is the second time I have contacted the police canceled. Thank you. This week?"
+  },
+  "request_id": "01a1b292-3deb-7e12-b133-4baf8fbe95d1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-3deb-7e12-b133-4baf8fbe95d1",
+      "created": "2026-11-06T20:34:51.056Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank you. This week?",
+            "start_word": 27,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Canceling order",
+                "confidence_score": 0.09506607
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you. This week?",
+            "start_word": 27,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.44788617
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Jordan Lee.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.006235460750758648
+          },
+          {
+            "text": "I do not want to cancel my order for $8.08. This is the second time I have contacted the police canceled.",
+            "start_word": 6,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7036781311035156
+          },
+          {
+            "text": "Thank you. This week?",
+            "start_word": 27,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.042242757976055145
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4624801158905029
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:51.119357+00:00"
+}

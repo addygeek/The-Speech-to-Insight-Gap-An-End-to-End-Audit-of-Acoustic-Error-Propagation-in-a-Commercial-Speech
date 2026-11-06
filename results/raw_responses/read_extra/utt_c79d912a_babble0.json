@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_c79d912a",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $75. Please do any transfer to me again unless the next appointment actually changed my Internet."
+  },
+  "request_id": "01a1b291-7bd5-7483-be5c-6fc56e56776c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7bd5-7483-be5c-6fc56e56776c",
+      "created": "2026-11-06T20:34:01.469Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do any transfer to me again unless the next appointment actually changed my Internet.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.84423184
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.2247961
+              },
+              {
+                "topic": "Internet change",
+                "confidence_score": 0.57600397
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do any transfer to me again unless the next appointment actually changed my Internet.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request to change internet",
+                "confidence_score": 0.036686763
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02999028004705906
+          },
+          {
+            "text": "I do not want to cancel my order for $75. Please do any transfer to me again unless the next appointment actually changed my Internet.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7304067015647888
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5303022485030325
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:01.527231+00:00"
+}

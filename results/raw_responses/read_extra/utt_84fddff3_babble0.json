@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_84fddff3",
+    "text_source": "transcript_babble0",
+    "text": "Could you please reschedule my flight to Denver on October 5? I've reached out to support twice. I see you are blocking any issues."
+  },
+  "request_id": "01a1b293-00dd-71f0-84ad-7a98d90ed4a6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-00dd-71f0-84ad-7a98d90ed4a6",
+      "created": "2026-11-06T20:35:41.155Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I see you are blocking any issues.",
+            "start_word": 17,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Flight rescheduling",
+                "confidence_score": 0.15037489
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I see you are blocking any issues.",
+            "start_word": 17,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Reschedule flight",
+                "confidence_score": 0.8124387
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.18537405
+              },
+              {
+                "intent": "Blocking issues",
+                "confidence_score": 0.045898035
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please reschedule my flight to Denver on October 5?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07043258100748062
+          },
+          {
+            "text": "I've reached out to support twice. I see you are blocking any issues.",
+            "start_word": 11,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.6732112169265747
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3718219083898208
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:41.214481+00:00"
+}

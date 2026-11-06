@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_abf768a1",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $170.06 yesterday. I'm calling from my mobile phone because I'm awaiting my."
+  },
+  "request_id": "01a1b291-8cb4-73e3-ac89-e03c71cad691",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-8cb4-73e3-ac89-e03c71cad691",
+      "created": "2026-11-06T20:34:05.969Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "06 yesterday. I'm calling from my mobile phone because I'm awaiting my.",
+            "start_word": 6,
+            "end_word": 17,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.25053537
+              }
+            ]
+          },
+          {
+            "text": "I'm calling from my mobile phone because I'm awaiting my.",
+            "start_word": 7,
+            "end_word": 16,
+            "topics": [
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.88110805
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "06 yesterday. I'm calling from my mobile phone because I'm awaiting my.",
+            "start_word": 6,
+            "end_word": 17,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.8696646
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $170.06 yesterday. I'm calling from my mobile phone because I'm awaiting my.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "negative",
+            "sentiment_score": -0.6941280961036682
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6941281071415654
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:06.024351+00:00"
+}

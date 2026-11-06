@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_145c6095",
+    "text_source": "transcript_pinkm10",
+    "text": "I was charged $75 to buy from my card ending in 4400. I can wait on the line while you check the record, and I do not have a problem with that."
+  },
+  "request_id": "01a1b292-f0b5-7421-ab91-386ece275758",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-f0b5-7421-ab91-386ece275758",
+      "created": "2026-11-06T20:35:36.944Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do not have a problem with that.",
+            "start_word": 12,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Checking record",
+                "confidence_score": 0.0013491198
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do not have a problem with that.",
+            "start_word": 12,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Verify card charges",
+                "confidence_score": 0.0459458
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75 to buy from my card ending in 4400.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.29273974895477295
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do not have a problem with that.",
+            "start_word": 12,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.4029558598995209
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1397196795489337
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:36.997616+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_dc8dba24",
+    "text_source": "transcript_pinkm10",
+    "text": "I'd like to schedule an appointment with doctor Alice Chen for October 6 at 11AM. Please don't transfer me again unless the next person is sending me out of."
+  },
+  "request_id": "01a1b291-b6d0-7853-9396-0eb867b77376",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-b6d0-7853-9396-0eb867b77376",
+      "created": "2026-11-06T20:34:16.734Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person is sending me out of.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.4925836
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person is sending me out of.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alice chen",
+                "confidence_score": 0.027308326
+              },
+              {
+                "intent": "Request to transfer to another person",
+                "confidence_score": 0.0009987095
+              },
+              {
+                "intent": "Verify appointment time",
+                "confidence_score": 8.308309e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Alice Chen for October 6 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15931858122348783
+          },
+          {
+            "text": "Please don't transfer me again unless the next person is sending me out of.",
+            "start_word": 15,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.9036696553230286
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.35781087102116765
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:16.789121+00:00"
+}

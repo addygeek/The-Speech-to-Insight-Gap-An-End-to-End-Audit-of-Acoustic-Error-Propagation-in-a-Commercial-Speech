@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_30aaa75d",
+    "text_source": "transcript_pinkm10",
+    "text": "Kindly cancel my $25.99 order that I placed yesterday. Please send me updated confirmation email address you have. I need this resolved by the end of the basic stage, so I promise you."
+  },
+  "request_id": "01a1b293-38e1-7db0-8daf-ab228e0c3ea9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-38e1-7db0-8daf-ab228e0c3ea9",
+      "created": "2026-11-06T20:35:55.400Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 14
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the basic stage, so I promise you.",
+            "start_word": 18,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7147629
+              },
+              {
+                "topic": "Confirmation email address update",
+                "confidence_score": 0.0041673207
+              },
+              {
+                "topic": "Customer satisfaction",
+                "confidence_score": 0.012426534
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the basic stage, so I promise you.",
+            "start_word": 18,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Cancel order and receive confirmation email",
+                "confidence_score": 7.365699e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Kindly cancel my $25.99 order that I placed yesterday.",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "negative",
+            "sentiment_score": -0.7656261324882507
+          },
+          {
+            "text": "Please send me updated confirmation email address you have.",
+            "start_word": 9,
+            "end_word": 17,
+            "sentiment": "neutral",
+            "sentiment_score": -0.19361399114131927
+          },
+          {
+            "text": "I need this resolved by the end of the basic stage, so I promise you.",
+            "start_word": 18,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.34784290194511414
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4368457305125701
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:55.463963+00:00"
+}

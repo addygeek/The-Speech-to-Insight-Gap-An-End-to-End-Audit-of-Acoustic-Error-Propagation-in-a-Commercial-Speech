@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_799db2e1",
+    "text_source": "reference",
+    "text": "Since 9:30 AM, my internet has been down, making it impossible for me to work from Denver. Please avoid transferring me again unless the next representative can genuinely modify the booking."
+  },
+  "request_id": "01a1b254-91b4-7ad2-948e-8443a0cd1532",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-91b4-7ad2-948e-8443a0cd1532",
+      "created": "2026-11-06T19:27:29.758Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 17,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.37439167
+              },
+              {
+                "topic": "Rescheduling",
+                "confidence_score": 0.048808884
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 17,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Requesting to avoid transfer",
+                "confidence_score": 0.035374556
+              },
+              {
+                "intent": "Requesting to modify booking",
+                "confidence_score": 0.56733817
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 9:30 AM, my internet has been down, making it impossible for me to work from Denver. Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8368619680404663
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8368619283040365
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:29.840338+00:00"
+}

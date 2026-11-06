@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_e6fe5e48",
+    "text_source": "reference",
+    "text": "Where is my package going to Seattle? It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b252-3d17-7602-955c-b9b5d342cdfd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-3d17-7602-955c-b9b5d342cdfd",
+      "created": "2026-11-06T19:24:56.757Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.7665822
+              },
+              {
+                "topic": "Agent contact",
+                "confidence_score": 0.006000499
+              },
+              {
+                "topic": "Charge display",
+                "confidence_score": 0.26109844
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report package location",
+                "confidence_score": 0.006087256
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.17414714
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06452421098947525
+          },
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.48056560754776
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3484226284605084
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:56.842720+00:00"
+}

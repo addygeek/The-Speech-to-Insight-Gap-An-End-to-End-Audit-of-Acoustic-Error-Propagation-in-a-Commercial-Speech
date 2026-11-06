@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_3d51c8af",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Jordan Lee on June 21 at 09:30AM. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b253-4382-7910-9d79-b361ef5a6690",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-4382-7910-9d79-b361ef5a6690",
+      "created": "2026-11-06T19:26:03.882Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.7144326
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.23334517
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.34118775
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on June 21 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.08871379494667053
+          },
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7909724116325378
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4303531131228885
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:03.960335+00:00"
+}

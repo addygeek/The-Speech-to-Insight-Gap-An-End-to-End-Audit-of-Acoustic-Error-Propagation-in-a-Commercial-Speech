@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_6292217c",
+    "text_source": "transcript_babble0",
+    "text": "I would like to cancel my order of $19. Please send me message today. I'm using my mobile phone because I'm not at my shopping."
+  },
+  "request_id": "01a1b291-bd6e-7fa1-a7de-ad819a410097",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-bd6e-7fa1-a7de-ad819a410097",
+      "created": "2026-11-06T20:34:18.184Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone because I'm not at my shopping.",
+            "start_word": 14,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.24453777
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.37012103
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone because I'm not at my shopping.",
+            "start_word": 14,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.46919098
+              },
+              {
+                "intent": "Send message",
+                "confidence_score": 0.20977792
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order of $19. Please send me message today. I'm using my mobile phone because I'm not at my shopping.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6985716223716736
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6985716223716736
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:18.235385+00:00"
+}

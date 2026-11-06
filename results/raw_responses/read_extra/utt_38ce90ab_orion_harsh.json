@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_38ce90ab",
+    "text_source": "transcript_orion_harsh",
+    "text": "Where is my package going in Denver? It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b29d-ef7f-7a33-8b2e-95643f45fa5c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-ef7f-7a33-8b2e-95643f45fa5c",
+      "created": "2026-11-06T20:47:37.412Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.022206433
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.37862584
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going in Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.045465655624866486
+          },
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6860719919204712
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5207541681105091
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:37.466157+00:00"
+}

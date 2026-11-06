@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_229202ae",
+    "text_source": "transcript_luna_clean",
+    "text": "Could you please alter my flight to Denver for March 12? The previous agent mentioned that I should reach out again if the fee was still occurring."
+  },
+  "request_id": "01a1b29d-bd72-7972-bb08-2979c1781eae",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-bd72-7972-bb08-2979c1781eae",
+      "created": "2026-11-06T20:47:24.771Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent mentioned that I should reach out again if the fee was still occurring.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.4277789
+              },
+              {
+                "topic": "Fee",
+                "confidence_score": 0.8088749
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent mentioned that I should reach out again if the fee was still occurring.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight to washington",
+                "confidence_score": 5.964157e-06
+              },
+              {
+                "intent": "Reach out again",
+                "confidence_score": 0.22014382
+              },
+              {
+                "intent": "Request flight to texas",
+                "confidence_score": 0.00013018918
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please alter my flight to Denver for March 12?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06393130123615265
+          },
+          {
+            "text": "The previous agent mentioned that I should reach out again if the fee was still occurring.",
+            "start_word": 11,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6761495471000671
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.43126227060953776
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:24.824329+00:00"
+}

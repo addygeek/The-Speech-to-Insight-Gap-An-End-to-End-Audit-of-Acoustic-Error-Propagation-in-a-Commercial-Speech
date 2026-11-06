@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_a123c2c8",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been down since 11AM, and I cannot work from Austin. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b255-0c0c-7bb3-a4a0-1154f056e998",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-0c0c-7bb3-a4a0-1154f056e998",
+      "created": "2026-11-06T19:28:00.919Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.11806002
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.20770374
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check internet status",
+                "confidence_score": 0.05389288
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.5612457
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Austin. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7327109575271606
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7327109745570591
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:00.994134+00:00"
+}

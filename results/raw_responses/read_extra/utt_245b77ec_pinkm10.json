@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_245b77ec",
+    "text_source": "transcript_pinkm10",
+    "text": "I was charged $8.60 twice on my card. Need this settled before the end of the day."
+  },
+  "request_id": "01a1b293-3d43-75e2-8252-a2d41b1e5773",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-3d43-75e2-8252-a2d41b1e5773",
+      "created": "2026-11-06T20:35:56.521Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 21
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Need this settled before the end of the day.",
+            "start_word": 8,
+            "end_word": 16,
+            "topics": [
+              {
+                "topic": "Charge issue",
+                "confidence_score": 0.0064207097
+              },
+              {
+                "topic": "Card settlement",
+                "confidence_score": 0.6940946
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Need this settled before the end of the day.",
+            "start_word": 8,
+            "end_word": 16,
+            "intents": [
+              {
+                "intent": "Resolve card issue",
+                "confidence_score": 0.061772034
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $8.60 twice on my card. Need this settled before the end of the day.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "negative",
+            "sentiment_score": -0.8203416466712952
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8203416551862445
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:56.574288+00:00"
+}

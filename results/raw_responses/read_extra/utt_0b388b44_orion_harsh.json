@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_0b388b44",
+    "text_source": "transcript_orion_harsh",
+    "text": "Thank you, Santotel. The support team in Denver was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b29d-855e-7281-8a6d-f7a1cc56636d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-855e-7281-8a6d-f7a1cc56636d",
+      "created": "2026-11-06T20:47:10.260Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Santotel support",
+                "confidence_score": 0.3856945
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Inform caller of absence",
+                "confidence_score": 0.0058862697
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Santotel. The support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "positive",
+            "sentiment_score": 0.8106129765510559
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.10640875995159148
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.3251308833851534
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:10.314620+00:00"
+}

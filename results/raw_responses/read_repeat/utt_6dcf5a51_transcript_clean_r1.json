@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_6dcf5a51",
+    "text_source": "transcript_clean",
+    "text": "My Internet has been out since 02:15PM, and I am unable to work from Boston. Please forward the updated confirmation to the same email address you have on record."
+  },
+  "request_id": "01a1b251-aeb1-7dd1-9be4-7ae66d3cba74",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-aeb1-7dd1-9be4-7ae66d3cba74",
+      "created": "2026-11-06T19:24:20.328Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please forward the updated confirmation to the same email address you have on record.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.95661604
+              },
+              {
+                "topic": "Work from boston",
+                "confidence_score": 0.2776723
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please forward the updated confirmation to the same email address you have on record.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Update email",
+                "confidence_score": 0.028572064
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been out since 02:15PM, and I am unable to work from Boston. Please forward the updated confirmation to the same email address you have on record.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.6484746932983398
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6484746932983398
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:20.406899+00:00"
+}

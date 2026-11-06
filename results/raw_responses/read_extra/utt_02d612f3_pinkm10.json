@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_02d612f3",
+    "text_source": "transcript_pinkm10",
+    "text": "I would like to cancel my order for $19.40 that I placed yesterday. This week, I contacted regarding the payment. The last agent told me to call back."
+  },
+  "request_id": "01a1b291-9dd6-7582-bf44-4ca721fbabb4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9dd6-7582-bf44-4ca721fbabb4",
+      "created": "2026-11-06T20:34:10.228Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent told me to call back.",
+            "start_word": 20,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.57336795
+              },
+              {
+                "topic": "Contacting agent",
+                "confidence_score": 0.039820805
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent told me to call back.",
+            "start_word": 20,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.4722833
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $19.40 that I placed yesterday. This week, I contacted regarding the payment. The last agent told me to call back.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7238147258758545
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.723814719063895
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:10.282981+00:00"
+}

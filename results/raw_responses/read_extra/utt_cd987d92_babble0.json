@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_cd987d92",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order by $19 and cancel the session. I'm not That was the second time I have contacted a supplier about the same problem. I can't"
+  },
+  "request_id": "01a1b292-7008-79e1-9fe9-4e2377d036e5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7008-79e1-9fe9-4e2377d036e5",
+      "created": "2026-11-06T20:35:03.949Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 50
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm not That was the second time I have contacted a supplier about the same problem.",
+            "start_word": 20,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.9041931
+              },
+              {
+                "topic": "Supplier communication",
+                "confidence_score": 0.8797922
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm not That was the second time I have contacted a supplier about the same problem.",
+            "start_word": 20,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Resolve supplier dispute",
+                "confidence_score": 0.0009204836
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -0.00796651653945446
+          },
+          {
+            "text": "I do not want to cancel my order by $19 and cancel the session. I'm not That was the second time I have contacted a supplier about the same problem. I can't",
+            "start_word": 6,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.6803149580955505
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.559292221069336
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:04.132914+00:00"
+}

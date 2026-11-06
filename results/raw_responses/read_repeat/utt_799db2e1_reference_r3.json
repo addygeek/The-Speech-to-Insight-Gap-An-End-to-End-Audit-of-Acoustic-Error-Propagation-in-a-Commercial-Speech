@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_799db2e1",
+    "text_source": "reference",
+    "text": "Since 9:30 AM, my internet has been down, making it impossible for me to work from Denver. Please avoid transferring me again unless the next representative can genuinely modify the booking."
+  },
+  "request_id": "01a1b254-930a-7f92-b172-af2841dcae88",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-930a-7f92-b172-af2841dcae88",
+      "created": "2026-11-06T19:27:30.793Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 17,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.37439156
+              },
+              {
+                "topic": "Transferring calls",
+                "confidence_score": 0.038697507
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 17,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request removal from hold",
+                "confidence_score": 0.00026465417
+              },
+              {
+                "intent": "Request cancellation",
+                "confidence_score": 0.046576023
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 9:30 AM, my internet has been down, making it impossible for me to work from Denver. Please avoid transferring me again unless the next representative can genuinely modify the booking.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8368619680404663
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8368619283040365
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:30.879063+00:00"
+}

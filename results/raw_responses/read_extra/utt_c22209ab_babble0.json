@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_c22209ab",
+    "text_source": "transcript_babble0",
+    "text": "Thank you, Jordan Lee. My support team in Boston was excellent today. But please do not transfer me again unless the next person can actually change the bundle."
+  },
+  "request_id": "01a1b293-bd7f-7b52-97e4-cee143799f86",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-bd7f-7b52-97e4-cee143799f86",
+      "created": "2026-11-06T20:36:29.252Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "But please do not transfer me again unless the next person can actually change the bundle.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.15371524
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "But please do not transfer me again unless the next person can actually change the bundle.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request to not transfer",
+                "confidence_score": 0.024394521
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan Lee. My support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6677714586257935
+          },
+          {
+            "text": "But please do not transfer me again unless the next person can actually change the bundle.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7374136447906494
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.09869316852453984
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:29.316056+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_f1bbd390",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my package going scheduled? It's gonna arrive by. This is the second time I can contact you to hear about the same problem."
+  },
+  "request_id": "01a1b292-d7fc-7b30-86b5-19a4a754d669",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-d7fc-7b30-86b5-19a4a754d669",
+      "created": "2026-11-06T20:35:30.512Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I can contact you to hear about the same problem.",
+            "start_word": 10,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Package scheduling",
+                "confidence_score": 0.76850665
+              },
+              {
+                "topic": "Problem-solving",
+                "confidence_score": 0.5367388
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I can contact you to hear about the same problem.",
+            "start_word": 10,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Inform about package",
+                "confidence_score": 0.0008380674
+              },
+              {
+                "intent": "Contact customer",
+                "confidence_score": 0.012398119
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going scheduled? It's gonna arrive by.",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2271505147218704
+          },
+          {
+            "text": "This is the second time I can contact you to hear about the same problem.",
+            "start_word": 10,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.7472509145736694
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4955894408687469
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:30.572534+00:00"
+}

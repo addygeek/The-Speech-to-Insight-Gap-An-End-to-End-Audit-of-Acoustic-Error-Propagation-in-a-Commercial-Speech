@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_f8fa1c47",
+    "text_source": "transcript_phone",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Boston. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b293-80b4-7cc2-87e3-791f260f7ffc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-80b4-7cc2-87e3-791f260f7ffc",
+      "created": "2026-11-06T20:36:13.713Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.45345548
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel work from bristol",
+                "confidence_score": 7.148679e-05
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.8430395
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Boston. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.8510608673095703
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8510608673095703
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:13.776054+00:00"
+}

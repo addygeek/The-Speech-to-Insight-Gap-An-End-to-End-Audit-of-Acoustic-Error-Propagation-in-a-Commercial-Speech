@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_132c30a0",
+    "text_source": "transcript_babble0",
+    "text": "Was charged $250 twice on my card ending in 4491. This is the second time I have contacted my lawyer by saying that I"
+  },
+  "request_id": "01a1b291-7145-7672-ad85-323ef89057b3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7145-7672-ad85-323ef89057b3",
+      "created": "2026-11-06T20:33:58.876Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Was charged $250 twice on my card ending in 4491.",
+            "start_word": 1,
+            "end_word": 10,
+            "topics": [
+              {
+                "topic": "Credit card charge",
+                "confidence_score": 0.015174523
+              },
+              {
+                "topic": "Lawyer communication",
+                "confidence_score": 0.5045028
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Was charged $250 twice on my card ending in 4491.",
+            "start_word": 1,
+            "end_word": 10,
+            "intents": [
+              {
+                "intent": "Contact lawyer",
+                "confidence_score": 0.2630082
+              },
+              {
+                "intent": "Request $225 double charge",
+                "confidence_score": 3.0999654e-06
+              },
+              {
+                "intent": "Contact lawyer",
+                "confidence_score": 0.67141247
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Was charged $250 twice on my card ending in 4491. This is the second time I have contacted my lawyer by saying that I",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.7840061783790588
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.784006189416956
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:33:58.931826+00:00"
+}

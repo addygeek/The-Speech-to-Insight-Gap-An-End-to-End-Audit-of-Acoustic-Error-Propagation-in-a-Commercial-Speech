@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_4d7ed674",
+    "text_source": "transcript_babble0",
+    "text": "Hello. I'm Maria Stroubles. I don't intend to cancel my order. I'm using my email to cancel my order."
+  },
+  "request_id": "01a1b293-955b-7043-8122-745aa83e8d99",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-955b-7043-8122-745aa83e8d99",
+      "created": "2026-11-06T20:36:19.000Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my email to cancel my order.",
+            "start_word": 11,
+            "end_word": 18,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7939412
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my email to cancel my order.",
+            "start_word": 11,
+            "end_word": 18,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6970697
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Maria Stroubles.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06634364277124405
+          },
+          {
+            "text": "I don't intend to cancel my order. I'm using my email to cancel my order.",
+            "start_word": 4,
+            "end_word": 18,
+            "sentiment": "negative",
+            "sentiment_score": -0.8029710650444031
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5497554540634155
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:19.062556+00:00"
+}

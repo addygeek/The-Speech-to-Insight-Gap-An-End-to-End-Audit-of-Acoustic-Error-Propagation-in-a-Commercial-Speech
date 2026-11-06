@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_25e1494b",
+    "text_source": "transcript_luna_harsh",
+    "text": "Thank you, Maria Santos. The support team in Chicago was excellent today. The last agent I spoke with asked me to call back if the charge is still showing."
+  },
+  "request_id": "01a1b29d-c982-7af2-9ef1-234fa7ae36a6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-c982-7af2-9ef1-234fa7ae36a6",
+      "created": "2026-11-06T20:47:28.073Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.56530243
+              },
+              {
+                "topic": "Charge issue",
+                "confidence_score": 0.10522103
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Contact representative for assistance",
+                "confidence_score": 2.149967e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. The support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.7961671948432922
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3063008189201355
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.21430908309088817
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:28.126748+00:00"
+}

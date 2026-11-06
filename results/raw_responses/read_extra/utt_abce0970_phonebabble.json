@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_abce0970",
+    "text_source": "transcript_phonebabble",
+    "text": "Please cancel my order for $8.50 placed yesterday. Need this settled before the end of the business day because I travel tomorrow morning. This is the second time I have contacted the store about the same problem you're calling."
+  },
+  "request_id": "01a1b291-d0d2-7650-8210-009e11048761",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-d0d2-7650-8210-009e11048761",
+      "created": "2026-11-06T20:34:23.184Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted the store about the same problem you're calling.",
+            "start_word": 23,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.02812013
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.3208304
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.059537027
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted the store about the same problem you're calling.",
+            "start_word": 23,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.7548472
+              },
+              {
+                "intent": "Resolve customer complaint",
+                "confidence_score": 0.0911446
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday. Need this settled before the end of the business day because I travel tomorrow morning. This is the second time I have contacted the store about the same problem you're calling.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.7086475491523743
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7086475453478225
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:23.246837+00:00"
+}

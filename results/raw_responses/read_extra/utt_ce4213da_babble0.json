@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_ce4213da",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package? I need to order it. It should arrive by October 5. I am calling from my mobile phone because I have a phone call from office."
+  },
+  "request_id": "01a1b292-1b8b-7a40-ac63-d321482a09e2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-1b8b-7a40-ac63-d321482a09e2",
+      "created": "2026-11-06T20:34:42.335Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I am calling from my mobile phone because I have a phone call from office.",
+            "start_word": 9,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package order",
+                "confidence_score": 0.68406665
+              },
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.3608922
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I am calling from my mobile phone because I have a phone call from office.",
+            "start_word": 9,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Order package",
+                "confidence_score": 0.68497926
+              },
+              {
+                "intent": "Receive call from office",
+                "confidence_score": 0.5141286
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package? I need to order it. It should arrive by October 5. I am calling from my mobile phone because I have a phone call from office.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.154455304145813
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.15445529713350184
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:42.399030+00:00"
+}

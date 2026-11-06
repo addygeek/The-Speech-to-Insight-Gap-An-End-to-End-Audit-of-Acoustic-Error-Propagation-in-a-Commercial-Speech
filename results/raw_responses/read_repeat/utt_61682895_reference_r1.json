@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_61682895",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Jordan Lee on April 3 at 2:15 PM. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b251-b25d-7571-bda7-01efa4d7ca81",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-b25d-7571-bda7-01efa4d7ca81",
+      "created": "2026-11-06T19:24:21.217Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 20
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.45200023
+              },
+              {
+                "topic": "Dr. jordan lee",
+                "confidence_score": 0.070085414
+              },
+              {
+                "topic": "Record checking",
+                "confidence_score": 0.07817969
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9366187
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.30842456
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.30180112
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Jordan Lee on April 3 at 2:15 PM. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": 0.12510648369789124
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.12510647773742675
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:21.300545+00:00"
+}

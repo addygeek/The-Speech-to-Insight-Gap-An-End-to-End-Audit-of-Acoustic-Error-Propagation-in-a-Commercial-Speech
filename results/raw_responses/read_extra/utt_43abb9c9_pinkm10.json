@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_43abb9c9",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you please go to Denver on June 21? I need to settle before the end of the business day because I travel tomorrow."
+  },
+  "request_id": "01a1b292-1314-7881-a5cb-6dedbb935f00",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-1314-7881-a5cb-6dedbb935f00",
+      "created": "2026-11-06T20:34:40.192Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 26
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 3
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow.",
+            "start_word": 9,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Transportation",
+                "confidence_score": 0.32694277
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow.",
+            "start_word": 9,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Negotiate travel date",
+                "confidence_score": 0.0024471052
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you please go to Denver on June 21?",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09553579986095428
+          },
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow.",
+            "start_word": 9,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.655126690864563
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36641040215125453
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:40.263896+00:00"
+}

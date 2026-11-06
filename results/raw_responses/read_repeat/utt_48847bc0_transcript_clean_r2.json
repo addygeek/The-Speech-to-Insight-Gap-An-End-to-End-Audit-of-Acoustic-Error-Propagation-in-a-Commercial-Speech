@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_48847bc0",
+    "text_source": "transcript_clean",
+    "text": "I would like to schedule an appointment with doctor Alex Chen on April 3 at 09:30AM. Kindly send the updated confirmation to the email address you have recorded."
+  },
+  "request_id": "01a1b253-9bcc-74e0-a43e-b47b42d5cfe3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-9bcc-74e0-a43e-b47b42d5cfe3",
+      "created": "2026-11-06T19:26:26.662Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 15
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you have recorded.",
+            "start_word": 16,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.6793337
+              },
+              {
+                "topic": "Doctor alex chen",
+                "confidence_score": 0.08298011
+              },
+              {
+                "topic": "Email confirmation",
+                "confidence_score": 0.06715172
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you have recorded.",
+            "start_word": 16,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alex chen",
+                "confidence_score": 0.091678806
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.50306374
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen on April 3 at 09:30AM. Kindly send the updated confirmation to the email address you have recorded.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "positive",
+            "sentiment_score": 0.6835485100746155
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6835485346177045
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:26.741017+00:00"
+}

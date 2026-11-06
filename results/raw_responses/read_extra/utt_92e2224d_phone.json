@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_92e2224d",
+    "text_source": "transcript_phone",
+    "text": "I appreciate your help, Jordan Lee. The Denver support team was outstanding today. However, please refrain from transferring me again unless the next representative can modify the booking."
+  },
+  "request_id": "01a1b292-ab9e-7d32-938b-1ded2c055a86",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-ab9e-7d32-938b-1ded2c055a86",
+      "created": "2026-11-06T20:35:19.163Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "However, please refrain from transferring me again unless the next representative can modify the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Denver support",
+                "confidence_score": 0.21150489
+              },
+              {
+                "topic": "Booking modification",
+                "confidence_score": 0.8301026
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "However, please refrain from transferring me again unless the next representative can modify the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Reject transfer",
+                "confidence_score": 0.037046418
+              },
+              {
+                "intent": "Modify booking",
+                "confidence_score": 0.1398291
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Jordan Lee. The Denver support team was outstanding today.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.7651411294937134
+          },
+          {
+            "text": "However, please refrain from transferring me again unless the next representative can modify the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6461575031280518
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.0009924428803580148
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:19.226020+00:00"
+}

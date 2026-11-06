@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_ad423c72",
+    "text_source": "transcript_phonebabble",
+    "text": "Please cancel my order for $120 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. This is the second time I have contacted support about the same problem."
+  },
+  "request_id": "01a1b293-a46a-7090-828d-078222d303cb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-a46a-7090-828d-078222d303cb",
+      "created": "2026-11-06T20:36:23.220Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem.",
+            "start_word": 23,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7838327
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.48784593
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.56598884
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem.",
+            "start_word": 23,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.72000945
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.5138326
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $120 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. This is the second time I have contacted support about the same problem.",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.7894917726516724
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7894917442685082
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:23.283933+00:00"
+}

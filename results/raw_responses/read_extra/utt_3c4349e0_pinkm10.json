@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_3c4349e0",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $8.50 today. The last week, my social is asking you to call back."
+  },
+  "request_id": "01a1b291-ae0c-7a61-85ae-4de4b2f1c7c5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ae0c-7a61-85ae-4de4b2f1c7c5",
+      "created": "2026-11-06T20:34:14.245Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 23,
+        "output_tokens": 23
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 23,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 23,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "50 today. The last week, my social is asking you to call back.",
+            "start_word": 6,
+            "end_word": 18,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.5968549
+              }
+            ]
+          },
+          {
+            "text": "The last week, my social is asking you to call back.",
+            "start_word": 7,
+            "end_word": 17,
+            "topics": [
+              {
+                "topic": "Social security request",
+                "confidence_score": 0.0028081797
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "50 today. The last week, my social is asking you to call back.",
+            "start_word": 6,
+            "end_word": 18,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.47497132
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 today. The last week, my social is asking you to call back.",
+            "start_word": 0,
+            "end_word": 17,
+            "sentiment": "negative",
+            "sentiment_score": -0.8779870271682739
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8779869908871858
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:14.298139+00:00"
+}

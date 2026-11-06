@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_a3f58073",
+    "text_source": "reference",
+    "text": "I need to cancel my order for $45.99 that I placed yesterday. I attempted to use the website twice, but it wouldn't save my changes. Please don't transfer me unless the person can actually modify the booking."
+  },
+  "request_id": "01a1b254-3219-7f53-9aaa-7ab0e6dc281a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-3219-7f53-9aaa-7ab0e6dc281a",
+      "created": "2026-11-06T19:27:05.005Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 48
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me unless the person can actually modify the booking.",
+            "start_word": 25,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.12109474
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me unless the person can actually modify the booking.",
+            "start_word": 25,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.5653643
+              },
+              {
+                "intent": "Transfer call",
+                "confidence_score": 0.10424816
+              },
+              {
+                "intent": "Modify booking",
+                "confidence_score": 0.46259832
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to cancel my order for $45.99 that I placed yesterday. I attempted to use the website twice, but it wouldn't save my changes. Please don't transfer me unless the person can actually modify the booking.",
+            "start_word": 0,
+            "end_word": 36,
+            "sentiment": "negative",
+            "sentiment_score": -0.7442072629928589
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7442072232564291
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:05.086857+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_d9232b8c",
+    "text_source": "transcript_pinkm10",
+    "text": "Thank you, Allison. This is for team in Seattle. Was excellent today. Please do not connect with me again unless you actually change your name."
+  },
+  "request_id": "01a1b292-2667-7791-96ab-def9200f1191",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2667-7791-96ab-def9200f1191",
+      "created": "2026-11-06T20:34:45.026Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not connect with me again unless you actually change your name.",
+            "start_word": 12,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Team",
+                "confidence_score": 0.2056971
+              },
+              {
+                "topic": "Connecting",
+                "confidence_score": 0.40441942
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not connect with me again unless you actually change your name.",
+            "start_word": 12,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change name",
+                "confidence_score": 0.54083014
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Allison. This is for team in Seattle. Was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.4911969304084778
+          },
+          {
+            "text": "Please do not connect with me again unless you actually change your name.",
+            "start_word": 12,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6896236538887024
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.08016787805864888
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:45.080870+00:00"
+}

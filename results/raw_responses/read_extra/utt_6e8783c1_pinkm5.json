@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_6e8783c1",
+    "text_source": "transcript_pinkm5",
+    "text": "My card ending in 4421 had a double charge of $75. The last representative I talked to told me to reach out again for charging me for a moment."
+  },
+  "request_id": "01a1b292-e06f-7d41-811b-32037ed5e96a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-e06f-7d41-811b-32037ed5e96a",
+      "created": "2026-11-06T20:35:32.728Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told me to reach out again for charging me for a moment.",
+            "start_word": 11,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Double charge",
+                "confidence_score": 0.397616
+              },
+              {
+                "topic": "Representative",
+                "confidence_score": 0.11010367
+              },
+              {
+                "topic": "Reach out",
+                "confidence_score": 0.34443706
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told me to reach out again for charging me for a moment.",
+            "start_word": 11,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request replacement",
+                "confidence_score": 0.00071606156
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 had a double charge of $75. The last representative I talked to told me to reach out again for charging me for a moment.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7503579258918762
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7503579083610984
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:32.791250+00:00"
+}

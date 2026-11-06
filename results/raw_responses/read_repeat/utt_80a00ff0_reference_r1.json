@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_80a00ff0",
+    "text_source": "reference",
+    "text": "I noticed that my card ending in 4421 was billed $8.50 two times. I'm reaching out from my mobile since I'm not at my home office at the moment."
+  },
+  "request_id": "01a1b254-fd14-7900-8d9b-101344a8dac0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-fd14-7900-8d9b-101344a8dac0",
+      "created": "2026-11-06T19:27:56.870Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile since I'm not at my home office at the moment.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.6127387
+              },
+              {
+                "topic": "Home office",
+                "confidence_score": 0.31653902
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile since I'm not at my home office at the moment.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Update card issue",
+                "confidence_score": 2.3324803e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed that my card ending in 4421 was billed $8.50 two times. I'm reaching out from my mobile since I'm not at my home office at the moment.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.4959869086742401
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4959868895701873
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:57.301000+00:00"
+}

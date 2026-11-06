@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_f16a446f",
+    "text_source": "reference",
+    "text": "I would like to schedule an appointment with Dr. Alex Chen on October 5 at 9:30 AM. I'm willing to hold while you verify the record, and I have my account number available."
+  },
+  "request_id": "01a1b253-1a7e-7201-a00e-575f4b50b67b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-1a7e-7201-a00e-575f4b50b67b",
+      "created": "2026-11-06T19:25:53.376Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number available.",
+            "start_word": 17,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.7981728
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.41485596
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9138001
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number available.",
+            "start_word": 17,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Schedule appointment with dr. alex chen",
+                "confidence_score": 0.23497343
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Dr. Alex Chen on October 5 at 9:30 AM. I'm willing to hold while you verify the record, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 32,
+            "sentiment": "positive",
+            "sentiment_score": 0.599148690700531
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5991486549377442
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:53.455494+00:00"
+}

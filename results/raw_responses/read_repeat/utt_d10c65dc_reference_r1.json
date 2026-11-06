@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_d10c65dc",
+    "text_source": "reference",
+    "text": "Thank you Sam Patel, the support team in Chicago was excellent today. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b251-704c-7942-affe-2e0ad0eac449",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-704c-7942-affe-2e0ad0eac449",
+      "created": "2026-11-06T19:24:04.391Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.85628444
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.22677283
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.38635454
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.044311047
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.2616073
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Sam Patel, the support team in Chicago was excellent today. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.6495060920715332
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6495060920715332
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:04.474482+00:00"
+}

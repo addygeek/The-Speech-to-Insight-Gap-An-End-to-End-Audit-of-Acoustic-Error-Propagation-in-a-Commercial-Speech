@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_1de37110",
+    "text_source": "transcript_phone",
+    "text": "Can you tell me the location of my package headed to Boston? It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning."
+  },
+  "request_id": "01a1b293-458f-72e0-8a46-e8efbfa3d793",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-458f-72e0-8a46-e8efbfa3d793",
+      "created": "2026-11-06T20:35:58.594Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 12,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.20278661
+              },
+              {
+                "topic": "Meeting resolution",
+                "confidence_score": 0.045949124
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 12,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Update package location",
+                "confidence_score": 0.019282993
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package headed to Boston?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07479001581668854
+          },
+          {
+            "text": "It's expected to reach by October 5. I need this resolved by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 12,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.4353274405002594
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3210106826410061
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:58.659566+00:00"
+}

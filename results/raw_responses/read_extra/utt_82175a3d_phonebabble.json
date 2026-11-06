@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_82175a3d",
+    "text_source": "transcript_phonebabble",
+    "text": "Please cancel my order for $8 due to the refund placed yesterday. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b292-30ed-7f91-9970-ef7c55def3a2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-30ed-7f91-9970-ef7c55def3a2",
+      "created": "2026-11-06T20:34:47.926Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7246132
+              },
+              {
+                "topic": "Refund",
+                "confidence_score": 0.22726378
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.14570123
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9374479
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6630022
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8 due to the refund placed yesterday.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "negative",
+            "sentiment_score": -0.7808516621589661
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07509155571460724
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3449409989749684
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:47.987799+00:00"
+}

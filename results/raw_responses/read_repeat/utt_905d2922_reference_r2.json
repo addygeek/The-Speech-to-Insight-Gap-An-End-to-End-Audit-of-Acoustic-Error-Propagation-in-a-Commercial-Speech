@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_905d2922",
+    "text_source": "reference",
+    "text": "Hi, my name is Alex Chen. I do not want to cancel my order for $45.99. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b256-c7d5-7e93-b3ea-ee660f53f80b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-c7d5-7e93-b3ea-ee660f53f80b",
+      "created": "2026-11-06T19:29:54.417Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.69634193
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.32522377
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.11987761
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -0.02694624289870262
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8518186211585999
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6781612195466694
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:54.505773+00:00"
+}

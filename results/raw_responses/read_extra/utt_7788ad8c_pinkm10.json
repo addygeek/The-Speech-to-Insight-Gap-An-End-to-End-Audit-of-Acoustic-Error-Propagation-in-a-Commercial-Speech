@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_7788ad8c",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you change my flight to Chicago on June 21? I am calling from my mobile phone to buy a new home office."
+  },
+  "request_id": "01a1b293-b039-7c22-95a3-6856705d58c4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-b039-7c22-95a3-6856705d58c4",
+      "created": "2026-11-06T20:36:26.057Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 26
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone to buy a new home office.",
+            "start_word": 10,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.9642689
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.3026947
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone to buy a new home office.",
+            "start_word": 10,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.80973715
+              },
+              {
+                "intent": "Buy new home office",
+                "confidence_score": 0.11615727
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on June 21? I am calling from my mobile phone to buy a new home office.",
+            "start_word": 0,
+            "end_word": 22,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1271524429321289
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.12715243376218355
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:26.112863+00:00"
+}

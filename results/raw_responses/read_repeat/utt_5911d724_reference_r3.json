@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_5911d724",
+    "text_source": "reference",
+    "text": "Hello, I\u2019m Alex Chen. I do not wish to cancel my order of $8.50. Please refrain from transferring me again unless the next representative can truly modify the booking."
+  },
+  "request_id": "01a1b250-9452-7301-98bc-a92a24b1bb44",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-9452-7301-98bc-a92a24b1bb44",
+      "created": "2026-11-06T19:23:08.516Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 14,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.80473775
+              },
+              {
+                "topic": "Changing representative",
+                "confidence_score": 0.06486142
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 14,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Refuse offer",
+                "confidence_score": 0.011791424
+              },
+              {
+                "intent": "Request removal",
+                "confidence_score": 0.39033657
+              },
+              {
+                "intent": "Reschedule",
+                "confidence_score": 0.042577967
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I\u2019m Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02689867466688156
+          },
+          {
+            "text": "I do not wish to cancel my order of $8.50. Please refrain from transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 4,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7861744165420532
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6193902431390225
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:08.600016+00:00"
+}

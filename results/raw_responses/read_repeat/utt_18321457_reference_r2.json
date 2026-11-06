@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_18321457",
+    "text_source": "reference",
+    "text": "My internet has been down since 11:00 AM and I cannot work from Denver. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b255-6320-76f2-9117-f55c9bba0232",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-6320-76f2-9117-f55c9bba0232",
+      "created": "2026-11-06T19:28:23.357Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 14,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.20788936
+              },
+              {
+                "topic": "Unable to work",
+                "confidence_score": 0.03234606
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.26805365
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 14,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Inform about internet issue",
+                "confidence_score": 0.002062134
+              },
+              {
+                "intent": "Request account number",
+                "confidence_score": 0.019016214
+              },
+              {
+                "intent": "Inform about internet downtime",
+                "confidence_score": 0.024229597
+              },
+              {
+                "intent": "Provide service",
+                "confidence_score": 0.002526182
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 11:00 AM and I cannot work from Denver.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "negative",
+            "sentiment_score": -0.7686761617660522
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 14,
+            "end_word": 32,
+            "sentiment": "neutral",
+            "sentiment_score": -0.15221518278121948
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4090738826327854
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:23.436202+00:00"
+}

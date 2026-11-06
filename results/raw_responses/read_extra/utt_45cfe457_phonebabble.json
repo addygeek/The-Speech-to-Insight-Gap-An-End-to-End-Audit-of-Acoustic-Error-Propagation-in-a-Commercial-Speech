@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_45cfe457",
+    "text_source": "transcript_phonebabble",
+    "text": "Where is my package going, miss Hagar? It should arrive by April 3. Please do not transfer me again unless the next person can actually take that to book."
+  },
+  "request_id": "01a1b291-dd90-7310-97a7-715fb2ccd481",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-dd90-7310-97a7-715fb2ccd481",
+      "created": "2026-11-06T20:34:26.695Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually take that to book.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.4835416
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually take that to book.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Assist with package delivery",
+                "confidence_score": 0.0009388547
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going, miss Hagar?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.044067371636629105
+          },
+          {
+            "text": "It should arrive by April 3. Please do not transfer me again unless the next person can actually take that to book.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.6924662590026855
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5017607071820427
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:26.752710+00:00"
+}

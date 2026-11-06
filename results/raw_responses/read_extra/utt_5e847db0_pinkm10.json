@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_5e847db0",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor. Already tried the website twice, but it's not."
+  },
+  "request_id": "01a1b291-a8c2-74a0-9bb7-409fbdebd966",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a8c2-74a0-9bb7-409fbdebd966",
+      "created": "2026-11-06T20:34:12.913Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 21
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Already tried the website twice, but it's not.",
+            "start_word": 8,
+            "end_word": 15,
+            "topics": [
+              {
+                "topic": "Doctor appointment booking",
+                "confidence_score": 0.080141045
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.7336314
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Already tried the website twice, but it's not.",
+            "start_word": 8,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor",
+                "confidence_score": 0.41041368
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor. Already tried the website twice, but it's not.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.6113658547401428
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6113658178420294
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:12.974109+00:00"
+}

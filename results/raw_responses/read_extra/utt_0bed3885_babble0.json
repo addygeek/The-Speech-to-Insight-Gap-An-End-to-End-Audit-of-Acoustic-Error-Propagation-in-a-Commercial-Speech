@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_0bed3885",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $19.20 twice on my card and ended up with a thousand 20 plus payment. Please send the updated confirmation to the ID and address your ID."
+  },
+  "request_id": "01a1b292-c37b-74f2-9be0-20301fb3c1e9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-c37b-74f2-9be0-20301fb3c1e9",
+      "created": "2026-11-06T20:35:25.436Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the ID and address your ID.",
+            "start_word": 17,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Charge discrepancy",
+                "confidence_score": 0.0036161488
+              },
+              {
+                "topic": "Card payment",
+                "confidence_score": 0.114719726
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the ID and address your ID.",
+            "start_word": 17,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Send confirmation and address",
+                "confidence_score": 0.06900788
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $19.20 twice on my card and ended up with a thousand 20 plus payment.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "negative",
+            "sentiment_score": -0.6091948747634888
+          },
+          {
+            "text": "Please send the updated confirmation to the ID and address your ID.",
+            "start_word": 17,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.021931443363428116
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.38465295118444104
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:25.488027+00:00"
+}

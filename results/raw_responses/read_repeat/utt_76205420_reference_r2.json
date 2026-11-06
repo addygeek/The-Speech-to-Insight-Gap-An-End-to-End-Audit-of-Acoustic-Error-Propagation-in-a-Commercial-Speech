@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_76205420",
+    "text_source": "reference",
+    "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a1b250-a0d8-72a3-931f-c893c5f43c0a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-a0d8-72a3-931f-c893c5f43c0a",
+      "created": "2026-11-06T19:23:11.205Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 14,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.5722687
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.78421277
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 14,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Fix internet issue",
+                "confidence_score": 0.4960412
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I already tried the website twice and it would not save the change under my account.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8033541440963745
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8033541477087772
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:11.288927+00:00"
+}

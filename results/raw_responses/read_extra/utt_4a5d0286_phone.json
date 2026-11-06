@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_4a5d0286",
+    "text_source": "transcript_phone",
+    "text": "Thank you, Jordan Lee. The support team in Seattle was excellent today. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b292-09fd-71d3-8e36-6a9554a2a075",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-09fd-71d3-8e36-6a9554a2a075",
+      "created": "2026-11-06T20:34:37.793Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.6158767
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.93746525
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The support team in Seattle was excellent today. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 4,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Expressing gratitude",
+                "confidence_score": 0.0042846054
+              }
+            ]
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Requesting absence from transfer",
+                "confidence_score": 6.883725e-06
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan Lee. The support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.660274088382721
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7105135321617126
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.0679568201303482
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:37.858951+00:00"
+}

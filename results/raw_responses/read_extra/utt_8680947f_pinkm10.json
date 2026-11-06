@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_8680947f",
+    "text_source": "transcript_pinkm10",
+    "text": "Could you also have flights to Seattle for a similar trip? I require this resolved by closing business day if I'm not traveling today."
+  },
+  "request_id": "01a1b291-d1c3-7dd0-927a-0e850a9b35de",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-d1c3-7dd0-927a-0e850a9b35de",
+      "created": "2026-11-06T20:34:23.355Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I require this resolved by closing business day if I'm not traveling today.",
+            "start_word": 11,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.08605318
+              },
+              {
+                "topic": "Transportation",
+                "confidence_score": 0.07429466
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I require this resolved by closing business day if I'm not traveling today.",
+            "start_word": 11,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Request resolution for similar trip",
+                "confidence_score": 0.04478599
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you also have flights to Seattle for a similar trip?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.060725316405296326
+          },
+          {
+            "text": "I require this resolved by closing business day if I'm not traveling today.",
+            "start_word": 11,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.7314379215240479
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3881671905517578
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:23.410332+00:00"
+}

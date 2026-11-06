@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_229202ae",
+    "text_source": "transcript_clean",
+    "text": "Could you please alter my flight to Denver for March 12? The previous agent mentioned that I should reach out again if the fee was still appearing."
+  },
+  "request_id": "01a1b255-c117-7c42-ac5f-91a3c9274493",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-c117-7c42-ac5f-91a3c9274493",
+      "created": "2026-11-06T19:28:47.059Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent mentioned that I should reach out again if the fee was still appearing.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.043481875
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent mentioned that I should reach out again if the fee was still appearing.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight date",
+                "confidence_score": 0.015955146
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please alter my flight to Denver for March 12?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03901839628815651
+          },
+          {
+            "text": "The previous agent mentioned that I should reach out again if the fee was still appearing.",
+            "start_word": 11,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6019061207771301
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3767510732014974
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:47.133584+00:00"
+}

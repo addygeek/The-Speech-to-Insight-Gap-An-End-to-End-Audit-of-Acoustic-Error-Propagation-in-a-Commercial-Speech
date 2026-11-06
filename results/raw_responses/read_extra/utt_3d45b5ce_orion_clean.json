@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_3d45b5ce",
+    "text_source": "transcript_orion_clean",
+    "text": "I need to book an appointment with Doctor. Sam Patel on April 3 at 09:30AM. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b29d-fb18-7c53-8e80-43176ebfbf22",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-fb18-7c53-8e80-43176ebfbf22",
+      "created": "2026-11-06T20:47:40.545Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.28669032
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.32492992
+              },
+              {
+                "intent": "Set up before business day",
+                "confidence_score": 0.050357476
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Doctor. Sam Patel on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.046456653624773026
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.3893859684467316
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1998723933571263
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:40.599138+00:00"
+}

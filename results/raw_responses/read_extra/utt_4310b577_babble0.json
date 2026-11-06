@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_4310b577",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $75 twice at my end March ending in 4005. Name is Brian. I'm calling from my mobile phone because I'm away from my home office right now."
+  },
+  "request_id": "01a1b293-67d5-7513-acfe-ae681f8d82ce",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-67d5-7513-acfe-ae681f8d82ce",
+      "created": "2026-11-06T20:36:07.642Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I'm away from my home office right now.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Cost discrepancy",
+                "confidence_score": 0.00018816917
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I'm away from my home office right now.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report charges",
+                "confidence_score": 0.10932649
+              },
+              {
+                "intent": "Provide name",
+                "confidence_score": 0.15110007
+              },
+              {
+                "intent": "Inform about absence",
+                "confidence_score": 0.007587118
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75 twice at my end March ending in 4005. Name is Brian. I'm calling from my mobile phone because I'm away from my home office right now.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.5832849144935608
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5832848935513884
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:07.705353+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_c5c40c95",
+    "text_source": "transcript_phonebabble",
+    "text": "I was charged $75 twice on my card ending in 4421. I already tried the website twice, and it would not save the change under my employee's name."
+  },
+  "request_id": "01a1b292-244e-7ae2-a39b-5bd7c6b5b113",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-244e-7ae2-a39b-5bd7c6b5b113",
+      "created": "2026-11-06T20:34:44.526Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my employee's name.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Card payment issue",
+                "confidence_score": 0.01767741
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my employee's name.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report problem with website",
+                "confidence_score": 0.01586557
+              },
+              {
+                "intent": "Request website assistance",
+                "confidence_score": 0.0058152275
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75 twice on my card ending in 4421. I already tried the website twice, and it would not save the change under my employee's name.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7845510840415955
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7845510594985065
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:44.583045+00:00"
+}

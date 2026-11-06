@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_72d04b5b",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $250 twice on my card ending in 4590. This And I'm calling from my cell phone because I didn't wait for my cell phone."
+  },
+  "request_id": "01a1b292-64c2-7932-869a-4c6d13649c4d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-64c2-7932-869a-4c6d13649c4d",
+      "created": "2026-11-06T20:35:01.273Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This And I'm calling from my cell phone because I didn't wait for my cell phone.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Cell phone charge",
+                "confidence_score": 0.061084215
+              },
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.032447826
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4590. This And I'm calling from my cell phone because I didn't wait for my cell phone.",
+            "start_word": 1,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report charges",
+                "confidence_score": 0.051688682
+              }
+            ]
+          },
+          {
+            "text": "This And I'm calling from my cell phone because I didn't wait for my cell phone.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Call from cell phone",
+                "confidence_score": 0.11188722
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4590. This And I'm calling from my cell phone because I didn't wait for my cell phone.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6099544167518616
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6099543851964614
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:01.334250+00:00"
+}

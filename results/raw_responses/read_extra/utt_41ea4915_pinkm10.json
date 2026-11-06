@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_41ea4915",
+    "text_source": "transcript_pinkm10",
+    "text": "I want to schedule an appointment with doctor. Please avoid texting me again unless the next representative is fully modified."
+  },
+  "request_id": "01a1b292-3814-7a20-aa5e-dcd71aee3de8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-3814-7a20-aa5e-dcd71aee3de8",
+      "created": "2026-11-06T20:34:49.664Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 24,
+        "output_tokens": 24
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 24,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 24,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid texting me again unless the next representative is fully modified.",
+            "start_word": 8,
+            "end_word": 19,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.63159066
+              },
+              {
+                "topic": "Texting",
+                "confidence_score": 0.4364186
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid texting me again unless the next representative is fully modified.",
+            "start_word": 8,
+            "end_word": 19,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor",
+                "confidence_score": 0.25728276
+              },
+              {
+                "intent": "Avoid texting",
+                "confidence_score": 0.679265
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2155022919178009
+          },
+          {
+            "text": "Please avoid texting me again unless the next representative is fully modified.",
+            "start_word": 8,
+            "end_word": 19,
+            "sentiment": "negative",
+            "sentiment_score": -0.8950074315071106
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.640192985534668
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:49.784190+00:00"
+}

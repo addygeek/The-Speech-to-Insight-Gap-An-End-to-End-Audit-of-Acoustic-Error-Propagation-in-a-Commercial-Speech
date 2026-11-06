@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_3d51c8af",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor George on June 21 at 09:30AM. I already tried the website twice, and it does not seem to change overnight."
+  },
+  "request_id": "01a1b293-d047-7123-b686-2a80a0961e51",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d047-7123-b686-2a80a0961e51",
+      "created": "2026-11-06T20:36:34.056Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it does not seem to change overnight.",
+            "start_word": 14,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.4989107
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it does not seem to change overnight.",
+            "start_word": 14,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.5796608
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor George on June 21 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "neutral",
+            "sentiment_score": -0.017646891996264458
+          },
+          {
+            "text": "I already tried the website twice, and it does not seem to change overnight.",
+            "start_word": 14,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6437016129493713
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.31226085214053884
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:34.114295+00:00"
+}

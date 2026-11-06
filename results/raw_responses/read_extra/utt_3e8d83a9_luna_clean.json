@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_3e8d83a9",
+    "text_source": "transcript_luna_clean",
+    "text": "I need to book an appointment with doctor Jordan May on April 3 at 11AM. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b29e-0266-7b12-878f-467f8d2673ad",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-0266-7b12-878f-467f8d2673ad",
+      "created": "2026-11-06T20:47:42.266Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Doctor appointment booking",
+                "confidence_score": 0.027140373
+              },
+              {
+                "topic": "Support issue",
+                "confidence_score": 0.04053901
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.750263
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.935693
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan May on April 3 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1051693856716156
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7375742793083191
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4213718526503619
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:42.320779+00:00"
+}

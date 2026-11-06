@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_72b564d7",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Alex Chen. The support team in Boston was excellent today. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b256-37f3-7653-b3d2-20934581dbac",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-37f3-7653-b3d2-20934581dbac",
+      "created": "2026-11-06T19:29:17.553Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.14904496
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.95425045
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.42599875
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.659017026424408
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7008084058761597
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.06339026987552643
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:17.651980+00:00"
+}

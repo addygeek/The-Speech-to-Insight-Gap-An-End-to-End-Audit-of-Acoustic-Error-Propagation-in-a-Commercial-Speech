@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_1bc6b904",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my package going from Chicago? You should arrive by October 2. Please do not connect with me again unless the next person"
+  },
+  "request_id": "01a1b293-d20c-72a3-9009-fe1d6e415ffa",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d20c-72a3-9009-fe1d6e415ffa",
+      "created": "2026-11-06T20:36:34.705Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 26
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Where is my package going from Chicago?",
+            "start_word": 1,
+            "end_word": 7,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.61962795
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.2656549
+              },
+              {
+                "topic": "Connecting with someone",
+                "confidence_score": 0.16876593
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Where is my package going from Chicago?",
+            "start_word": 1,
+            "end_word": 7,
+            "intents": [
+              {
+                "intent": "Notify package location",
+                "confidence_score": 0.019018766
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going from Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.069573312997818
+          },
+          {
+            "text": "You should arrive by October 2. Please do not connect with me again unless the next person",
+            "start_word": 7,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.6451982855796814
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4680829414954552
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:34.761085+00:00"
+}

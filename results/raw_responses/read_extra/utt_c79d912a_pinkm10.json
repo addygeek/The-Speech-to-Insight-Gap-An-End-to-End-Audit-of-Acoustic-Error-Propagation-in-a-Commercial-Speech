@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_c79d912a",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Maria Campbell. I do not want to cancel my order for $75. Please do not transfer me again unless the next person is happy."
+  },
+  "request_id": "01a1b291-7b36-7552-af1b-5fdaea601460",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7b36-7552-af1b-5fdaea601460",
+      "created": "2026-11-06T20:34:01.265Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person is happy.",
+            "start_word": 16,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.55441475
+              },
+              {
+                "topic": "Customer satisfaction",
+                "confidence_score": 0.24417062
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person is happy.",
+            "start_word": 16,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Stop ordering",
+                "confidence_score": 0.0061862012
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Campbell.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.012686573900282385
+          },
+          {
+            "text": "I do not want to cancel my order for $75. Please do not transfer me again unless the next person is happy.",
+            "start_word": 6,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.8371599912643433
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6311365763346354
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:01.317596+00:00"
+}

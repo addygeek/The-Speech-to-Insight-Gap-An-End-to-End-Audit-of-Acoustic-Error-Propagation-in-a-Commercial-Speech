@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_9a8413e5",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $250. The last agent I spoke with asked me to call back if the charge was not sure if"
+  },
+  "request_id": "01a1b292-d06e-73a1-8d40-b08c53a20895",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-d06e-73a1-8d40-b08c53a20895",
+      "created": "2026-11-06T20:35:28.567Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $250.",
+            "start_word": 1,
+            "end_word": 6,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8246149
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.061755747
+              },
+              {
+                "topic": "Charge confirmation",
+                "confidence_score": 0.32495064
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $250.",
+            "start_word": 1,
+            "end_word": 6,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.31049037
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $250. The last agent I spoke with asked me to call back if the charge was not sure if",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.8510206937789917
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8510206717031973
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:28.631527+00:00"
+}

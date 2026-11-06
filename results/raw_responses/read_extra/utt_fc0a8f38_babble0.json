@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_fc0a8f38",
+    "text_source": "transcript_babble0",
+    "text": "Since 09:30AM, my Internet has been out. My Internet is impossible to leave Seattle. Avoid transferring me again unless the next person I can see is a lot of trafficking."
+  },
+  "request_id": "01a1b292-6650-7e40-9538-3081b2ac0518",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-6650-7e40-9538-3081b2ac0518",
+      "created": "2026-11-06T20:35:01.456Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My Internet is impossible to leave Seattle. Avoid transferring me again unless the next person I can see is a lot of trafficking.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.77280164
+              }
+            ]
+          },
+          {
+            "text": "Avoid transferring me again unless the next person I can see is a lot of trafficking.",
+            "start_word": 14,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Transferring calls",
+                "confidence_score": 0.035240885
+              },
+              {
+                "topic": "Trafficking",
+                "confidence_score": 0.9996793
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My Internet is impossible to leave Seattle. Avoid transferring me again unless the next person I can see is a lot of trafficking.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report outage",
+                "confidence_score": 0.017012855
+              }
+            ]
+          },
+          {
+            "text": "Avoid transferring me again unless the next person I can see is a lot of trafficking.",
+            "start_word": 14,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Avoid transferring",
+                "confidence_score": 0.07011747
+              },
+              {
+                "intent": "Seek help",
+                "confidence_score": 0.043248378
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 09:30AM, my Internet has been out. My Internet is impossible to leave Seattle. Avoid transferring me again unless the next person I can see is a lot of trafficking.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8202800154685974
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8202800285525438
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:01.514437+00:00"
+}

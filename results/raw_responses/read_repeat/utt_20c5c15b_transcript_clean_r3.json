@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_20c5c15b",
+    "text_source": "transcript_clean",
+    "text": "I noticed that my card ending in 4421 was billed $75 two times. Kindly send the revised confirmation to the email address you currently have on file."
+  },
+  "request_id": "01a1b250-c8e6-7cd3-ab22-8bb6e9b361db",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-c8e6-7cd3-ab22-8bb6e9b361db",
+      "created": "2026-11-06T19:23:21.294Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to the email address you currently have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.70485806
+              },
+              {
+                "topic": "Email confirmation",
+                "confidence_score": 0.74046755
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to the email address you currently have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Send revised confirmation",
+                "confidence_score": 0.5420591
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed that my card ending in 4421 was billed $75 two times.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.6403981447219849
+          },
+          {
+            "text": "Kindly send the revised confirmation to the email address you currently have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.11400801688432692
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.26319506764411926
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:21.373854+00:00"
+}

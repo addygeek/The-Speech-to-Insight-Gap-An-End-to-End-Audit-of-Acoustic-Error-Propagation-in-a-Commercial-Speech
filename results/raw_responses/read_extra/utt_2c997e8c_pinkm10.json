@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_2c997e8c",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you tell me the location of my doctor's site in Chicago? It is expected to be delivered by April 3. The previous agent instructed me to call back to the party for the"
+  },
+  "request_id": "01a1b292-962f-7af0-9467-e47d9b71a27b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-962f-7af0-9467-e47d9b71a27b",
+      "created": "2026-11-06T20:35:13.838Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my doctor's site in Chicago?",
+            "start_word": 1,
+            "end_word": 12,
+            "topics": [
+              {
+                "topic": "Doctor's site location",
+                "confidence_score": 0.64043623
+              },
+              {
+                "topic": "Delivery timeline",
+                "confidence_score": 0.2125149
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my doctor's site in Chicago?",
+            "start_word": 1,
+            "end_word": 12,
+            "intents": [
+              {
+                "intent": "Request information about delivery schedule",
+                "confidence_score": 0.0016625493
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my doctor's site in Chicago?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03784332796931267
+          },
+          {
+            "text": "It is expected to be delivered by April 3. The previous agent instructed me to call back to the party for the",
+            "start_word": 12,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.41319987177848816
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2610282897949219
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:13.903165+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_ee0eef64",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me where my package is headed together? It's expected to arrive by October 3. My Internet is I'm using my mobile phone since I'm currently away from my packages."
+  },
+  "request_id": "01a1b292-a4e5-72b2-91ce-0c5f75a9fd56",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-a4e5-72b2-91ce-0c5f75a9fd56",
+      "created": "2026-11-06T20:35:17.506Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 3. My Internet is I'm using my mobile phone since I'm currently away from my packages.",
+            "start_word": 10,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.527687
+              },
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.5289107
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 3. My Internet is I'm using my mobile phone since I'm currently away from my packages.",
+            "start_word": 10,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Schedule package delivery",
+                "confidence_score": 0.0060901036
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is headed together?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0171325895935297
+          },
+          {
+            "text": "It's expected to arrive by October 3. My Internet is I'm using my mobile phone since I'm currently away from my packages.",
+            "start_word": 10,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.5146082639694214
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.368379545211792
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:17.560349+00:00"
+}

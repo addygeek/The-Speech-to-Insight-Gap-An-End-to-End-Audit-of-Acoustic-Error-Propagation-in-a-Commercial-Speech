@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_b9fa805c",
+    "text_source": "reference",
+    "text": "Hi, my name is Maria Santos. I do not want to cancel my order for $8.50. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b255-ba5f-7c30-a23a-a28d6b92bc1b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-ba5f-7c30-a23a-a28d6b92bc1b",
+      "created": "2026-11-06T19:28:45.397Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.4383517
+              },
+              {
+                "topic": "Support contact",
+                "confidence_score": 0.015106714
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.016877897
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Resolve customer support issue",
+                "confidence_score": 0.05335723
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.026828451082110405
+          },
+          {
+            "text": "I do not want to cancel my order for $8.50. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7318550944328308
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5421841621398926
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:45.476672+00:00"
+}

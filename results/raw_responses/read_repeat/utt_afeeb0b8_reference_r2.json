@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_afeeb0b8",
+    "text_source": "reference",
+    "text": "Can you tell me the location of my package heading to Seattle? It's expected to arrive by April 3. I require this resolved by the end of the business day, as I leave for travel tomorrow morning."
+  },
+  "request_id": "01a1b251-74fc-7cf2-97c2-b5fe1d700b53",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-74fc-7cf2-97c2-b5fe1d700b53",
+      "created": "2026-11-06T19:24:05.777Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I require this resolved by the end of the business day, as I leave for travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.5440392
+              },
+              {
+                "topic": "Business day resolution",
+                "confidence_score": 0.17670244
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I require this resolved by the end of the business day, as I leave for travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.35736436
+              },
+              {
+                "intent": "Resolve package issue",
+                "confidence_score": 0.47828558
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Seattle?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07022184133529663
+          },
+          {
+            "text": "It's expected to arrive by April 3. I require this resolved by the end of the business day, as I leave for travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 36,
+            "sentiment": "negative",
+            "sentiment_score": -0.4922493100166321
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3616217658633277
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:05.858440+00:00"
+}

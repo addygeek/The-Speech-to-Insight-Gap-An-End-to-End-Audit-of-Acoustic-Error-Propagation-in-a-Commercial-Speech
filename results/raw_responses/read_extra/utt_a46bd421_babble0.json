@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_a46bd421",
+    "text_source": "transcript_babble0",
+    "text": "Since 09:30AM, my Internet has been out. I'd like to make it my cost control. Sorry. My previous agent I talked to suggested calling back if the chest can"
+  },
+  "request_id": "01a1b291-745a-7101-9345-9406760dec17",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-745a-7101-9345-9406760dec17",
+      "created": "2026-11-06T20:33:59.804Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 23
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Sorry.",
+            "start_word": 15,
+            "end_word": 15,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.95804775
+              },
+              {
+                "topic": "Cost control",
+                "confidence_score": 0.93777114
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Sorry.",
+            "start_word": 15,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Confirm internet outage",
+                "confidence_score": 0.012889379
+              },
+              {
+                "intent": "Make it cost control",
+                "confidence_score": 0.17305611
+              },
+              {
+                "intent": "Explain previous agent's suggestion",
+                "confidence_score": 0.00018407732
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.2659761
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 09:30AM, my Internet has been out.",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "negative",
+            "sentiment_score": -0.6157984137535095
+          },
+          {
+            "text": "I'd like to make it my cost control.",
+            "start_word": 7,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.26382118463516235
+          },
+          {
+            "text": "Sorry. My previous agent I talked to suggested calling back if the chest can",
+            "start_word": 15,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.4865694642066955
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4635057693872696
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:33:59.858403+00:00"
+}

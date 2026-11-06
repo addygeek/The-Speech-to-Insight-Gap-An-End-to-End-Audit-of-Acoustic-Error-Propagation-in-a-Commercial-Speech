@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_21a8a0a5",
+    "text_source": "transcript_phonebabble",
+    "text": "Where is my package going to Chicago? It should arrive by March 12. The last agent I spoke with asked me to call back if my charge was still showing"
+  },
+  "request_id": "01a1b293-2735-75c0-8cc1-12615d56d040",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-2735-75c0-8cc1-12615d56d040",
+      "created": "2026-11-06T20:35:50.873Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 1,
+            "end_word": 7,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.8251508
+              },
+              {
+                "topic": "Agent inquiry",
+                "confidence_score": 0.021295013
+              },
+              {
+                "topic": "Charge issue",
+                "confidence_score": 0.45687813
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 1,
+            "end_word": 7,
+            "intents": [
+              {
+                "intent": "Check package location",
+                "confidence_score": 0.114079595
+              },
+              {
+                "intent": "Confirm charge status",
+                "confidence_score": 0.014914437
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04428624361753464
+          },
+          {
+            "text": "It should arrive by March 12. The last agent I spoke with asked me to call back if my charge was still showing",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.470296323299408
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3416506350040436
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:50.925775+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_93ac470b",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $45 and $900 today. Need this settled before the end of the Wednesday. I need to buy tablets more money. I think you should tried the website advice, and I need my bank to change under my account."
+  },
+  "request_id": "01a1b292-738c-7bb2-8426-c0d1db26e3a2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-738c-7bb2-8426-c0d1db26e3a2",
+      "created": "2026-11-06T20:35:04.856Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 50
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I think you should tried the website advice, and I need my bank to change under my account.",
+            "start_word": 25,
+            "end_word": 42,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8532314
+              },
+              {
+                "topic": "Tablet purchase",
+                "confidence_score": 0.0021967222
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I think you should tried the website advice, and I need my bank to change under my account.",
+            "start_word": 25,
+            "end_word": 42,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.8756206
+              },
+              {
+                "intent": "Get order settled",
+                "confidence_score": 0.1416582
+              },
+              {
+                "intent": "Buy tablets",
+                "confidence_score": 0.2834104
+              },
+              {
+                "intent": "Change bank",
+                "confidence_score": 0.44076177
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45 and $900 today. Need this settled before the end of the Wednesday. I need to buy tablets more money. I think you should tried the website advice, and I need my bank to change under my account.",
+            "start_word": 0,
+            "end_word": 42,
+            "sentiment": "negative",
+            "sentiment_score": -0.6447134017944336
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6447134399414063
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:04.911652+00:00"
+}

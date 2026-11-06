@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_aba9a118",
+    "text_source": "transcript_babble5",
+    "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 09:30AM. The last agent I spoke with asked me to call back if the chart was still showing."
+  },
+  "request_id": "01a1b292-871e-7460-a6aa-341a107f36ee",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-871e-7460-a6aa-341a107f36ee",
+      "created": "2026-11-06T20:35:10.061Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 18
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.6207876
+              },
+              {
+                "topic": "Doctor jennifer lee",
+                "confidence_score": 0.0019857094
+              },
+              {
+                "topic": "Agent verification",
+                "confidence_score": 0.029487086
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.48032364
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.13748738
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03797605633735657
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7596803903579712
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3988282053094161
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:10.553137+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_795f03c8",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the status of my package headed to Chicago? It's expected by August 12. I've reached out to support regarding this issue twice as soon as possible."
+  },
+  "request_id": "01a1b291-ab33-7ca2-8895-88331b55d420",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ab33-7ca2-8895-88331b55d420",
+      "created": "2026-11-06T20:34:13.565Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected by August 12. I've reached out to support regarding this issue twice as soon as possible.",
+            "start_word": 12,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.57024693
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.693369
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected by August 12. I've reached out to support regarding this issue twice as soon as possible.",
+            "start_word": 12,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.25537634
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.6671124
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package headed to Chicago? It's expected by August 12. I've reached out to support regarding this issue twice as soon as possible.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13268227875232697
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.13268227047390407
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:13.627085+00:00"
+}

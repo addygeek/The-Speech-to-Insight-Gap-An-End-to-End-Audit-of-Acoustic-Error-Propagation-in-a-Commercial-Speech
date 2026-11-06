@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_631cdd2c",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package going, please? Can I wait? It should arrive by March 12. I am following him in mailbox. I am for my am waiting"
+  },
+  "request_id": "01a1b291-9ade-73d1-be69-6b1d72d1766a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9ade-73d1-be69-6b1d72d1766a",
+      "created": "2026-11-06T20:34:09.417Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I am following him in mailbox.",
+            "start_word": 9,
+            "end_word": 20,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.49179703
+              },
+              {
+                "topic": "Mailbox",
+                "confidence_score": 0.16643113
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can I wait? It should arrive by March 12. I am following him in mailbox.",
+            "start_word": 6,
+            "end_word": 20,
+            "intents": [
+              {
+                "intent": "Locate package",
+                "confidence_score": 0.038921826
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going, please? Can I wait?",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1220446676015854
+          },
+          {
+            "text": "It should arrive by March 12. I am following him in mailbox.",
+            "start_word": 9,
+            "end_word": 20,
+            "sentiment": "positive",
+            "sentiment_score": 0.4097520112991333
+          },
+          {
+            "text": "I am for my am waiting",
+            "start_word": 21,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04511897265911102
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.13332108528383316
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:09.472917+00:00"
+}

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_b8f889d3",
+    "text_source": "transcript_babble5",
+    "text": "Thank you, Jordan Lee. The support team in Seattle was excellent today. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b291-c547-7872-bd76-cec07200fe85",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c547-7872-bd76-cec07200fe85",
+      "created": "2026-11-06T20:34:20.501Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.71676266
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.8842595
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Reporting good support",
+                "confidence_score": 0.009055072
+              },
+              {
+                "intent": "Requesting settled decision",
+                "confidence_score": 0.0012543661
+              },
+              {
+                "intent": "Traveling tomorrow morning",
+                "confidence_score": 0.037170388
+              },
+              {
+                "intent": "Expressing gratitude",
+                "confidence_score": 0.28389773
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan Lee. The support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8356862664222717
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.243696853518486
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5211919546127319
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:20.565093+00:00"
+}

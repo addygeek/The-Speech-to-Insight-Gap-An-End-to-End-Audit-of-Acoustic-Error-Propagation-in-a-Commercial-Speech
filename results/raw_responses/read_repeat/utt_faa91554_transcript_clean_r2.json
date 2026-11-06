@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_faa91554",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Taylor Brooks on June 21 at 09:30AM. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b255-ffa8-7911-bc51-8ec28c816fcf",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-ffa8-7911-bc51-8ec28c816fcf",
+      "created": "2026-11-06T19:29:03.134Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.59549
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.05205077
+              },
+              {
+                "topic": "Email",
+                "confidence_score": 0.22080389
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.58516586
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.9098112
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Taylor Brooks on June 21 at 09:30AM. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07219263911247253
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.07219264166695731
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:03.583150+00:00"
+}

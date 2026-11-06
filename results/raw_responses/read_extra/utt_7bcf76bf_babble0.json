@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_7bcf76bf",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Taylor Brooks. I am not ready to cancel my flight, but I'm there. The last agent I swear would like to ask him to call back if I charge"
+  },
+  "request_id": "01a1b292-0f9f-74a0-b29d-1b9cd6726996",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0f9f-74a0-b29d-1b9cd6726996",
+      "created": "2026-11-06T20:34:39.339Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am not ready to cancel my flight, but I'm there.",
+            "start_word": 6,
+            "end_word": 16,
+            "topics": [
+              {
+                "topic": "Flight cancellation",
+                "confidence_score": 0.828954
+              },
+              {
+                "topic": "Agent contact",
+                "confidence_score": 0.02033776
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am not ready to cancel my flight, but I'm there.",
+            "start_word": 6,
+            "end_word": 16,
+            "intents": [
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.26285636
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0025131062138825655
+          },
+          {
+            "text": "I am not ready to cancel my flight, but I'm there. The last agent I swear would like to ask him to call back if I charge",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7830432653427124
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6106040768507051
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:39.402505+00:00"
+}

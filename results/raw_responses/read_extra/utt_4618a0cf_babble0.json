@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_4618a0cf",
+    "text_source": "transcript_babble0",
+    "text": "I would like to cancel my $75 order that I made yesterday. I need this resolved by the end of the business day. Please don't transfer me again unless the next agent can help you for your help."
+  },
+  "request_id": "01a1b292-ed0c-7783-ac84-c802eb1a8a8d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-ed0c-7783-ac84-c802eb1a8a8d",
+      "created": "2026-11-06T20:35:35.920Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next agent can help you for your help.",
+            "start_word": 23,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.500637
+              },
+              {
+                "topic": "Resolution",
+                "confidence_score": 0.19345246
+              },
+              {
+                "topic": "Transfer",
+                "confidence_score": 0.02982369
+              },
+              {
+                "topic": "Agent assistance",
+                "confidence_score": 0.9073996
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next agent can help you for your help.",
+            "start_word": 23,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.23634757
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $75 order that I made yesterday. I need this resolved by the end of the business day. Please don't transfer me again unless the next agent can help you for your help.",
+            "start_word": 0,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.7626515626907349
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7626515301791105
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:35.973901+00:00"
+}

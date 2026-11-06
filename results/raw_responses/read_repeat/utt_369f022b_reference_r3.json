@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_369f022b",
+    "text_source": "reference",
+    "text": "I want to schedule an appointment with Dr. Sam Patel for June 21 at 11:00 AM, and I need it confirmed by the end of the business day since I'm traveling tomorrow morning."
+  },
+  "request_id": "01a1b254-f40a-7481-9d8b-f1a3b2a0fea8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-f40a-7481-9d8b-f1a3b2a0fea8",
+      "created": "2026-11-06T19:27:55.207Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Sam Patel for June 21 at 11:00 AM, and I need it confirmed by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 8,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment confirmation",
+                "confidence_score": 0.3910195
+              },
+              {
+                "topic": "Travel plans",
+                "confidence_score": 0.43076935
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Sam Patel for June 21 at 11:00 AM, and I need it confirmed by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 8,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Confirm appointment",
+                "confidence_score": 0.5834492
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with Dr. Sam Patel for June 21 at 11:00 AM, and I need it confirmed by the end of the business day since I'm traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 32,
+            "sentiment": "positive",
+            "sentiment_score": 0.5213565230369568
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5213565337352264
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:55.281940+00:00"
+}

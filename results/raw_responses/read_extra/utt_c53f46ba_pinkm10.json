@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_c53f46ba",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you change my flight to Seattle on April 3? Please do not answer me again unless the next person can actually change the"
+  },
+  "request_id": "01a1b293-116c-7453-bb0d-76975f10d71f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-116c-7453-bb0d-76975f10d71f",
+      "created": "2026-11-06T20:35:45.289Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 26
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on April 3?",
+            "start_word": 1,
+            "end_word": 10,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.715499
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on April 3?",
+            "start_word": 1,
+            "end_word": 10,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.20337795
+              },
+              {
+                "intent": "Notify about unauthorized response",
+                "confidence_score": 0.00031812192
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on April 3?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.21857628226280212
+          },
+          {
+            "text": "Please do not answer me again unless the next person can actually change the",
+            "start_word": 10,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.9104247093200684
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6177195769089919
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:45.343058+00:00"
+}

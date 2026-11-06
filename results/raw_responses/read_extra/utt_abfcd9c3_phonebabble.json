@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_abfcd9c3",
+    "text_source": "transcript_phonebabble",
+    "text": "I was charged $45.99 twice on my card ending in 4421. Please send me updated confirmation to the same email address we have on file."
+  },
+  "request_id": "01a1b293-7f3c-7762-b5d9-c924729e8ec6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7f3c-7762-b5d9-c924729e8ec6",
+      "created": "2026-11-06T20:36:13.393Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address we have on file.",
+            "start_word": 11,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Card payment",
+                "confidence_score": 0.015592198
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address we have on file.",
+            "start_word": 11,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Request a new confirmation",
+                "confidence_score": 0.010924991
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $45.99 twice on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "negative",
+            "sentiment_score": -0.741985559463501
+          },
+          {
+            "text": "Please send me updated confirmation to the same email address we have on file.",
+            "start_word": 11,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03978366777300835
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3908845901489258
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:13.446178+00:00"
+}

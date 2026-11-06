@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_8680947f",
+    "text_source": "transcript_babble0",
+    "text": "Could you alter my flight to Seattle for October a bit? I need to require this resolved by the closing business today since I have to travel to Thank you. Thank you."
+  },
+  "request_id": "01a1b291-d239-7662-bb8f-0f23b0b2f923",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-d239-7662-bb8f-0f23b0b2f923",
+      "created": "2026-11-06T20:34:23.543Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 30,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.060784582
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 30,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Request flight change",
+                "confidence_score": 0.094338045
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you alter my flight to Seattle for October a bit? I need to require this resolved by the closing business today since I have to travel to Thank you.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.17623114585876465
+          },
+          {
+            "text": "Thank you.",
+            "start_word": 30,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.6915647387504578
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.10391481717427573
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:23.606950+00:00"
+}

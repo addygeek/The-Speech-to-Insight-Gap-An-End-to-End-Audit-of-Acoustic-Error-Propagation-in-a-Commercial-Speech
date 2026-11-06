@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_575b6bfd",
+    "text_source": "transcript_phonebabble",
+    "text": "Hello. I'm Sam Patel. I would like to keep my order for $45.99. A previous representative told me to reach out again if I still like to change."
+  },
+  "request_id": "01a1b293-2854-7b21-b53b-10045ea1d020",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-2854-7b21-b53b-10045ea1d020",
+      "created": "2026-11-06T20:35:51.184Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "A previous representative told me to reach out again if I still like to change.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order change",
+                "confidence_score": 0.7687813
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "A previous representative told me to reach out again if I still like to change.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.14391443
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.12843044102191925
+          },
+          {
+            "text": "I would like to keep my order for $45.99.",
+            "start_word": 4,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.3878201842308045
+          },
+          {
+            "text": "A previous representative told me to reach out again if I still like to change.",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.48390668630599976
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.06359730268779554
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:51.242393+00:00"
+}

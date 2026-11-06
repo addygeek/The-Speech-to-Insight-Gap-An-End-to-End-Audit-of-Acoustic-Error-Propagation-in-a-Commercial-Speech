@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_3c4349e0",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order. You're $8.50 placed yesterday. At the last eight nights, we've asked for you to call back to the side by staying"
+  },
+  "request_id": "01a1b291-aed1-7af0-a397-e34c4d236c11",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-aed1-7af0-a397-e34c4d236c11",
+      "created": "2026-11-06T20:34:14.564Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "50 placed yesterday.",
+            "start_word": 6,
+            "end_word": 8,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.39613375
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "50 placed yesterday.",
+            "start_word": 6,
+            "end_word": 8,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6843649
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order. You're $8.50 placed yesterday. At the last eight nights, we've asked for you to call back to the side by staying",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.7092764377593994
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7092764237347771
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:14.616370+00:00"
+}

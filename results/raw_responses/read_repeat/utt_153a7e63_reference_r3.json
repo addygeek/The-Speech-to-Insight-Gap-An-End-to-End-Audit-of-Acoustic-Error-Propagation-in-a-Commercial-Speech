@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_153a7e63",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Sam Patel on June 21 at 11:00 AM. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b250-b95c-70f0-9e69-6e7bc0fcec4e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-b95c-70f0-9e69-6e7bc0fcec4e",
+      "created": "2026-11-06T19:23:17.449Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.34435117
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.23614565
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Sam Patel on June 21 at 11:00 AM. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.11903619766235352
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.11903619766235352
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:17.528293+00:00"
+}

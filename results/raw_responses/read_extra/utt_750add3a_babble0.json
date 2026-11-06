@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_750add3a",
+    "text_source": "transcript_babble0",
+    "text": "I see that my card ending in 4421 billed $45 and $10.90 cents. Please ensure that I am not transferred again. I can be less than next representative."
+  },
+  "request_id": "01a1b293-e60a-7580-a3ce-8674db108baa",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-e60a-7580-a3ce-8674db108baa",
+      "created": "2026-11-06T20:36:39.685Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can be less than next representative.",
+            "start_word": 21,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.5311671
+              },
+              {
+                "topic": "Card deletion",
+                "confidence_score": 0.00023931201
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can be less than next representative.",
+            "start_word": 21,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Confirm bill bill",
+                "confidence_score": 1.3867123e-06
+              },
+              {
+                "intent": "Arrange transfer",
+                "confidence_score": 0.00052731705
+              },
+              {
+                "intent": "Represent representative",
+                "confidence_score": 0.010259373
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I see that my card ending in 4421 billed $45 and $10.90 cents. Please ensure that I am not transferred again. I can be less than next representative.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6361678242683411
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6361678355448955
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:39.739772+00:00"
+}

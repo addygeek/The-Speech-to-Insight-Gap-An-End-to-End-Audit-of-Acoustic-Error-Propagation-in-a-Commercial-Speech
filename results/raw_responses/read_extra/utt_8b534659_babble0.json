@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_8b534659",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the status of my package heading to? It's expected to arrive by March 12. The last representative is scheduled to arrive by an email charges. What is"
+  },
+  "request_id": "01a1b293-5ee8-7921-9b2b-69e04d89ed48",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-5ee8-7921-9b2b-69e04d89ed48",
+      "created": "2026-11-06T20:36:05.237Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative is scheduled to arrive by an email charges.",
+            "start_word": 11,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package arrival status",
+                "confidence_score": 0.0025015008
+              },
+              {
+                "topic": "Email charges",
+                "confidence_score": 0.47489136
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative is scheduled to arrive by an email charges.",
+            "start_word": 11,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request package status",
+                "confidence_score": 0.05463573
+              },
+              {
+                "intent": "Confirm package arrival",
+                "confidence_score": 0.10750057
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.008633308112621307
+          },
+          {
+            "text": "It's expected to arrive by March 12. The last representative is scheduled to arrive by an email charges. What is",
+            "start_word": 11,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.38980749249458313
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.25911919730050226
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:05.290766+00:00"
+}

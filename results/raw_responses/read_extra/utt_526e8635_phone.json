@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_526e8635",
+    "text_source": "transcript_phone",
+    "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21. The previous agent advised me to call back if the charge persists."
+  },
+  "request_id": "01a1b292-2c3e-7103-9594-ce9db6b816ad",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2c3e-7103-9594-ce9db6b816ad",
+      "created": "2026-11-06T20:34:46.647Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge persists.",
+            "start_word": 20,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.07789206
+              },
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.13416027
+              },
+              {
+                "topic": "Agent recommendation",
+                "confidence_score": 0.038850967
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge persists.",
+            "start_word": 20,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.40564102
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.04114543
+              },
+              {
+                "intent": "Report charge",
+                "confidence_score": 0.07194444
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03312823921442032
+          },
+          {
+            "text": "The previous agent advised me to call back if the charge persists.",
+            "start_word": 20,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.8269817233085632
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3155649546030405
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:46.724016+00:00"
+}

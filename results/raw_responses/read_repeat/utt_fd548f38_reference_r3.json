@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_fd548f38",
+    "text_source": "reference",
+    "text": "Where is my package going to Seattle? It should arrive by June 21. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a1b253-dc82-71f0-9dd8-997e622a3669",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-dc82-71f0-9dd8-997e622a3669",
+      "created": "2026-11-06T19:26:43.621Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9044915
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.17572992
+              },
+              {
+                "topic": "Account issue",
+                "confidence_score": 0.35485977
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Fix website issue",
+                "confidence_score": 0.13409044
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07660084962844849
+          },
+          {
+            "text": "It should arrive by June 21.",
+            "start_word": 7,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.37539833784103394
+          },
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7797860503196716
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.31299275159835815
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:43.705034+00:00"
+}

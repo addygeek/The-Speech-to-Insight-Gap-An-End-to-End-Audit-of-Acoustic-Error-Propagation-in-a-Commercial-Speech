@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_a92cface",
+    "text_source": "transcript_clean",
+    "text": "I want to schedule an appointment with doctor Sam Patel for March 12 at 11AM. Please don't transfer me again unless the next person can change the booking."
+  },
+  "request_id": "01a1b255-1717-7621-9a68-ec743f0f656a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-1717-7621-9a68-ec743f0f656a",
+      "created": "2026-11-06T19:28:03.693Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person can change the booking.",
+            "start_word": 15,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Doctor appointment scheduling",
+                "confidence_score": 0.055820163
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person can change the booking.",
+            "start_word": 15,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change appointment",
+                "confidence_score": 0.6934522
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Sam Patel for March 12 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.15290303528308868
+          },
+          {
+            "text": "Please don't transfer me again unless the next person can change the booking.",
+            "start_word": 15,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.913838267326355
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5225001198904855
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:03.773105+00:00"
+}

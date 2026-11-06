@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_3775d7fb",
+    "text_source": "transcript_pinkm5",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Denver. Please send me updated confirmation with the same email address you have on file."
+  },
+  "request_id": "01a1b291-f4dc-7193-a90c-d16d85a68021",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-f4dc-7193-a90c-d16d85a68021",
+      "created": "2026-11-06T20:34:32.446Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation with the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Confirmation",
+                "confidence_score": 7.173464e-05
+              },
+              {
+                "topic": "Email address",
+                "confidence_score": 0.36749193
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation with the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Request update",
+                "confidence_score": 0.025280613
+              },
+              {
+                "intent": "Request confirmation",
+                "confidence_score": 0.03761834
+              },
+              {
+                "intent": "Express inability to work from delhi",
+                "confidence_score": 0.00026749013
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Denver.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7493334412574768
+          },
+          {
+            "text": "Please send me updated confirmation with the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.19604264199733737
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4978376446348248
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:32.502470+00:00"
+}

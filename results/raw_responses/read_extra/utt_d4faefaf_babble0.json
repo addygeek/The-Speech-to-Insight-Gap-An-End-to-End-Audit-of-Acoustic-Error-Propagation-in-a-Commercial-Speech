@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_d4faefaf",
+    "text_source": "transcript_babble0",
+    "text": "I appreciate your help, Alex Chen. In Seattle, we have been providing outstanding service today. I need this resolved by the closing and I just have to try in a one minute."
+  },
+  "request_id": "01a1b293-2157-70e3-84a9-6db9564bc050",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-2157-70e3-84a9-6db9564bc050",
+      "created": "2026-11-06T20:35:49.440Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the closing and I just have to try in a one minute.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Outstanding service",
+                "confidence_score": 0.72613364
+              },
+              {
+                "topic": "Resolution",
+                "confidence_score": 0.028020114
+              },
+              {
+                "topic": "Closing",
+                "confidence_score": 0.96263486
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the closing and I just have to try in a one minute.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Resolve outstanding service by closing",
+                "confidence_score": 0.021487597
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Alex Chen. In Seattle, we have been providing outstanding service today.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "positive",
+            "sentiment_score": 0.6671402454376221
+          },
+          {
+            "text": "I need this resolved by the closing and I just have to try in a one minute.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.3363237679004669
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1654082222988731
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:49.503663+00:00"
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_d0c00267",
+    "text_source": "transcript_phonebabble",
+    "text": "Hello. I'm Taylor Brooke. I do not wish to cancel my $120 order. I think I've already reached out to support about this issue twice."
+  },
+  "request_id": "01a1b293-d5a6-71b1-a074-7884f5affc4d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d5a6-71b1-a074-7884f5affc4d",
+      "created": "2026-11-06T20:36:35.418Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 2
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I think I've already reached out to support about this issue twice.",
+            "start_word": 13,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.36386642
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.88274133
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": []
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Taylor Brooke.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.01659724861383438
+          },
+          {
+            "text": "I do not wish to cancel my $120 order. I think I've already reached out to support about this issue twice.",
+            "start_word": 4,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.753734827041626
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5556494576590402
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:35.472487+00:00"
+}

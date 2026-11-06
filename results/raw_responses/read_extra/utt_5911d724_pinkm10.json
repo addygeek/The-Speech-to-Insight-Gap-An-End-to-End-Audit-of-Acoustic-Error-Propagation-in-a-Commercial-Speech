@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_5911d724",
+    "text_source": "transcript_pinkm10",
+    "text": "Hello. I'm. I do not wish to cancel my order of $8. Please refrain from canceling me again until the next."
+  },
+  "request_id": "01a1b291-de48-7f33-b63c-6e44fbd36ac9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-de48-7f33-b63c-6e44fbd36ac9",
+      "created": "2026-11-06T20:34:26.703Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from canceling me again until the next.",
+            "start_word": 12,
+            "end_word": 20,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7839869
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from canceling me again until the next.",
+            "start_word": 12,
+            "end_word": 20,
+            "intents": [
+              {
+                "intent": "Refuse offer",
+                "confidence_score": 0.060163278
+              },
+              {
+                "intent": "Reschedule order",
+                "confidence_score": 0.11698718
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm.",
+            "start_word": 0,
+            "end_word": 1,
+            "sentiment": "neutral",
+            "sentiment_score": -0.0777711570262909
+          },
+          {
+            "text": "I do not wish to cancel my order of $8. Please refrain from canceling me again until the next.",
+            "start_word": 2,
+            "end_word": 20,
+            "sentiment": "negative",
+            "sentiment_score": -0.776362419128418
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.626664297921317
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:26.759181+00:00"
+}

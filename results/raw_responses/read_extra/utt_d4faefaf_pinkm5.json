@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_d4faefaf",
+    "text_source": "transcript_pinkm5",
+    "text": "I appreciate your help, Alex Chen. The Seattle support team provided outstanding service today. I need this resolved by the COVID business since I have to travel tomorrow."
+  },
+  "request_id": "01a1b293-1f35-7253-b13a-d6ca87fccdbd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-1f35-7253-b13a-d6ca87fccdbd",
+      "created": "2026-11-06T20:35:48.934Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the COVID business since I have to travel tomorrow.",
+            "start_word": 14,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Seattle support team",
+                "confidence_score": 0.25736034
+              },
+              {
+                "topic": "Covid business",
+                "confidence_score": 0.6239282
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the COVID business since I have to travel tomorrow.",
+            "start_word": 14,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request covid business resolution",
+                "confidence_score": 0.020681195
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Alex Chen. The Seattle support team provided outstanding service today.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "positive",
+            "sentiment_score": 0.7934172749519348
+          },
+          {
+            "text": "I need this resolved by the COVID business since I have to travel tomorrow.",
+            "start_word": 14,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05271754041314125
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3703498840332031
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:48.988047+00:00"
+}

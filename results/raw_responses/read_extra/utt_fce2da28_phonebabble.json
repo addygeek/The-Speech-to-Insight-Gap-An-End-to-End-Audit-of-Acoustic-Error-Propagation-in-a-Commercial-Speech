@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_fce2da28",
+    "text_source": "transcript_phonebabble",
+    "text": "Would it be possible to modify my flight to Austin for April 3? I've reached out to support regarding this issue's licensing."
+  },
+  "request_id": "01a1b291-b104-73a3-82c0-c7798edffc98",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-b104-73a3-82c0-c7798edffc98",
+      "created": "2026-11-06T20:34:15.140Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue's licensing.",
+            "start_word": 13,
+            "end_word": 21,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.89571196
+              },
+              {
+                "topic": "Licensing issue",
+                "confidence_score": 0.8920148
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support regarding this issue's licensing.",
+            "start_word": 13,
+            "end_word": 21,
+            "intents": [
+              {
+                "intent": "Modify flight to austin",
+                "confidence_score": 0.14885196
+              },
+              {
+                "intent": "Reach out to support regarding licensing issue",
+                "confidence_score": 0.26351976
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Would it be possible to modify my flight to Austin for April 3?",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04556824639439583
+          },
+          {
+            "text": "I've reached out to support regarding this issue's licensing.",
+            "start_word": 13,
+            "end_word": 21,
+            "sentiment": "negative",
+            "sentiment_score": -0.3635708093643189
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.159001282283238
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:15.195486+00:00"
+}

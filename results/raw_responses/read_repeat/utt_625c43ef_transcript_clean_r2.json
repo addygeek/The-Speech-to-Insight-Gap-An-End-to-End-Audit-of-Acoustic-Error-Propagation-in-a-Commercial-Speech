@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_625c43ef",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Chicago? It should arrive by October 5. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b254-e698-72d3-bbee-ae527b9ebc8f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-e698-72d3-bbee-ae527b9ebc8f",
+      "created": "2026-11-06T19:27:51.360Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.923104
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.46039006
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Update package delivery",
+                "confidence_score": 0.010068836
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05378945916891098
+          },
+          {
+            "text": "It should arrive by October 5. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5099121332168579
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3689866662025452
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:51.949645+00:00"
+}

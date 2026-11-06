@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_06373f56",
+    "text_source": "transcript_babble0",
+    "text": "I would like to schedule an appointment with doctor Taylor Brooks on March 11 at nine. I don't know how much time. Thank you. The three days agent advised me to call back if in charge was still"
+  },
+  "request_id": "01a1b292-5aa1-7ce3-afaa-a8c3df2776c5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-5aa1-7ce3-afaa-a8c3df2776c5",
+      "created": "2026-11-06T20:34:58.547Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 26
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 22,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.26616192
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 22,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor taylor brooks",
+                "confidence_score": 0.06212553
+              },
+              {
+                "intent": "Inquire about time required",
+                "confidence_score": 0.0020854224
+              },
+              {
+                "intent": "Ask for call back",
+                "confidence_score": 0.00019860278
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Taylor Brooks on March 11 at nine.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.5382559299468994
+          },
+          {
+            "text": "I don't know how much time.",
+            "start_word": 16,
+            "end_word": 21,
+            "sentiment": "neutral",
+            "sentiment_score": -0.289513498544693
+          },
+          {
+            "text": "Thank you.",
+            "start_word": 22,
+            "end_word": 23,
+            "sentiment": "positive",
+            "sentiment_score": 0.4192015528678894
+          },
+          {
+            "text": "The three days agent advised me to call back if in charge was still",
+            "start_word": 24,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.4178810715675354
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.04605276319715712
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:58.606713+00:00"
+}

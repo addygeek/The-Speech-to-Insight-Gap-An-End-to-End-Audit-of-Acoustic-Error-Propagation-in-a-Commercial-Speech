@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_d5ea1549",
+    "text_source": "transcript_phonebabble",
+    "text": "I need to book an appointment with doctor Jordan Lee on March 12 at 02:15PM. The last agent I spoke with asked me to call back, and the charge was still showing."
+  },
+  "request_id": "01a1b293-43ec-7bf3-a99a-9a44cdfa9977",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-43ec-7bf3-a99a-9a44cdfa9977",
+      "created": "2026-11-06T20:35:58.215Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back, and the charge was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Booking appointment",
+                "confidence_score": 0.020788996
+              },
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.014200602
+              },
+              {
+                "topic": "Charge showing",
+                "confidence_score": 0.06258352
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back, and the charge was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.5667727
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.07490625
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on March 12 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03799919784069061
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back, and the charge was still showing.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.8110752105712891
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4245372069509406
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:58.268406+00:00"
+}

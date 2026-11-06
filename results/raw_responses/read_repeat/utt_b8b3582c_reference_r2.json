@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_b8b3582c",
+    "text_source": "reference",
+    "text": "Hi, my name is Alex Chen. I do not want to cancel my order for $120.00. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a1b255-1062-76d3-9543-c83065d4e84f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-1062-76d3-9543-c83065d4e84f",
+      "created": "2026-11-06T19:28:01.972Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7547547
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.3563349
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Resolve issue with website",
+                "confidence_score": 0.0010281407
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06861713528633118
+          },
+          {
+            "text": "I do not want to cancel my order for $120.00. I already tried the website twice and it would not save the change under my account.",
+            "start_word": 6,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7752318382263184
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5927780769966744
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:02.051125+00:00"
+}

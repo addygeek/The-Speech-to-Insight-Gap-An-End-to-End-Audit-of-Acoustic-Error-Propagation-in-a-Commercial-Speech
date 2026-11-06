@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_b522ab96",
+    "text_source": "transcript_babble0",
+    "text": "Can you take my flight to Boston on the next show? The last agent I spoke with asked me to call by the insurance company."
+  },
+  "request_id": "01a1b291-6f4a-7292-b8a7-90a00ef32b6b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-6f4a-7292-b8a7-90a00ef32b6b",
+      "created": "2026-11-06T20:33:58.363Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call by the insurance company.",
+            "start_word": 11,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight",
+                "confidence_score": 0.31042135
+              },
+              {
+                "topic": "Insurance",
+                "confidence_score": 0.7241605
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call by the insurance company.",
+            "start_word": 11,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Request flight to boston on thursday",
+                "confidence_score": 1.6427547e-06
+              },
+              {
+                "intent": "Request agent to call by insurance company",
+                "confidence_score": 0.081407435
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you take my flight to Boston on the next show?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07392050325870514
+          },
+          {
+            "text": "The last agent I spoke with asked me to call by the insurance company.",
+            "start_word": 11,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.8104117512702942
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.48308224148220485
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:33:58.425711+00:00"
+}

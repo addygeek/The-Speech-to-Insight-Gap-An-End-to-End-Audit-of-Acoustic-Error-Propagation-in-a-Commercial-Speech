@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_c6ab8e48",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my office going to Seattle? It should arrive by October 6. I need to settle because I promise."
+  },
+  "request_id": "01a1b292-0cd7-79a2-84ea-008770447681",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0cd7-79a2-84ea-008770447681",
+      "created": "2026-11-06T20:34:38.750Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 22,
+        "output_tokens": 22
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 22,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 22,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 6. I need to settle because I promise.",
+            "start_word": 7,
+            "end_word": 19,
+            "topics": [
+              {
+                "topic": "Office move",
+                "confidence_score": 0.00056141935
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 6. I need to settle because I promise.",
+            "start_word": 7,
+            "end_word": 19,
+            "intents": [
+              {
+                "intent": "Collect and confirm arrival time",
+                "confidence_score": 8.929021e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my office going to Seattle? It should arrive by October 6. I need to settle because I promise.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": -0.10211726278066637
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.10211725668473676
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:38.822044+00:00"
+}

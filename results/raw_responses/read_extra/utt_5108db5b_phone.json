@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_5108db5b",
+    "text_source": "transcript_phone",
+    "text": "Since 11AM, my Internet has been out, preventing me from working in Denver. I attempted to use the website twice, but the changes wouldn't save to my account."
+  },
+  "request_id": "01a1b293-bbed-7d43-a038-a8e99665ddac",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-bbed-7d43-a038-a8e99665ddac",
+      "created": "2026-11-06T20:36:28.991Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to use the website twice, but the changes wouldn't save to my account.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.87630904
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.4379547
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to use the website twice, but the changes wouldn't save to my account.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report outage",
+                "confidence_score": 0.009059299
+              },
+              {
+                "intent": "Resolve website issue",
+                "confidence_score": 0.020518636
+              },
+              {
+                "intent": "Save account",
+                "confidence_score": 0.1508332
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 11AM, my Internet has been out, preventing me from working in Denver. I attempted to use the website twice, but the changes wouldn't save to my account.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.769817054271698
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7698170429951435
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:29.055463+00:00"
+}

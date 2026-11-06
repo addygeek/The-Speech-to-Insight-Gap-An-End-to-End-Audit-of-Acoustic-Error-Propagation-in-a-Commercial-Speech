@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_994f38cc",
+    "text_source": "transcript_babble5",
+    "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today. Last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b293-c5fd-7ec1-ae78-1e3ba8e96f14",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-c5fd-7ec1-ae78-1e3ba8e96f14",
+      "created": "2026-11-06T20:36:31.466Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.168168
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.8622519
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.6044886
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8056477904319763
+          },
+          {
+            "text": "Last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14714473485946655
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.30122824276194854
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:31.523098+00:00"
+}

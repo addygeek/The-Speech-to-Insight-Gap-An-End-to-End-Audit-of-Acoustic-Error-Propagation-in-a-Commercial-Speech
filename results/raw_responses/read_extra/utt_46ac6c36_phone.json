@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_46ac6c36",
+    "text_source": "transcript_phone",
+    "text": "Can you change my flight to Seattle on April 3? I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b293-b989-7c42-b223-3806dcc6cf73",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-b989-7c42-b223-3806dcc6cf73",
+      "created": "2026-11-06T20:36:28.494Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.13039404
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight to seattle",
+                "confidence_score": 0.048747893
+              },
+              {
+                "intent": "Check finalization before business day",
+                "confidence_score": 1.7669925e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on April 3? I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.043620266020298
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.04362026282719204
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:28.546985+00:00"
+}

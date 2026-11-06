@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_f9f8783b",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $120 placed yesterday. I need this settled before the end of the day because I travel tomorrow morning. This is the second time I have contacted my care about it."
+  },
+  "request_id": "01a1b292-0003-7f80-959d-738daae46a51",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0003-7f80-959d-738daae46a51",
+      "created": "2026-11-06T20:34:35.339Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted my care about it.",
+            "start_word": 23,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.19501139
+              },
+              {
+                "topic": "Payment",
+                "confidence_score": 0.1279568
+              },
+              {
+                "topic": "Care",
+                "confidence_score": 0.9001377
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted my care about it.",
+            "start_word": 23,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.30002785
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $120 placed yesterday. I need this settled before the end of the day because I travel tomorrow morning. This is the second time I have contacted my care about it.",
+            "start_word": 0,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.7671397924423218
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7671397686004638
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:35.403465+00:00"
+}

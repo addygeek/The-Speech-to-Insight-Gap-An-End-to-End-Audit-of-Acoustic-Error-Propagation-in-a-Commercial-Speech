@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_7bcf76bf",
+    "text_source": "transcript_clean",
+    "text": "Hi. My name is Taylor Brooks. I do not want to cancel my order for $75. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b250-d665-71e1-b39a-cb2b2def6ca1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-d665-71e1-b39a-cb2b2def6ca1",
+      "created": "2026-11-06T19:23:25.684Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.82012737
+              },
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.0019212627
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.06101513
+              },
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.06471652
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03230292350053787
+          },
+          {
+            "text": "I do not want to cancel my order for $75. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7577127814292908
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5754014039650942
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:25.765358+00:00"
+}

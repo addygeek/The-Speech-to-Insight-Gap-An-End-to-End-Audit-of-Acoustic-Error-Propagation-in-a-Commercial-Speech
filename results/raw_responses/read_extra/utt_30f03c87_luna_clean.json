@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_30f03c87",
+    "text_source": "transcript_luna_clean",
+    "text": "My Internet has been down since 11AM, and I cannot work from Austin. Please send me updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b29d-e023-7aa2-b0f6-426b24456db3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-e023-7aa2-b0f6-426b24456db3",
+      "created": "2026-11-06T20:47:33.641Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.2537271
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Update email address",
+                "confidence_score": 0.0053517753
+              },
+              {
+                "intent": "Request new email",
+                "confidence_score": 0.0015233569
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from Austin.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7615225315093994
+          },
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.16911792755126953
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4748751424974011
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:33.695056+00:00"
+}

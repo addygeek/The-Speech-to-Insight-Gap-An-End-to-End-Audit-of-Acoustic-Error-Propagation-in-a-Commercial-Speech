@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_4a45808b",
+    "text_source": "reference",
+    "text": "I'm looking to schedule an appointment with Dr. Alex Chen for March 12 at 9:30 AM. I'm using my mobile phone since I'm currently away from my home office."
+  },
+  "request_id": "01a1b253-6e93-7f00-88cc-5f40517b569c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-6e93-7f00-88cc-5f40517b569c",
+      "created": "2026-11-06T19:26:14.786Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm currently away from my home office.",
+            "start_word": 16,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.5408128
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm currently away from my home office.",
+            "start_word": 16,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment with dr. alex chen",
+                "confidence_score": 0.33614478
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'm looking to schedule an appointment with Dr. Alex Chen for March 12 at 9:30 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2701934278011322
+          },
+          {
+            "text": "I'm using my mobile phone since I'm currently away from my home office.",
+            "start_word": 16,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.4153801500797272
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.04622515653952574
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:16.869057+00:00"
+}

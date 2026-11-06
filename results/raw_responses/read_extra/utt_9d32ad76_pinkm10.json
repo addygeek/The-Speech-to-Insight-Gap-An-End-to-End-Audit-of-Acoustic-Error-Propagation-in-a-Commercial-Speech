@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_9d32ad76",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $75 to pay. Please send me updated confirmation email on this email on file. The last agent I spoke with asked me to call back if I charge you for a"
+  },
+  "request_id": "01a1b291-dfe9-7f90-8cbe-591ed8624265",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-dfe9-7f90-8cbe-591ed8624265",
+      "created": "2026-11-06T20:34:27.116Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation email on this email on file.",
+            "start_word": 8,
+            "end_word": 18,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.84607536
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.8122401
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.36226445
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation email on this email on file.",
+            "start_word": 8,
+            "end_word": 18,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.81217587
+              },
+              {
+                "intent": "Send confirmation email",
+                "confidence_score": 0.44096008
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.12567227
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 to pay.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "negative",
+            "sentiment_score": -0.8198015093803406
+          },
+          {
+            "text": "Please send me updated confirmation email on this email on file.",
+            "start_word": 8,
+            "end_word": 18,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2521991431713104
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if I charge you for a",
+            "start_word": 19,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.8507465720176697
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6642196655273438
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:27.170703+00:00"
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_f709e1a5",
+    "text_source": "reference",
+    "text": "Where is my package going to Boston? It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b250-629e-7e32-823e-a9486c89baab",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-629e-7e32-823e-a9486c89baab",
+      "created": "2026-11-06T19:22:56.028Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.3060318
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Schedule package delivery",
+                "confidence_score": 0.0066863336
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05728049576282501
+          },
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.36008796095848083
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2557458281517029
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:56.106332+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_232a39a1",
+    "text_source": "transcript_babble5",
+    "text": "Please cancel my order for $19.40 placed yesterday. I already tried the website twice, and it would not save the change under my account. Please do not transfer me again unless the next person can actually change your order for you."
+  },
+  "request_id": "01a1b291-7dca-79e0-aed4-b6923804441d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7dca-79e0-aed4-b6923804441d",
+      "created": "2026-11-06T20:34:01.898Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 48
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change your order for you.",
+            "start_word": 24,
+            "end_word": 40,
+            "topics": [
+              {
+                "topic": "Canceling order",
+                "confidence_score": 0.018032005
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.34771177
+              },
+              {
+                "topic": "Account issue",
+                "confidence_score": 0.07372793
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change your order for you.",
+            "start_word": 24,
+            "end_word": 40,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.57618946
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $19.40 placed yesterday. I already tried the website twice, and it would not save the change under my account. Please do not transfer me again unless the next person can actually change your order for you.",
+            "start_word": 0,
+            "end_word": 40,
+            "sentiment": "negative",
+            "sentiment_score": -0.7910847663879395
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7910847663879395
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:02.405554+00:00"
+}

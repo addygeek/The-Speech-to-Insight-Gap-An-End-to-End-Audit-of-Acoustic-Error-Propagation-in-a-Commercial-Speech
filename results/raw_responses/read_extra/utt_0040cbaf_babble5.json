@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_0040cbaf",
+    "text_source": "transcript_babble5",
+    "text": "What is the status of my package heading to Denver? It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand."
+  },
+  "request_id": "01a1b291-c985-7a72-8005-09bf05dfcca8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c985-7a72-8005-09bf05dfcca8",
+      "created": "2026-11-06T20:34:21.462Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand.",
+            "start_word": 10,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.120201
+              },
+              {
+                "topic": "Account information",
+                "confidence_score": 0.22399844
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand.",
+            "start_word": 10,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.5047105
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package heading to Denver? It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.16546334326267242
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1654633375314566
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:21.517862+00:00"
+}

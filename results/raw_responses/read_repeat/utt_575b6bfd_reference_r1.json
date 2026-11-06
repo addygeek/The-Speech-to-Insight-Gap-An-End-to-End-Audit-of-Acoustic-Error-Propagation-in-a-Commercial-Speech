@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_575b6bfd",
+    "text_source": "reference",
+    "text": "Hello, I'm Sam Patel. I would like to keep my order for $45.99. The previous representative told me to reach out again if I still see the charge."
+  },
+  "request_id": "01a1b252-5274-7933-89ce-fc29c4b19a9e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-5274-7933-89ce-fc29c4b19a9e",
+      "created": "2026-11-06T19:25:02.239Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous representative told me to reach out again if I still see the charge.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.015988959
+              },
+              {
+                "topic": "Order management",
+                "confidence_score": 0.009737404
+              },
+              {
+                "topic": "Charge discrepancy",
+                "confidence_score": 0.015321202
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous representative told me to reach out again if I still see the charge.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.5562856
+              },
+              {
+                "intent": "Reach out again",
+                "confidence_score": 0.022830544
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1949976831674576
+          },
+          {
+            "text": "I would like to keep my order for $45.99.",
+            "start_word": 4,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.4475141763687134
+          },
+          {
+            "text": "The previous representative told me to reach out again if I still see the charge.",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7372604012489319
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.14232309241043894
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:02.836024+00:00"
+}

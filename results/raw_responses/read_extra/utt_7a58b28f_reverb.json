@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_7a58b28f",
+    "text_source": "transcript_reverb",
+    "text": "Hi. My name is Marina Santos. I do not want to cancel my order for $45.99. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b291-9cc8-70d0-8599-8ad551c512d7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9cc8-70d0-8599-8ad551c512d7",
+      "created": "2026-11-06T20:34:09.961Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7942693
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.2172762
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Check order status",
+                "confidence_score": 0.091171384
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Marina Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0371033251285553
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7440018653869629
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5580244064331055
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:10.019570+00:00"
+}

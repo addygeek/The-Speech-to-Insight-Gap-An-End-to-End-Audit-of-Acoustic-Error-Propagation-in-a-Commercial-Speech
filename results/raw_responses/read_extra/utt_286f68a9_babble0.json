@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_286f68a9",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $45.99 placed yesterday. Please do not transfer me again unless the next person can actually change it. Hi. This is the second time I have contacted support about"
+  },
+  "request_id": "01a1b292-c054-7253-a20d-e71b8ad5c84f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-c054-7253-a20d-e71b8ad5c84f",
+      "created": "2026-11-06T20:35:24.618Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 3
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Hi.",
+            "start_word": 22,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.0015372131
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Hi.",
+            "start_word": 22,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.4885752
+              },
+              {
+                "intent": "Change order",
+                "confidence_score": 0.40859437
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45.99 placed yesterday. Please do not transfer me again unless the next person can actually change it.",
+            "start_word": 0,
+            "end_word": 21,
+            "sentiment": "negative",
+            "sentiment_score": -0.7979254126548767
+          },
+          {
+            "text": "Hi.",
+            "start_word": 22,
+            "end_word": 22,
+            "sentiment": "neutral",
+            "sentiment_score": -0.21123656630516052
+          },
+          {
+            "text": "This is the second time I have contacted support about",
+            "start_word": 23,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.41348642110824585
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.662870216369629
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:24.671553+00:00"
+}

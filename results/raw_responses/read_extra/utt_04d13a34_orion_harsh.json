@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_04d13a34",
+    "text_source": "transcript_orion_harsh",
+    "text": "Can you change my flight to Seattle on March 12? I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b29d-7c69-7f41-8782-aed51f95d83f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-7c69-7f41-8782-aed51f95d83f",
+      "created": "2026-11-06T20:47:08.181Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Change flight",
+                "confidence_score": 0.02172853
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.022099165
+              },
+              {
+                "topic": "Check record",
+                "confidence_score": 0.4797547
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Change flight to washington",
+                "confidence_score": 0.03221101
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2796465754508972
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 10,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.508131206035614
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4295896291732788
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:08.235712+00:00"
+}

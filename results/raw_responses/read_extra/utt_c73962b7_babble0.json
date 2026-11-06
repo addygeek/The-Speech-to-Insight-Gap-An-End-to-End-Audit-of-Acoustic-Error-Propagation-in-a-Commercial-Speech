@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_c73962b7",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Taylor Brooks. I do not want to cancel my appointment $8.50. I already tried the letter fighting twice, and it's not safe to change under my card."
+  },
+  "request_id": "01a1b292-fce0-7792-90c1-ddf224448df6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-fce0-7792-90c1-ddf224448df6",
+      "created": "2026-11-06T20:35:40.144Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the letter fighting twice, and it's not safe to change under my card.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment cancellation",
+                "confidence_score": 0.38783535
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the letter fighting twice, and it's not safe to change under my card.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request appointment",
+                "confidence_score": 1.4057039e-05
+              },
+              {
+                "intent": "Reject letter fighting",
+                "confidence_score": 0.020949148
+              },
+              {
+                "intent": "Express unsafety under card",
+                "confidence_score": 0.00015594292
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.021697266027331352
+          },
+          {
+            "text": "I do not want to cancel my appointment $8.50. I already tried the letter fighting twice, and it's not safe to change under my card.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7968896627426147
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6171998279850658
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:40.196592+00:00"
+}

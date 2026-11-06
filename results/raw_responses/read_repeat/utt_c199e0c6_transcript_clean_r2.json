@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_c199e0c6",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Maria Santos. The support team in Denver was excellent today. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b256-1951-78a3-b1cd-771f6d18cfb4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-1951-78a3-b1cd-771f6d18cfb4",
+      "created": "2026-11-06T19:29:09.633Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.61728114
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.1964204
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.98145366
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Collect support schedule",
+                "confidence_score": 4.5141886e-07
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. The support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8122621178627014
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.22900189459323883
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5206320145550896
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:09.723683+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_1acef034",
+    "text_source": "reference",
+    "text": "Thank you Alex Chen, the support team in Austin was excellent today. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b253-17c4-79a3-bdb8-20286b89cc28",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-17c4-79a3-bdb8-20286b89cc28",
+      "created": "2026-11-06T19:25:52.974Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.73096895
+              },
+              {
+                "topic": "Austin",
+                "confidence_score": 0.49063405
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.41365147
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.1225247
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Alex Chen, the support team in Austin was excellent today. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.6536733508110046
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.653673335484096
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:53.053019+00:00"
+}

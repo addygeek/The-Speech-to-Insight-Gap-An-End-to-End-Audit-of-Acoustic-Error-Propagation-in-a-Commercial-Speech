@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_b2cbed50",
+    "text_source": "reference",
+    "text": "I was charged $8.50 twice on my card ending in 4421. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b250-dd63-7ed3-b2b5-304755bbab8e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-dd63-7ed3-b2b5-304755bbab8e",
+      "created": "2026-11-06T19:23:27.170Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Charge discrepancy",
+                "confidence_score": 0.029835315
+              },
+              {
+                "topic": "Agent confirmation",
+                "confidence_score": 0.0017503722
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report charge issue",
+                "confidence_score": 0.039502133
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.61142886
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $8.50 twice on my card ending in 4421. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7311272621154785
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7311272340662339
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:27.249382+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_fd972592",
+    "text_source": "reference",
+    "text": "Where is my package going to Chicago? It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b256-6782-7d41-ad04-7e21a94d2c6d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-6782-7d41-ad04-7e21a94d2c6d",
+      "created": "2026-11-06T19:29:29.820Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.25805962
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Provide package location",
+                "confidence_score": 0.086577624
+              },
+              {
+                "intent": "Request call from mobile phone",
+                "confidence_score": 0.036568798
+              },
+              {
+                "intent": "Provide package arrival time",
+                "confidence_score": 0.006490216
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0840369462966919
+          },
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.3378860354423523
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.23240530490875244
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:29.914363+00:00"
+}

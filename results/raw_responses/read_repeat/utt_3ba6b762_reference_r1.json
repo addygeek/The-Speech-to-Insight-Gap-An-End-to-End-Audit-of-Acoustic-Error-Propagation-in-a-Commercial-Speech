@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_3ba6b762",
+    "text_source": "reference",
+    "text": "Thank you Sam Patel, the support team in Denver was excellent today. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b254-2e1f-7200-a288-babda946c949",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-2e1f-7200-a288-babda946c949",
+      "created": "2026-11-06T19:27:04.418Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.7949872
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.3757571
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Resolve issue before business day",
+                "confidence_score": 0.049358416
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Sam Patel, the support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8763968348503113
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.22099366784095764
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5282138586044312
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:04.497502+00:00"
+}

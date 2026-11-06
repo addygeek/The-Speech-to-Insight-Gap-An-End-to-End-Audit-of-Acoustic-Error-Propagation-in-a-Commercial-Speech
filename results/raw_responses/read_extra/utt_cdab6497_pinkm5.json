@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_cdab6497",
+    "text_source": "transcript_pinkm5",
+    "text": "My card ending in 4421 has been charged $250 two times. I attempted to update my account through the website twice, but it did not make changes."
+  },
+  "request_id": "01a1b291-e34a-7d82-9773-2df5cadf90d0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-e34a-7d82-9773-2df5cadf90d0",
+      "created": "2026-11-06T20:34:28.057Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to update my account through the website twice, but it did not make changes.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Authenticated card charges",
+                "confidence_score": 3.322869e-05
+              },
+              {
+                "topic": "Account updates",
+                "confidence_score": 0.015683273
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.8620729
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to update my account through the website twice, but it did not make changes.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Update account",
+                "confidence_score": 0.34563032
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 has been charged $250 two times. I attempted to update my account through the website twice, but it did not make changes.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7545119524002075
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7545119870093561
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:28.112430+00:00"
+}

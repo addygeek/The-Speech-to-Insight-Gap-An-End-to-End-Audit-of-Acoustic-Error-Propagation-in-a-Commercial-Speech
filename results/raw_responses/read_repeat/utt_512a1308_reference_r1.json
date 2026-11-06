@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_512a1308",
+    "text_source": "reference",
+    "text": "Could you please adjust my flight to Chicago for June 21? I require this to be confirmed by the end of the business day, as I'm traveling tomorrow morning."
+  },
+  "request_id": "01a1b256-a08b-77f2-a424-6a06d6a9eecf",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-a08b-77f2-a424-6a06d6a9eecf",
+      "created": "2026-11-06T19:29:44.277Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I require this to be confirmed by the end of the business day, as I'm traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Flight adjustment",
+                "confidence_score": 0.71452457
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.7191504
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I require this to be confirmed by the end of the business day, as I'm traveling tomorrow morning.",
+            "start_word": 11,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Adjust flight to chicago",
+                "confidence_score": 0.035724454
+              },
+              {
+                "intent": "Confirm flight date",
+                "confidence_score": 0.19352198
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please adjust my flight to Chicago for June 21? I require this to be confirmed by the end of the business day, as I'm traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04226405546069145
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.04226405480328728
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:44.724496+00:00"
+}

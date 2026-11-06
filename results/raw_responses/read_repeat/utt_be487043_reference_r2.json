@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_be487043",
+    "text_source": "reference",
+    "text": "Thank you Sam Patel, the support team in Denver was excellent today. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b255-40e9-7322-b76d-f43267cc678e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-40e9-7322-b76d-f43267cc678e",
+      "created": "2026-11-06T19:28:14.383Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Denver support",
+                "confidence_score": 0.030760966
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Call back",
+                "confidence_score": 0.022402534
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Sam Patel, the support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8673361539840698
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.3396584093570709
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1928391596850227
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:14.467899+00:00"
+}

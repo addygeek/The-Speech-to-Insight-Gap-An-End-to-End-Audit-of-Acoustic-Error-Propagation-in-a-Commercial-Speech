@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_e58c887c",
+    "text_source": "transcript_babble5",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Boston. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b292-074f-7fc2-896a-3ca6e12997f2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-074f-7fc2-896a-3ca6e12997f2",
+      "created": "2026-11-06T20:34:37.472Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.6172581
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.7122085
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Report internet issue",
+                "confidence_score": 0.036622427
+              },
+              {
+                "intent": "Ask to reset website",
+                "confidence_score": 9.595495e-08
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.12975633
+              },
+              {
+                "intent": "Express frustration",
+                "confidence_score": 0.052410573
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Boston. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7929587364196777
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7929587364196777
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:37.527561+00:00"
+}

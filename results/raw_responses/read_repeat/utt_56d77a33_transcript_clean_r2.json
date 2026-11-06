@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_56d77a33",
+    "text_source": "transcript_clean",
+    "text": "Please cancel my order for $250 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b256-132d-7242-8994-a30887a1fd07",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-132d-7242-8994-a30887a1fd07",
+      "created": "2026-11-06T19:29:08.080Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 23,
+            "end_word": 39,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7905765
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.72462875
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 23,
+            "end_word": 39,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.7120092
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.39209497
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $250 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 39,
+            "sentiment": "negative",
+            "sentiment_score": -0.8029407858848572
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8029407925075955
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:08.166727+00:00"
+}

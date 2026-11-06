@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_994f38cc",
+    "text_source": "transcript_pinkm5",
+    "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today. The last agent I spoke with asked me to call back if the card was still showing."
+  },
+  "request_id": "01a1b293-c535-79e0-8b77-fc02f2fa52ec",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-c535-79e0-8b77-fc02f2fa52ec",
+      "created": "2026-11-06T20:36:31.209Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the card was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Boston support",
+                "confidence_score": 0.1630995
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the card was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Check card status",
+                "confidence_score": 0.54353946
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8167659044265747
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the card was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.26989325881004333
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.22686523709978376
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:31.263064+00:00"
+}

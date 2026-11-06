@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_cdab6497",
+    "text_source": "reference",
+    "text": "My card ending in 4421 has been charged $250.00 two times. I attempted to update my account through the website twice, but it did not save the changes."
+  },
+  "request_id": "01a1b250-9c23-7d50-82f6-6918b7705f47",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-9c23-7d50-82f6-6918b7705f47",
+      "created": "2026-11-06T19:23:10.708Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to update my account through the website twice, but it did not save the changes.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Card charge",
+                "confidence_score": 0.04276508
+              },
+              {
+                "topic": "Account update",
+                "confidence_score": 0.052812923
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.4794054
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to update my account through the website twice, but it did not save the changes.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Resolve account issues",
+                "confidence_score": 0.01203245
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 has been charged $250.00 two times. I attempted to update my account through the website twice, but it did not save the changes.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7642911672592163
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7642911275227865
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:10.793548+00:00"
+}

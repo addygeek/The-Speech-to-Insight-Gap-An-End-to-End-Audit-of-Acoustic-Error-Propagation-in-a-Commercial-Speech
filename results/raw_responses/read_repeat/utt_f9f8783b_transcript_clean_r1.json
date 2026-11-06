@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_f9f8783b",
+    "text_source": "transcript_clean",
+    "text": "Please cancel my order for $120 placed yesterday. I need this settled before the end of the business day because I travel tomorrow morning. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b250-c2f2-7b73-a3fa-0a0db3787602",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-c2f2-7b73-a3fa-0a0db3787602",
+      "created": "2026-11-06T19:23:19.875Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.69359654
+              },
+              {
+                "topic": "Support request",
+                "confidence_score": 0.020653661
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 24,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.80469614
+              },
+              {
+                "intent": "Report communication",
+                "confidence_score": 8.105811e-05
+              },
+              {
+                "intent": "End conversation",
+                "confidence_score": 0.0053029764
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $120 placed yesterday. I need this settled before the end of the business day because I travel tomorrow morning. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.6761149168014526
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6761149059642445
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:19.954361+00:00"
+}

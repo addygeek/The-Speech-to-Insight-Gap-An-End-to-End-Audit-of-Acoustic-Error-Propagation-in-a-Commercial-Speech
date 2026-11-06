@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_cb0b3801",
+    "text_source": "reference",
+    "text": "Can you change my flight to Boston on April 3? Please send the updated confirmation to the same email address you have on file. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b254-b4a8-7882-b13b-b3e70bc4ac89",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-b4a8-7882-b13b-b3e70bc4ac89",
+      "created": "2026-11-06T19:27:38.416Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 24,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Flight booking change",
+                "confidence_score": 0.013404076
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 24,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.6442018
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.49146444
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.23163486
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on April 3? Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "neutral",
+            "sentiment_score": -0.24081936478614807
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 24,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.8851740956306458
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4955642167911974
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:38.493619+00:00"
+}

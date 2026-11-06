@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_7a58b28f",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Maria. I do not want to cancel my order for $25.99. The last agent I quoted asked me to call back before"
+  },
+  "request_id": "01a1b291-9d0e-7913-abcd-3d70765bbb2e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9d0e-7913-abcd-3d70765bbb2e",
+      "created": "2026-11-06T20:34:10.246Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I do not want to cancel my order for $25.99.",
+            "start_word": 5,
+            "end_word": 14,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.45158124
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.5979336
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I do not want to cancel my order for $25.99.",
+            "start_word": 5,
+            "end_word": 14,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.14219743
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria.",
+            "start_word": 0,
+            "end_word": 4,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03186608850955963
+          },
+          {
+            "text": "I do not want to cancel my order for $25.99. The last agent I quoted asked me to call back before",
+            "start_word": 5,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7360087037086487
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5568379084269206
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:10.308196+00:00"
+}

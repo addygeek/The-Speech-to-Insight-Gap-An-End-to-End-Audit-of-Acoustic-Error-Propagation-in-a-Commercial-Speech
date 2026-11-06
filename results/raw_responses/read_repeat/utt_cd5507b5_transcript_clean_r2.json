@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_cd5507b5",
+    "text_source": "transcript_clean",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $19.40. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b256-3cfc-7c00-95da-e4806ed52929",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-3cfc-7c00-95da-e4806ed52929",
+      "created": "2026-11-06T19:29:18.800Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7516502
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.5484772
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.24298656
+              },
+              {
+                "intent": "Save change",
+                "confidence_score": 0.6955646
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0563000924885273
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 6,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7694541811943054
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5836594581604004
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:18.894276+00:00"
+}

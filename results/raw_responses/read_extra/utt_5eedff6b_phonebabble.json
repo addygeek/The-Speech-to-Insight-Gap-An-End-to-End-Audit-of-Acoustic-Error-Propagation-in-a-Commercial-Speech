@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_5eedff6b",
+    "text_source": "transcript_phonebabble",
+    "text": "Could you please modify my flight to Seattle for October 5? I've attempted to make this change on the website quite, but it hasn't stayed under my account."
+  },
+  "request_id": "01a1b293-4e1a-7652-b82c-02118ca8d299",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-4e1a-7652-b82c-02118ca8d299",
+      "created": "2026-11-06T20:36:00.925Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to make this change on the website quite, but it hasn't stayed under my account.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.6660023
+              },
+              {
+                "topic": "Website modification",
+                "confidence_score": 0.052985348
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to make this change on the website quite, but it hasn't stayed under my account.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Modify flight to seattle",
+                "confidence_score": 0.006125129
+              },
+              {
+                "intent": "Make change on website",
+                "confidence_score": 0.77383137
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Seattle for October 5?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.01895579881966114
+          },
+          {
+            "text": "I've attempted to make this change on the website quite, but it hasn't stayed under my account.",
+            "start_word": 11,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7236267924308777
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.49508481412320526
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:00.982444+00:00"
+}

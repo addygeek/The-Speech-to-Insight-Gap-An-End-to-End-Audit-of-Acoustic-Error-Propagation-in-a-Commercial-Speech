@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_e1d8f17c",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you change my flight to Boston on March 12? I can wait on the line while you check your address, and I can have my account number."
+  },
+  "request_id": "01a1b292-b3e7-7233-ba3a-f8bb7c290737",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-b3e7-7233-ba3a-f8bb7c290737",
+      "created": "2026-11-06T20:35:21.426Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check your address, and I can have my account number.",
+            "start_word": 10,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8411319
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.34697527
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check your address, and I can have my account number.",
+            "start_word": 10,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.527571
+              },
+              {
+                "intent": "Check address",
+                "confidence_score": 0.48277843
+              },
+              {
+                "intent": "Get account number",
+                "confidence_score": 0.24168463
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on March 12? I can wait on the line while you check your address, and I can have my account number.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2913547456264496
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2913547638923891
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:21.478567+00:00"
+}

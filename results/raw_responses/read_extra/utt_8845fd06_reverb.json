@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_8845fd06",
+    "text_source": "transcript_reverb",
+    "text": "Where is my package going to Denver? It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b292-3ba3-78c3-9d7b-6a300ded0022",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-3ba3-78c3-9d7b-6a300ded0022",
+      "created": "2026-11-06T20:34:50.660Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.73950475
+              },
+              {
+                "topic": "Account information",
+                "confidence_score": 0.11340646
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Check package arrival",
+                "confidence_score": 0.066734575
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.10614822804927826
+          },
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 7,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.5091841220855713
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.417061642238072
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:51.170603+00:00"
+}

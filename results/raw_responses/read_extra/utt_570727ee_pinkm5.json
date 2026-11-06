@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_570727ee",
+    "text_source": "transcript_pinkm5",
+    "text": "Where is my package going to doctor? It should arrive by June 21. Please do not transfer me again unless the next person can actually change the visit"
+  },
+  "request_id": "01a1b293-0abe-7c51-b834-881a5b6c98d0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0abe-7c51-b834-881a5b6c98d0",
+      "created": "2026-11-06T20:35:43.606Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 24
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by June 21.",
+            "start_word": 7,
+            "end_word": 12,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.59638673
+              },
+              {
+                "topic": "Doctor's visit change",
+                "confidence_score": 0.020244712
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by June 21.",
+            "start_word": 7,
+            "end_word": 12,
+            "intents": [
+              {
+                "intent": "Requesting removal from package",
+                "confidence_score": 0.00080112054
+              },
+              {
+                "intent": "Requesting call back",
+                "confidence_score": 0.00038810264
+              },
+              {
+                "intent": "Requesting no transfer",
+                "confidence_score": 0.005890021
+              },
+              {
+                "intent": "Asking for change in package",
+                "confidence_score": 0.003589639
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to doctor? It should arrive by June 21.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06597080826759338
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the visit",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.9160133004188538
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5047024449994487
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:43.661628+00:00"
+}

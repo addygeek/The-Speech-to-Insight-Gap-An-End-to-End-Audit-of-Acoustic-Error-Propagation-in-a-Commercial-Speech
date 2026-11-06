@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_45e0a717",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor Sam Patel on the thirty twenty first at 02:15PM. I already tried the website twice, and it was not safe to change from my medicine."
+  },
+  "request_id": "01a1b291-c765-7323-8e87-180774eb205b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c765-7323-8e87-180774eb205b",
+      "created": "2026-11-06T20:34:20.951Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it was not safe to change from my medicine.",
+            "start_word": 17,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.2404559
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Sam Patel on the thirty twenty first at 02:15PM. I already tried the website twice, and it was not safe to change from my medicine.",
+            "start_word": 1,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Book appointment with dr. sam pattel",
+                "confidence_score": 0.0004961702
+              }
+            ]
+          },
+          {
+            "text": "I already tried the website twice, and it was not safe to change from my medicine.",
+            "start_word": 17,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Try website",
+                "confidence_score": 0.10584263
+              },
+              {
+                "intent": "Change medicine",
+                "confidence_score": 0.9391459
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Sam Patel on the thirty twenty first at 02:15PM.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1049451008439064
+          },
+          {
+            "text": "I already tried the website twice, and it was not safe to change from my medicine.",
+            "start_word": 17,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.8663895130157471
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4475951194763184
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:21.009914+00:00"
+}

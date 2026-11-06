@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_83d45a21",
+    "text_source": "reference",
+    "text": "Since 2:15 PM, my internet has been out, preventing me from working in Chicago. The last representative told me to reach out again if the charge remains."
+  },
+  "request_id": "01a1b252-f66c-7e73-98bb-a26b4c878840",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-f66c-7e73-98bb-a26b4c878840",
+      "created": "2026-11-06T19:25:44.220Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative told me to reach out again if the charge remains.",
+            "start_word": 14,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.96183336
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.034511488
+              },
+              {
+                "topic": "Representative request",
+                "confidence_score": 0.057767678
+              },
+              {
+                "topic": "Charge",
+                "confidence_score": 0.7181329
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative told me to reach out again if the charge remains.",
+            "start_word": 14,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Communicate charge status",
+                "confidence_score": 0.0004815456
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 2:15 PM, my internet has been out, preventing me from working in Chicago. The last representative told me to reach out again if the charge remains.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7717358469963074
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7717358645270852
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:44.294458+00:00"
+}

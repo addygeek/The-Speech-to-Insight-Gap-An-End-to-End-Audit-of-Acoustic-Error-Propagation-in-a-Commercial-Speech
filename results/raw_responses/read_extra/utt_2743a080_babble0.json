@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_2743a080",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $8.50 placed yesterday. This is the second time I have contacted support by my agent. Be Please send the updated confirmation number. Thank you. I'll try"
+  },
+  "request_id": "01a1b293-4a32-7242-a075-6acf8fecb6f3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-4a32-7242-a075-6acf8fecb6f3",
+      "created": "2026-11-06T20:35:59.840Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 27,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.82211155
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.24012159
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you.",
+            "start_word": 27,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.5624167
+              },
+              {
+                "intent": "Send confirmation number",
+                "confidence_score": 0.03517335
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.6441985
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday. This is the second time I have contacted support by my agent.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "negative",
+            "sentiment_score": -0.61918044090271
+          },
+          {
+            "text": "Be Please send the updated confirmation number.",
+            "start_word": 20,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.17433348298072815
+          },
+          {
+            "text": "Thank you.",
+            "start_word": 27,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.5068912506103516
+          },
+          {
+            "text": "I'll try",
+            "start_word": 29,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.004212835803627968
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3834163427352905
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:59.904181+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_0536e4c9",
+    "text_source": "transcript_pinkm5",
+    "text": "What is the status of my package going to? It's expected to arrive by June 21. The last representative I talked to told him to call back if the charge is still disclosed."
+  },
+  "request_id": "01a1b291-78db-7771-b011-191f7ac55bb1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-78db-7771-b011-191f7ac55bb1",
+      "created": "2026-11-06T20:34:00.684Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told him to call back if the charge is still disclosed.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.74284154
+              },
+              {
+                "topic": "Delivery date",
+                "confidence_score": 0.49245378
+              },
+              {
+                "topic": "Representative's call",
+                "confidence_score": 0.08642395
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told him to call back if the charge is still disclosed.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.3300858
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package going to? It's expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04646120965480805
+          },
+          {
+            "text": "The last representative I talked to told him to call back if the charge is still disclosed.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7710447907447815
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.35181091993283004
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:00.748262+00:00"
+}

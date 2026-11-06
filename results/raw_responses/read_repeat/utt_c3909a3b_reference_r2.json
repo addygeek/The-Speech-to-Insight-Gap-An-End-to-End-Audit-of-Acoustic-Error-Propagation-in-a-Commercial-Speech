@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_c3909a3b",
+    "text_source": "reference",
+    "text": "My internet has been down since 11:00 AM and I cannot work from Chicago. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b256-6187-75d2-b35c-32c1cd796699",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-6187-75d2-b35c-32c1cd796699",
+      "created": "2026-11-06T19:29:28.217Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 14,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet issues",
+                "confidence_score": 0.0021008886
+              },
+              {
+                "topic": "Communication with agent",
+                "confidence_score": 0.00036569615
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 14,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Check internet status",
+                "confidence_score": 0.0337488
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 11:00 AM and I cannot work from Chicago. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7298358678817749
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7298358468448415
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:28.305977+00:00"
+}

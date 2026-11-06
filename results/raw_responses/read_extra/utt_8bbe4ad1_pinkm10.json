@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_8bbe4ad1",
+    "text_source": "transcript_pinkm10",
+    "text": "Could you please modify my flight to Boston for April 3? I've attempted to use the website twice, but it failed to save the changes in my time."
+  },
+  "request_id": "01a1b292-c1b0-7b21-b44a-a56f18af0d9c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-c1b0-7b21-b44a-a56f18af0d9c",
+      "created": "2026-11-06T20:35:24.791Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the changes in my time.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.7479273
+              },
+              {
+                "topic": "Website crash",
+                "confidence_score": 0.00070788304
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the changes in my time.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.0027614932
+              },
+              {
+                "intent": "Save changes",
+                "confidence_score": 0.085135035
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Boston for April 3?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03235097602009773
+          },
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the changes in my time.",
+            "start_word": 11,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.738312304019928
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.45807110179554333
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:24.854172+00:00"
+}

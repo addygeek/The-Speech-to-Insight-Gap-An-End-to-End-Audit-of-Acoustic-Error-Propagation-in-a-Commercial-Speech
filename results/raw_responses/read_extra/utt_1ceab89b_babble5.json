@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_1ceab89b",
+    "text_source": "transcript_babble5",
+    "text": "I'd like to schedule an appointment with doctor Jordan Lee for March 12 at 09:30AM. Please refrain from transferring me unless the next representative can modify the book of yours."
+  },
+  "request_id": "01a1b291-981a-70e3-b423-72013df22a3a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-981a-70e3-b423-72013df22a3a",
+      "created": "2026-11-06T20:34:08.709Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me unless the next representative can modify the book of yours.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.62956434
+              },
+              {
+                "topic": "Doctor jordan lee",
+                "confidence_score": 0.3546662
+              },
+              {
+                "topic": "Book modification",
+                "confidence_score": 0.44529265
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me unless the next representative can modify the book of yours.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.15951042
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Jordan Lee for March 12 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2461555153131485
+          },
+          {
+            "text": "Please refrain from transferring me unless the next representative can modify the book of yours.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8330769538879395
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2664799213409424
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:08.762889+00:00"
+}

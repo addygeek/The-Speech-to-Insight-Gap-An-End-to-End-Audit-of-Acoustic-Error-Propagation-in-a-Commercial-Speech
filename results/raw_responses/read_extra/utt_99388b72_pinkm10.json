@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_99388b72",
+    "text_source": "transcript_pinkm10",
+    "text": "I would like to cancel my $120 order from yesterday. Kindly send me a new email. The previous agent advised me to call back as far as you can go visit us."
+  },
+  "request_id": "01a1b291-f173-7f01-b944-674a02f1b1e4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-f173-7f01-b944-674a02f1b1e4",
+      "created": "2026-11-06T20:34:31.573Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back as far as you can go visit us.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Cancelling order",
+                "confidence_score": 0.05164511
+              },
+              {
+                "topic": "New email",
+                "confidence_score": 0.55393493
+              },
+              {
+                "topic": "Contacting agent",
+                "confidence_score": 0.10543661
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back as far as you can go visit us.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.69818735
+              },
+              {
+                "intent": "Request new email",
+                "confidence_score": 0.3632079
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.26098362
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $120 order from yesterday. Kindly send me a new email. The previous agent advised me to call back as far as you can go visit us.",
+            "start_word": 0,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.6286831498146057
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.628683140403346
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:31.632007+00:00"
+}

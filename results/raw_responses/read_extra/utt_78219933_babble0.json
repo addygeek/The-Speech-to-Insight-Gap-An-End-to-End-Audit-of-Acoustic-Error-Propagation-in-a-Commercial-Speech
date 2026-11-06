@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_78219933",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Austin on weekend? Do not transfer me again unless the next person can actually change again."
+  },
+  "request_id": "01a1b292-decb-7d93-86dd-c03c25ce7090",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-decb-7d93-86dd-c03c25ce7090",
+      "created": "2026-11-06T20:35:32.363Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 25,
+        "output_tokens": 25
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 25,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 25,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change again.",
+            "start_word": 9,
+            "end_word": 21,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.5236445
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change again.",
+            "start_word": 9,
+            "end_word": 21,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.22122392
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on weekend? Do not transfer me again unless the next person can actually change again.",
+            "start_word": 0,
+            "end_word": 21,
+            "sentiment": "negative",
+            "sentiment_score": -0.7075855135917664
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7075855255126953
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:32.426076+00:00"
+}

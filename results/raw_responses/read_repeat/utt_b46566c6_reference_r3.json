@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_b46566c6",
+    "text_source": "reference",
+    "text": "Thank you Alex Chen, the support team in Austin was excellent today. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b253-6e47-7931-b779-92b95db5e005",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-6e47-7931-b779-92b95db5e005",
+      "created": "2026-11-06T19:26:14.900Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Austin support",
+                "confidence_score": 0.03768801
+              },
+              {
+                "topic": "Call back request",
+                "confidence_score": 0.14151706
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.5261223
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Alex Chen, the support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8587257862091064
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.29682329297065735
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.19340963074655243
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:14.979530+00:00"
+}

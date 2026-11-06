@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_2c997e8c",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the location of my Jeep returning to Chicago? Thank you, Jordan. It is expected to be delivered by you, sir. I want to schedule The previous agent instructed me to call back to be charged to deliver the"
+  },
+  "request_id": "01a1b292-96e5-72b0-a50a-580829527cf7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-96e5-72b0-a50a-580829527cf7",
+      "created": "2026-11-06T20:35:14.070Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 48
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my Jeep returning to Chicago?",
+            "start_word": 1,
+            "end_word": 12,
+            "topics": [
+              {
+                "topic": "Agent charge",
+                "confidence_score": 0.59721464
+              }
+            ]
+          },
+          {
+            "text": "It is expected to be delivered by you, sir.",
+            "start_word": 15,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Jeep return",
+                "confidence_score": 0.0066625765
+              },
+              {
+                "topic": "Scheduling",
+                "confidence_score": 0.59404737
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It is expected to be delivered by you, sir.",
+            "start_word": 15,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Request jeep delivery",
+                "confidence_score": 0.0012333955
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my Jeep returning to Chicago?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.006778661161661148
+          },
+          {
+            "text": "Thank you, Jordan. It is expected to be delivered by you, sir.",
+            "start_word": 12,
+            "end_word": 23,
+            "sentiment": "positive",
+            "sentiment_score": 0.5998977422714233
+          },
+          {
+            "text": "I want to schedule The previous agent instructed me to call back to be charged to deliver the",
+            "start_word": 24,
+            "end_word": 41,
+            "sentiment": "negative",
+            "sentiment_score": -0.412058562040329
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.05977770686149597
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:14.127083+00:00"
+}

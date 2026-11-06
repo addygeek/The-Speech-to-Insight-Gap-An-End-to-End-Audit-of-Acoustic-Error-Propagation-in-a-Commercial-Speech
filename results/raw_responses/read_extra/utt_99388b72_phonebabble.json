@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_99388b72",
+    "text_source": "transcript_phonebabble",
+    "text": "I would like to cancel my $120 order from yesterday. Kindly send the updated confirmation to the same email address on record. The previous agent advised me to call back if the chart is still visible."
+  },
+  "request_id": "01a1b291-f2ff-7af2-96ce-e38390555f9f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-f2ff-7af2-96ce-e38390555f9f",
+      "created": "2026-11-06T20:34:31.984Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the chart is still visible.",
+            "start_word": 22,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.4969521
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.35078454
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the chart is still visible.",
+            "start_word": 22,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.66223437
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.5062116
+              },
+              {
+                "intent": "Check chart visibility",
+                "confidence_score": 0.073909484
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $120 order from yesterday. Kindly send the updated confirmation to the same email address on record. The previous agent advised me to call back if the chart is still visible.",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.5021572709083557
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5021572567167736
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:32.035161+00:00"
+}

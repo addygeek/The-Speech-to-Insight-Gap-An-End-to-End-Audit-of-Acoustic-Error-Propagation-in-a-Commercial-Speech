@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_01b1ad9a",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $75 placed yesterday. Please do not transfer me again unless the next person will not be. Please send me an updated confirmation."
+  },
+  "request_id": "01a1b293-cb65-76c0-a239-61382d25370f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-cb65-76c0-a239-61382d25370f",
+      "created": "2026-11-06T20:36:32.821Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me an updated confirmation.",
+            "start_word": 21,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.07168383
+              },
+              {
+                "topic": "Order",
+                "confidence_score": 0.058971263
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me an updated confirmation.",
+            "start_word": 21,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6696226
+              },
+              {
+                "intent": "Receive confirmation",
+                "confidence_score": 0.40892538
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday. Please do not transfer me again unless the next person will not be. Please send me an updated confirmation.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7511208057403564
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7511208441949659
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:33.327636+00:00"
+}

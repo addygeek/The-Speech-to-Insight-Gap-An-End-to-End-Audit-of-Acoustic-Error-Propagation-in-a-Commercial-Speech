@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_decf2893",
+    "text_source": "transcript_phonebabble",
+    "text": "Thank you, Sam Patel. The support team in Boston is excellent today. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b291-a7f9-7532-8c67-bf0a0b9b1fe0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a7f9-7532-8c67-bf0a0b9b1fe0",
+      "created": "2026-11-06T20:34:12.734Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.32704052
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.5001181
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.55316037
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Boston is excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6815275549888611
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6977878212928772
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.02902885458686135
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:12.796795+00:00"
+}

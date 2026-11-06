@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_42c3ddd0",
+    "text_source": "transcript_babble0",
+    "text": "I would like to schedule an appointment with doctor Alex Chen for March 12 at two ninety. This is the second time to send the updated confirmation to the email address for sure if you have"
+  },
+  "request_id": "01a1b292-0b5a-70e3-8ecc-c309d7076dd3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0b5a-70e3-8ecc-c309d7076dd3",
+      "created": "2026-11-06T20:34:38.316Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen for March 12 at two ninety.",
+            "start_word": 1,
+            "end_word": 17,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.7747147
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.6342287
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen for March 12 at two ninety.",
+            "start_word": 1,
+            "end_word": 17,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alex chen",
+                "confidence_score": 0.1789234
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.3489606
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen for March 12 at two ninety. This is the second time to send the updated confirmation to the email address for sure if you have",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "positive",
+            "sentiment_score": 0.8380878567695618
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.8380878448486329
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:38.368778+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_932b75c7",
+    "text_source": "transcript_babble5",
+    "text": "I would like to schedule an appointment with Doctor. Sam Patel for March 12 at 02:15PM. The previous agent I talked to advised me to call again if the charge remains visible."
+  },
+  "request_id": "01a1b292-7be3-7c93-915c-335b1e481ded",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7be3-7c93-915c-335b1e481ded",
+      "created": "2026-11-06T20:35:07.076Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to advised me to call again if the charge remains visible.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.22192594
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to advised me to call again if the charge remains visible.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.22877343
+              },
+              {
+                "intent": "Call again",
+                "confidence_score": 0.2190144
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Doctor. Sam Patel for March 12 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.5492976903915405
+          },
+          {
+            "text": "The previous agent I talked to advised me to call again if the charge remains visible.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7238611578941345
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.023623831570148468
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:07.140306+00:00"
+}

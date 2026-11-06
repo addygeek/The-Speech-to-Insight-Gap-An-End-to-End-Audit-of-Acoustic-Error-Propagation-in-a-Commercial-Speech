@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_286f68a9",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $45.99 placed yesterday. Please do not transfer me again unless the next person has actually changed the. This is the second time I have talked about the same problem."
+  },
+  "request_id": "01a1b292-bfbe-7571-89c1-aab343e703d3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-bfbe-7571-89c1-aab343e703d3",
+      "created": "2026-11-06T20:35:24.332Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have talked about the same problem.",
+            "start_word": 22,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.6750478
+              },
+              {
+                "topic": "Change of order",
+                "confidence_score": 0.00018135348
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have talked about the same problem.",
+            "start_word": 22,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.45658076
+              },
+              {
+                "intent": "Change order",
+                "confidence_score": 0.73400503
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45.99 placed yesterday. Please do not transfer me again unless the next person has actually changed the. This is the second time I have talked about the same problem.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.7959732413291931
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7959732055664063
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:24.399296+00:00"
+}

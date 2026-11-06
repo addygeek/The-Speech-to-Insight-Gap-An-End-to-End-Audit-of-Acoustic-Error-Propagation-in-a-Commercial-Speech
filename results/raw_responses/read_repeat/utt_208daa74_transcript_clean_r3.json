@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_208daa74",
+    "text_source": "transcript_clean",
+    "text": "Where is my cottage going to Boston? It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b254-f94f-7b53-ac56-96151c3f5db5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-f94f-7b53-ac56-96151c3f5db5",
+      "created": "2026-11-06T19:27:56.013Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Cottage rental",
+                "confidence_score": 0.05746355
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.8791739
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.011767191
+              },
+              {
+                "intent": "Change cottage location",
+                "confidence_score": 0.21666153
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my cottage going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03065375424921513
+          },
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6601236462593079
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4976798026792465
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:56.096924+00:00"
+}

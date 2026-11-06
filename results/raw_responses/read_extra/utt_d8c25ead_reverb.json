@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_d8c25ead",
+    "text_source": "transcript_reverb",
+    "text": "I was charged $120 twice on my card and made 4,421. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b293-a66b-7381-8886-f2a48d98599e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-a66b-7381-8886-f2a48d98599e",
+      "created": "2026-11-06T20:36:23.532Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card and made 4,421. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 1,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Payment issue",
+                "confidence_score": 0.024649024
+              },
+              {
+                "topic": "Charge discrepancy",
+                "confidence_score": 0.073012345
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card and made 4,421. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 1,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.2217197
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card and made 4,421. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7390331625938416
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.739033149950432
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:23.587655+00:00"
+}

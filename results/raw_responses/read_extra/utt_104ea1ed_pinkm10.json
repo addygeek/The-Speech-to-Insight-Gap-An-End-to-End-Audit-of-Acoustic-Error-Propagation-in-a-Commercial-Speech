@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_104ea1ed",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you change next flight to Boston on May 21? Please do not transfer me again unless the next flight will actually change."
+  },
+  "request_id": "01a1b292-7f5f-7aa3-843e-9f5f42a9951e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7f5f-7aa3-843e-9f5f42a9951e",
+      "created": "2026-11-06T20:35:07.792Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 26
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next flight will actually change.",
+            "start_word": 10,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Change flight",
+                "confidence_score": 0.0252916
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next flight will actually change.",
+            "start_word": 10,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.6424574
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change next flight to Boston on May 21?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.27771010994911194
+          },
+          {
+            "text": "Please do not transfer me again unless the next flight will actually change.",
+            "start_word": 10,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.9005740284919739
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6370545900785006
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:07.846152+00:00"
+}

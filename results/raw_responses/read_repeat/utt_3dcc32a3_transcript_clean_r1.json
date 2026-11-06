@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_3dcc32a3",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Maria Santos on April 3 at 02:15PM. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b252-e97d-7c03-b475-e0d9c3ecc10f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-e97d-7c03-b475-e0d9c3ecc10f",
+      "created": "2026-11-06T19:25:40.828Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.0012449898
+              },
+              {
+                "topic": "Account management",
+                "confidence_score": 0.047126465
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.25179523
+              },
+              {
+                "intent": "Obtain account number",
+                "confidence_score": 0.0023350515
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Maria Santos on April 3 at 02:15PM. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15374693274497986
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1537469341641381
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:40.907169+00:00"
+}

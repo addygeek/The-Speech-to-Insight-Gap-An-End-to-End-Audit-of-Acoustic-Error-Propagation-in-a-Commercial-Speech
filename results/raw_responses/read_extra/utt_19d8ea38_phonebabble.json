@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_19d8ea38",
+    "text_source": "transcript_phonebabble",
+    "text": "You please cancel my order for $120 placed yesterday? I already tried the website twice, and it would not save the change under my account. This is the second time I have contact support about the same problem as me."
+  },
+  "request_id": "01a1b293-112e-7e90-961f-6cf133a9f95c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-112e-7e90-961f-6cf133a9f95c",
+      "created": "2026-11-06T20:35:45.148Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contact support about the same problem as me.",
+            "start_word": 25,
+            "end_word": 39,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.56682646
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.39067668
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.49401906
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contact support about the same problem as me.",
+            "start_word": 25,
+            "end_word": 39,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.37702584
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "You please cancel my order for $120 placed yesterday? I already tried the website twice, and it would not save the change under my account. This is the second time I have contact support about the same problem as me.",
+            "start_word": 0,
+            "end_word": 39,
+            "sentiment": "negative",
+            "sentiment_score": -0.7151250243186951
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7151250203450521
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:45.211238+00:00"
+}

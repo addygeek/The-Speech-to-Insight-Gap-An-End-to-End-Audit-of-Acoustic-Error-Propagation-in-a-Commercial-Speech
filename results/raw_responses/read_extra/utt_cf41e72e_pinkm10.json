@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_cf41e72e",
+    "text_source": "transcript_pinkm10",
+    "text": "I was charged $250 twice on my card and we paid 4,400. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b291-d39d-7d61-b471-79b8546741ef",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-d39d-7d61-b471-79b8546741ef",
+      "created": "2026-11-06T20:34:23.930Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Payment dispute",
+                "confidence_score": 0.10409733
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Pay card",
+                "confidence_score": 0.008799124
+              },
+              {
+                "intent": "Resolve payment issue",
+                "confidence_score": 0.12285204
+              },
+              {
+                "intent": "Travel tomorrow morning",
+                "confidence_score": 0.6407389
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card and we paid 4,400. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.5963754057884216
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5963754346293788
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:23.996346+00:00"
+}

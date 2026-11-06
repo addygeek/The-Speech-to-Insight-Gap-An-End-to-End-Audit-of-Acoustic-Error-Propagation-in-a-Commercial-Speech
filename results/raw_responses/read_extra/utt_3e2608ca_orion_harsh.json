@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_3e2608ca",
+    "text_source": "transcript_orion_harsh",
+    "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b29d-ffe0-7631-9e96-c1cdf3312781",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-ffe0-7631-9e96-c1cdf3312781",
+      "created": "2026-11-06T20:47:41.703Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.40781453
+              },
+              {
+                "topic": "Support team",
+                "confidence_score": 0.04425793
+              },
+              {
+                "topic": "Account problem",
+                "confidence_score": 0.002593187
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Fix website issue",
+                "confidence_score": 0.08259602
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8075704574584961
+          },
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.24904638528823853
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2481850736281451
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:41.756954+00:00"
+}

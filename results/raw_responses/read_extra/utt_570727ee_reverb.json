@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_570727ee",
+    "text_source": "transcript_reverb",
+    "text": "Where is my package going to Boston? It should arrive by June 21. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b293-0d2b-7562-8f7b-4ce872d254f0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0d2b-7562-8f7b-4ce872d254f0",
+      "created": "2026-11-06T20:35:44.180Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.41853988
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.13816412
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change package arrival date",
+                "confidence_score": 0.03597322
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston? It should arrive by June 21.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04598326608538627
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.9262518882751464
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.513625979423523
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:44.232407+00:00"
+}

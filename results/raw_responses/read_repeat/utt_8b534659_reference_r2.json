@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_8b534659",
+    "text_source": "reference",
+    "text": "Can you tell me the status of my package heading to Boston? It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge remains."
+  },
+  "request_id": "01a1b252-9e99-7ac0-b733-def152b66647",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-9e99-7ac0-b733-def152b66647",
+      "created": "2026-11-06T19:25:21.725Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge remains.",
+            "start_word": 12,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.46472558
+              },
+              {
+                "topic": "Attentions for arrival",
+                "confidence_score": 2.7364135e-07
+              },
+              {
+                "topic": "Charge status",
+                "confidence_score": 0.3814967
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge remains.",
+            "start_word": 12,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.31478053
+              },
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.023100656
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Boston?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03131264075636864
+          },
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge remains.",
+            "start_word": 12,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.5235661268234253
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3386065654265575
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:21.804642+00:00"
+}

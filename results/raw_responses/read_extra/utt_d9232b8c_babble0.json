@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_d9232b8c",
+    "text_source": "transcript_babble0",
+    "text": "Thank you, Alex Chen. You're supporting me in Seattle. I was excellent today. Please do not transfer me again. I'm the next person to actually change the world changes."
+  },
+  "request_id": "01a1b292-2775-7ef1-b618-ea4d326f3ae5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2775-7ef1-b618-ea4d326f3ae5",
+      "created": "2026-11-06T20:34:45.417Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm the next person to actually change the world changes.",
+            "start_word": 19,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.5627288
+              },
+              {
+                "topic": "Transfer",
+                "confidence_score": 0.45189255
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm the next person to actually change the world changes.",
+            "start_word": 19,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Expressing gratitude",
+                "confidence_score": 0.04680075
+              },
+              {
+                "intent": "Declining transfer",
+                "confidence_score": 0.13454492
+              },
+              {
+                "intent": "Expressing gratitude",
+                "confidence_score": 0.0549617
+              },
+              {
+                "intent": "Requesting end of conversation",
+                "confidence_score": 0.0016297654
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. You're supporting me in Seattle. I was excellent today.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.5680345296859741
+          },
+          {
+            "text": "Please do not transfer me again.",
+            "start_word": 13,
+            "end_word": 18,
+            "sentiment": "negative",
+            "sentiment_score": -0.5581802129745483
+          },
+          {
+            "text": "I'm the next person to actually change the world changes.",
+            "start_word": 19,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1070842444896698
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1408538573827499
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:45.480474+00:00"
+}

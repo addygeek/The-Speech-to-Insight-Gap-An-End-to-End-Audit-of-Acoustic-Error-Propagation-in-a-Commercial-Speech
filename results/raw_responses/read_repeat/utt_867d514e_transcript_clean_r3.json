@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_867d514e",
+    "text_source": "transcript_clean",
+    "text": "I noticed a double charge of $45.99 on my card ending with 4421. This is the second instance this week that I've reached out to support regarding the same issue."
+  },
+  "request_id": "01a1b256-9b03-74b3-b58d-ac6b1ba750d6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-9b03-74b3-b58d-ac6b1ba750d6",
+      "created": "2026-11-06T19:29:42.971Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second instance this week that I've reached out to support regarding the same issue.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Card support",
+                "confidence_score": 0.29075643
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second instance this week that I've reached out to support regarding the same issue.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report double charge",
+                "confidence_score": 0.64809483
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.6265531
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I noticed a double charge of $45.99 on my card ending with 4421. This is the second instance this week that I've reached out to support regarding the same issue.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.5948084592819214
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5948084279110557
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:43.065519+00:00"
+}

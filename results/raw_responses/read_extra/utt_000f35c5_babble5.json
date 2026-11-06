@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_000f35c5",
+    "text_source": "transcript_babble5",
+    "text": "Where is my package going? To Seattle? It should arrive by March 12. I can wait on the line while you check the records, and I do have my account number ringtone."
+  },
+  "request_id": "01a1b293-7889-7a82-84a3-b1713d2dcfee",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7889-7a82-84a3-b1713d2dcfee",
+      "created": "2026-11-06T20:36:11.627Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "To Seattle? It should arrive by March 12. I can wait on the line while you check the records, and I do have my account number ringtone.",
+            "start_word": 5,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.82707965
+              }
+            ]
+          },
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the records, and I do have my account number ringtone.",
+            "start_word": 7,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Checking records",
+                "confidence_score": 0.0054882797
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "To Seattle? It should arrive by March 12. I can wait on the line while you check the records, and I do have my account number ringtone.",
+            "start_word": 5,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.10931643
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going? To Seattle? It should arrive by March 12. I can wait on the line while you check the records, and I do have my account number ringtone.",
+            "start_word": 0,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2350689321756363
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.23506892354864825
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:11.679905+00:00"
+}

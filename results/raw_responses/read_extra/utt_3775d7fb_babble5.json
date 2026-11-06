@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_3775d7fb",
+    "text_source": "transcript_babble5",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Denver. Send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b291-f5b0-7fb1-a7dc-fae6b061a1bf",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-f5b0-7fb1-a7dc-fae6b061a1bf",
+      "created": "2026-11-06T20:34:32.639Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Internet downbreak",
+                "confidence_score": 5.0169245e-05
+              },
+              {
+                "topic": "Changed email address",
+                "confidence_score": 0.003381846
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Send the updated confirmation to the same email address you have on file.",
+            "start_word": 13,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Send email",
+                "confidence_score": 0.13875656
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Denver. Send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.627030074596405
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.627030074596405
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:32.694259+00:00"
+}

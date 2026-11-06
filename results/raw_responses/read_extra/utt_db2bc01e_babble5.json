@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_db2bc01e",
+    "text_source": "transcript_babble5",
+    "text": "Thank you, Sam Patel. The support team in Seattle was excellent today. Do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b292-47c8-78f2-bd88-6aee4023bbe8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-47c8-78f2-bd88-6aee4023bbe8",
+      "created": "2026-11-06T20:34:53.760Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.41722214
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.9259463
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Request to change booking",
+                "confidence_score": 0.098245315
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6835805773735046
+          },
+          {
+            "text": "Do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.6375389695167542
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.023020798340439796
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:53.822702+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_001f6013",
+    "text_source": "transcript_orion_clean",
+    "text": "Thank you, Jordan Lee. The support team in Chicago was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b29d-7215-7bb1-a31a-fcd6e6b55c3b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-7215-7bb1-a31a-fcd6e6b55c3b",
+      "created": "2026-11-06T20:47:05.499Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.70349306
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.1241971
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.87867033
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Providing support",
+                "confidence_score": 0.0015366832
+              },
+              {
+                "intent": "Reporting issue",
+                "confidence_score": 0.0026454402
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan Lee. The support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.7935022115707397
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.014781143516302109
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.37980663776397705
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:05.557100+00:00"
+}

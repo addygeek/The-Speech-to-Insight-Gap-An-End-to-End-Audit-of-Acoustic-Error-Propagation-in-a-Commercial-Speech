@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_c5555ad6",
+    "text_source": "reference",
+    "text": "Where is my package going to Boston? It should arrive by March 12. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b255-199d-7ab1-b6e6-2273de76388a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-199d-7ab1-b6e6-2273de76388a",
+      "created": "2026-11-06T19:28:04.265Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 7,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.49322584
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.68240047
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 7,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.5138065
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.007788402028381824
+          },
+          {
+            "text": "It should arrive by March 12. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 7,
+            "end_word": 26,
+            "sentiment": "positive",
+            "sentiment_score": 0.4026191532611847
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2937003168566474
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:04.348711+00:00"
+}

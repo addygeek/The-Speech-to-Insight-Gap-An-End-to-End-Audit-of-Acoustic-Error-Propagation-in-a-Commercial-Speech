@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_24dc97a6",
+    "text_source": "transcript_luna_harsh",
+    "text": "My Internet has been down since 02:15PM, and I cannot work from Denver. The last agent I spoke with asked me to call back if the chart is still showing."
+  },
+  "request_id": "01a1b29d-c3fb-7912-8465-038c3a5e21e0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-c3fb-7912-8465-038c3a5e21e0",
+      "created": "2026-11-06T20:47:26.289Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart is still showing.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.50707376
+              },
+              {
+                "topic": "Network issue",
+                "confidence_score": 0.0012485129
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart is still showing.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.31787366
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Denver. The last agent I spoke with asked me to call back if the chart is still showing.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7203128933906555
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7203128917797191
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:26.342256+00:00"
+}

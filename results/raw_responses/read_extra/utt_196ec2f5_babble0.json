@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_196ec2f5",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Taylor Brooks. I do not want to cancel my appointment with $35.99. Please send me updated confirmation to the state I already addressed the coverage file."
+  },
+  "request_id": "01a1b292-bf0a-7b32-a2a4-7d0f8951721e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-bf0a-7b32-a2a4-7d0f8951721e",
+      "created": "2026-11-06T20:35:24.150Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the state I already addressed the coverage file.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment cancellation",
+                "confidence_score": 0.08490294
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the state I already addressed the coverage file.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Request updated confirmation",
+                "confidence_score": 0.21544917
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -0.003787844674661755
+          },
+          {
+            "text": "I do not want to cancel my appointment with $35.99.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.8044142723083496
+          },
+          {
+            "text": "Please send me updated confirmation to the state I already addressed the coverage file.",
+            "start_word": 16,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.10228707641363144
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3117046356201172
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:24.205954+00:00"
+}

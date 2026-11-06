@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_eda8ba96",
+    "text_source": "transcript_phone",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $45.99. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b291-ad78-7330-9a1f-8f5e5e0a3c7d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ad78-7330-9a1f-8f5e5e0a3c7d",
+      "created": "2026-11-06T20:34:14.219Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8943121
+              },
+              {
+                "topic": "Payment",
+                "confidence_score": 0.093508795
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.8252824
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Resolve order before business day",
+                "confidence_score": 0.031447437
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.10734625160694122
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.6531838774681091
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3042480945587158
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3147536039352417
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:14.280061+00:00"
+}

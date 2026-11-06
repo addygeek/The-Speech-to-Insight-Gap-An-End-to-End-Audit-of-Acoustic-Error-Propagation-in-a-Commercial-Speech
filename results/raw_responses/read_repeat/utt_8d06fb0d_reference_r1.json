@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_8d06fb0d",
+    "text_source": "reference",
+    "text": "Could you reschedule my flight to Seattle for April 3? I can hold on the line while you look up the details, and I've got my account number prepared."
+  },
+  "request_id": "01a1b255-8032-7f12-b007-d0593d0a9455",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-8032-7f12-b007-d0593d0a9455",
+      "created": "2026-11-06T19:28:30.768Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can hold on the line while you look up the details, and I've got my account number prepared.",
+            "start_word": 10,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Flight rescheduling",
+                "confidence_score": 0.5108566
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can hold on the line while you look up the details, and I've got my account number prepared.",
+            "start_word": 10,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Reschedule flight",
+                "confidence_score": 0.57012403
+              },
+              {
+                "intent": "Prepare account number",
+                "confidence_score": 0.7798686
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you reschedule my flight to Seattle for April 3?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.21721285581588745
+          },
+          {
+            "text": "I can hold on the line while you look up the details, and I've got my account number prepared.",
+            "start_word": 10,
+            "end_word": 28,
+            "sentiment": "positive",
+            "sentiment_score": 0.42965131998062134
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.342497067573743
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:30.847287+00:00"
+}

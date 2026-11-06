@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_570727ee",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my package going to Boston? It should arrive by 03:28. Please do not pay for me again unless the next person has"
+  },
+  "request_id": "01a1b293-0bdc-7333-ad48-c65cf74b04db",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0bdc-7333-ad48-c65cf74b04db",
+      "created": "2026-11-06T20:35:44.035Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by 03:28.",
+            "start_word": 7,
+            "end_word": 11,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.3788759
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by 03:28.",
+            "start_word": 7,
+            "end_word": 11,
+            "intents": [
+              {
+                "intent": "Request to not pay for package",
+                "confidence_score": 0.03805965
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston? It should arrive by 03:28.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.030716896057128903
+          },
+          {
+            "text": "Please do not pay for me again unless the next person has",
+            "start_word": 12,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.9504761695861816
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4430227279663086
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:44.097898+00:00"
+}

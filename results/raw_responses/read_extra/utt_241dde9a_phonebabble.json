@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_241dde9a",
+    "text_source": "transcript_phonebabble",
+    "text": "Thank you, Taylor Brooks. Your support team in Austin was excellent today. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b293-51c6-73a1-a31e-a50ad6f82cb6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-51c6-73a1-a31e-a50ad6f82cb6",
+      "created": "2026-11-06T20:36:01.694Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.43095157
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Request to stop transfer",
+                "confidence_score": 0.038751215
+              },
+              {
+                "intent": "Request to change booking",
+                "confidence_score": 0.49245992
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. Your support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6464716196060181
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7181729078292847
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.05652709440751509
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:01.758973+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_05144139",
+    "text_source": "reference",
+    "text": "Hi, my name is Sam Patel. I do not want to cancel my order for $120.00. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b256-0ddb-7c82-acac-b6a3b6a7122d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-0ddb-7c82-acac-b6a3b6a7122d",
+      "created": "2026-11-06T19:29:06.783Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8086565
+              },
+              {
+                "topic": "Confirmation email",
+                "confidence_score": 0.32073203
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Send updated confirmation",
+                "confidence_score": 0.058952
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05138141289353371
+          },
+          {
+            "text": "I do not want to cancel my order for $120.00.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.7564966082572937
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.0006446471088565886
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.23958873748779297
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:06.869198+00:00"
+}

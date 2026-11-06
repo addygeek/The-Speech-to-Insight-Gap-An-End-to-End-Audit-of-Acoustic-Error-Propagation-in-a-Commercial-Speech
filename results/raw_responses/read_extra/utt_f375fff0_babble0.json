@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_f375fff0",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me where my coffee is headed to Chicago? It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account in my account."
+  },
+  "request_id": "01a1b293-aed4-76c3-a07b-2eadb58e8ebf",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-aed4-76c3-a07b-2eadb58e8ebf",
+      "created": "2026-11-06T20:36:25.578Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account in my account.",
+            "start_word": 11,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Coffee delivery",
+                "confidence_score": 0.32353783
+              },
+              {
+                "topic": "Chicago arrival time",
+                "confidence_score": 0.0403421
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account in my account.",
+            "start_word": 11,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Confirm location",
+                "confidence_score": 0.17177343
+              },
+              {
+                "intent": "Stay on line",
+                "confidence_score": 0.7575781
+              },
+              {
+                "intent": "Verify details",
+                "confidence_score": 0.8585195
+              },
+              {
+                "intent": "Confirm account",
+                "confidence_score": 0.016060418
+              },
+              {
+                "intent": "Provide information",
+                "confidence_score": 0.06620442
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my coffee is headed to Chicago?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04867405816912651
+          },
+          {
+            "text": "It's expected to arrive by April 3. I'm willing to stay on the line while you verify the details, and I have my account in my account.",
+            "start_word": 11,
+            "end_word": 37,
+            "sentiment": "positive",
+            "sentiment_score": 0.4628753662109375
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3524216969807943
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:25.641527+00:00"
+}

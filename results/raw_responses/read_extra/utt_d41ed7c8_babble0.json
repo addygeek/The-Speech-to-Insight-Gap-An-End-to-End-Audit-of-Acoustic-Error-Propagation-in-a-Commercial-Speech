@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_d41ed7c8",
+    "text_source": "transcript_babble0",
+    "text": "I want to schedule a visit with doctor Sam Dai on April 3 at 02:15PM. I tried the website two times already, but it did not change. I think it's a time."
+  },
+  "request_id": "01a1b293-52a7-7792-bae3-47b02cb82802",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-52a7-7792-bae3-47b02cb82802",
+      "created": "2026-11-06T20:36:01.933Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I think it's a time.",
+            "start_word": 27,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Scheduling",
+                "confidence_score": 0.40271932
+              },
+              {
+                "topic": "Website",
+                "confidence_score": 0.30734134
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I think it's a time.",
+            "start_word": 27,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Schedule visit with doctor sam dai",
+                "confidence_score": 0.521561
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule a visit with doctor Sam Dai on April 3 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "positive",
+            "sentiment_score": 0.3793734610080719
+          },
+          {
+            "text": "I tried the website two times already, but it did not change. I think it's a time.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1397942751646042
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.10799032991582697
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:01.997502+00:00"
+}

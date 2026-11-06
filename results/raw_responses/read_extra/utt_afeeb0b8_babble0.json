@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_afeeb0b8",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the location of my package heading to San Diego? It's expected to arrive by April 3. I require this resolvement and enroll in the same day by law. Travel"
+  },
+  "request_id": "01a1b292-8ac8-71a1-92b8-8dc8e6fa45fd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-8ac8-71a1-92b8-8dc8e6fa45fd",
+      "created": "2026-11-06T20:35:11.066Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to San Diego? It's expected to arrive by April 3. I require this resolvement and enroll in the same day by law.",
+            "start_word": 1,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Travel plans",
+                "confidence_score": 0.018566296
+              }
+            ]
+          },
+          {
+            "text": "It's expected to arrive by April 3. I require this resolvement and enroll in the same day by law.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.17595023
+              },
+              {
+                "topic": "Package location",
+                "confidence_score": 0.09501365
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I require this resolvement and enroll in the same day by law.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Request package location and arrive date",
+                "confidence_score": 0.0023344618
+              },
+              {
+                "intent": "Resolve package issue",
+                "confidence_score": 0.32566434
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to San Diego?",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06596820801496506
+          },
+          {
+            "text": "It's expected to arrive by April 3. I require this resolvement and enroll in the same day by law. Travel",
+            "start_word": 13,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.508164644241333
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3452501547963996
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:11.124318+00:00"
+}

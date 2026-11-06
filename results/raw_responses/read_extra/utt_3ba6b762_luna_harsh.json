@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_3ba6b762",
+    "text_source": "transcript_luna_harsh",
+    "text": "Thank you, Sam Patel. The support team in Denver was excellent today. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b29d-f54f-7141-ae53-dcfb05c6d030",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-f54f-7141-ae53-dcfb05c6d030",
+      "created": "2026-11-06T20:47:39.078Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.7458943
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.5279131
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Confirm support",
+                "confidence_score": 0.005902173
+              },
+              {
+                "intent": "Travel",
+                "confidence_score": 0.040600255
+              },
+              {
+                "intent": "Check status",
+                "confidence_score": 0.008696457
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8313465714454651
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2385245710611343
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5259534662420099
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:39.131844+00:00"
+}

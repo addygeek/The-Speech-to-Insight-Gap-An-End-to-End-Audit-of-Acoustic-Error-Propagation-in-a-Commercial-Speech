@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_1f14eba8",
+    "text_source": "transcript_orion_harsh",
+    "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today. I'm calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b29d-b56c-7c40-a616-93a0075d7691",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-b56c-7c40-a616-93a0075d7691",
+      "created": "2026-11-06T20:47:22.850Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Boston support",
+                "confidence_score": 0.5487853
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Expressing absence from home office",
+                "confidence_score": 0.053168293
+              },
+              {
+                "intent": "Reporting absence from support team",
+                "confidence_score": 0.0011740929
+              },
+              {
+                "intent": "Providing contact information",
+                "confidence_score": 0.0053566555
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.812240481376648
+          },
+          {
+            "text": "I'm calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05616519972681999
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3408202852521624
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:22.904457+00:00"
+}

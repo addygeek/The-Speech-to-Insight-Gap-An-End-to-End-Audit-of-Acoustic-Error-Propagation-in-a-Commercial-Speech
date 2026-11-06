@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_aba9a118",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 09:30AM. The last agent at local asked me to call back to."
+  },
+  "request_id": "01a1b292-85ff-7312-8399-cda2c725f49d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-85ff-7312-8399-cda2c725f49d",
+      "created": "2026-11-06T20:35:09.725Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent at local asked me to call back to.",
+            "start_word": 15,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.4117059
+              },
+              {
+                "topic": "Doctor jordan lee",
+                "confidence_score": 0.57714593
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent at local asked me to call back to.",
+            "start_word": 15,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor jordan lee",
+                "confidence_score": 0.32501572
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.08794607222080231
+          },
+          {
+            "text": "The last agent at local asked me to call back to.",
+            "start_word": 15,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7933419942855835
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3610025221301663
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:10.495125+00:00"
+}

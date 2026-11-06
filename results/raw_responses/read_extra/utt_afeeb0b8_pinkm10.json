@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_afeeb0b8",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you tell me the location of my passenger's heading to Seattle? It's expected to arrive by April 3. I require this resolved by the end of the day as I recently traveled from home."
+  },
+  "request_id": "01a1b292-89ac-7d20-b11f-a48187e53574",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-89ac-7d20-b11f-a48187e53574",
+      "created": "2026-11-06T20:35:10.670Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I require this resolved by the end of the day as I recently traveled from home.",
+            "start_word": 12,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Passenger location",
+                "confidence_score": 0.17056416
+              },
+              {
+                "topic": "Arrival date",
+                "confidence_score": 0.27884716
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by April 3. I require this resolved by the end of the day as I recently traveled from home.",
+            "start_word": 12,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Request a location",
+                "confidence_score": 0.0045743072
+              },
+              {
+                "intent": "Request resolution",
+                "confidence_score": 0.11656661
+              },
+              {
+                "intent": "Report recent travel",
+                "confidence_score": 0.17935695
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my passenger's heading to Seattle?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04826043918728829
+          },
+          {
+            "text": "It's expected to arrive by April 3. I require this resolved by the end of the day as I recently traveled from home.",
+            "start_word": 12,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.4293109476566314
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2899021986054211
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:10.727398+00:00"
+}

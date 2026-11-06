@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_a80d9bc8",
+    "text_source": "transcript_clean",
+    "text": "My card ending in 4421 was charged $45.99 two times. I attempted to make changes on the website twice, but it wouldn't save to my account."
+  },
+  "request_id": "01a1b256-0335-7c43-a6e8-9859fb6682ec",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-0335-7c43-a6e8-9859fb6682ec",
+      "created": "2026-11-06T19:29:04.883Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to make changes on the website twice, but it wouldn't save to my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Card charging",
+                "confidence_score": 0.037394065
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.64208895
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to make changes on the website twice, but it wouldn't save to my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Report card issue",
+                "confidence_score": 0.13598794
+              },
+              {
+                "intent": "Request website changes",
+                "confidence_score": 0.18923666
+              },
+              {
+                "intent": "Inquire about account",
+                "confidence_score": 0.0002025092
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was charged $45.99 two times. I attempted to make changes on the website twice, but it wouldn't save to my account.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7812771797180176
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.781277151668773
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:04.972972+00:00"
+}

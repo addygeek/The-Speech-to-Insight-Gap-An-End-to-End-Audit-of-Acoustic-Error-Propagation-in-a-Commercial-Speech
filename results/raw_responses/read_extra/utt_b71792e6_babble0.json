@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_b71792e6",
+    "text_source": "transcript_babble0",
+    "text": "What is the Can you change my flight to Denver on April 30? Please do not transfer me again unless the next person can actually change it."
+  },
+  "request_id": "01a1b292-d26c-7bf1-aa8e-b69b7ad10c93",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-d26c-7bf1-aa8e-b69b7ad10c93",
+      "created": "2026-11-06T20:35:29.200Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change it.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.5983953
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change it.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight to detroit",
+                "confidence_score": 0.015785495
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the Can you change my flight to Denver on April 30?",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.27047574520111084
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change it.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.9096941947937012
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6113922119140625
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:29.254838+00:00"
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_eda8ba96",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $45 and help you. My name is Sam. I need this settled before the end of the day because I travel and buy more than"
+  },
+  "request_id": "01a1b291-ad0f-7710-b155-59be61051f46",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ad0f-7710-b155-59be61051f46",
+      "created": "2026-11-06T20:34:14.133Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My name is Sam.",
+            "start_word": 19,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.89188826
+              },
+              {
+                "topic": "Settlement",
+                "confidence_score": 0.45260805
+              },
+              {
+                "topic": "Travel",
+                "confidence_score": 0.4540492
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My name is Sam.",
+            "start_word": 19,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Resolve order issue",
+                "confidence_score": 0.20477565
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09431519359350204
+          },
+          {
+            "text": "I do not want to cancel my order for $45 and help you.",
+            "start_word": 6,
+            "end_word": 18,
+            "sentiment": "negative",
+            "sentiment_score": -0.654464066028595
+          },
+          {
+            "text": "My name is Sam.",
+            "start_word": 19,
+            "end_word": 22,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09197447448968887
+          },
+          {
+            "text": "I need this settled before the end of the day because I travel and buy more than",
+            "start_word": 23,
+            "end_word": 39,
+            "sentiment": "negative",
+            "sentiment_score": -0.5720639228820801
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.40550564705057346
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:14.187504+00:00"
+}

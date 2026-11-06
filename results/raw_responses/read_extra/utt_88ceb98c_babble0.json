@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_88ceb98c",
+    "text_source": "transcript_babble0",
+    "text": "My card ending in 400419 was charged $8.90. I've attempted to save a change on the website twice, but it hasn't worked on my account."
+  },
+  "request_id": "01a1b293-595f-7061-8f3d-9523d5522f2c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-595f-7061-8f3d-9523d5522f2c",
+      "created": "2026-11-06T20:36:03.610Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to save a change on the website twice, but it hasn't worked on my account.",
+            "start_word": 8,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.010799603
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to save a change on the website twice, but it hasn't worked on my account.",
+            "start_word": 8,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Fix account issue",
+                "confidence_score": 0.44169548
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 400419 was charged $8.90. I've attempted to save a change on the website twice, but it hasn't worked on my account.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6902431845664978
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.690243168881065
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:03.665535+00:00"
+}

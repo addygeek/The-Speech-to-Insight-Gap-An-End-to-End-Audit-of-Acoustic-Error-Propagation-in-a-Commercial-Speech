@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_5c76c664",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is. I do not want to cancel my order. I need this settled before the end of the day, but I travel tomorrow morning."
+  },
+  "request_id": "01a1b293-46e9-7c12-b38b-cc83a07af70a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-46e9-7c12-b38b-cc83a07af70a",
+      "created": "2026-11-06T20:35:59.043Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the day, but I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.89668995
+              },
+              {
+                "topic": "Settlement",
+                "confidence_score": 0.12321707
+              },
+              {
+                "topic": "Travel plans",
+                "confidence_score": 0.5023209
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the day, but I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Schedule order",
+                "confidence_score": 0.0031492808
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09825007617473602
+          },
+          {
+            "text": "I do not want to cancel my order.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "negative",
+            "sentiment_score": -0.5497221350669861
+          },
+          {
+            "text": "I need this settled before the end of the day, but I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1127765029668808
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1960999965667725
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:59.107541+00:00"
+}

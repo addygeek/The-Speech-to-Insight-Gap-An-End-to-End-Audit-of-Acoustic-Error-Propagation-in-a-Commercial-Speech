@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_39799731",
+    "text_source": "transcript_babble5",
+    "text": "Can you change my flight to Boston on June 21? I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b292-0230-71e2-b907-89d41aa453be",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0230-71e2-b907-89d41aa453be",
+      "created": "2026-11-06T20:34:35.906Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.70922
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.4057886
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight to boston on june 21",
+                "confidence_score": 0.019565647
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on June 21?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04794074222445488
+          },
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7752636671066284
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4630137147574589
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:36.841378+00:00"
+}

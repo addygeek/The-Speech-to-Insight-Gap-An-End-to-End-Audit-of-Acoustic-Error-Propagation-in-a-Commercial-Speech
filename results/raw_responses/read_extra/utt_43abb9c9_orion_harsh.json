@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_43abb9c9",
+    "text_source": "transcript_orion_harsh",
+    "text": "We changed my flight to Denver on June 21. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b29e-0ae1-77b1-9e01-71bf69d24c5f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-0ae1-77b1-9e01-71bf69d24c5f",
+      "created": "2026-11-06T20:47:44.651Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 9,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight information",
+                "confidence_score": 1.0118569e-05
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.9292432
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 9,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.6959386
+              },
+              {
+                "intent": "Request settlement",
+                "confidence_score": 0.0032900793
+              },
+              {
+                "intent": "Travel tomorrow morning",
+                "confidence_score": 0.84091675
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "We changed my flight to Denver on June 21. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1555265486240387
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.15552654972782842
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:44.705744+00:00"
+}

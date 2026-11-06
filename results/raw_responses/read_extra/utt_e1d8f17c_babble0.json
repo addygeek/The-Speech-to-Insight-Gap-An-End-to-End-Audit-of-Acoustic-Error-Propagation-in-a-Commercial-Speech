@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_e1d8f17c",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Boston on March 12? I can wait on the line while you check your numbers, and I do have my account, like, last day."
+  },
+  "request_id": "01a1b292-b4c7-7273-a4f2-a74d4545dc02",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-b4c7-7273-a4f2-a74d4545dc02",
+      "created": "2026-11-06T20:35:21.856Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check your numbers, and I do have my account, like, last day.",
+            "start_word": 10,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.780909
+              },
+              {
+                "topic": "Account",
+                "confidence_score": 0.13911155
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check your numbers, and I do have my account, like, last day.",
+            "start_word": 10,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Change flight to boston",
+                "confidence_score": 0.25787973
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.18127086758613584
+          },
+          {
+            "text": "I can wait on the line while you check your numbers, and I do have my account, like, last day.",
+            "start_word": 10,
+            "end_word": 29,
+            "sentiment": "positive",
+            "sentiment_score": 0.46484702825546265
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3757231031145368
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:21.921720+00:00"
+}

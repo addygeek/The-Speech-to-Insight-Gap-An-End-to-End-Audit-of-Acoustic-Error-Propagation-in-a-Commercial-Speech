@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_ba711047",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Boston? It should arrive by March 12. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b253-87b8-7860-add1-3f2046983e7c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-87b8-7860-add1-3f2046983e7c",
+      "created": "2026-11-06T19:26:21.372Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.91718125
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.4452689
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Fix package issue",
+                "confidence_score": 0.080176264
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05848522111773491
+          },
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5020492672920227
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36191561818122864
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:21.451132+00:00"
+}

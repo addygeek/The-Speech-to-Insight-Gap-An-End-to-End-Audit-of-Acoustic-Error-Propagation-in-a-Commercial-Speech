@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_e3513a7e",
+    "text_source": "transcript_pinkm5",
+    "text": "I need to book an appointment with doctor Alex Chen on June 21 at 02:15PM. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b293-be96-7aa3-b5e5-2ec0d6d29cb3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-be96-7aa3-b5e5-2ec0d6d29cb3",
+      "created": "2026-11-06T20:36:29.568Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.7134518
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.72191256
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.55500793
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.9233072
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Alex Chen on June 21 at 02:15PM. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07372642308473587
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.07372642264646642
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:29.621710+00:00"
+}

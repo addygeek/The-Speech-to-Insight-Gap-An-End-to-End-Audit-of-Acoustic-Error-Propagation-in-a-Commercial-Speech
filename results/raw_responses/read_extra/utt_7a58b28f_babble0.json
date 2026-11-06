@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_7a58b28f",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is. I do not want to cancel my order for $45.99 again. The last agent I started with, she asked me to call back. I tried to schedule"
+  },
+  "request_id": "01a1b291-9c66-7911-b0f2-0f057176eb7a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9c66-7911-b0f2-0f057176eb7a",
+      "created": "2026-11-06T20:34:09.760Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 2
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I started with, she asked me to call back.",
+            "start_word": 15,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.4836598
+              },
+              {
+                "topic": "Callback request",
+                "confidence_score": 0.04489294
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": []
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.008871437981724739
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99 again. The last agent I started with, she asked me to call back. I tried to schedule",
+            "start_word": 4,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.6690106391906738
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5619766335738333
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:09.813437+00:00"
+}

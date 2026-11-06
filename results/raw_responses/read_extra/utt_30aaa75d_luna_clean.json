@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_30aaa75d",
+    "text_source": "transcript_luna_clean",
+    "text": "Kindly cancel my $45.99 order that I placed yesterday. Please send the updated confirmation to the email address you have. I need this resolved by the end of the business day since I travel tomorrow morning."
+  },
+  "request_id": "01a1b29d-dd65-7862-9d4d-bcda67dd33f0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-dd65-7862-9d4d-bcda67dd33f0",
+      "created": "2026-11-06T20:47:32.991Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 15
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I travel tomorrow morning.",
+            "start_word": 20,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.87058264
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.34015873
+              },
+              {
+                "topic": "Email address",
+                "confidence_score": 0.027666297
+              },
+              {
+                "topic": "Business day resolution",
+                "confidence_score": 0.25766844
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I travel tomorrow morning.",
+            "start_word": 20,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Fix order",
+                "confidence_score": 0.00041709485
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Kindly cancel my $45.99 order that I placed yesterday.",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "negative",
+            "sentiment_score": -0.763397216796875
+          },
+          {
+            "text": "Please send the updated confirmation to the email address you have. I need this resolved by the end of the business day since I travel tomorrow morning.",
+            "start_word": 9,
+            "end_word": 35,
+            "sentiment": "neutral",
+            "sentiment_score": -0.26072803139686584
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.416316168648856
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:33.045821+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_eae43346",
+    "text_source": "transcript_reverb",
+    "text": "I appreciate your help, Maria Santos. The Seattle support team was outstanding today. I can hold the line while you review the record, and I have my account number available."
+  },
+  "request_id": "01a1b293-8fa8-7f92-8206-5c71369c49a1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-8fa8-7f92-8206-5c71369c49a1",
+      "created": "2026-11-06T20:36:17.688Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can hold the line while you review the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Seattle support",
+                "confidence_score": 0.10151802
+              },
+              {
+                "topic": "Record review",
+                "confidence_score": 0.35612178
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.956331
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can hold the line while you review the record, and I have my account number available.",
+            "start_word": 13,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Update support team",
+                "confidence_score": 0.017089626
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Maria Santos. The Seattle support team was outstanding today. I can hold the line while you review the record, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "positive",
+            "sentiment_score": 0.5873681902885437
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5873681661244985
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:17.742526+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_cf41e72e",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $250 twice on my card and within 40,412. I need this settled before the end of business day because I travel to the airport."
+  },
+  "request_id": "01a1b291-d484-7a90-962d-b76b1c9c1454",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-d484-7a90-962d-b76b1c9c1454",
+      "created": "2026-11-06T20:34:24.114Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card and within 40,412. I need this settled before the end of business day because I travel to the airport.",
+            "start_word": 1,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Payment issue",
+                "confidence_score": 0.21816249
+              },
+              {
+                "topic": "Express need to settle",
+                "confidence_score": 0.0014345692
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card and within 40,412. I need this settled before the end of business day because I travel to the airport.",
+            "start_word": 1,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Resolve billing issues",
+                "confidence_score": 0.001977211
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card and within 40,412. I need this settled before the end of business day because I travel to the airport.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7011259198188782
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7011259140506867
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:24.168635+00:00"
+}

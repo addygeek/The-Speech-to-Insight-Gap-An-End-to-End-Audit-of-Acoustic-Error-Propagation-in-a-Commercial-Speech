@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_c6ab8e48",
+    "text_source": "transcript_phonebabble",
+    "text": "Where is my package going to Seattle? It should arrive by October 5. Need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b292-0e57-73a2-bc02-20919c7eabe9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0e57-73a2-bc02-20919c7eabe9",
+      "created": "2026-11-06T20:34:39.163Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package",
+                "confidence_score": 0.2432529
+              },
+              {
+                "topic": "Portland",
+                "confidence_score": 0.00072665035
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. Need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.13233036
+              },
+              {
+                "intent": "Arrange settlement before business day",
+                "confidence_score": 0.00575268
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle? It should arrive by October 5. Need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.11346126347780228
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.11346125602722168
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:39.221285+00:00"
+}

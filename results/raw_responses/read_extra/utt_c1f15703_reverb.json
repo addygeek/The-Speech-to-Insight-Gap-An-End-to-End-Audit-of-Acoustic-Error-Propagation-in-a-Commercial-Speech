@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_c1f15703",
+    "text_source": "transcript_reverb",
+    "text": "Where is my package going to Seattle? It should arrive by October 5. I am calling for my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b292-5cab-7c11-8c8c-742715c43ca7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-5cab-7c11-8c8c-742715c43ca7",
+      "created": "2026-11-06T20:34:59.013Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I am calling for my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.62627
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.8336983
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I am calling for my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Find package location and arrange mobile phone delivery",
+                "confidence_score": 0.00047186887
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05816991627216339
+          },
+          {
+            "text": "It should arrive by October 5. I am calling for my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.36473363637924194
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2590077519416809
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:59.067078+00:00"
+}

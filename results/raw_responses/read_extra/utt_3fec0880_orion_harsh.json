@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_3fec0880",
+    "text_source": "transcript_orion_harsh",
+    "text": "I need to book an appointment with Doctor. Alex Chen on October 5 at 11AM. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b29e-02be-74f1-94d6-41b1226be2d5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-02be-74f1-94d6-41b1226be2d5",
+      "created": "2026-11-06T20:47:42.355Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.6676472
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.7604641
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Alex Chen on October 5 at 11AM. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 8,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor",
+                "confidence_score": 0.22228923
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Doctor. Alex Chen on October 5 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04183594137430191
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.36855462193489075
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.20052785873413087
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:42.409667+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_45e0a717",
+    "text_source": "transcript_clean",
+    "text": "I need to put an appointment with doctor Sam Patel on June 21 at 02:15PM. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b250-7929-7e90-a6e1-86ac8d99e4f2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-7929-7e90-a6e1-86ac8d99e4f2",
+      "created": "2026-11-06T19:23:01.006Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.53913826
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.7293985
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.13006032
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to put an appointment with doctor Sam Patel on June 21 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.011766130104660988
+          },
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7793375849723816
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.37535260853014496
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:01.091050+00:00"
+}

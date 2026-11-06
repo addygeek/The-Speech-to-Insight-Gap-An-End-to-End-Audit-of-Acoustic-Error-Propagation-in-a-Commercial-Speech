@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_30cfa570",
+    "text_source": "transcript_babble5",
+    "text": "Could you please modify my flight to Denver for March 12? I've reached out to support about this issue twice already this week."
+  },
+  "request_id": "01a1b293-7c7e-7fc0-bfe0-748f53910823",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7c7e-7fc0-bfe0-748f53910823",
+      "created": "2026-11-06T20:36:12.711Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've reached out to support about this issue twice already this week.",
+            "start_word": 11,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.074350566
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've reached out to support about this issue twice already this week.",
+            "start_word": 11,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.130393
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Denver for March 12?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.054449498653411865
+          },
+          {
+            "text": "I've reached out to support about this issue twice already this week.",
+            "start_word": 11,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.7406732439994812
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4356849105269821
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:12.774159+00:00"
+}

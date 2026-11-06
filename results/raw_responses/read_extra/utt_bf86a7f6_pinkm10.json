@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_bf86a7f6",
+    "text_source": "transcript_pinkm10",
+    "text": "My Internet has been down 11AM, and I cannot open. I've already tried to go to my wife, and it is not."
+  },
+  "request_id": "01a1b292-a865-7502-8c31-436f09bf008a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-a865-7502-8c31-436f09bf008a",
+      "created": "2026-11-06T20:35:18.552Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 23
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've already tried to go to my wife, and it is not.",
+            "start_word": 10,
+            "end_word": 21,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.6625112
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've already tried to go to my wife, and it is not.",
+            "start_word": 10,
+            "end_word": 21,
+            "intents": [
+              {
+                "intent": "Report internet problem",
+                "confidence_score": 0.059308503
+              },
+              {
+                "intent": "Attempt to reach wife",
+                "confidence_score": 0.0023085573
+              },
+              {
+                "intent": "Reject attempts to go to wife",
+                "confidence_score": 2.5538402e-05
+              },
+              {
+                "intent": "Report internet issue",
+                "confidence_score": 0.13103695
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down 11AM, and I cannot open. I've already tried to go to my wife, and it is not.",
+            "start_word": 0,
+            "end_word": 21,
+            "sentiment": "negative",
+            "sentiment_score": -0.7762604355812073
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.776260441747205
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:18.622043+00:00"
+}

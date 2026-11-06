@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_7622d8d7",
+    "text_source": "transcript_pinkm10",
+    "text": "I would like to cancel my order of $8.50 that I paid for. Kindly send the updated confirmation through email address. I need this resolved by any particular day. I will stop at the end."
+  },
+  "request_id": "01a1b292-5fab-7001-8ef6-1909ebc16700",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-5fab-7001-8ef6-1909ebc16700",
+      "created": "2026-11-06T20:34:59.927Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I will stop at the end.",
+            "start_word": 29,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.51206136
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.2706774
+              },
+              {
+                "topic": "Email address",
+                "confidence_score": 0.496045
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I will stop at the end.",
+            "start_word": 29,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.49909377
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.2192738
+              },
+              {
+                "intent": "Resolve order",
+                "confidence_score": 0.42593116
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order of $8.50 that I paid for. Kindly send the updated confirmation through email address. I need this resolved by any particular day.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5766205787658691
+          },
+          {
+            "text": "I will stop at the end.",
+            "start_word": 29,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": -0.31603533029556274
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5331896827334449
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:59.978286+00:00"
+}

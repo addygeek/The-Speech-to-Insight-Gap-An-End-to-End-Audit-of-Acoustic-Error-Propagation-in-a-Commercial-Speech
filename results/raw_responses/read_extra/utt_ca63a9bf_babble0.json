@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_ca63a9bf",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel your time for me. Already tried the website twice. I'm not sure."
+  },
+  "request_id": "01a1b292-9902-7aa3-8911-4a7151180071",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-9902-7aa3-8911-4a7151180071",
+      "created": "2026-11-06T20:35:14.539Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 2
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": []
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm not sure.",
+            "start_word": 21,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Cancel time",
+                "confidence_score": 0.080569446
+              },
+              {
+                "intent": "Test website",
+                "confidence_score": 0.016627608
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04307665675878525
+          },
+          {
+            "text": "I do not want to cancel your time for me. Already tried the website twice. I'm not sure.",
+            "start_word": 6,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.6989713311195374
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4902702569961548
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:14.674687+00:00"
+}

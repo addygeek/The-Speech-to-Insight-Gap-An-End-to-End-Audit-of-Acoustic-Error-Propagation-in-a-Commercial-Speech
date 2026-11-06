@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_8f3896f3",
+    "text_source": "transcript_clean",
+    "text": "Hello. I'm Alex Chen. I wish to keep my order for $75 and need this resolved by the end of the business day since I have to travel tomorrow morning."
+  },
+  "request_id": "01a1b250-c0af-7381-b2ae-542a3f49c8d6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-c0af-7381-b2ae-542a3f49c8d6",
+      "created": "2026-11-06T19:23:19.379Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I wish to keep my order for $75 and need this resolved by the end of the business day since I have to travel tomorrow morning.",
+            "start_word": 4,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Order resolution",
+                "confidence_score": 0.67794806
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.55387044
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I wish to keep my order for $75 and need this resolved by the end of the business day since I have to travel tomorrow morning.",
+            "start_word": 4,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Keep order resolved",
+                "confidence_score": 0.00027866857
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen. I wish to keep my order for $75 and need this resolved by the end of the business day since I have to travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.17407295107841492
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1740729468209403
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:19.457290+00:00"
+}

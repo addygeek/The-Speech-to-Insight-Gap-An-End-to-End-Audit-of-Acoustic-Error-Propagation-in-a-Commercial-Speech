@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_f1bbd390",
+    "text_source": "transcript_reverb",
+    "text": "Where is my package going to Denver? It should arrive by March 12. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b292-d8c1-7b43-81f8-7a3a7b80787d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-d8c1-7b43-81f8-7a3a7b80787d",
+      "created": "2026-11-06T20:35:30.707Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9305079
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.1758395
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.81787664
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Notify package delivery",
+                "confidence_score": 0.0031610958
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0288856104016304
+          },
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.35672080516815186
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.257209470195155
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:31.058928+00:00"
+}

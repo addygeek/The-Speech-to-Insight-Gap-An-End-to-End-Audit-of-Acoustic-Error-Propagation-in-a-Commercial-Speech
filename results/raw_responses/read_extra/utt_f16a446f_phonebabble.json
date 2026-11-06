@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_f16a446f",
+    "text_source": "transcript_phonebabble",
+    "text": "I would like to schedule an appointment with doctor Alex Chen on October 5 at 09:30AM. Please cancel my record. I'm willing to hold while you verify the record, and I have my account number available."
+  },
+  "request_id": "01a1b293-b4c2-7b51-aa72-db22d7fbb286",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-b4c2-7b51-aa72-db22d7fbb286",
+      "created": "2026-11-06T20:36:27.121Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 15
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number available.",
+            "start_word": 20,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.78489983
+              },
+              {
+                "topic": "Record cancellation",
+                "confidence_score": 0.35417455
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.014213192
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9293659
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number available.",
+            "start_word": 20,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alex chen",
+                "confidence_score": 0.09007702
+              },
+              {
+                "intent": "Cancel record",
+                "confidence_score": 0.6374362
+              },
+              {
+                "intent": "Verify record",
+                "confidence_score": 0.58783644
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.3729627
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen on October 5 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.19832201302051544
+          },
+          {
+            "text": "Please cancel my record.",
+            "start_word": 16,
+            "end_word": 19,
+            "sentiment": "negative",
+            "sentiment_score": -0.8473019599914551
+          },
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my account number available.",
+            "start_word": 20,
+            "end_word": 35,
+            "sentiment": "neutral",
+            "sentiment_score": -0.33154165744781494
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.153353394402398
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:27.184779+00:00"
+}

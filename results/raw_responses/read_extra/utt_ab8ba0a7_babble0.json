@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_ab8ba0a7",
+    "text_source": "transcript_babble0",
+    "text": "I need to book an appointment with doctor Bourgui on March 12 at 11AM. I need to the This is the second time I have contacted support about"
+  },
+  "request_id": "01a1b291-da07-78a2-ad34-0cf292c2c0fe",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-da07-78a2-ad34-0cf292c2c0fe",
+      "created": "2026-11-06T20:34:25.658Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Bourgui on March 12 at 11AM.",
+            "start_word": 1,
+            "end_word": 14,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.8631924
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.41847777
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Bourgui on March 12 at 11AM.",
+            "start_word": 1,
+            "end_word": 14,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.60095036
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.9852586
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Bourgui on March 12 at 11AM.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "neutral",
+            "sentiment_score": -0.025212259963154793
+          },
+          {
+            "text": "I need to the This is the second time I have contacted support about",
+            "start_word": 14,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.5696665048599243
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.28042519092559814
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:25.796410+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_cbd06c99",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor Taylor Swift on April 3 at 09:30AM. I am calling from my mobile phone because I am related to my."
+  },
+  "request_id": "01a1b292-f8c2-7af0-8026-6d356ea380be",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-f8c2-7af0-8026-6d356ea380be",
+      "created": "2026-11-06T20:35:39.030Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am related to my.",
+            "start_word": 15,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Doctor appointment booking",
+                "confidence_score": 0.042134803
+              },
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.37832868
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am related to my.",
+            "start_word": 15,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.20968676
+              },
+              {
+                "intent": "Report phone call",
+                "confidence_score": 0.00026157053
+              },
+              {
+                "intent": "Express relationship",
+                "confidence_score": 0.014197699
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Taylor Swift on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.011587012559175491
+          },
+          {
+            "text": "I am calling from my mobile phone because I am related to my.",
+            "start_word": 15,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.4899273812770843
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.20117665782119287
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:39.526719+00:00"
+}

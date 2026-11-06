@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_3c4349e0",
+    "text_source": "transcript_reverb",
+    "text": "Please cancel my order for $8.50 placed yesterday. The last agent I spoke with asked me to call back if the chart was still showing."
+  },
+  "request_id": "01a1b291-af2e-7282-ade9-927b7408136f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-af2e-7282-ade9-927b7408136f",
+      "created": "2026-11-06T20:34:14.681Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "50 placed yesterday. The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 6,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.910761
+              }
+            ]
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 8,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.22001503
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 8,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.53175545
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday. The last agent I spoke with asked me to call back if the chart was still showing.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.7836993336677551
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7836992899576823
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:14.745911+00:00"
+}

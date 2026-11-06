@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_1824f6db",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $45.99 to wipe out my card, adding in the $1 and $14. I need to I can wait on the line while you check the offer, and I do have my account number going on."
+  },
+  "request_id": "01a1b291-8210-7993-8ede-197c83d039b8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-8210-7993-8ede-197c83d039b8",
+      "created": "2026-11-06T20:34:03.275Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 14
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to I can wait on the line while you check the offer, and I do have my account number going on.",
+            "start_word": 15,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Wireless card charges",
+                "confidence_score": 0.0009638497
+              },
+              {
+                "topic": "Dispatching card",
+                "confidence_score": 7.62051e-05
+              },
+              {
+                "topic": "Offer details",
+                "confidence_score": 0.0030846691
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to I can wait on the line while you check the offer, and I do have my account number going on.",
+            "start_word": 15,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Wash card",
+                "confidence_score": 0.0023928413
+              },
+              {
+                "intent": "Check offer",
+                "confidence_score": 0.40625316
+              },
+              {
+                "intent": "Record account number",
+                "confidence_score": 0.0015353529
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $45.99 to wipe out my card, adding in the $1 and $14.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "negative",
+            "sentiment_score": -0.6118954420089722
+          },
+          {
+            "text": "I need to I can wait on the line while you check the offer, and I do have my account number going on.",
+            "start_word": 15,
+            "end_word": 37,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2583962380886078
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.411043643951416
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:03.339685+00:00"
+}

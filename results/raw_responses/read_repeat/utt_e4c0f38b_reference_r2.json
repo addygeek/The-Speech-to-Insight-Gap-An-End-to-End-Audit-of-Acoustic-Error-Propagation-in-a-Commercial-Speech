@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_e4c0f38b",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Sam Patel on October 5 at 9:30 AM. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b254-aa76-73b3-9c39-4585a2ed3f57",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-aa76-73b3-9c39-4585a2ed3f57",
+      "created": "2026-11-06T19:27:36.062Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 21
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.2564467
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Sam Patel on October 5 at 9:30 AM. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 1,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Book appointment with dr. sam patel",
+                "confidence_score": 0.09559595
+              }
+            ]
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Call back",
+                "confidence_score": 0.013204082
+              },
+              {
+                "intent": "Check charge status",
+                "confidence_score": 0.33541578
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Sam Patel on October 5 at 9:30 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07040166109800339
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7917927503585815
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4218485905573918
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:36.145881+00:00"
+}

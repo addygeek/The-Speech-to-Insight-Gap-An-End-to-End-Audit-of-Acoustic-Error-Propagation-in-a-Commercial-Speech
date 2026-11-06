@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_ce4213da",
+    "text_source": "transcript_babble5",
+    "text": "Where is my package going to Austin? They should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b292-1b2b-74b2-914f-15a9c18a21fe",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-1b2b-74b2-914f-15a9c18a21fe",
+      "created": "2026-11-06T20:34:42.206Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "They should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.6717048
+              },
+              {
+                "topic": "Location",
+                "confidence_score": 0.043876477
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "They should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report package arrival",
+                "confidence_score": 0.008278019
+              },
+              {
+                "intent": "Provide mobile phone number",
+                "confidence_score": 0.051983748
+              },
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.025221378
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.011373189277946947
+          },
+          {
+            "text": "They should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.3638285994529724
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2757147252559662
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:42.263802+00:00"
+}

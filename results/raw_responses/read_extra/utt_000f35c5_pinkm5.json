@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_000f35c5",
+    "text_source": "transcript_pinkm5",
+    "text": "Where is my package going from Seattle? It should arrive by March 12. I can wait on the line while you check the record, and I do have my account on the list."
+  },
+  "request_id": "01a1b293-7805-7b40-abf2-13aa77a2a5a9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7805-7b40-abf2-13aa77a2a5a9",
+      "created": "2026-11-06T20:36:11.599Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account on the list.",
+            "start_word": 7,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.85361445
+              },
+              {
+                "topic": "Account status",
+                "confidence_score": 0.2158309
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account on the list.",
+            "start_word": 7,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.24906057
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going from Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08517250418663025
+          },
+          {
+            "text": "It should arrive by March 12. I can wait on the line while you check the record, and I do have my account on the list.",
+            "start_word": 7,
+            "end_word": 32,
+            "sentiment": "positive",
+            "sentiment_score": 0.557384192943573
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4524482621086968
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:11.662794+00:00"
+}

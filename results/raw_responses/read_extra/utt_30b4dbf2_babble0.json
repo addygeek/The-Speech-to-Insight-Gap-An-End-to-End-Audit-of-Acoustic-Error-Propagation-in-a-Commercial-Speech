@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_30b4dbf2",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $250 twice on my card, changing $4,014. Please send me updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b292-43d2-7f61-a96c-f6536fb8811f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-43d2-7f61-a96c-f6536fb8811f",
+      "created": "2026-11-06T20:34:52.589Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card, changing $4,014. Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 1,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Card payment",
+                "confidence_score": 0.20464802
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.07120985
+              },
+              {
+                "topic": "Email address",
+                "confidence_score": 0.7899874
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card, changing $4,014. Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 1,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Request updated confirmation",
+                "confidence_score": 0.03709262
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card, changing $4,014. Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.4045811593532562
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4045811686022529
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:52.648582+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_000f35c5",
+    "text_source": "transcript_pinkm10",
+    "text": "There is, half a storm in Seattle. It should arrive by March 12. I can wait on the line while we take the number, and please have a good time."
+  },
+  "request_id": "01a1b293-780a-7f43-b164-342cefe2fa98",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-780a-7f43-b164-342cefe2fa98",
+      "created": "2026-11-06T20:36:11.588Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while we take the number, and please have a good time.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Storm",
+                "confidence_score": 0.55669665
+              },
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.9319739
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I can wait on the line while we take the number, and please have a good time.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Wait",
+                "confidence_score": 0.035442058
+              },
+              {
+                "intent": "Take number",
+                "confidence_score": 0.5599655
+              },
+              {
+                "intent": "Have a good time",
+                "confidence_score": 0.5615816
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "There is, half a storm in Seattle.",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.24737928807735443
+          },
+          {
+            "text": "It should arrive by March 12. I can wait on the line while we take the number, and please have a good time.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "positive",
+            "sentiment_score": 0.6383949518203735
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5297795401679145
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:11.650875+00:00"
+}

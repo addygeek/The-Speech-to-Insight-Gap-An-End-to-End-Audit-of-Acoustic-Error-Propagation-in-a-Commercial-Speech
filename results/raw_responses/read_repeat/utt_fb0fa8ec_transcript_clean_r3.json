@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_fb0fa8ec",
+    "text_source": "transcript_clean",
+    "text": "I would like to cancel my $250 order that was made yesterday. I need this resolved by the end of the business day since I am traveling tomorrow morning. Please avoid transferring me again unless the next person can make the change."
+  },
+  "request_id": "01a1b253-7a68-7171-9e2c-1f05b49abe7d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-7a68-7171-9e2c-1f05b49abe7d",
+      "created": "2026-11-06T19:26:17.997Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next person can make the change.",
+            "start_word": 29,
+            "end_word": 41,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.5123612
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.29136175
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next person can make the change.",
+            "start_word": 29,
+            "end_word": 41,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.24406536
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $250 order that was made yesterday. I need this resolved by the end of the business day since I am traveling tomorrow morning. Please avoid transferring me again unless the next person can make the change.",
+            "start_word": 0,
+            "end_word": 41,
+            "sentiment": "negative",
+            "sentiment_score": -0.7470777034759521
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7470776984032165
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:18.569592+00:00"
+}

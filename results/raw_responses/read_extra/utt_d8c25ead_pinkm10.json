@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_d8c25ead",
+    "text_source": "transcript_pinkm10",
+    "text": "I was charged 100 and dollars right on my card and. The last week, and I spoke with."
+  },
+  "request_id": "01a1b293-a55d-7e70-9fe3-cf8b2870f7ab",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-a55d-7e70-9fe3-cf8b2870f7ab",
+      "created": "2026-11-06T20:36:23.058Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 21
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 21,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last week, and I spoke with.",
+            "start_word": 11,
+            "end_word": 17,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.10278065
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last week, and I spoke with.",
+            "start_word": 11,
+            "end_word": 17,
+            "intents": [
+              {
+                "intent": "Inform about account charges",
+                "confidence_score": 2.4264587e-06
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged 100 and dollars right on my card and.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "negative",
+            "sentiment_score": -0.4075685441493988
+          },
+          {
+            "text": "The last week, and I spoke with.",
+            "start_word": 11,
+            "end_word": 17,
+            "sentiment": "neutral",
+            "sentiment_score": -0.15089412033557892
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.29756521043323336
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:23.111698+00:00"
+}

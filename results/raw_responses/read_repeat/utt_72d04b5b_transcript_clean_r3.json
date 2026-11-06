@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_72d04b5b",
+    "text_source": "transcript_clean",
+    "text": "I was charged $250 twice on my card ending in 4421. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b251-49df-7a32-834e-ec7732d8aee3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-49df-7a32-834e-ec7732d8aee3",
+      "created": "2026-11-06T19:23:54.521Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Mobile phone billing",
+                "confidence_score": 0.010583018
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Informing about charges",
+                "confidence_score": 0.0035724957
+              },
+              {
+                "intent": "Providing call",
+                "confidence_score": 1.755478e-05
+              },
+              {
+                "intent": "Reporting absence from home office",
+                "confidence_score": 0.096786544
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4421. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7437577843666077
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.743757801671182
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:55.403241+00:00"
+}

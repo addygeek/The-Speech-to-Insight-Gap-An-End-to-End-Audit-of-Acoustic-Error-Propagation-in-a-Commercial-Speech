@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_9493b329",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $75 for 2020. I am calling from my order phone, so can't come off it right now."
+  },
+  "request_id": "01a1b292-fec9-7bc2-95af-c9793edf2160",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-fec9-7bc2-95af-c9793edf2160",
+      "created": "2026-11-06T20:35:40.609Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 27
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 27,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my order phone, so can't come off it right now.",
+            "start_word": 8,
+            "end_word": 21,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.76279104
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my order phone, so can't come off it right now.",
+            "start_word": 8,
+            "end_word": 21,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.83444947
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 for 2020. I am calling from my order phone, so can't come off it right now.",
+            "start_word": 0,
+            "end_word": 21,
+            "sentiment": "negative",
+            "sentiment_score": -0.8480318188667297
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8480317857530382
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:40.664014+00:00"
+}

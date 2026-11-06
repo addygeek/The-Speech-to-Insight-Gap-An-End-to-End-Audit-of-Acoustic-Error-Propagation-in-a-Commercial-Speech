@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_ce4213da",
+    "text_source": "reference",
+    "text": "Where is my package going to Austin? It should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b250-e7a3-7cd1-b1da-296da661b3d4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-e7a3-7cd1-b1da-296da661b3d4",
+      "created": "2026-11-06T19:23:30.422Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.06612175
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.13454048
+              },
+              {
+                "topic": "Home office",
+                "confidence_score": 0.970046
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Leave message",
+                "confidence_score": 0.0034171396
+              },
+              {
+                "intent": "Arrive package",
+                "confidence_score": 0.051039614
+              },
+              {
+                "intent": "Arrange call",
+                "confidence_score": 0.0011687571
+              },
+              {
+                "intent": "Return call",
+                "confidence_score": 0.1873338
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.034800514578819275
+          },
+          {
+            "text": "It should arrive by October 5. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.3429050147533417
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.24847862124443057
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:30.506579+00:00"
+}

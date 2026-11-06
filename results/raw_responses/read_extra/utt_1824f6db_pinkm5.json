@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_1824f6db",
+    "text_source": "transcript_pinkm5",
+    "text": "I was charged $45.99 twice on my card ending in 4429. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b291-80cb-7ee3-8b5b-9b7299a82386",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-80cb-7ee3-8b5b-9b7299a82386",
+      "created": "2026-11-06T20:34:02.750Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.10405353
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.054846525
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $45.99 twice on my card ending in 4429.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "negative",
+            "sentiment_score": -0.6685673594474792
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15599368512630463
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.18757340643141004
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:02.804276+00:00"
+}

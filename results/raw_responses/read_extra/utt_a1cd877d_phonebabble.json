@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_a1cd877d",
+    "text_source": "transcript_phonebabble",
+    "text": "I appreciate your help, Maria Santos. The support team based in Boston was outstanding today. However, I attempted to use the website twice, and it did not save the changes to my account."
+  },
+  "request_id": "01a1b293-d010-73b0-b302-1eeaf4322155",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d010-73b0-b302-1eeaf4322155",
+      "created": "2026-11-06T20:36:34.227Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "However, I attempted to use the website twice, and it did not save the changes to my account.",
+            "start_word": 15,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.15809938
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "However, I attempted to use the website twice, and it did not save the changes to my account.",
+            "start_word": 15,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Appreciate help",
+                "confidence_score": 0.037894726
+              },
+              {
+                "intent": "Share website experience",
+                "confidence_score": 0.005942081
+              },
+              {
+                "intent": "Notify account issue",
+                "confidence_score": 0.00077173783
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Maria Santos. The support team based in Boston was outstanding today.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "positive",
+            "sentiment_score": 0.8101374506950378
+          },
+          {
+            "text": "However, I attempted to use the website twice, and it did not save the changes to my account.",
+            "start_word": 15,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.6259626150131226
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.09208746183486212
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:34.280363+00:00"
+}

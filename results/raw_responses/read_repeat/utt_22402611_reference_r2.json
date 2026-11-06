@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_22402611",
+    "text_source": "reference",
+    "text": "Since 2:15 PM, my internet has been out, preventing me from working while in Denver. I'm using my mobile phone to call, as I'm currently away from my home office."
+  },
+  "request_id": "01a1b255-ae7b-7531-80a8-02b088da1ed6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-ae7b-7531-80a8-02b088da1ed6",
+      "created": "2026-11-06T19:28:42.531Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call, as I'm currently away from my home office.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.7335396
+              },
+              {
+                "topic": "Mobile phone usage",
+                "confidence_score": 0.24517094
+              },
+              {
+                "topic": "Call back",
+                "confidence_score": 0.00047764834
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call, as I'm currently away from my home office.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report internet outage",
+                "confidence_score": 0.32968473
+              },
+              {
+                "intent": "Report mobile phone usage",
+                "confidence_score": 0.03113495
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.008113425
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 2:15 PM, my internet has been out, preventing me from working while in Denver. I'm using my mobile phone to call, as I'm currently away from my home office.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.6868113875389099
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6868114006228563
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:43.113131+00:00"
+}

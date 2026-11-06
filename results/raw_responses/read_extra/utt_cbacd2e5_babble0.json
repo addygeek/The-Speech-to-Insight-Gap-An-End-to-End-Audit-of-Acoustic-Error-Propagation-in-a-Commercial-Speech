@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_cbacd2e5",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Chicago on April 3? Send me updated confirmation to the same email address you have on file. Need this settled before the end of the business day because I travel to The United States."
+  },
+  "request_id": "01a1b293-56d8-75d1-8644-9362d7823189",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-56d8-75d1-8644-9362d7823189",
+      "created": "2026-11-06T20:36:03.332Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 23
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Need this settled before the end of the business day because I travel to The United States.",
+            "start_word": 23,
+            "end_word": 39,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.94422317
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.29472762
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Need this settled before the end of the business day because I travel to The United States.",
+            "start_word": 23,
+            "end_word": 39,
+            "intents": [
+              {
+                "intent": "Change flight to chicago",
+                "confidence_score": 0.20954607
+              },
+              {
+                "intent": "Receive updated confirmation",
+                "confidence_score": 0.5526267
+              },
+              {
+                "intent": "Report and confirm flight time",
+                "confidence_score": 6.9346235e-08
+              },
+              {
+                "intent": "Confirm flight destination",
+                "confidence_score": 0.068104394
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on April 3? Send me updated confirmation to the same email address you have on file. Need this settled before the end of the business day because I travel to The United States.",
+            "start_word": 0,
+            "end_word": 39,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04165143147110939
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.04165143190428268
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:03.387656+00:00"
+}

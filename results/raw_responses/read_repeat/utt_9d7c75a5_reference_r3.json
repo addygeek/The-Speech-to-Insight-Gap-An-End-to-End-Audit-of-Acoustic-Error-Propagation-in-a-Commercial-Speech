@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_9d7c75a5",
+    "text_source": "reference",
+    "text": "Could you modify my flight to Austin for October 5? I'm using my mobile phone to call since I'm currently away from my home office."
+  },
+  "request_id": "01a1b251-06b1-7b70-ab6f-066e69320ed6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-06b1-7b70-ab6f-066e69320ed6",
+      "created": "2026-11-06T19:23:37.210Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 10,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.7472188
+              },
+              {
+                "topic": "Mobile device",
+                "confidence_score": 0.0030752323
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 10,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.44589216
+              },
+              {
+                "intent": "Utilize mobile phone for call",
+                "confidence_score": 0.0012309126
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Austin for October 5?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06170381233096123
+          },
+          {
+            "text": "I'm using my mobile phone to call since I'm currently away from my home office.",
+            "start_word": 10,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.5358853340148926
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.32383758791031375
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:37.288300+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_b00fe0ea",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package going to Denver? It should arrive by June 21. Please send the updated confirmation to the same real address you have on my"
+  },
+  "request_id": "01a1b291-89bd-70f3-b936-fba0bd90862d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-89bd-70f3-b936-fba0bd90862d",
+      "created": "2026-11-06T20:34:04.930Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by June 21.",
+            "start_word": 7,
+            "end_word": 12,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.6201895
+              },
+              {
+                "topic": "Delivery confirmation",
+                "confidence_score": 0.43650502
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by June 21.",
+            "start_word": 7,
+            "end_word": 12,
+            "intents": [
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.5712029
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0072389752604067326
+          },
+          {
+            "text": "It should arrive by June 21. Please send the updated confirmation to the same real address you have on my",
+            "start_word": 7,
+            "end_word": 26,
+            "sentiment": "positive",
+            "sentiment_score": 0.4013710021972656
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2926448953562769
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:04.987627+00:00"
+}

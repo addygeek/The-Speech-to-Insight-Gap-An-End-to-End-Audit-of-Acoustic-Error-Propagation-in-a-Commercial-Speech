@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_d3f520c2",
+    "text_source": "transcript_pinkm10",
+    "text": "Hello. I'm. I don't wish to schedule $75. I'm willing to stay on the line so I can verify the details, and I have my account number available."
+  },
+  "request_id": "01a1b293-18d2-7e41-8634-cca51f26f9d5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-18d2-7e41-8634-cca51f26f9d5",
+      "created": "2026-11-06T20:35:47.329Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to stay on the line so I can verify the details, and I have my account number available.",
+            "start_word": 8,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Scheduling",
+                "confidence_score": 0.83192074
+              },
+              {
+                "topic": "Verifying details",
+                "confidence_score": 0.061075605
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.97933155
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to stay on the line so I can verify the details, and I have my account number available.",
+            "start_word": 8,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Verify details",
+                "confidence_score": 0.12992197
+              },
+              {
+                "intent": "Confirm account number",
+                "confidence_score": 0.04407287
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm.",
+            "start_word": 0,
+            "end_word": 1,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05348272621631622
+          },
+          {
+            "text": "I don't wish to schedule $75.",
+            "start_word": 2,
+            "end_word": 7,
+            "sentiment": "negative",
+            "sentiment_score": -0.6586419343948364
+          },
+          {
+            "text": "I'm willing to stay on the line so I can verify the details, and I have my account number available.",
+            "start_word": 8,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06740044802427292
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.20169959924159905
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:47.392142+00:00"
+}

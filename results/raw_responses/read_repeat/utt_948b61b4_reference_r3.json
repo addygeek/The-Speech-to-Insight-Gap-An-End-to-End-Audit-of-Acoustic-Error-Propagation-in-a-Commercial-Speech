@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_948b61b4",
+    "text_source": "reference",
+    "text": "Can you tell me where my package bound for Denver is? It should be delivered by April 3. I've reached out to support about this issue twice this week."
+  },
+  "request_id": "01a1b256-d330-7b72-a419-c5aff03bce69",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-d330-7b72-a419-c5aff03bce69",
+      "created": "2026-11-06T19:29:57.398Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should be delivered by April 3. I've reached out to support about this issue twice this week.",
+            "start_word": 11,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.06058511
+              },
+              {
+                "topic": "Delivery timeline",
+                "confidence_score": 0.07418032
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should be delivered by April 3. I've reached out to support about this issue twice this week.",
+            "start_word": 11,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Retrieve package location",
+                "confidence_score": 0.06681996
+              },
+              {
+                "intent": "Reach out to support",
+                "confidence_score": 0.7644431
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package bound for Denver is? It should be delivered by April 3. I've reached out to support about this issue twice this week.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.21591100096702576
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.21591099825772372
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:57.492524+00:00"
+}

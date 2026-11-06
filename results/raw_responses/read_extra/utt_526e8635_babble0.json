@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_526e8635",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21. The previous agent advised me to call back and charge for Sythex."
+  },
+  "request_id": "01a1b292-2b81-70d3-9ee9-4e4aa328ebba",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2b81-70d3-9ee9-4e4aa328ebba",
+      "created": "2026-11-06T20:34:46.556Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back and charge for Sythex.",
+            "start_word": 20,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.63342595
+              },
+              {
+                "topic": "Arrival date",
+                "confidence_score": 0.16124648
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back and charge for Sythex.",
+            "start_word": 20,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.3033732
+              },
+              {
+                "intent": "Charge for sythex",
+                "confidence_score": 0.44554195
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0411556214094162
+          },
+          {
+            "text": "The previous agent advised me to call back and charge for Sythex.",
+            "start_word": 20,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.8020303249359131
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.30067652625006597
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:47.051028+00:00"
+}

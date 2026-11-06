@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_b4af3bf0",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you change our flight to Boston on October 5? The last lady I spoke with actually a callback if you charge me for the service."
+  },
+  "request_id": "01a1b291-e194-7e53-94da-2d87327565c1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-e194-7e53-94da-2d87327565c1",
+      "created": "2026-11-06T20:34:27.433Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last lady I spoke with actually a callback if you charge me for the service.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8283507
+              },
+              {
+                "topic": "Callback",
+                "confidence_score": 0.23276253
+              },
+              {
+                "topic": "Service charge",
+                "confidence_score": 0.971356
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last lady I spoke with actually a callback if you charge me for the service.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.541368
+              },
+              {
+                "intent": "Charge for service",
+                "confidence_score": 0.505898
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change our flight to Boston on October 5?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.052554771304130554
+          },
+          {
+            "text": "The last lady I spoke with actually a callback if you charge me for the service.",
+            "start_word": 10,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.8579029440879822
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5721342025264617
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:27.486243+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_232a39a1",
+    "text_source": "transcript_phonebabble",
+    "text": "Please cancel my order for $19.40 placed yesterday. I already tried the website twice, and it would not save the change under my account. Please do not transfer me again unless the next person can actually change the menu."
+  },
+  "request_id": "01a1b291-7ee0-7f81-bb54-2eeda4a11762",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7ee0-7f81-bb54-2eeda4a11762",
+      "created": "2026-11-06T20:34:02.241Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 46
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the menu.",
+            "start_word": 24,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.72486484
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.26162642
+              },
+              {
+                "topic": "Menu changes",
+                "confidence_score": 0.14007665
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the menu.",
+            "start_word": 24,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.5039553
+              },
+              {
+                "intent": "Change menu",
+                "confidence_score": 0.6034506
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $19.40 placed yesterday. I already tried the website twice, and it would not save the change under my account. Please do not transfer me again unless the next person can actually change the menu.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.7785308957099915
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7785308672034222
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:02.302206+00:00"
+}

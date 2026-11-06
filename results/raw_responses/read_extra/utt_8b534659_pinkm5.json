@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_8b534659",
+    "text_source": "transcript_pinkm5",
+    "text": "Can you tell me the status of my package heading to Boston? It's expected to arrive by March 12. The last representative I spoke to told me to call again if the car is in need."
+  },
+  "request_id": "01a1b293-5e5a-7d10-894b-c7e8aef648dd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-5e5a-7d10-894b-c7e8aef648dd",
+      "created": "2026-11-06T20:36:05.003Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Boston? It's expected to arrive by March 12. The last representative I spoke to told me to call again if the car is in need.",
+            "start_word": 1,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Car needs",
+                "confidence_score": 0.34820533
+              }
+            ]
+          },
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the car is in need.",
+            "start_word": 12,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.5176788
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the car is in need.",
+            "start_word": 12,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.2156193
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Boston?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04587918147444725
+          },
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the car is in need.",
+            "start_word": 12,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.5154852867126465
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.33749168675120284
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:05.066236+00:00"
+}

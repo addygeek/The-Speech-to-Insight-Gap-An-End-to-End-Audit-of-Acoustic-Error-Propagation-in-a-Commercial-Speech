@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_d7286b38",
+    "text_source": "transcript_phonebabble",
+    "text": "Hello. I'm Allison Chen. Wish to keep my order for $19.40. The previous agent advised me to reach out again if the charge appeared again."
+  },
+  "request_id": "01a1b293-a22d-71e2-829c-931e628bea09",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-a22d-71e2-829c-931e628bea09",
+      "created": "2026-11-06T20:36:22.347Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the charge appeared again.",
+            "start_word": 11,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Ordering",
+                "confidence_score": 0.07561279
+              },
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.043398496
+              },
+              {
+                "topic": "Charge issue",
+                "confidence_score": 0.08593143
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the charge appeared again.",
+            "start_word": 11,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.4841449
+              },
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.6902381
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Allison Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.13872671127319336
+          },
+          {
+            "text": "Wish to keep my order for $19.40.",
+            "start_word": 4,
+            "end_word": 10,
+            "sentiment": "positive",
+            "sentiment_score": 0.7049879431724548
+          },
+          {
+            "text": "The previous agent advised me to reach out again if the charge appeared again.",
+            "start_word": 11,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.5293170213699341
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.009099401971873117
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:22.411583+00:00"
+}

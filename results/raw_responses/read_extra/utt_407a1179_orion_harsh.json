@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_407a1179",
+    "text_source": "transcript_orion_harsh",
+    "text": "I would like to cancel my $45.99 order that I placed yesterday. This week, I've contacted support twice about the same issue. Please don't transfer me again unless the next agent can resolve the booking."
+  },
+  "request_id": "01a1b29e-042f-70a2-9d90-47fa89d4c76f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-042f-70a2-9d90-47fa89d4c76f",
+      "created": "2026-11-06T20:47:42.998Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next agent can resolve the booking.",
+            "start_word": 22,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Cancelling order",
+                "confidence_score": 0.15111525
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.7403662
+              },
+              {
+                "topic": "Issue",
+                "confidence_score": 0.16774987
+              },
+              {
+                "topic": "Next agent",
+                "confidence_score": 0.028633766
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next agent can resolve the booking.",
+            "start_word": 22,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.27021837
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $45.99 order that I placed yesterday. This week, I've contacted support twice about the same issue. Please don't transfer me again unless the next agent can resolve the booking.",
+            "start_word": 0,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.7937947511672974
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7937947537036653
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:43.051419+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_4713fe28",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Jordan Lee. I cannot want to cancel my order from. I am calling from my mobile phone because I am away from having a problem right now."
+  },
+  "request_id": "01a1b293-7ad3-7611-8d6c-6643c4624b08",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7ad3-7611-8d6c-6643c4624b08",
+      "created": "2026-11-06T20:36:12.211Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from having a problem right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.22247097
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.892742
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from having a problem right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.20931543
+              },
+              {
+                "intent": "Disclose problem",
+                "confidence_score": 0.0047036395
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Jordan Lee.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04828507825732231
+          },
+          {
+            "text": "I cannot want to cancel my order from. I am calling from my mobile phone because I am away from having a problem right now.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.4998601973056793
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3780501153733995
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:12.275899+00:00"
+}

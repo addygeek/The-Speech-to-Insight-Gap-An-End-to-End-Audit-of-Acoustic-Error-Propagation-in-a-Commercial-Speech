@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_c53f46ba",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Seattle on the eighth third? Hi. Please do not transfer me again unless the next person can actually change that."
+  },
+  "request_id": "01a1b293-1228-76a1-99f7-9435cf615396",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-1228-76a1-99f7-9435cf615396",
+      "created": "2026-11-06T20:35:45.409Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change that.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.68607324
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change that.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.21065457
+              },
+              {
+                "intent": "Request to transfer",
+                "confidence_score": 0.028725792
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on the eighth third?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04919066280126572
+          },
+          {
+            "text": "Hi. Please do not transfer me again unless the next person can actually change that.",
+            "start_word": 11,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.8654658198356628
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5389556884765625
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:45.462046+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_d9ab875e",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you tell me the status of my package? It's expected to arrive by October 6. I'm willing to hold while terrified of records, and I have my account number on the line."
+  },
+  "request_id": "01a1b292-6b8f-7803-b4a0-73187a8c9831",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-6b8f-7803-b4a0-73187a8c9831",
+      "created": "2026-11-06T20:35:02.751Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package? It's expected to arrive by October 6. I'm willing to hold while terrified of records, and I have my account number on the line.",
+            "start_word": 1,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Account number",
+                "confidence_score": 0.61497605
+              }
+            ]
+          },
+          {
+            "text": "It's expected to arrive by October 6. I'm willing to hold while terrified of records, and I have my account number on the line.",
+            "start_word": 9,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.74423486
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by October 6. I'm willing to hold while terrified of records, and I have my account number on the line.",
+            "start_word": 9,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Request package status update",
+                "confidence_score": 0.00731637
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package?",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02904798462986946
+          },
+          {
+            "text": "It's expected to arrive by October 6. I'm willing to hold while terrified of records, and I have my account number on the line.",
+            "start_word": 9,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.5195881128311157
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.382429027557373
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:02.807874+00:00"
+}

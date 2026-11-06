@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_ecee7ccc",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $45 and $9.29. I can wait on the line when you check the number, and I do have my account number."
+  },
+  "request_id": "01a1b293-6d34-7392-b8d6-427d37769355",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-6d34-7392-b8d6-427d37769355",
+      "created": "2026-11-06T20:36:08.904Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 46
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line when you check the number, and I do have my account number.",
+            "start_word": 18,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.0044714264
+              },
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.72176296
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line when you check the number, and I do have my account number.",
+            "start_word": 18,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Check account number",
+                "confidence_score": 0.007681111
+              },
+              {
+                "intent": "Process order",
+                "confidence_score": 0.00041105453
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06829684227705002
+          },
+          {
+            "text": "I do not want to cancel my order for $45 and $9.29.",
+            "start_word": 6,
+            "end_word": 17,
+            "sentiment": "negative",
+            "sentiment_score": -0.7331130504608154
+          },
+          {
+            "text": "I can wait on the line when you check the number, and I do have my account number.",
+            "start_word": 18,
+            "end_word": 35,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07967469096183777
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.20550754795903745
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:08.967708+00:00"
+}

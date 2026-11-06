@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_e6fe5e48",
+    "text_source": "transcript_phonebabble",
+    "text": "Where is my traffic going to Seattle? It should arrive by April 3. The last agent I spoke with asked me to call back if the charge is still showing."
+  },
+  "request_id": "01a1b293-1836-7d32-88b2-2b72c4e12cd2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-1836-7d32-88b2-2b72c4e12cd2",
+      "created": "2026-11-06T20:35:46.957Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Traffic",
+                "confidence_score": 0.94718933
+              },
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.6759516
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check traffic status",
+                "confidence_score": 0.21511103
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my traffic going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.01662961021065712
+          },
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the charge is still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.4891296327114105
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3745841979980469
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:47.013899+00:00"
+}

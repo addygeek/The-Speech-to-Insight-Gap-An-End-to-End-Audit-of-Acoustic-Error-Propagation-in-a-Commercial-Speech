@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_8a1d92c8",
+    "text_source": "transcript_phonebabble",
+    "text": "My card ending in 4421 was billed $120 to your email. I attempted to update my account on the website twice, but it wouldn't state the change I thought."
+  },
+  "request_id": "01a1b292-764e-77c1-8955-1e6cc45ff696",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-764e-77c1-8955-1e6cc45ff696",
+      "created": "2026-11-06T20:35:05.531Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to update my account on the website twice, but it wouldn't state the change I thought.",
+            "start_word": 11,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Billing issue",
+                "confidence_score": 0.2985241
+              },
+              {
+                "topic": "Account update",
+                "confidence_score": 0.8403803
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to update my account on the website twice, but it wouldn't state the change I thought.",
+            "start_word": 11,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Update account",
+                "confidence_score": 0.40855813
+              },
+              {
+                "intent": "Correct billing issue",
+                "confidence_score": 0.004679144
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was billed $120 to your email. I attempted to update my account on the website twice, but it wouldn't state the change I thought.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.6831148862838745
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.683114850843275
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:05.584687+00:00"
+}

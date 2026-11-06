@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_a1f6a50a",
+    "text_source": "transcript_babble0",
+    "text": "I'd like to schedule an appointment with doctor Jordan Mignon for June 31 at 02:10PM. I'm willing to hold on to verify my records, and I have my drug test done today."
+  },
+  "request_id": "01a1b293-6bf9-7213-b999-2e619b90fe81",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-6bf9-7213-b999-2e619b90fe81",
+      "created": "2026-11-06T20:36:08.502Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold on to verify my records, and I have my drug test done today.",
+            "start_word": 15,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.939731
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.1664535
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold on to verify my records, and I have my drug test done today.",
+            "start_word": 15,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.49801767
+              },
+              {
+                "intent": "Verify records",
+                "confidence_score": 0.786681
+              },
+              {
+                "intent": "Confirm drug test",
+                "confidence_score": 0.062483266
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Jordan Mignon for June 31 at 02:10PM. I'm willing to hold on to verify my records, and I have my drug test done today.",
+            "start_word": 0,
+            "end_word": 31,
+            "sentiment": "positive",
+            "sentiment_score": 0.5539223551750183
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5539223426996276
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:08.564228+00:00"
+}

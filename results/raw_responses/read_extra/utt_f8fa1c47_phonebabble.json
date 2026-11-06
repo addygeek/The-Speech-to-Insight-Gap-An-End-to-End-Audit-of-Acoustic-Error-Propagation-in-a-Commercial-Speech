@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_f8fa1c47",
+    "text_source": "transcript_phonebabble",
+    "text": "My Internet has been down since 09:30AM, and I cannot work from Bombay. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b293-80ba-7820-8634-13690d640ae5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-80ba-7820-8634-13690d640ae5",
+      "created": "2026-11-06T20:36:13.860Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.36022687
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.73771024
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Requesting not to transfer",
+                "confidence_score": 0.00015233825
+              },
+              {
+                "intent": "Expressing service difficulty",
+                "confidence_score": 9.875463e-07
+              },
+              {
+                "intent": "Instructing to change booking",
+                "confidence_score": 0.013888316
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work from Bombay. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.8569243550300598
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8569243147566512
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:13.913916+00:00"
+}

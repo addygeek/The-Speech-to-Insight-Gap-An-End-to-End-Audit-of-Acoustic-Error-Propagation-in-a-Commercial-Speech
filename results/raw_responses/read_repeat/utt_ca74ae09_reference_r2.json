@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_ca74ae09",
+    "text_source": "reference",
+    "text": "I would like to schedule an appointment with Dr. Sam Patel for June 21 at 11:00 AM. I'm willing to hold while you verify my account, and I have my account number available."
+  },
+  "request_id": "01a1b255-eb08-78c1-a0c3-a4003f430c5f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-eb08-78c1-a0c3-a4003f430c5f",
+      "created": "2026-11-06T19:28:57.913Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my account, and I have my account number available.",
+            "start_word": 17,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.23207775
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my account, and I have my account number available.",
+            "start_word": 17,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Schedule appointment with dr. sam patel",
+                "confidence_score": 0.12884194
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Dr. Sam Patel for June 21 at 11:00 AM. I'm willing to hold while you verify my account, and I have my account number available.",
+            "start_word": 0,
+            "end_word": 32,
+            "sentiment": "positive",
+            "sentiment_score": 0.5918982625007629
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.591898250579834
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:57.994494+00:00"
+}

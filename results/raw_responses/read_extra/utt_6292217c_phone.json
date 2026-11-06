@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_6292217c",
+    "text_source": "transcript_phone",
+    "text": "I would like to cancel my order of $19.40 that I placed yesterday. I'm using my mobile phone since I'm not at my home office at the moment."
+  },
+  "request_id": "01a1b291-bde6-7a31-8127-7264b14199ac",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-bde6-7a31-8127-7264b14199ac",
+      "created": "2026-11-06T20:34:18.293Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm not at my home office at the moment.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.23553151
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone since I'm not at my home office at the moment.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.106620125
+              },
+              {
+                "intent": "Use mobile phone",
+                "confidence_score": 0.8410682
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order of $19.40 that I placed yesterday. I'm using my mobile phone since I'm not at my home office at the moment.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7206671833992004
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7206672032674154
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:18.358218+00:00"
+}

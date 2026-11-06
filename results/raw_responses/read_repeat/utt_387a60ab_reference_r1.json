@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_387a60ab",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Maria Santos on October 5 at 2:15 PM. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a1b251-ca19-7af2-bb0f-3b4490a44a27",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-ca19-7af2-bb0f-3b4490a44a27",
+      "created": "2026-11-06T19:24:27.253Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.76242155
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.55410737
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.37562558
+              },
+              {
+                "intent": "Save change in account",
+                "confidence_score": 0.014221975
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Maria Santos on October 5 at 2:15 PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.031078284606337547
+          },
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7844713926315308
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36812255257054377
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:27.856274+00:00"
+}

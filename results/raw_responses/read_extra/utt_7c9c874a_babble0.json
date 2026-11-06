@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_7c9c874a",
+    "text_source": "transcript_babble0",
+    "text": "Hello. I'm Alexi Chen. I do not wish to cancel my order at $232. The previous agent told me to call back after"
+  },
+  "request_id": "01a1b293-0e8e-71b0-a925-f1c1abcab8b6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0e8e-71b0-a925-f1c1abcab8b6",
+      "created": "2026-11-06T20:35:44.553Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I do not wish to cancel my order at $232.",
+            "start_word": 4,
+            "end_word": 13,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.3814195
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.7890762
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I do not wish to cancel my order at $232.",
+            "start_word": 4,
+            "end_word": 13,
+            "intents": [
+              {
+                "intent": "Resolve order issue",
+                "confidence_score": 0.023846602
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alexi Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.028031805530190468
+          },
+          {
+            "text": "I do not wish to cancel my order at $232. The previous agent told me to call back after",
+            "start_word": 4,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.7535459995269775
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5190726280212402
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:44.603927+00:00"
+}

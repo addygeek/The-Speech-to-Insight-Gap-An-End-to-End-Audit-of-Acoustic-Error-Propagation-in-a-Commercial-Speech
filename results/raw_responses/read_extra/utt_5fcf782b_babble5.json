@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_5fcf782b",
+    "text_source": "transcript_babble5",
+    "text": "I would like to schedule an appointment with doctor Taylor Brooks for June 21 at 09:30AM. The previous agent advised me to call back if the charge remains visible."
+  },
+  "request_id": "01a1b292-e6c9-7793-b83c-49ea1154f696",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-e6c9-7793-b83c-49ea1154f696",
+      "created": "2026-11-06T20:35:34.463Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge remains visible.",
+            "start_word": 16,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.67855364
+              },
+              {
+                "topic": "Contacting doctor brooks",
+                "confidence_score": 0.0012225652
+              },
+              {
+                "topic": "Charge visibility",
+                "confidence_score": 0.93140566
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the charge remains visible.",
+            "start_word": 16,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor taylor brooks",
+                "confidence_score": 0.08657832
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Taylor Brooks for June 21 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.7364068031311035
+          },
+          {
+            "text": "The previous agent advised me to call back if the charge remains visible.",
+            "start_word": 16,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.5464166402816772
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.20189706484476724
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:34.528177+00:00"
+}

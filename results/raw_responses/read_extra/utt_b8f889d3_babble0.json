@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_b8f889d3",
+    "text_source": "transcript_babble0",
+    "text": "Thank you, Jordan. The support team in Seattle was actually today. I know this is the I need this settled before the end of the business day. I'd like to travel tomorrow morning."
+  },
+  "request_id": "01a1b291-c613-74e1-ab0b-b188d09946b2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c613-74e1-ab0b-b188d09946b2",
+      "created": "2026-11-06T20:34:20.403Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'd like to travel tomorrow morning.",
+            "start_word": 27,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.839855
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.15307312
+              },
+              {
+                "topic": "Travel",
+                "confidence_score": 0.9726467
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'd like to travel tomorrow morning.",
+            "start_word": 27,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Arrange travel",
+                "confidence_score": 0.040470608
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan. The support team in Seattle was actually today.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "positive",
+            "sentiment_score": 0.4924483299255371
+          },
+          {
+            "text": "I know this is the I need this settled before the end of the business day. I'd like to travel tomorrow morning.",
+            "start_word": 11,
+            "end_word": 32,
+            "sentiment": "neutral",
+            "sentiment_score": -0.05425756052136421
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.13708947896957396
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:20.461698+00:00"
+}

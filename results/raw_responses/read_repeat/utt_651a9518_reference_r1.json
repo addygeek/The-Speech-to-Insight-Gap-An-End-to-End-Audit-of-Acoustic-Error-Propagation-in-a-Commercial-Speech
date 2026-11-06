@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_651a9518",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Alex Chen on April 3 at 9:30 AM. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b250-2484-70a0-b237-c0675267e257",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-2484-70a0-b237-c0675267e257",
+      "created": "2026-11-06T19:22:39.905Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.750397
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.003982916
+              },
+              {
+                "topic": "Charge issue",
+                "confidence_score": 0.16490822
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.13966045
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Alex Chen on April 3 at 9:30 AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06556648761034012
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7936280965805054
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.429597302487022
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:39.991033+00:00"
+}

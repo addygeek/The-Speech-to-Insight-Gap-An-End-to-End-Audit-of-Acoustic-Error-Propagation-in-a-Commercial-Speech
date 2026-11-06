@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_1f14eba8",
+    "text_source": "transcript_orion_clean",
+    "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b29d-b517-7a63-b810-332427b18e12",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-b517-7a63-b810-332427b18e12",
+      "created": "2026-11-06T20:47:22.649Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 3
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Mobility",
+                "confidence_score": 0.00014581419
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Thank",
+                "confidence_score": 0.035083808
+              },
+              {
+                "intent": "Report absence",
+                "confidence_score": 0.055454645
+              },
+              {
+                "intent": "Call from mobile phone",
+                "confidence_score": 0.3349277
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8134762048721313
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1045633926987648
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.3274552401374368
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:22.708511+00:00"
+}

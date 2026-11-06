@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_f709e1a5",
+    "text_source": "transcript_reverb",
+    "text": "Where is my package going to Boston? It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b291-ba0b-75a2-9cbd-bf79db6b10b9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ba0b-75a2-9cbd-bf79db6b10b9",
+      "created": "2026-11-06T20:34:17.317Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.54592836
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.7117876
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Request package delivery",
+                "confidence_score": 0.0043014926
+              },
+              {
+                "intent": "Confirm package arrival",
+                "confidence_score": 0.0060004746
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.057280585169792175
+          },
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.3600878119468689
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.25574570894241333
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:17.375347+00:00"
+}

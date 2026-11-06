@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_4310b577",
+    "text_source": "transcript_phonebabble",
+    "text": "I was charged $75 twice on my card ending in 4470. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b293-6928-7513-9098-1a30d5808a06",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-6928-7513-9098-1a30d5808a06",
+      "created": "2026-11-06T20:36:07.706Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Mobile phone issue",
+                "confidence_score": 0.014851482
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report charge",
+                "confidence_score": 0.19605333
+              },
+              {
+                "intent": "Provide location",
+                "confidence_score": 0.0024766193
+              },
+              {
+                "intent": "Report charge",
+                "confidence_score": 0.035073306
+              },
+              {
+                "intent": "Confirm identity",
+                "confidence_score": 0.0061693527
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $75 twice on my card ending in 4470. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7159819602966309
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7159820064421623
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:07.780769+00:00"
+}

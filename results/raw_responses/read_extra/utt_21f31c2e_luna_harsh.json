@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_21f31c2e",
+    "text_source": "transcript_luna_harsh",
+    "text": "My card ending in 4421 was charged $19.40 twice. This is the second time I've reached out to support regarding this issue this week."
+  },
+  "request_id": "01a1b29d-bb41-76f1-9046-dee348005f53",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-bb41-76f1-9046-dee348005f53",
+      "created": "2026-11-06T20:47:24.135Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I've reached out to support regarding this issue this week.",
+            "start_word": 9,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Card charge",
+                "confidence_score": 0.028652312
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I've reached out to support regarding this issue this week.",
+            "start_word": 9,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Report charge",
+                "confidence_score": 0.16493112
+              },
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.040048253
+              },
+              {
+                "intent": "Express support",
+                "confidence_score": 0.0006407248
+              },
+              {
+                "intent": "Provide information",
+                "confidence_score": 0.08302609
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was charged $19.40 twice. This is the second time I've reached out to support regarding this issue this week.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.5400968790054321
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5400968982327369
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:24.189850+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_47542698",
+    "text_source": "transcript_pinkm5",
+    "text": "Please cancel my order for $75 placed yesterday. The last agent I spoke with asked me to call back if the card is still showing."
+  },
+  "request_id": "01a1b293-d5ce-7251-8f5b-834376ddd045",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d5ce-7251-8f5b-834376ddd045",
+      "created": "2026-11-06T20:36:35.652Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the card is still showing.",
+            "start_word": 8,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.03380066
+              },
+              {
+                "topic": "Phone call",
+                "confidence_score": 0.0013109806
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the card is still showing.",
+            "start_word": 8,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.4638314
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday. The last agent I spoke with asked me to call back if the card is still showing.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.8237994909286499
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8237994738987514
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:35.708063+00:00"
+}

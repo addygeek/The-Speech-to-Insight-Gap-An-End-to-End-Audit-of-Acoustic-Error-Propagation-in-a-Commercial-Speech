@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_5c76c664",
+    "text_source": "transcript_phonebabble",
+    "text": "Hi. My name is Taylor Rose. Do not want to cancel my order for $250. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b293-48ad-7320-bc04-4c021958525a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-48ad-7320-bc04-4c021958525a",
+      "created": "2026-11-06T20:35:59.572Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.9222427
+              },
+              {
+                "topic": "Settlement request",
+                "confidence_score": 0.013193948
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.79719317
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Discuss saturday travel plans",
+                "confidence_score": 3.0714265e-08
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Rose.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.13520589470863342
+          },
+          {
+            "text": "Do not want to cancel my order for $250.",
+            "start_word": 6,
+            "end_word": 14,
+            "sentiment": "negative",
+            "sentiment_score": -0.6474567651748657
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2579684853553772
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2793824332101004
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:00.070781+00:00"
+}

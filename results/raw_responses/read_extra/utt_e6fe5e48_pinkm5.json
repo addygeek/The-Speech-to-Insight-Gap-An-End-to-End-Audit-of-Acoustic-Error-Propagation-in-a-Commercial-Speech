@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_e6fe5e48",
+    "text_source": "transcript_pinkm5",
+    "text": "Where is my package going to Seattle? It should arrive by April 3. The last agent I spoke with asked me to call back if the chart is still showing."
+  },
+  "request_id": "01a1b293-16fa-73f3-a99b-08686c97f860",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-16fa-73f3-a99b-08686c97f860",
+      "created": "2026-11-06T20:35:46.622Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the chart is still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.60152173
+              },
+              {
+                "topic": "Chart issue",
+                "confidence_score": 0.032151442
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the chart is still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check chart status",
+                "confidence_score": 0.07615993
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1288660764694214
+          },
+          {
+            "text": "It should arrive by April 3. The last agent I spoke with asked me to call back if the chart is still showing.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.3764366805553436
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.25393905061664
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:46.675925+00:00"
+}

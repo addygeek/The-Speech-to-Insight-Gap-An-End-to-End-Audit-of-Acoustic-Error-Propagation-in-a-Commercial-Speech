@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_72d04b5b",
+    "text_source": "transcript_pinkm10",
+    "text": "I was charged $250 twice on my card ending with 4425. I am calling from my mobile phone because I am away from my phone."
+  },
+  "request_id": "01a1b292-63fc-7de3-a00c-d04f2905dfda",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-63fc-7de3-a00c-d04f2905dfda",
+      "created": "2026-11-06T20:35:00.822Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my phone.",
+            "start_word": 11,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Phone issue",
+                "confidence_score": 0.001177646
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.5148389
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my phone.",
+            "start_word": 11,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Report payment issue",
+                "confidence_score": 0.0029092128
+              },
+              {
+                "intent": "Clarify identity",
+                "confidence_score": 1.5895275e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending with 4425. I am calling from my mobile phone because I am away from my phone.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.8328940868377686
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8328940527779716
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:00.875893+00:00"
+}

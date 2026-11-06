@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_edae7bc7",
+    "text_source": "transcript_phonebabble",
+    "text": "Thank you, Maria Santos. Support team in Austin was excellent today. The last agent I spoke with asked me to call back, but the charge was still showing."
+  },
+  "request_id": "01a1b292-f6a8-72a1-b90a-07f05652604e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-f6a8-72a1-b90a-07f05652604e",
+      "created": "2026-11-06T20:35:38.587Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back, but the charge was still showing.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.40813467
+              },
+              {
+                "topic": "Call back",
+                "confidence_score": 0.036029797
+              },
+              {
+                "topic": "Charge",
+                "confidence_score": 0.9570169
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back, but the charge was still showing.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report charge",
+                "confidence_score": 0.09707161
+              },
+              {
+                "intent": "Thank support team",
+                "confidence_score": 0.006367841
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. Support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "positive",
+            "sentiment_score": 0.773361325263977
+          },
+          {
+            "text": "The last agent I spoke with asked me to call back, but the charge was still showing.",
+            "start_word": 11,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.43576139211654663
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.11698037556239536
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:38.651809+00:00"
+}

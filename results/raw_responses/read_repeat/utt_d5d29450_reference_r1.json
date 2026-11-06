@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_d5d29450",
+    "text_source": "reference",
+    "text": "I need to book an appointment with Dr. Maria Santos on October 5 at 9:30 AM. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b253-ebfd-7681-bb7c-e12f1eb9b7ac",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-ebfd-7681-bb7c-e12f1eb9b7ac",
+      "created": "2026-11-06T19:26:47.251Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.67820966
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.16906276
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Dr. Maria Santos on October 5 at 9:30 AM. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.6177664995193481
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6177664806968287
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:47.330700+00:00"
+}

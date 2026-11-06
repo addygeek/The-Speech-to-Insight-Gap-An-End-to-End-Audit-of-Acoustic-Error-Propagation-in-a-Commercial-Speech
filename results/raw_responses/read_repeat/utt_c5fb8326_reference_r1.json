@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_c5fb8326",
+    "text_source": "reference",
+    "text": "Thank you Sam Patel, the support team in Chicago was excellent today. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b255-a953-7370-9799-fcc2df98f0c8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-a953-7370-9799-fcc2df98f0c8",
+      "created": "2026-11-06T19:28:41.523Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.08720887
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.034574687
+              },
+              {
+                "topic": "Travel",
+                "confidence_score": 0.45275095
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Finalize support and travel",
+                "confidence_score": 4.0507264e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Sam Patel, the support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8837590217590332
+          },
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2498001754283905
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5469683408737183
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:41.607012+00:00"
+}

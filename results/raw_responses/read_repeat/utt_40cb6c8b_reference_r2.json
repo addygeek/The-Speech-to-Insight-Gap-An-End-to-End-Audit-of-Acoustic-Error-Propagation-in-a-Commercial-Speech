@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_40cb6c8b",
+    "text_source": "reference",
+    "text": "Can you tell me where my package for Boston is? It's supposed to reach there by April 3. I kindly ask not to be transferred again unless the next agent can modify the booking."
+  },
+  "request_id": "01a1b251-b4d1-7eb3-9fdb-1da67f7d0c5c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-b4d1-7eb3-9fdb-1da67f7d0c5c",
+      "created": "2026-11-06T19:24:21.919Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's supposed to reach there by April 3. I kindly ask not to be transferred again unless the next agent can modify the booking.",
+            "start_word": 10,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package",
+                "confidence_score": 0.06054625
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.5023169
+              },
+              {
+                "topic": "Booking modification",
+                "confidence_score": 0.26810065
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's supposed to reach there by April 3. I kindly ask not to be transferred again unless the next agent can modify the booking.",
+            "start_word": 10,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Provide package location",
+                "confidence_score": 0.1583405
+              },
+              {
+                "intent": "Reassure not to be transferred",
+                "confidence_score": 0.00018958533
+              },
+              {
+                "intent": "Request to update booking",
+                "confidence_score": 0.0035216457
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package for Boston is?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.014553016051650047
+          },
+          {
+            "text": "It's supposed to reach there by April 3. I kindly ask not to be transferred again unless the next agent can modify the booking.",
+            "start_word": 10,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.5448129177093506
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.39899144172668455
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:21.998965+00:00"
+}

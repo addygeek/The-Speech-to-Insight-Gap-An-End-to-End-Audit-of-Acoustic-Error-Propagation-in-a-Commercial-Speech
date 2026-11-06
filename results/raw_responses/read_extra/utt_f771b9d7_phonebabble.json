@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_f771b9d7",
+    "text_source": "transcript_phonebabble",
+    "text": "I need to book an appointment with doctor Jordan Lima on April 3 at 09:30AM. I'm calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b292-95f9-74a0-9a31-699a2df8265f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-95f9-74a0-9a31-699a2df8265f",
+      "created": "2026-11-06T20:35:13.591Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.35557583
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.72953343
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lima on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.10798585414886476
+          },
+          {
+            "text": "I'm calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.6617051959037781
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.37774658203125
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:13.646547+00:00"
+}

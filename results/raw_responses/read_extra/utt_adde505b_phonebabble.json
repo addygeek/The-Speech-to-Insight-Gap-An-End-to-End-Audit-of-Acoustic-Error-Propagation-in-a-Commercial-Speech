@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_adde505b",
+    "text_source": "transcript_phonebabble",
+    "text": "Where is my package going to Chicago? It should arrive by April 1. This is the second time I have contacted support about the same problem we've had."
+  },
+  "request_id": "01a1b291-fcec-7f00-975e-2afa17071644",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-fcec-7f00-975e-2afa17071644",
+      "created": "2026-11-06T20:34:34.944Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 1. This is the second time I have contacted support about the same problem we've had.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.084701486
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 1. This is the second time I have contacted support about the same problem we've had.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report package arrival",
+                "confidence_score": 0.0454631
+              },
+              {
+                "intent": "Contact support about problem",
+                "confidence_score": 0.025863696
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03674895316362381
+          },
+          {
+            "text": "It should arrive by April 1. This is the second time I have contacted support about the same problem we've had.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.34343764185905457
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.25127121896454785
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:34.998059+00:00"
+}

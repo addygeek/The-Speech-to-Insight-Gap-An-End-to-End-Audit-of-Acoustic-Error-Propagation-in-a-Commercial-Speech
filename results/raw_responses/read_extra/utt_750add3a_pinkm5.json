@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_750add3a",
+    "text_source": "transcript_pinkm5",
+    "text": "I see that my card ending in 4421 was billed $45.99 two times. Please ensure that I am not transferred again unless the next representative can modify the purchase."
+  },
+  "request_id": "01a1b293-e501-7493-9f0c-6889938ef166",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-e501-7493-9f0c-6889938ef166",
+      "created": "2026-11-06T20:36:39.508Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please ensure that I am not transferred again unless the next representative can modify the purchase.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.70880836
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.06443596
+              },
+              {
+                "topic": "Changing order",
+                "confidence_score": 0.00068764365
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please ensure that I am not transferred again unless the next representative can modify the purchase.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request to not transfer",
+                "confidence_score": 0.0013819193
+              },
+              {
+                "intent": "Request to modify purchase",
+                "confidence_score": 0.71447176
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I see that my card ending in 4421 was billed $45.99 two times. Please ensure that I am not transferred again unless the next representative can modify the purchase.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7809134721755981
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7809134589301215
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:39.563697+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_45ebd9f4",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my package going to get there? It should arrive by October 5. Please do not transfer me again until"
+  },
+  "request_id": "01a1b292-e8a4-77a3-8fa5-333c44d3ca3f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-e8a4-77a3-8fa5-333c44d3ca3f",
+      "created": "2026-11-06T20:35:34.943Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 22,
+        "output_tokens": 22
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 22,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 22,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Where is my package going to get there?",
+            "start_word": 1,
+            "end_word": 8,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.23209251
+              },
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.21080352
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Where is my package going to get there?",
+            "start_word": 1,
+            "end_word": 8,
+            "intents": [
+              {
+                "intent": "Provide package location",
+                "confidence_score": 0.06668756
+              },
+              {
+                "intent": "Request not to transfer",
+                "confidence_score": 0.020352384
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to get there?",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "neutral",
+            "sentiment_score": -0.17151345312595367
+          },
+          {
+            "text": "It should arrive by October 5. Please do not transfer me again until",
+            "start_word": 8,
+            "end_word": 20,
+            "sentiment": "negative",
+            "sentiment_score": -0.5058416128158569
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36907100677490234
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:35.007171+00:00"
+}

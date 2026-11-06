@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_577b064f",
+    "text_source": "reference",
+    "text": "Hi, my name is Alex Chen. I do not want to cancel my order for $120.00. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b256-acea-7a02-be2d-1f627c8916e5",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-acea-7a02-be2d-1f627c8916e5",
+      "created": "2026-11-06T19:29:47.367Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.43648142
+              },
+              {
+                "topic": "Record checking",
+                "confidence_score": 0.0446037
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.8959416
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Notify about cancellation",
+                "confidence_score": 0.0019182779
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09364543110132216
+          },
+          {
+            "text": "I do not want to cancel my order for $120.00.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.7325706481933594
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": 0.10698547959327698
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1413412094116211
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:47.456939+00:00"
+}

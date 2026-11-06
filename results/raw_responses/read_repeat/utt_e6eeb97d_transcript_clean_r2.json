@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_e6eeb97d",
+    "text_source": "transcript_clean",
+    "text": "Hello. I'm Taylor Brooks. I wish to keep my order for $19.40. The previous agent advised me to reach out again if the charge remained visible."
+  },
+  "request_id": "01a1b253-bbce-7aa1-af19-2533381af086",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-bbce-7aa1-af19-2533381af086",
+      "created": "2026-11-06T19:26:34.738Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the charge remained visible.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order status",
+                "confidence_score": 0.22631244
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the charge remained visible.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.45456648
+              },
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.7251928
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1254911720752716
+          },
+          {
+            "text": "I wish to keep my order for $19.40.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.494675874710083
+          },
+          {
+            "text": "The previous agent advised me to reach out again if the charge remained visible.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.5612131357192993
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.08026403994173617
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:34.817494+00:00"
+}

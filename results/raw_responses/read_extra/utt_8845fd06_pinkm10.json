@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_8845fd06",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my? It can arrive by March 12. I can wait on the line while I check the records, and I do have my account number."
+  },
+  "request_id": "01a1b292-3a16-7aa1-b5dc-eba2046a435f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-3a16-7aa1-b5dc-eba2046a435f",
+      "created": "2026-11-06T20:34:50.249Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It can arrive by March 12. I can wait on the line while I check the records, and I do have my account number.",
+            "start_word": 3,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Arrival",
+                "confidence_score": 0.26645413
+              },
+              {
+                "topic": "Records",
+                "confidence_score": 0.33537653
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.978803
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It can arrive by March 12. I can wait on the line while I check the records, and I do have my account number.",
+            "start_word": 3,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Check records",
+                "confidence_score": 0.13172033
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my?",
+            "start_word": 0,
+            "end_word": 2,
+            "sentiment": "neutral",
+            "sentiment_score": -0.12392296642065048
+          },
+          {
+            "text": "It can arrive by March 12. I can wait on the line while I check the records, and I do have my account number.",
+            "start_word": 3,
+            "end_word": 26,
+            "sentiment": "positive",
+            "sentiment_score": 0.436066597700119
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.36140130360921224
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:50.364420+00:00"
+}

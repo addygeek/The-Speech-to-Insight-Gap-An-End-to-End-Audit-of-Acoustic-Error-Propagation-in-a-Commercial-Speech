@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_9192a5de",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel that order for $75. So last week, I just to call back."
+  },
+  "request_id": "01a1b291-eeba-76c0-bbb0-b984904c2015",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-eeba-76c0-bbb0-b984904c2015",
+      "created": "2026-11-06T20:34:30.932Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "So last week, I just to call back.",
+            "start_word": 16,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7753097
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "So last week, I just to call back.",
+            "start_word": 16,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Change order",
+                "confidence_score": 0.0030981319
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.018279805779457092
+          },
+          {
+            "text": "I do not want to cancel that order for $75. So last week, I just to call back.",
+            "start_word": 6,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.6769320964813232
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4683685302734375
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:30.994269+00:00"
+}

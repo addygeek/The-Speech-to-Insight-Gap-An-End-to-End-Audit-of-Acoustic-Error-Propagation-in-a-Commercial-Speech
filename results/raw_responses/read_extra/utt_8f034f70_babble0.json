@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_8f034f70",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $120 twice on my card and reached 4,000. I'd like to do a new line. I have joined on the line when I checked the record, and I do have to show how I know why."
+  },
+  "request_id": "01a1b291-c159-7c30-bc1f-a8ffd8cffa63",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c159-7c30-bc1f-a8ffd8cffa63",
+      "created": "2026-11-06T20:34:19.229Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 48
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 48,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I have joined on the line when I checked the record, and I do have to show how I know why.",
+            "start_word": 18,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Billing issue",
+                "confidence_score": 0.03886357
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I have joined on the line when I checked the record, and I do have to show how I know why.",
+            "start_word": 18,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Request a new line",
+                "confidence_score": 0.01929601
+              },
+              {
+                "intent": "Identify a reason for charging",
+                "confidence_score": 0.0009897526
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.22039267
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card and reached 4,000. I'd like to do a new line. I have joined on the line when I checked the record, and I do have to show how I know why.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.5238451361656189
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5238451162974039
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:19.290846+00:00"
+}

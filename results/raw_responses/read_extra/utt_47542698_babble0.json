@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_47542698",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $75 placed in that second week. The last agent I spoke with after I was charged with a charge of steel shell."
+  },
+  "request_id": "01a1b293-d697-7f62-b53f-ebd9c05d85ff",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d697-7f62-b53f-ebd9c05d85ff",
+      "created": "2026-11-06T20:36:35.960Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with after I was charged with a charge of steel shell.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.9085237
+              },
+              {
+                "topic": "Agent contact",
+                "confidence_score": 0.027212773
+              },
+              {
+                "topic": "Steel shell charge",
+                "confidence_score": 0.97405887
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with after I was charged with a charge of steel shell.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6143946
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed in that second week. The last agent I spoke with after I was charged with a charge of steel shell.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.8901963233947754
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8901962916056315
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:36.022790+00:00"
+}

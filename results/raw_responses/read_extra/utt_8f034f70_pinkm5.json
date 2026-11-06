@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_8f034f70",
+    "text_source": "transcript_pinkm5",
+    "text": "I was charged $120 twice on my card, and we need 4,421. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b291-c0af-7450-ba63-e17d9373a805",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-c0af-7450-ba63-e17d9373a805",
+      "created": "2026-11-06T20:34:19.142Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card, and we need 4,421. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 1,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.44762278
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.4122661
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card, and we need 4,421. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 1,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Wait on the line while checking record",
+                "confidence_score": 0.00027880236
+              },
+              {
+                "intent": "Have account number ready",
+                "confidence_score": 0.41902933
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card, and we need 4,421. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13011889159679413
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.13011888555578285
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:19.199925+00:00"
+}

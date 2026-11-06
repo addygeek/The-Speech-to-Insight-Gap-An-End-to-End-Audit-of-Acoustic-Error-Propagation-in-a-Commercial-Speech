@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_c5e2908e",
+    "text_source": "reference",
+    "text": "Thank you Jordan Lee, the support team in Austin was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b250-369a-7973-ab9d-a78ecf4731a6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-369a-7973-ab9d-a78ecf4731a6",
+      "created": "2026-11-06T19:22:44.311Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.5586071
+              },
+              {
+                "topic": "Austin problem",
+                "confidence_score": 0.17815542
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you Jordan Lee, the support team in Austin was excellent today. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 1,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Express gratitude",
+                "confidence_score": 0.17176321
+              }
+            ]
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Inform about second contact",
+                "confidence_score": 0.004288692
+              },
+              {
+                "intent": "Discuss same problem",
+                "confidence_score": 0.045816462
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Jordan Lee, the support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8491371870040894
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.007509218528866768
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3875992682672316
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:44.389810+00:00"
+}

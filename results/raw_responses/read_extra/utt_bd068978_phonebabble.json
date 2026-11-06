@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_bd068978",
+    "text_source": "transcript_phonebabble",
+    "text": "I appreciate your help, Dorothy. The Denver support team was great today. The last representative advised me to reach out again if the charge remains visible."
+  },
+  "request_id": "01a1b291-864d-7b93-876b-4196e1e1eba9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-864d-7b93-876b-4196e1e1eba9",
+      "created": "2026-11-06T20:34:04.206Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative advised me to reach out again if the charge remains visible.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Denver support",
+                "confidence_score": 0.40651402
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative advised me to reach out again if the charge remains visible.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Appreciate help",
+                "confidence_score": 0.09171003
+              },
+              {
+                "intent": "Reach out to dora",
+                "confidence_score": 0.0006326927
+              },
+              {
+                "intent": "Check charge visibility",
+                "confidence_score": 0.09804954
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Dorothy. The Denver support team was great today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8267695307731628
+          },
+          {
+            "text": "The last representative advised me to reach out again if the charge remains visible.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14276354014873505
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.32636534783147997
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:04.266787+00:00"
+}

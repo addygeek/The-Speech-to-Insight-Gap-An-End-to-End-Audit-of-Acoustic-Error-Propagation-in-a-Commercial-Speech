@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_01b1ad9a",
+    "text_source": "transcript_pinkm5",
+    "text": "Please cancel my order for $75 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. Please send me updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b293-cacf-7ba2-8fd1-fc13bfc714bd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-cacf-7ba2-8fd1-fc13bfc714bd",
+      "created": "2026-11-06T20:36:32.792Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 23,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.08298404
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.26352897
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 23,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.68107355
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.32426435
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.8444027900695801
+          },
+          {
+            "text": "Please send me updated confirmation to the same email address you have on file.",
+            "start_word": 23,
+            "end_word": 36,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2020088881254196
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6093805824838033
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:32.857278+00:00"
+}

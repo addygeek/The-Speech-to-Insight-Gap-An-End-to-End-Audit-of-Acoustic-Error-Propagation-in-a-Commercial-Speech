@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_dc8dba24",
+    "text_source": "transcript_phonebabble",
+    "text": "I'd like to schedule an appointment with doctor Alex Chen for October 5 at 11AM. Please don't transfer me again unless the next person can genuinely modify the booking."
+  },
+  "request_id": "01a1b291-b7e6-7120-91e9-3c6e656a174e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-b7e6-7120-91e9-3c6e656a174e",
+      "created": "2026-11-06T20:34:16.985Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.47230026
+              },
+              {
+                "topic": "Doctor alex chen",
+                "confidence_score": 0.51678646
+              },
+              {
+                "topic": "Changing booking",
+                "confidence_score": 0.35256505
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointments with doctor alex chen",
+                "confidence_score": 9.868208e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Alex Chen for October 5 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.19865883886814115
+          },
+          {
+            "text": "Please don't transfer me again unless the next person can genuinely modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.9089189171791076
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.35513004503752055
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:17.048467+00:00"
+}

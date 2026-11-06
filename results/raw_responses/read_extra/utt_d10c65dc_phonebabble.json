@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_d10c65dc",
+    "text_source": "transcript_phonebabble",
+    "text": "Thank you, Sam, tell the support team in Chicago was exported today. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b292-85ec-7fe3-bf7b-e857b075b93a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-85ec-7fe3-bf7b-e857b075b93a",
+      "created": "2026-11-06T20:35:09.688Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Support team export",
+                "confidence_score": 0.54316556
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.2632909
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Update support team's record",
+                "confidence_score": 0.0005645487
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam, tell the support team in Chicago was exported today. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.5138475298881531
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5138475100199381
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:09.758369+00:00"
+}

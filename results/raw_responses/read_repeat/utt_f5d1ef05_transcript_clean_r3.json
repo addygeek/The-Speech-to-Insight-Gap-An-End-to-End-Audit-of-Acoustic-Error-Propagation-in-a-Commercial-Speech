@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_f5d1ef05",
+    "text_source": "transcript_clean",
+    "text": "Hello. I'm Taylor Brooks. I want to keep my order of $250. I'm reaching out from my mobile as I'm currently away from my home office."
+  },
+  "request_id": "01a1b251-d247-7ec2-8331-b0a33b62970a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-d247-7ec2-8331-b0a33b62970a",
+      "created": "2026-11-06T19:24:30.253Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Mobile order",
+                "confidence_score": 0.015262923
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.29762235
+              },
+              {
+                "intent": "Reach out",
+                "confidence_score": 0.28020337
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07388941198587418
+          },
+          {
+            "text": "I want to keep my order of $250.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.3537186086177826
+          },
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.3662296235561371
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.08405108709593077
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:30.333396+00:00"
+}

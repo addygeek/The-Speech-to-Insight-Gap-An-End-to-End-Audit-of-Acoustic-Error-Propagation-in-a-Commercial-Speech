@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_a534fb50",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Sam Patel. The support team in Boston was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b254-7640-77e2-9cff-82b4ecb62c3e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-7640-77e2-9cff-82b4ecb62c3e",
+      "created": "2026-11-06T19:27:22.404Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Boston support",
+                "confidence_score": 0.40164775
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The support team in Boston was excellent today. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 4,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Expressing gratitude",
+                "confidence_score": 0.37184256
+              }
+            ]
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Expressing absence from home office",
+                "confidence_score": 0.033931244
+              },
+              {
+                "intent": "Requesting mobile phone call",
+                "confidence_score": 0.04758096
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8220988512039185
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1113087311387062
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.32794189453125
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:22.484193+00:00"
+}

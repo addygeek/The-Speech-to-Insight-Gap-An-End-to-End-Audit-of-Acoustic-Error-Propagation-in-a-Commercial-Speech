@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_8b534659",
+    "text_source": "transcript_babble5",
+    "text": "Can you tell me the status of my package heading to Boston? It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge is new."
+  },
+  "request_id": "01a1b293-5e93-76e3-ba41-49bf69fd9761",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-5e93-76e3-ba41-49bf69fd9761",
+      "created": "2026-11-06T20:36:05.154Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge is new.",
+            "start_word": 12,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.467556
+              },
+              {
+                "topic": "Charge status",
+                "confidence_score": 0.400884
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge is new.",
+            "start_word": 12,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.33915645
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.19101991
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Boston?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0660887062549591
+          },
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to told me to call again if the charge is new.",
+            "start_word": 12,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.5552854537963867
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3533388614654541
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:05.212041+00:00"
+}

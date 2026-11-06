@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_9c5b13d7",
+    "text_source": "transcript_reverb",
+    "text": "Hi. My name is Marina Santos. I do not want to cancel my order for $19.40. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b291-cc4e-7742-8129-d589ed00c35f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-cc4e-7742-8129-d589ed00c35f",
+      "created": "2026-11-06T20:34:21.954Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.5213709
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.034945305
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Marina Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.076240673661232
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.7259978652000427
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15860256552696228
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.12147525223818692
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:22.053310+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_decf2893",
+    "text_source": "transcript_pinkm10",
+    "text": "Thank you, Sam Patel, for supporting Boston and. Please do not transfer me again unless the next person can actually change the book."
+  },
+  "request_id": "01a1b291-a6c1-7770-8d27-9c0f6589a57f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a6c1-7770-8d27-9c0f6589a57f",
+      "created": "2026-11-06T20:34:12.354Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the book.",
+            "start_word": 8,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Book change",
+                "confidence_score": 0.27838445
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the book.",
+            "start_word": 8,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Change book",
+                "confidence_score": 0.0189956
+              },
+              {
+                "intent": "Support boston",
+                "confidence_score": 0.15126553
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel, for supporting Boston and.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "positive",
+            "sentiment_score": 0.5243870615959167
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the book.",
+            "start_word": 8,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.8484864830970764
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2804009010051859
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:12.409466+00:00"
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_4eb947ac",
+    "text_source": "transcript_babble0",
+    "text": "I appreciate Maria's financial support team in Austin provided excellent service today. I request not to be transferred again unless the next person will continue to modify."
+  },
+  "request_id": "01a1b292-1703-7121-91c0-278b8c34ae46",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-1703-7121-91c0-278b8c34ae46",
+      "created": "2026-11-06T20:34:41.271Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I request not to be transferred again unless the next person will continue to modify.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Financial support",
+                "confidence_score": 0.5303371
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I request not to be transferred again unless the next person will continue to modify.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Notify mr. mary of assistance",
+                "confidence_score": 6.223043e-07
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate Maria's financial support team in Austin provided excellent service today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.846308708190918
+          },
+          {
+            "text": "I request not to be transferred again unless the next person will continue to modify.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.406245082616806
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.18088948726654053
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:41.336728+00:00"
+}

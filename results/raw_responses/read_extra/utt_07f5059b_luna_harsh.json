@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_07f5059b",
+    "text_source": "transcript_luna_harsh",
+    "text": "Hi. My name is Maria Sanchez. I do not want to cancel my order for $120. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b29d-8227-7fe0-815a-eba0493ef6dd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-8227-7fe0-815a-eba0493ef6dd",
+      "created": "2026-11-06T20:47:09.412Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 2
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.12705158
+              },
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8507105
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": []
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Sanchez.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.025118879973888397
+          },
+          {
+            "text": "I do not want to cancel my order for $120. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7248412370681763
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5669548135054739
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:09.465513+00:00"
+}

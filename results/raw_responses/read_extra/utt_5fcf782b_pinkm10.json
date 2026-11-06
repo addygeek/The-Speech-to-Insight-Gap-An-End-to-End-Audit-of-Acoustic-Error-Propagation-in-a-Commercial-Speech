@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_5fcf782b",
+    "text_source": "transcript_pinkm10",
+    "text": "I would like to schedule an appointment with doctor Taylor Brooks for June 21 at 09:30AM. The previous agent advised me to call back if the card is available."
+  },
+  "request_id": "01a1b292-e6c9-74f2-9e01-b57e9c59f644",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-e6c9-74f2-9e01-b57e9c59f644",
+      "created": "2026-11-06T20:35:34.394Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 19
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the card is available.",
+            "start_word": 16,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.56293696
+              },
+              {
+                "topic": "Doctor taylor brooks",
+                "confidence_score": 0.2454387
+              },
+              {
+                "topic": "Patient availability",
+                "confidence_score": 0.023069106
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to call back if the card is available.",
+            "start_word": 16,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor taylor brooks",
+                "confidence_score": 0.23812081
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Taylor Brooks for June 21 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.770704448223114
+          },
+          {
+            "text": "The previous agent advised me to call back if the card is available.",
+            "start_word": 16,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03935017064213753
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4331816832224528
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:34.449490+00:00"
+}

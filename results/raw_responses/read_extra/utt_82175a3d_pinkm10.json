@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_82175a3d",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $8.50 per. I can wait on the line while you text the number, and I do have my account number."
+  },
+  "request_id": "01a1b292-2fb5-7321-a17b-387294b55b77",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2fb5-7321-a17b-387294b55b77",
+      "created": "2026-11-06T20:34:47.981Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "50 per. I can wait on the line while you text the number, and I do have my account number.",
+            "start_word": 6,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.5031459
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "50 per. I can wait on the line while you text the number, and I do have my account number.",
+            "start_word": 6,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.7846979
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 per.",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "negative",
+            "sentiment_score": -0.8148348927497864
+          },
+          {
+            "text": "I can wait on the line while you text the number, and I do have my account number.",
+            "start_word": 7,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": -0.23006699979305267
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4249896049499512
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:48.037962+00:00"
+}

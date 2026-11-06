@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_d6d419a3",
+    "text_source": "transcript_phonebabble",
+    "text": "Could you please modify my flight to Seattle on March 12? Thank you. I have reached out to support regarding this issue twice this week."
+  },
+  "request_id": "01a1b292-91fc-7c63-bdb8-591563bb12ec",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-91fc-7c63-bdb8-591563bb12ec",
+      "created": "2026-11-06T20:35:12.588Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I have reached out to support regarding this issue twice this week.",
+            "start_word": 13,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.8821053
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.8785223
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I have reached out to support regarding this issue twice this week.",
+            "start_word": 13,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.004098466
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Seattle on March 12?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04008037596940994
+          },
+          {
+            "text": "Thank you.",
+            "start_word": 11,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.7328192591667175
+          },
+          {
+            "text": "I have reached out to support regarding this issue twice this week.",
+            "start_word": 13,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1696886420249939
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.016909646136420115
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:12.642064+00:00"
+}

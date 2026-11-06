@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_3cd1831d",
+    "text_source": "transcript_orion_harsh",
+    "text": "I would like to cancel my order for $8.50 that I placed yesterday. I've reached out to support twice this week regarding the same issue. I need this resolved by the end of the business day since I am traveling tomorrow morning."
+  },
+  "request_id": "01a1b29d-f8d1-7891-b224-b574797abda2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-f8d1-7891-b224-b574797abda2",
+      "created": "2026-11-06T20:47:40.095Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 49,
+        "output_tokens": 49
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 49,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 49,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 25,
+            "end_word": 41,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7863199
+              },
+              {
+                "topic": "Support support",
+                "confidence_score": 0.000627888
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 25,
+            "end_word": 41,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.62013894
+              },
+              {
+                "intent": "Resolve issue",
+                "confidence_score": 0.010908015
+              },
+              {
+                "intent": "Travel tomorrow",
+                "confidence_score": 0.53324133
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $8.50 that I placed yesterday. I've reached out to support twice this week regarding the same issue. I need this resolved by the end of the business day since I am traveling tomorrow morning.",
+            "start_word": 0,
+            "end_word": 41,
+            "sentiment": "negative",
+            "sentiment_score": -0.5709816813468933
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5709817068917411
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:40.148501+00:00"
+}

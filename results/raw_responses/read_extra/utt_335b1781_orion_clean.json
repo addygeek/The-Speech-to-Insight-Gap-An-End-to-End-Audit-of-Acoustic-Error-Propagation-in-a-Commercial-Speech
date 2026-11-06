@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_335b1781",
+    "text_source": "transcript_orion_clean",
+    "text": "I need to book an appointment with Doctor. San Patel on March 12 at 11AM. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b29d-e58c-7832-a6de-9ecefb887e57",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-e58c-7832-a6de-9ecefb887e57",
+      "created": "2026-11-06T20:47:34.849Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "San Patel on March 12 at 11AM. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 8,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.4131685
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "San Patel on March 12 at 11AM. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 8,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.7073362
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with Doctor. San Patel on March 12 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.0944003164768219
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 15,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.6629353165626526
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3709849280280036
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:34.901129+00:00"
+}

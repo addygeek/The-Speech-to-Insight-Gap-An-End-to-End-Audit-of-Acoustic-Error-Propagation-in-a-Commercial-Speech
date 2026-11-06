@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_983b8064",
+    "text_source": "transcript_reverb",
+    "text": "Thank you, Sam Patel. The support team in Denver was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b292-68b3-73b3-8403-c9c515380105",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-68b3-73b3-8403-c9c515380105",
+      "created": "2026-11-06T20:35:02.176Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 21
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.6229433
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.8549158
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The support team in Denver was excellent today. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 4,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Thanking sam patel",
+                "confidence_score": 0.053297594
+              }
+            ]
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Discussing the same issue",
+                "confidence_score": 5.6734156e-05
+              },
+              {
+                "intent": "Indicating previous contact",
+                "confidence_score": 0.000106162006
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.7892519235610962
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.004609920550137758
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3850424217455315
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:02.238305+00:00"
+}

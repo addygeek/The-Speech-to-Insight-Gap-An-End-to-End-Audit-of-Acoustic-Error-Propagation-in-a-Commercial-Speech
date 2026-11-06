@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_e12ced47",
+    "text_source": "transcript_babble5",
+    "text": "My Internet has been down since 02:15PM, and I cannot work from Chicago. This is the second time I have contacted support about the same problem as me."
+  },
+  "request_id": "01a1b291-b293-7463-b4a2-59632afadc2f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-b293-7463-b4a2-59632afadc2f",
+      "created": "2026-11-06T20:34:15.393Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem as me.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.23022087
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem as me.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report internet problem",
+                "confidence_score": 0.13178697
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.11998767
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Chicago. This is the second time I have contacted support about the same problem as me.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7559345960617065
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.755934579031808
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:15.459521+00:00"
+}

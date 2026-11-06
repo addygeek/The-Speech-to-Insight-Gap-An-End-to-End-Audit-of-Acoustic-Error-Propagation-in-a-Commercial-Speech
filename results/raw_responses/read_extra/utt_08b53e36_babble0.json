@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_08b53e36",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me why my package is headed to Seattle? It is supposed to be delivered by April 3. My package is I'm willing to hold on the line while you verify the record, and I have my"
+  },
+  "request_id": "01a1b293-c14e-7fc2-87a3-df6bcb063e1b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-c14e-7fc2-87a3-df6bcb063e1b",
+      "created": "2026-11-06T20:36:30.312Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you tell me why my package is headed to Seattle?",
+            "start_word": 1,
+            "end_word": 11,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.57989866
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.37509307
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you tell me why my package is headed to Seattle?",
+            "start_word": 1,
+            "end_word": 11,
+            "intents": [
+              {
+                "intent": "Provide package information",
+                "confidence_score": 0.00381081
+              },
+              {
+                "intent": "Verify package delivery",
+                "confidence_score": 0.020403845
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me why my package is headed to Seattle? It is supposed to be delivered by April 3. My package is I'm willing to hold on the line while you verify the record, and I have my",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "neutral",
+            "sentiment_score": 0.010654179379343988
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.010654179162757342
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:30.369106+00:00"
+}

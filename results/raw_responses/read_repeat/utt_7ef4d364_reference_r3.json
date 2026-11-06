@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_7ef4d364",
+    "text_source": "reference",
+    "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b255-0032-7331-be15-0d9679a622c2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-0032-7331-be15-0d9679a622c2",
+      "created": "2026-11-06T19:27:57.768Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 20
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 14,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.45727208
+              },
+              {
+                "topic": "Work",
+                "confidence_score": 0.0052449587
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.9775806
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 14,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Report internet downtime",
+                "confidence_score": 0.051949453
+              },
+              {
+                "intent": "Request to settle the issue",
+                "confidence_score": 3.2299755e-05
+              },
+              {
+                "intent": "Travel to san diego",
+                "confidence_score": 0.06762509
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7171733379364014
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7171733162619851
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:57.851157+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_4d8c103f",
+    "text_source": "transcript_reverb",
+    "text": "Hello. I'm Alex Chen. I want to keep my order for $120. The previous agent advised me to reach out again if the charge was still appearing."
+  },
+  "request_id": "01a1b292-da93-7221-9714-24342e9b5b41",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-da93-7221-9714-24342e9b5b41",
+      "created": "2026-11-06T20:35:31.277Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the charge was still appearing.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Ordering",
+                "confidence_score": 0.09283622
+              },
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.26083347
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent advised me to reach out again if the charge was still appearing.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Keep order",
+                "confidence_score": 0.26956108
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08994023501873016
+          },
+          {
+            "text": "I want to keep my order for $120.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.37836989760398865
+          },
+          {
+            "text": "The previous agent advised me to reach out again if the charge was still appearing.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6822541356086731
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.20271709987095424
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:31.333823+00:00"
+}

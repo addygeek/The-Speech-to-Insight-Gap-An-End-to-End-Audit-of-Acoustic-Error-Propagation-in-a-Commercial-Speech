@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_bd068978",
+    "text_source": "reference",
+    "text": "I appreciate your help, Jordan Lee. The Denver support team was great today. The last representative advised me to reach out again if the charge remains visible."
+  },
+  "request_id": "01a1b250-2321-7130-877b-42c0790fc7f9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-2321-7130-877b-42c0790fc7f9",
+      "created": "2026-11-06T19:22:39.659Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative advised me to reach out again if the charge remains visible.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Denver support team",
+                "confidence_score": 0.15204
+              },
+              {
+                "topic": "Charge visibility",
+                "confidence_score": 0.3776435
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative advised me to reach out again if the charge remains visible.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Notify about charge status",
+                "confidence_score": 0.0051916433
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Jordan Lee. The Denver support team was great today.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.8191831111907959
+          },
+          {
+            "text": "The last representative advised me to reach out again if the charge remains visible.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1445329636335373
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3373250961303711
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:39.737688+00:00"
+}

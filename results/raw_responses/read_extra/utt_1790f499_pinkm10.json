@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_1790f499",
+    "text_source": "transcript_pinkm10",
+    "text": "I want to schedule an appointment for doctor Alex at 02:15PM. The previous agent I talked to said you could call back if you're charging"
+  },
+  "request_id": "01a1b293-333a-7930-b7a6-1514283455ee",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-333a-7930-b7a6-1514283455ee",
+      "created": "2026-11-06T20:35:53.893Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment for doctor Alex at 02:15PM.",
+            "start_word": 1,
+            "end_word": 11,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.8927895
+              },
+              {
+                "topic": "Doctor alex",
+                "confidence_score": 0.5110683
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment for doctor Alex at 02:15PM.",
+            "start_word": 1,
+            "end_word": 11,
+            "intents": [
+              {
+                "intent": "Schedule appointment for doctor alex",
+                "confidence_score": 0.032832745
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment for doctor Alex at 02:15PM.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.3329398036003113
+          },
+          {
+            "text": "The previous agent I talked to said you could call back if you're charging",
+            "start_word": 11,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.7569109797477722
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2460434287786484
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:53.956056+00:00"
+}

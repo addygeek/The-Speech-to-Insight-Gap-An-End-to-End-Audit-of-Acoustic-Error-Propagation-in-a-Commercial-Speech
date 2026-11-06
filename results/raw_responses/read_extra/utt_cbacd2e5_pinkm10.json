@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_cbacd2e5",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you change your flight to Chicago on April 3? Please send me updated confirmation to the patient's mammogram you have on file. I need to settle before the end of the day because I'll probably tomorrow morning."
+  },
+  "request_id": "01a1b293-564a-7e83-a1cf-bd949a573f29",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-564a-7e83-a1cf-bd949a573f29",
+      "created": "2026-11-06T20:36:02.971Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 47
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 15
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 47,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to settle before the end of the day because I'll probably tomorrow morning.",
+            "start_word": 23,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.9602192
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.6880128
+              },
+              {
+                "topic": "Patient's mammogram",
+                "confidence_score": 0.40547895
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to settle before the end of the day because I'll probably tomorrow morning.",
+            "start_word": 23,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.8113861
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.5877771
+              },
+              {
+                "intent": "Check mammogram",
+                "confidence_score": 0.02725311
+              },
+              {
+                "intent": "settle before day",
+                "confidence_score": 0.15789095
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change your flight to Chicago on April 3?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.015836304053664207
+          },
+          {
+            "text": "Please send me updated confirmation to the patient's mammogram you have on file.",
+            "start_word": 10,
+            "end_word": 22,
+            "sentiment": "positive",
+            "sentiment_score": 0.3495495021343231
+          },
+          {
+            "text": "I need to settle before the end of the day because I'll probably tomorrow morning.",
+            "start_word": 23,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.5797770619392395
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.0918786474998961
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:03.025607+00:00"
+}

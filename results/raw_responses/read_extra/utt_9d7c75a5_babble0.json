@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_9d7c75a5",
+    "text_source": "transcript_babble0",
+    "text": "Could you modify my flight to Austin for October 5? We're immediately on noble boat to call. Can continue to wait for my hotel."
+  },
+  "request_id": "01a1b292-330a-7cf0-a6e3-66907ccec15e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-330a-7cf0-a6e3-66907ccec15e",
+      "created": "2026-11-06T20:34:48.385Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can continue to wait for my hotel.",
+            "start_word": 17,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.74518466
+              },
+              {
+                "topic": "Hotel reservation",
+                "confidence_score": 0.6712773
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can continue to wait for my hotel.",
+            "start_word": 17,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.26673383
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Austin for October 5? We're immediately on noble boat to call.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "neutral",
+            "sentiment_score": 0.17973692715168
+          },
+          {
+            "text": "Can continue to wait for my hotel.",
+            "start_word": 17,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.335463285446167
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.03761271772713497
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:48.437608+00:00"
+}

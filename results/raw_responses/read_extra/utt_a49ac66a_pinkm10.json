@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_a49ac66a",
+    "text_source": "transcript_pinkm10",
+    "text": "My Internet has been down since 11AM, and I cannot work in Seattle. I'm leaving on the line on the November 10, and I do have my"
+  },
+  "request_id": "01a1b291-82c7-7e03-bc31-37fea4967c26",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-82c7-7e03-bc31-37fea4967c26",
+      "created": "2026-11-06T20:34:03.393Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 15
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work in Seattle.",
+            "start_word": 1,
+            "end_word": 13,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.08827821
+              },
+              {
+                "topic": "Unable to work",
+                "confidence_score": 0.045343608
+              },
+              {
+                "topic": "Rescheduling",
+                "confidence_score": 0.004740974
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work in Seattle.",
+            "start_word": 1,
+            "end_word": 13,
+            "intents": [
+              {
+                "intent": "Informing about internet downtime",
+                "confidence_score": 0.013388781
+              },
+              {
+                "intent": "Requesting to leave",
+                "confidence_score": 0.0046216194
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work in Seattle.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7653477787971497
+          },
+          {
+            "text": "I'm leaving on the line on the November 10, and I do have my",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.15533104538917542
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.46033939719200134
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:03.450158+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_570f7630",
+    "text_source": "reference",
+    "text": "Can you change my flight to Chicago on June 21? Please send the updated confirmation to the same email address you have on file. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b254-3570-7421-b5fc-0d80e2b81334",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-3570-7421-b5fc-0d80e2b81334",
+      "created": "2026-11-06T19:27:05.843Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 24,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.08871696
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 24,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.7164763
+              },
+              {
+                "intent": "Request confirmation",
+                "confidence_score": 0.0018712902
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on June 21? Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2166779637336731
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 24,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.8813648223876953
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4794611376385356
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:05.922658+00:00"
+}

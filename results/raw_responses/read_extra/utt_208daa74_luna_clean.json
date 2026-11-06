@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_208daa74",
+    "text_source": "transcript_luna_clean",
+    "text": "Where is my package going to Boston? It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b29d-b6d2-7702-a04c-e6b70d9bae61",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-b6d2-7702-a04c-e6b70d9bae61",
+      "created": "2026-11-06T20:47:22.918Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.011630269
+              },
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.03913827
+              },
+              {
+                "topic": "Change of booking",
+                "confidence_score": 0.078528084
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Change package",
+                "confidence_score": 0.029736284
+              },
+              {
+                "intent": "Transfer call",
+                "confidence_score": 0.12848158
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07006815075874329
+          },
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6938111186027527
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5328451587307838
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:22.973364+00:00"
+}

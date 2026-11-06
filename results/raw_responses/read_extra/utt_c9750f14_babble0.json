@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_c9750f14",
+    "text_source": "transcript_babble0",
+    "text": "I want to schedule an appointment for doctor Jordan Lee for April 3 at 09:30AM. I'm the second Please refrain from transferring me again unless you"
+  },
+  "request_id": "01a1b293-c79c-71c1-9d17-76ebf1eb96ab",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-c79c-71c1-9d17-76ebf1eb96ab",
+      "created": "2026-11-06T20:36:32.004Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment for doctor Jordan Lee for April 3 at 09:30AM.",
+            "start_word": 1,
+            "end_word": 15,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.49002072
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment for doctor Jordan Lee for April 3 at 09:30AM.",
+            "start_word": 1,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.6693342
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment for doctor Jordan Lee for April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.010542831383645536
+          },
+          {
+            "text": "I'm the second Please refrain from transferring me again unless you",
+            "start_word": 15,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.6563096642494202
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2836567934821634
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:32.056775+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_584a54f3",
+    "text_source": "reference",
+    "text": "Can you change my flight to Austin on October 5? This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b255-39b9-7563-80a2-26f3621ad490",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-39b9-7563-80a2-26f3621ad490",
+      "created": "2026-11-06T19:28:13.034Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 10,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.94925016
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.1196049
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.98411757
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 10,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.5524007
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.8154711
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on October 5?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.030689608305692673
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 10,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6094748377799988
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.35798168182373047
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:13.113423+00:00"
+}

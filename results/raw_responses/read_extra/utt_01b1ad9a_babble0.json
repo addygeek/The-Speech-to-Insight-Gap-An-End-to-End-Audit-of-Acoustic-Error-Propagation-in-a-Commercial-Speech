@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_01b1ad9a",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $75 replaced yesterday. Please do not transfer me again unless the next person can actually change it. Please send me updated confirmation to the email address you have on file."
+  },
+  "request_id": "01a1b293-cc1d-72c0-85ef-c1fc7b00c91e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-cc1d-72c0-85ef-c1fc7b00c91e",
+      "created": "2026-11-06T20:36:33.079Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the email address you have on file.",
+            "start_word": 22,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.80014604
+              },
+              {
+                "topic": "Change of plan",
+                "confidence_score": 0.0005510539
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to the email address you have on file.",
+            "start_word": 22,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Requesting a change in order",
+                "confidence_score": 0.0005284369
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 replaced yesterday. Please do not transfer me again unless the next person can actually change it.",
+            "start_word": 0,
+            "end_word": 21,
+            "sentiment": "negative",
+            "sentiment_score": -0.8303746581077576
+          },
+          {
+            "text": "Please send me updated confirmation to the email address you have on file.",
+            "start_word": 22,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04536421224474907
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5485760615422175
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:33.133737+00:00"
+}

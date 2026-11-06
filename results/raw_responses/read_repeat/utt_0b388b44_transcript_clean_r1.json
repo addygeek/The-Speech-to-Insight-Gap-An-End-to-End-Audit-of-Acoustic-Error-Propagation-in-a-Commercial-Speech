@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_0b388b44",
+    "text_source": "transcript_clean",
+    "text": "Thank you, Sam Patel. The support team in Denver was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b252-fa86-7c33-bbdb-07bc9e6b0128",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-fa86-7c33-bbdb-07bc9e6b0128",
+      "created": "2026-11-06T19:25:45.174Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.49176034
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.9675665
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The support team in Denver was excellent today. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 4,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Express gratitude",
+                "confidence_score": 0.45352563
+              }
+            ]
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Report absence from home office",
+                "confidence_score": 0.02932365
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Denver was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8119164705276489
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.11334548890590668
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.32207191691679116
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:45.258752+00:00"
+}

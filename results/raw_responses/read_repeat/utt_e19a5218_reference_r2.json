@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_e19a5218",
+    "text_source": "reference",
+    "text": "Thank you Taylor Brooks, the support team in Austin was excellent today. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b251-8eb6-73f0-8714-83ec64097a63",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-8eb6-73f0-8714-83ec64097a63",
+      "created": "2026-11-06T19:24:12.710Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Austin support",
+                "confidence_score": 0.38565403
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Update caller about same problem",
+                "confidence_score": 1.211245e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Taylor Brooks, the support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.853295624256134
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.00877301674336195
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4046429693698883
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:12.784589+00:00"
+}

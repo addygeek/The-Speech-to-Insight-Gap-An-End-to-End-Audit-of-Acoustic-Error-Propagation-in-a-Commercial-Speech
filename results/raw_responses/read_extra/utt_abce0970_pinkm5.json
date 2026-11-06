@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_abce0970",
+    "text_source": "transcript_pinkm5",
+    "text": "Please cancel my order for $8.50 placed yesterday. I need to settle before the end of the business day because I travel tomorrow morning. This is the second time I have contacted support about the same problem with"
+  },
+  "request_id": "01a1b291-ce89-7fc2-8b15-6ff1f1ca4c31",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ce89-7fc2-8b15-6ff1f1ca4c31",
+      "created": "2026-11-06T20:34:22.785Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "50 placed yesterday. I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 6,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7514911
+              }
+            ]
+          },
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 8,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Business day settlement",
+                "confidence_score": 0.020596495
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "50 placed yesterday. I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 6,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.8206183
+              }
+            ]
+          },
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 8,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Discuss resolution",
+                "confidence_score": 1.7196571e-05
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.96165437
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $8.50 placed yesterday. I need to settle before the end of the business day because I travel tomorrow morning. This is the second time I have contacted support about the same problem with",
+            "start_word": 0,
+            "end_word": 37,
+            "sentiment": "negative",
+            "sentiment_score": -0.7223487496376038
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7223487676576127
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:22.849810+00:00"
+}

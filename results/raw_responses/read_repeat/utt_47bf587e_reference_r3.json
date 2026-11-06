@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_47bf587e",
+    "text_source": "reference",
+    "text": "Since 11:00 AM, my internet has been out, preventing me from working in Denver. The previous agent I talked to instructed me to call back if the charge remained."
+  },
+  "request_id": "01a1b251-6e67-7bd2-8e7c-aba4fe9dcf07",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-6e67-7bd2-8e7c-aba4fe9dcf07",
+      "created": "2026-11-06T19:24:03.800Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to instructed me to call back if the charge remained.",
+            "start_word": 14,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.9280649
+              },
+              {
+                "topic": "Denver work",
+                "confidence_score": 0.1061648
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to instructed me to call back if the charge remained.",
+            "start_word": 14,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.31640166
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 11:00 AM, my internet has been out, preventing me from working in Denver. The previous agent I talked to instructed me to call back if the charge remained.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7282112836837769
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7282112969292535
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:03.873429+00:00"
+}

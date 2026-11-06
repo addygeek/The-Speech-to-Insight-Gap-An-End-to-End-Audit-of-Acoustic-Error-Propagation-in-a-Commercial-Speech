@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_8f3896f3",
+    "text_source": "transcript_pinkm10",
+    "text": "Hello. I'm Alice Penn. I received my order for $75, and it was resolved by the time of the business day. I have to call it tomorrow morning."
+  },
+  "request_id": "01a1b291-fd86-7312-a450-45857ce2222d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-fd86-7312-a450-45857ce2222d",
+      "created": "2026-11-06T20:34:34.573Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I have to call it tomorrow morning.",
+            "start_word": 21,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order resolution",
+                "confidence_score": 0.40641946
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I have to call it tomorrow morning.",
+            "start_word": 21,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Call tomorrow morning",
+                "confidence_score": 0.029581267
+              },
+              {
+                "intent": "Report order resolution",
+                "confidence_score": 0.07068791
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alice Penn.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05822322145104408
+          },
+          {
+            "text": "I received my order for $75, and it was resolved by the time of the business day.",
+            "start_word": 4,
+            "end_word": 20,
+            "sentiment": "positive",
+            "sentiment_score": 0.37450703978538513
+          },
+          {
+            "text": "I have to call it tomorrow morning.",
+            "start_word": 21,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3132304847240448
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1450164522443499
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:34.627966+00:00"
+}

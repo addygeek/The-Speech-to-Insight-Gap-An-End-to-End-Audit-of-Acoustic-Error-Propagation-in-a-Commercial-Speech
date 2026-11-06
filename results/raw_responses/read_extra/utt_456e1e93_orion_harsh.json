@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_456e1e93",
+    "text_source": "transcript_orion_harsh",
+    "text": "Where is my package going to Boston? It should arrive by April 3. This is the second time I've contacted support about the same problem this week."
+  },
+  "request_id": "01a1b29e-0e41-7670-8474-5fd931fbd621",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-0e41-7670-8474-5fd931fbd621",
+      "created": "2026-11-06T20:47:45.463Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I've contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.8692979
+              },
+              {
+                "topic": "Boston support",
+                "confidence_score": 0.003432212
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I've contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.092199095
+              },
+              {
+                "intent": "Communicate customer support",
+                "confidence_score": 0.00064155617
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0237897839397192
+          },
+          {
+            "text": "It should arrive by April 3. This is the second time I've contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.4169351458549499
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.30675387382507324
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:45.517648+00:00"
+}

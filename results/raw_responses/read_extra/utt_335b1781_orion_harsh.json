@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_335b1781",
+    "text_source": "transcript_orion_harsh",
+    "text": "I need to book an appointment with doctor Santatell on March 12 at 11AM. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b29d-e5ae-7732-85d8-db9c8c718982",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-e5ae-7732-85d8-db9c8c718982",
+      "created": "2026-11-06T20:47:35.029Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.5048218
+              },
+              {
+                "topic": "Doctor santatell",
+                "confidence_score": 0.43437773
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.80400664
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.78750587
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Santatell on March 12 at 11AM.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14470943808555603
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.6869261264801025
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.423563711983817
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:35.082635+00:00"
+}

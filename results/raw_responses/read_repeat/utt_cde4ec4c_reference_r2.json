@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_cde4ec4c",
+    "text_source": "reference",
+    "text": "Where is my package going to Chicago? It should arrive by October 5. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b254-64d3-76d2-b6d0-e161404238b6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-64d3-76d2-b6d0-e161404238b6",
+      "created": "2026-11-06T19:27:18.100Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.90807444
+              },
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.13415043
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Locate package",
+                "confidence_score": 0.09073578
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.66715986
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.028016939759254456
+          },
+          {
+            "text": "It should arrive by October 5. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.3456035852432251
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2491853775516633
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:18.177573+00:00"
+}

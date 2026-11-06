@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_d3f520c2",
+    "text_source": "transcript_clean",
+    "text": "Hello. I'm Sam Patel. I don't wish to cancel my $75 order. I'm willing to stay on the line as you verify the details, and I have my account number available."
+  },
+  "request_id": "01a1b252-41b1-7902-8e3c-b8b5701b85da",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-41b1-7902-8e3c-b8b5701b85da",
+      "created": "2026-11-06T19:24:57.786Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 2
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.24215032
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": []
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0362086184322834
+          },
+          {
+            "text": "I don't wish to cancel my $75 order.",
+            "start_word": 4,
+            "end_word": 11,
+            "sentiment": "negative",
+            "sentiment_score": -0.5965272188186646
+          },
+          {
+            "text": "I'm willing to stay on the line as you verify the details, and I have my account number available.",
+            "start_word": 12,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.21180634200572968
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.031729656596516456
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:57.869345+00:00"
+}

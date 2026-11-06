@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_f709e1a5",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package going from Boston? It should arrive by April. I think I am calling it on my college phone because I will wait for my"
+  },
+  "request_id": "01a1b291-b9fd-7a91-b051-cda03d339787",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-b9fd-7a91-b051-cda03d339787",
+      "created": "2026-11-06T20:34:17.297Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April.",
+            "start_word": 7,
+            "end_word": 11,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.6487774
+              },
+              {
+                "topic": "Boston",
+                "confidence_score": 0.38493517
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April.",
+            "start_word": 7,
+            "end_word": 11,
+            "intents": [
+              {
+                "intent": "Request package delivery",
+                "confidence_score": 0.029670203
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going from Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04526618868112564
+          },
+          {
+            "text": "It should arrive by April.",
+            "start_word": 7,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.5629595518112183
+          },
+          {
+            "text": "I think I am calling it on my college phone because I will wait for my",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08426058292388916
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.16960185368855793
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:17.366013+00:00"
+}

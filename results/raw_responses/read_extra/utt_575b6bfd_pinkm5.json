@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_575b6bfd",
+    "text_source": "transcript_pinkm5",
+    "text": "Hello. I'm Sam Patel. I would like to keep my order for $45.99. The previous representative told me to reach out again to help purchase the car."
+  },
+  "request_id": "01a1b293-2739-78e2-b942-6718fc897e83",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-2739-78e2-b942-6718fc897e83",
+      "created": "2026-11-06T20:35:50.859Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous representative told me to reach out again to help purchase the car.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Car order",
+                "confidence_score": 0.20329732
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous representative told me to reach out again to help purchase the car.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Store order",
+                "confidence_score": 0.00027470256
+              },
+              {
+                "intent": "Provide assistance",
+                "confidence_score": 0.018413223
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel. I would like to keep my order for $45.99. The previous representative told me to reach out again to help purchase the car.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": -0.007764087989926338
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.007764087782965766
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:50.912249+00:00"
+}

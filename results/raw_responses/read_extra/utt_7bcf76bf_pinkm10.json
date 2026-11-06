@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_7bcf76bf",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Taylor Brooks. I do not want to cancel my order for $75. The last agent has spoken after you called back if the car is still going."
+  },
+  "request_id": "01a1b292-0ef7-7dc2-83d3-61d24c068eee",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-0ef7-7dc2-83d3-61d24c068eee",
+      "created": "2026-11-06T20:34:39.037Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent has spoken after you called back if the car is still going.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.3857179
+              },
+              {
+                "topic": "Car status",
+                "confidence_score": 0.9085878
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent has spoken after you called back if the car is still going.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Notify customer about status",
+                "confidence_score": 0.011183997
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -0.004360387101769447
+          },
+          {
+            "text": "I do not want to cancel my order for $75. The last agent has spoken after you called back if the car is still going.",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7978277802467346
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6048221072635135
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:39.098632+00:00"
+}

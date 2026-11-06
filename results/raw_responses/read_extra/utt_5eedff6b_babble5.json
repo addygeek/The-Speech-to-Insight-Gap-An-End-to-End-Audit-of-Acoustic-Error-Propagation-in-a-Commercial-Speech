@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_5eedff6b",
+    "text_source": "transcript_babble5",
+    "text": "Could you please modify my flight to Seattle for October 5? I've attempted to make this change on the website twice, it hasn't saved under my account."
+  },
+  "request_id": "01a1b293-4c6b-7292-82e6-fed04be3fb6f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-4c6b-7292-82e6-fed04be3fb6f",
+      "created": "2026-11-06T20:36:00.480Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to make this change on the website twice, it hasn't saved under my account.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.7896789
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.29565084
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to make this change on the website twice, it hasn't saved under my account.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.33653015
+              },
+              {
+                "intent": "Make change",
+                "confidence_score": 0.10312796
+              },
+              {
+                "intent": "Save flight",
+                "confidence_score": 0.8787084
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Seattle for October 5?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.007501226849853992
+          },
+          {
+            "text": "I've attempted to make this change on the website twice, it hasn't saved under my account.",
+            "start_word": 11,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7684190273284912
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5023891993931362
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:00.533688+00:00"
+}

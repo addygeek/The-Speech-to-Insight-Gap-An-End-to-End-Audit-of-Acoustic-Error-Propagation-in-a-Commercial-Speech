@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_13074499",
+    "text_source": "transcript_phonebabble",
+    "text": "Can you change my flight to Chicago on March 12? Can wait on the line while you check the record, and I may have my account number that is"
+  },
+  "request_id": "01a1b291-9025-7f73-a238-61df9fca0e9e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-9025-7f73-a238-61df9fca0e9e",
+      "created": "2026-11-06T20:34:06.805Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on March 12?",
+            "start_word": 1,
+            "end_word": 10,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.8291284
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.08056474
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.9887674
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on March 12?",
+            "start_word": 1,
+            "end_word": 10,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.54757154
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.6178534
+              },
+              {
+                "intent": "Have account number",
+                "confidence_score": 0.30983597
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on March 12? Can wait on the line while you check the record, and I may have my account number that is",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13705725967884064
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.13705725823679277
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:06.869482+00:00"
+}

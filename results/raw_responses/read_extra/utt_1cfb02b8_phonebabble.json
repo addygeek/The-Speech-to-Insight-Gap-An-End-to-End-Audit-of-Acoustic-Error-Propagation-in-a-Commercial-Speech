@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_1cfb02b8",
+    "text_source": "transcript_phonebabble",
+    "text": "Please cancel my order for $45.99 placed yesterday. I can wait on the line while you check the record, and I do have my account number by name."
+  },
+  "request_id": "01a1b292-52fa-73c2-96cb-8dbcd6583bbf",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-52fa-73c2-96cb-8dbcd6583bbf",
+      "created": "2026-11-06T20:34:56.569Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number by name.",
+            "start_word": 8,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.47538206
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.3758541
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number by name.",
+            "start_word": 8,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.83615535
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45.99 placed yesterday.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "negative",
+            "sentiment_score": -0.7870376110076904
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number by name.",
+            "start_word": 8,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.29455888271331787
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4587184443618312
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:56.626280+00:00"
+}

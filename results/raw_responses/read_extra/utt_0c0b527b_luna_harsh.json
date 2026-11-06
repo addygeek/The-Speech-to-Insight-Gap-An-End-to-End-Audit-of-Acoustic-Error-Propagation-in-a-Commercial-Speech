@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_0c0b527b",
+    "text_source": "transcript_luna_harsh",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $120. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b29d-88d8-78e3-81dd-4359d360d3d7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-88d8-78e3-81dd-4359d360d3d7",
+      "created": "2026-11-06T20:47:11.149Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.41691253
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.43281806
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.2904003
+              },
+              {
+                "intent": "Confirm account number",
+                "confidence_score": 0.08268097
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07103458046913147
+          },
+          {
+            "text": "I do not want to cancel my order for $120.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.7368342280387878
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08681335300207138
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.15189568201700843
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:11.203354+00:00"
+}

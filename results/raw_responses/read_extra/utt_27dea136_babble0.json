@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_27dea136",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $19.40 twice on my car ending in 4004. I was charged with a monthly I need this settled before the end of the business day because I travel to the office. I'm wearing"
+  },
+  "request_id": "01a1b293-03a6-7082-846e-1b886a0db93a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-03a6-7082-846e-1b886a0db93a",
+      "created": "2026-11-06T20:35:41.894Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $19.40 twice on my car ending in 4004. I was charged with a monthly I need this settled before the end of the business day because I travel to the office.",
+            "start_word": 1,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Car charges",
+                "confidence_score": 0.44592977
+              },
+              {
+                "topic": "Monthly bills",
+                "confidence_score": 0.037137058
+              },
+              {
+                "topic": "Office travel",
+                "confidence_score": 0.5048376
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $19.40 twice on my car ending in 4004. I was charged with a monthly I need this settled before the end of the business day because I travel to the office.",
+            "start_word": 1,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Resolve car issue",
+                "confidence_score": 0.0019609956
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $19.40 twice on my car ending in 4004. I was charged with a monthly I need this settled before the end of the business day because I travel to the office. I'm wearing",
+            "start_word": 0,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.6345066428184509
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.634506624798442
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:42.374004+00:00"
+}

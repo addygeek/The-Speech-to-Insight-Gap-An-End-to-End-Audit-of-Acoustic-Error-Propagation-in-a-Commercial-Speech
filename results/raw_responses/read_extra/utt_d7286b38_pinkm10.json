@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_d7286b38",
+    "text_source": "transcript_pinkm10",
+    "text": "Hello. I'm Alex Chen. I just received my order for $19.30. The previous agent advised me to reach out again. The charge is really well."
+  },
+  "request_id": "01a1b293-a0df-74a1-a7b5-5c435d1cf1e7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-a0df-74a1-a7b5-5c435d1cf1e7",
+      "created": "2026-11-06T20:36:21.924Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The charge is really well.",
+            "start_word": 20,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Order delivery",
+                "confidence_score": 0.11375088
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.36895457
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The charge is really well.",
+            "start_word": 20,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Check order status",
+                "confidence_score": 0.10093921
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05083904042840004
+          },
+          {
+            "text": "I just received my order for $19.30. The previous agent advised me to reach out again. The charge is really well.",
+            "start_word": 4,
+            "end_word": 24,
+            "sentiment": "positive",
+            "sentiment_score": 0.5036697387695312
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.397121317246381
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:21.979227+00:00"
+}

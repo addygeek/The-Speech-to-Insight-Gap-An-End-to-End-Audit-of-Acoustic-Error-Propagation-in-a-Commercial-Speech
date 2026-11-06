@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_4a7207a8",
+    "text_source": "transcript_babble5",
+    "text": "Thank you, Alex Chen. The support team in Chicago was excellent today. This is the second time I have contacted support about the same problem I see."
+  },
+  "request_id": "01a1b293-6998-76b1-a343-2ccffd066459",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-6998-76b1-a343-2ccffd066459",
+      "created": "2026-11-06T20:36:07.843Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem I see.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.112984814
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.046017427
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.9344904
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem I see.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Review support team's response",
+                "confidence_score": 0.023802007
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Alex Chen. The support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.7902278900146484
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem I see.",
+            "start_word": 12,
+            "end_word": 26,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07911613583564758
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4124497473239898
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:07.899633+00:00"
+}

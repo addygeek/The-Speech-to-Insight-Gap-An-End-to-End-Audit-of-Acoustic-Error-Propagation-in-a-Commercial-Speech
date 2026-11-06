@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_1824f6db",
+    "text_source": "transcript_orion_clean",
+    "text": "I was charged $45.99 twice on my card ending in 4421. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b29d-a6dd-7980-9882-4a36abd66708",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-a6dd-7980-9882-4a36abd66708",
+      "created": "2026-11-06T20:47:18.836Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.43676785
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.3837687
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Check account status",
+                "confidence_score": 0.01245458
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $45.99 twice on my card ending in 4421.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "negative",
+            "sentiment_score": -0.6761872172355652
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 11,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.14932869374752045
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.19463625219133163
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:18.893725+00:00"
+}

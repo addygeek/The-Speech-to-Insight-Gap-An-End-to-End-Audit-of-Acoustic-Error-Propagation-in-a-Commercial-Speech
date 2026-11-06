@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_d31f786a",
+    "text_source": "transcript_clean",
+    "text": "I want to schedule an appointment with doctor Sam Patel on October 5 at 09:30AM. This is the second time I have reached out to support regarding this issue this week."
+  },
+  "request_id": "01a1b255-8a85-7a62-a241-3ab283650090",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-8a85-7a62-a241-3ab283650090",
+      "created": "2026-11-06T19:28:33.186Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have reached out to support regarding this issue this week.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.89810234
+              },
+              {
+                "topic": "Support for issue",
+                "confidence_score": 0.062329978
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have reached out to support regarding this issue this week.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.619667
+              },
+              {
+                "intent": "Provide support",
+                "confidence_score": 0.03123669
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Sam Patel on October 5 at 09:30AM. This is the second time I have reached out to support regarding this issue this week.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.28625068068504333
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2862506814905115
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:33.265101+00:00"
+}

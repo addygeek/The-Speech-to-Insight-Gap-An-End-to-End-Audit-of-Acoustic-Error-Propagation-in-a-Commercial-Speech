@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_42c3ddd0",
+    "text_source": "transcript_orion_clean",
+    "text": "I would like to schedule an appointment with Doctor. Alex Chen for March 12 at 02:15PM. Kindly send the updated confirmation to the email address you currently have on record."
+  },
+  "request_id": "01a1b29e-0702-7262-9672-015b8c0a34b2",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-0702-7262-9672-015b8c0a34b2",
+      "created": "2026-11-06T20:47:43.639Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you currently have on record.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.58566636
+              },
+              {
+                "topic": "Doctor appointment",
+                "confidence_score": 0.3469467
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the updated confirmation to the email address you currently have on record.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.30014664
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.022463737
+              },
+              {
+                "intent": "Send email",
+                "confidence_score": 0.34084436
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Doctor. Alex Chen for March 12 at 02:15PM. Kindly send the updated confirmation to the email address you currently have on record.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "positive",
+            "sentiment_score": 0.5660592317581177
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5660592156487543
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:43.692780+00:00"
+}

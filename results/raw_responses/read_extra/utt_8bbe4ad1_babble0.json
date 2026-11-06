@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_8bbe4ad1",
+    "text_source": "transcript_babble0",
+    "text": "Could you please modify my flight to Boston for April furlough? I've attempted to use the website twice, but it failed to save the changes to my account."
+  },
+  "request_id": "01a1b292-c1f2-7970-b598-fd8906be0fb3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-c1f2-7970-b598-fd8906be0fb3",
+      "created": "2026-11-06T20:35:24.882Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the changes to my account.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.8341634
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.17936382
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the changes to my account.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.41260898
+              },
+              {
+                "intent": "Save changes",
+                "confidence_score": 0.4373421
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Boston for April furlough?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04362459480762482
+          },
+          {
+            "text": "I've attempted to use the website twice, but it failed to save the changes to my account.",
+            "start_word": 11,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7102494239807129
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4435994829450335
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:24.944331+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_4713fe28",
+    "text_source": "reference",
+    "text": "Hi, my name is Jordan Lee. I do not want to cancel my order for $19.40. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b252-c63d-7ca2-b379-a53205c442fd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-c63d-7ca2-b379-a53205c442fd",
+      "created": "2026-11-06T19:25:31.858Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.38991615
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Informing absence from home office",
+                "confidence_score": 0.020715093
+              },
+              {
+                "intent": "Cancelling order",
+                "confidence_score": 0.0006991591
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Jordan Lee.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.020525231957435608
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7126356959342957
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5622437305939503
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:31.935879+00:00"
+}

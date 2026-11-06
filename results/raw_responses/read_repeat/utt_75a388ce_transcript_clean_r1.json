@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_75a388ce",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Alex Chen on March 12 at 09:30AM. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b256-1b3a-7963-9074-f7d91627edf7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-1b3a-7963-9074-f7d91627edf7",
+      "created": "2026-11-06T19:29:10.085Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.8701466
+              },
+              {
+                "topic": "Support for similar problem",
+                "confidence_score": 0.015860291
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.73657537
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.938826
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Alex Chen on March 12 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06536600738763809
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7323013544082642
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.380307674407959
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:10.166673+00:00"
+}

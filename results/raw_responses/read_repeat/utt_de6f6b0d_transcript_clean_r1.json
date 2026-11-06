@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_de6f6b0d",
+    "text_source": "transcript_clean",
+    "text": "I was charged $19.40 twice on my card ending in 4421. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b254-dc7c-7571-ba9d-cce08bc5d3b0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-dc7c-7571-ba9d-cce08bc5d3b0",
+      "created": "2026-11-06T19:27:48.884Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.31562155
+              },
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.0017687128
+              },
+              {
+                "topic": "Home office",
+                "confidence_score": 0.9465734
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Report charge",
+                "confidence_score": 0.19419283
+              },
+              {
+                "intent": "Call from mobile phone",
+                "confidence_score": 0.045239188
+              },
+              {
+                "intent": "Confirm location",
+                "confidence_score": 0.016581869
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $19.40 twice on my card ending in 4421. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7040156722068787
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7040156740130801
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:48.967355+00:00"
+}

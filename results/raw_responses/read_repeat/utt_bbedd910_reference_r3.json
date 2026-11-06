@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_bbedd910",
+    "text_source": "reference",
+    "text": "Can you change my flight to Boston on April 3? I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b254-8dcf-7fe0-bd46-4444920f94bd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-8dcf-7fe0-bd46-4444920f94bd",
+      "created": "2026-11-06T19:27:28.708Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.6791606
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.6538804
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.45115748
+              },
+              {
+                "intent": "Obtain change on april 3",
+                "confidence_score": 9.5212024e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on April 3?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.01920941285789013
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6792823076248169
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.414337158203125
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:28.783251+00:00"
+}

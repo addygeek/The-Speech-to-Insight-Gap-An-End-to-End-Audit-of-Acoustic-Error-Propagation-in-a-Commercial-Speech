@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_f66246b7",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Maria Santos. I stopped on the cancel my order for $8.15. I stayed on the line while I checked the records, and I do have my account number ready."
+  },
+  "request_id": "01a1b292-8c5b-70c2-8fc2-973bcbfad7a4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-8c5b-70c2-8fc2-973bcbfad7a4",
+      "created": "2026-11-06T20:35:11.474Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I stayed on the line while I checked the records, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.14623858
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.044074696
+              },
+              {
+                "topic": "Record readiness",
+                "confidence_score": 0.00017719077
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I stayed on the line while I checked the records, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Check records",
+                "confidence_score": 0.43680266
+              },
+              {
+                "intent": "Confirm account number",
+                "confidence_score": 0.24337277
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09592026472091676
+          },
+          {
+            "text": "I stopped on the cancel my order for $8.15.",
+            "start_word": 6,
+            "end_word": 14,
+            "sentiment": "negative",
+            "sentiment_score": -0.415749728679657
+          },
+          {
+            "text": "I stayed on the line while I checked the records, and I do have my account number ready.",
+            "start_word": 15,
+            "end_word": 32,
+            "sentiment": "neutral",
+            "sentiment_score": 0.14922486245632172
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.020838870558627817
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:11.529691+00:00"
+}

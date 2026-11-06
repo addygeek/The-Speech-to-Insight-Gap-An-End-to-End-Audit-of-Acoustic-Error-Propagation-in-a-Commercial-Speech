@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_456e1e93",
+    "text_source": "transcript_orion_clean",
+    "text": "Where is my package going to Boston? It should arrive by April 3. This is the second time I've contacted support about the same problem this week."
+  },
+  "request_id": "01a1b29e-0d7d-7230-97cd-a037a25bcda4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-0d7d-7230-97cd-a037a25bcda4",
+      "created": "2026-11-06T20:47:45.254Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I've contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.8692979
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.4382589
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I've contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Update package delivery",
+                "confidence_score": 0.027775023
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0237897839397192
+          },
+          {
+            "text": "It should arrive by April 3. This is the second time I've contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.4169351458549499
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.30675387382507324
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:45.308863+00:00"
+}

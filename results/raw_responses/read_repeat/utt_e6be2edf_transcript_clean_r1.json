@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_e6be2edf",
+    "text_source": "transcript_clean",
+    "text": "Can you change my flight to Chicago on March 12? I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b252-02ef-7ce1-aced-f56896f0fa5f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-02ef-7ce1-aced-f56896f0fa5f",
+      "created": "2026-11-06T19:24:41.963Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change and website issues",
+                "confidence_score": 0.000103204075
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight to chicago",
+                "confidence_score": 0.2926256
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Chicago on March 12?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.039570968598127365
+          },
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 10,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7797144055366516
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4689509293128704
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:42.050116+00:00"
+}

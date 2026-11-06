@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_8a1d92c8",
+    "text_source": "transcript_babble0",
+    "text": "My card ending in 4421 was billed $120. I attempted to update my account on the website twice, but I do believe my Internet has"
+  },
+  "request_id": "01a1b292-7580-7c00-a575-35875c8a5c1b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7580-7c00-a575-35875c8a5c1b",
+      "created": "2026-11-06T20:35:05.489Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was billed $120.",
+            "start_word": 1,
+            "end_word": 8,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.16514978
+              },
+              {
+                "topic": "Account update",
+                "confidence_score": 0.5432689
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was billed $120.",
+            "start_word": 1,
+            "end_word": 8,
+            "intents": [
+              {
+                "intent": "Update account",
+                "confidence_score": 0.47237903
+              },
+              {
+                "intent": "Clarify billing issue",
+                "confidence_score": 0.001312931
+              },
+              {
+                "intent": "Determine Internet connectivity",
+                "confidence_score": 4.6413523e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was billed $120. I attempted to update my account on the website twice, but I do believe my Internet has",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6271428465843201
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6271428426106771
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:05.541782+00:00"
+}

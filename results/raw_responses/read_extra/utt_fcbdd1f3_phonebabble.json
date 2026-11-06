@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_fcbdd1f3",
+    "text_source": "transcript_phonebabble",
+    "text": "Please cancel my order for $75 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b293-e2d8-7102-be79-80b3c7a3587c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-e2d8-7102-be79-80b3c7a3587c",
+      "created": "2026-11-06T20:36:38.974Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 23,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.03550922
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 23,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel",
+                "confidence_score": 0.0006452269
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.8584984
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday. Please do not transfer me again unless the next person can actually change the booking. I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.8110715746879578
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8110715692693536
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:39.472440+00:00"
+}

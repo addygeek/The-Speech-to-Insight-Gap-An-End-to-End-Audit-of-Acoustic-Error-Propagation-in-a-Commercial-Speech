@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_9c79b1bc",
+    "text_source": "transcript_pinkm10",
+    "text": "My Internet has been down since 11AM, and I cannot listen to. This is the second time I have contact support about the same problem with you."
+  },
+  "request_id": "01a1b293-051a-7950-b353-677e1d9ff39b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-051a-7950-b353-677e1d9ff39b",
+      "created": "2026-11-06T20:35:42.089Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contact support about the same problem with you.",
+            "start_word": 12,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.061055023
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.18498959
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contact support about the same problem with you.",
+            "start_word": 12,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Report internet downtime",
+                "confidence_score": 0.071975596
+              },
+              {
+                "intent": "Request support for same problem",
+                "confidence_score": 0.0015598764
+              },
+              {
+                "intent": "Express dissatisfaction",
+                "confidence_score": 0.03118172
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot listen to. This is the second time I have contact support about the same problem with you.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7658366560935974
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7658366541708669
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:42.152491+00:00"
+}

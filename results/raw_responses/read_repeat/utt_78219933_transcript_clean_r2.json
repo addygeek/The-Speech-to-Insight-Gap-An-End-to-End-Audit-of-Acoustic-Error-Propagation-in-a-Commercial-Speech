@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_78219933",
+    "text_source": "transcript_clean",
+    "text": "Can you change my flight to Austin on April 3? Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b251-ec09-7712-8bc8-19ae96180805",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-ec09-7712-8bc8-19ae96180805",
+      "created": "2026-11-06T19:24:35.884Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 28
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 28,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight booking",
+                "confidence_score": 0.0091714235
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.23825687
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on April 3? Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6797364354133606
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6797364098685128
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:35.959291+00:00"
+}

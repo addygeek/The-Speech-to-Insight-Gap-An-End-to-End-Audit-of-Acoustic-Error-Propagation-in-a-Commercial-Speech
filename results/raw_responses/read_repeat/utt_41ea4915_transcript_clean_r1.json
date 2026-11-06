@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_41ea4915",
+    "text_source": "transcript_clean",
+    "text": "I want to schedule an appointment with doctor Sam Patel on October 5 at 11AM. Please avoid transferring me again unless the next representative can truly modify the booking."
+  },
+  "request_id": "01a1b251-112a-7db3-a559-5e51be07ada3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-112a-7db3-a559-5e51be07ada3",
+      "created": "2026-11-06T19:23:40.314Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.31717488
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor sam patel",
+                "confidence_score": 0.14918314
+              },
+              {
+                "intent": "Avoid transferring",
+                "confidence_score": 0.05427965
+              },
+              {
+                "intent": "Modify booking",
+                "confidence_score": 0.7770066
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Sam Patel on October 5 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1409545540809631
+          },
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.9215074181556702
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5200802394321986
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:40.392529+00:00"
+}

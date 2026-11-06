@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_a91a2f74",
+    "text_source": "transcript_phonebabble",
+    "text": "Thank you, Maria Santos. The support team in Austin was excellent today. I need this settled before the end of the bidding today because I travel tomorrow morning."
+  },
+  "request_id": "01a1b293-5e10-7fd3-87b7-b5e74a17e86c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-5e10-7fd3-87b7-b5e74a17e86c",
+      "created": "2026-11-06T20:36:05.068Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the bidding today because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Support team in austin",
+                "confidence_score": 0.011270597
+              },
+              {
+                "topic": "Bidding",
+                "confidence_score": 0.342782
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the bidding today because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Determine bidding process",
+                "confidence_score": 0.00034025926
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. The support team in Austin was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8197908997535706
+          },
+          {
+            "text": "I need this settled before the end of the bidding today because I travel tomorrow morning.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": 0.17726799845695496
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4893505641392299
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:05.121848+00:00"
+}

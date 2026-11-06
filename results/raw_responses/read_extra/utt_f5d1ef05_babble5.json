@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_f5d1ef05",
+    "text_source": "transcript_babble5",
+    "text": "Hello. I'm Kayla Brooks. I want to take my order of $250. I'm reaching out from my mobile as I'm currently away from my ID."
+  },
+  "request_id": "01a1b292-ce18-77f2-a093-65a5558ba40a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-ce18-77f2-a093-65a5558ba40a",
+      "created": "2026-11-06T20:35:28.027Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my ID.",
+            "start_word": 12,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Ordering",
+                "confidence_score": 0.49337205
+              },
+              {
+                "topic": "Mobile device",
+                "confidence_score": 0.46107793
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my ID.",
+            "start_word": 12,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Place order",
+                "confidence_score": 0.098629
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Kayla Brooks. I want to take my order of $250.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1822393387556076
+          },
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my ID.",
+            "start_word": 12,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.6123550534248352
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2043200827933647
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:28.079830+00:00"
+}

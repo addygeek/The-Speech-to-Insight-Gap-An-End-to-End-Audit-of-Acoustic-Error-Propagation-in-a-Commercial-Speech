@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_104ea1ed",
+    "text_source": "transcript_phonebabble",
+    "text": "Can you change my flight to Boston on June 21? Can you please not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b292-812c-7fb1-a7e0-1c1f1e90c145",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-812c-7fb1-a7e0-1c1f1e90c145",
+      "created": "2026-11-06T20:35:08.373Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you please not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.5393819
+              },
+              {
+                "topic": "Booking",
+                "confidence_score": 0.3291761
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you please not transfer me again unless the next person can actually change the booking.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.3364384
+              },
+              {
+                "intent": "Request to not change booking",
+                "confidence_score": 0.00030101964
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Boston on June 21? Can you please not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.6792851090431213
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.679285115209119
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:08.427536+00:00"
+}

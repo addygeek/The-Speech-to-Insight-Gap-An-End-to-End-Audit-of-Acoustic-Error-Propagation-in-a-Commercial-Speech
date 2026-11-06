@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_abf768a1",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $120 placed yesterday. I am calling from my mobile phone, and I've been waiting for my home life for a shift."
+  },
+  "request_id": "01a1b291-8cdd-7b71-aef3-d1fe9edcb8dd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-8cdd-7b71-aef3-d1fe9edcb8dd",
+      "created": "2026-11-06T20:34:06.024Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone, and I've been waiting for my home life for a shift.",
+            "start_word": 8,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.060392532
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone, and I've been waiting for my home life for a shift.",
+            "start_word": 8,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.3751685
+              },
+              {
+                "intent": "Wait for shift",
+                "confidence_score": 0.8455888
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $120 placed yesterday. I am calling from my mobile phone, and I've been waiting for my home life for a shift.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.80306476354599
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8030647509025804
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:06.087005+00:00"
+}

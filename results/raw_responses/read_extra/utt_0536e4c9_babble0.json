@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_0536e4c9",
+    "text_source": "transcript_babble0",
+    "text": "What is the status of my wife? It's expected to arrive by June. Thank The last representative I talked to told me to call back if the chart might be below."
+  },
+  "request_id": "01a1b291-79b9-7ce0-9224-31c99f844e11",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-79b9-7ce0-9224-31c99f844e11",
+      "created": "2026-11-06T20:34:00.922Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank The last representative I talked to told me to call back if the chart might be below.",
+            "start_word": 13,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Schedule of arrival",
+                "confidence_score": 0.00036593887
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank The last representative I talked to told me to call back if the chart might be below.",
+            "start_word": 13,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Update chart",
+                "confidence_score": 0.012470832
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my wife? It's expected to arrive by June.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03785446286201477
+          },
+          {
+            "text": "Thank The last representative I talked to told me to call back if the chart might be below.",
+            "start_word": 13,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.3348018229007721
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.16358137130737305
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:00.976318+00:00"
+}

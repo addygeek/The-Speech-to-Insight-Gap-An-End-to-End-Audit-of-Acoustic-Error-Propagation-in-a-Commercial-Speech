@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_d10c65dc",
+    "text_source": "transcript_babble0",
+    "text": "Thank you, Sam Patel. This is team in Chicago. It was excellent today. I can wait on the line. I will check the record, and I do have my account number ready. I think"
+  },
+  "request_id": "01a1b292-8521-7e22-8edc-31497ec1c74f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-8521-7e22-8edc-31497ec1c74f",
+      "created": "2026-11-06T20:35:09.360Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 42
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 42,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I will check the record, and I do have my account number ready.",
+            "start_word": 19,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Team in chicago",
+                "confidence_score": 0.008428834
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I will check the record, and I do have my account number ready.",
+            "start_word": 19,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.6642784
+              },
+              {
+                "intent": "Prepare account number",
+                "confidence_score": 0.5969239
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. This is team in Chicago. It was excellent today. I can wait on the line.",
+            "start_word": 0,
+            "end_word": 18,
+            "sentiment": "positive",
+            "sentiment_score": 0.7156721353530884
+          },
+          {
+            "text": "I will check the record, and I do have my account number ready. I think",
+            "start_word": 19,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2129129320383072
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5121743792579287
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:09.557012+00:00"
+}

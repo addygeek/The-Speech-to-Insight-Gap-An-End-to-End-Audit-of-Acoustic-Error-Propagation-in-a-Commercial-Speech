@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_c79d912a",
+    "text_source": "transcript_phonebabble",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $75. Do not transfer me again unless the next person can actually manage the booking."
+  },
+  "request_id": "01a1b291-7c6e-7a42-bba7-8a32915815a8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7c6e-7a42-bba7-8a32915815a8",
+      "created": "2026-11-06T20:34:01.647Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually manage the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7505053
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.31951237
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually manage the booking.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.3147401
+              },
+              {
+                "intent": "Manage booking",
+                "confidence_score": 0.94882727
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03066403977572918
+          },
+          {
+            "text": "I do not want to cancel my order for $75. Do not transfer me again unless the next person can actually manage the booking.",
+            "start_word": 6,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8375968933105469
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6029317185685441
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:01.701737+00:00"
+}

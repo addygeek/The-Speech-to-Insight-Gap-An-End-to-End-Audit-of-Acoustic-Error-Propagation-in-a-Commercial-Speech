@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_a1f6a50a",
+    "text_source": "transcript_pinkm10",
+    "text": "I'd like to schedule an appointment with doctor Jordan Lee, June 21 at 02:15AM. I'm willing to hold while you verify my records and have my account."
+  },
+  "request_id": "01a1b293-6b10-75f2-a09f-ed2bddd78b7b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-6b10-75f2-a09f-ed2bddd78b7b",
+      "created": "2026-11-06T20:36:08.329Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my records and have my account.",
+            "start_word": 14,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.768375
+              },
+              {
+                "topic": "Medical records verification",
+                "confidence_score": 0.0045530777
+              },
+              {
+                "topic": "Account management",
+                "confidence_score": 0.85379046
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my records and have my account.",
+            "start_word": 14,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.2893109
+              },
+              {
+                "intent": "Verify records",
+                "confidence_score": 0.20602122
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor Jordan Lee, June 21 at 02:15AM. I'm willing to hold while you verify my records and have my account.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "positive",
+            "sentiment_score": 0.5419183373451233
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5419183164029509
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:08.382224+00:00"
+}

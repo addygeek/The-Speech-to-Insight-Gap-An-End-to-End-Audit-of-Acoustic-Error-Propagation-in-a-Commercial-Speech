@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_aa7067a9",
+    "text_source": "reference",
+    "text": "Thank you, Sam Patel. The support team in Austin provided excellent service today. Please refrain from transferring me again unless the next representative can genuinely change the booking."
+  },
+  "request_id": "01a1b253-d628-7072-9798-d403ae70f7e3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-d628-7072-9798-d403ae70f7e3",
+      "created": "2026-11-06T19:26:41.495Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can genuinely change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Customer support",
+                "confidence_score": 0.26114416
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.8565319
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can genuinely change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request cancellation or change in booking",
+                "confidence_score": 1.5683623e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. The support team in Austin provided excellent service today.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "positive",
+            "sentiment_score": 0.7288057804107666
+          },
+          {
+            "text": "Please refrain from transferring me again unless the next representative can genuinely change the booking.",
+            "start_word": 13,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7165170311927795
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.0340034564336141
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:42.052159+00:00"
+}

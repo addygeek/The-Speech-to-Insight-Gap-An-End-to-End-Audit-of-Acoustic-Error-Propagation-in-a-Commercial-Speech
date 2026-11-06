@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_a805ac76",
+    "text_source": "transcript_phone",
+    "text": "Where is my package going to Denver? It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b292-b000-7ca0-ba0f-6a5a19755cf3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-b000-7ca0-ba0f-6a5a19755cf3",
+      "created": "2026-11-06T20:35:20.506Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.037738338
+              },
+              {
+                "topic": "Mobility",
+                "confidence_score": 0.031787295
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Order package",
+                "confidence_score": 0.015724327
+              },
+              {
+                "intent": "Confirm package arrival",
+                "confidence_score": 0.002216139
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.061208803206682205
+          },
+          {
+            "text": "It should arrive by April 3. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 7,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.36465176939964294
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2581866383552551
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:20.566414+00:00"
+}

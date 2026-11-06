@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_089b1eb7",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the status of my package? Is expected to reach me by email. I'm calling from my mobile center at my"
+  },
+  "request_id": "01a1b292-faef-7923-9d08-236ad93fdc80",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-faef-7923-9d08-236ad93fdc80",
+      "created": "2026-11-06T20:35:39.866Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Is expected to reach me by email.",
+            "start_word": 9,
+            "end_word": 15,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.9786031
+              },
+              {
+                "topic": "Email communication",
+                "confidence_score": 0.6828016
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Is expected to reach me by email.",
+            "start_word": 9,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Request package status",
+                "confidence_score": 0.20856348
+              },
+              {
+                "intent": "Determine expected delivery method",
+                "confidence_score": 0.0042282348
+              },
+              {
+                "intent": "Schedule call from mobile center",
+                "confidence_score": 0.044170227
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package?",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "neutral",
+            "sentiment_score": -0.014721405692398548
+          },
+          {
+            "text": "Is expected to reach me by email.",
+            "start_word": 9,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.4704047441482544
+          },
+          {
+            "text": "I'm calling from my mobile center at my",
+            "start_word": 16,
+            "end_word": 23,
+            "sentiment": "neutral",
+            "sentiment_score": -0.32489800453186035
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2630978288321659
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:39.922611+00:00"
+}

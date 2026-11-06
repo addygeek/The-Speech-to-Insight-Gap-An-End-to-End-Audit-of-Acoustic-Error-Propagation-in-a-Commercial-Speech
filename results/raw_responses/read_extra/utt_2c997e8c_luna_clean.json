@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "luna_clean",
+    "utterance_id": "utt_2c997e8c",
+    "text_source": "transcript_luna_clean",
+    "text": "Can you tell me the location of my package heading to Chicago? It is expected to be delivered by April 3. The previous agent instructed me to call back if the charge still appeared."
+  },
+  "request_id": "01a1b29d-d5fc-78e2-8009-d38078770675",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-d5fc-78e2-8009-d38078770675",
+      "created": "2026-11-06T20:47:31.323Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It is expected to be delivered by April 3. The previous agent instructed me to call back if the charge still appeared.",
+            "start_word": 12,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.38526875
+              },
+              {
+                "topic": "Delivery date",
+                "confidence_score": 0.54740083
+              },
+              {
+                "topic": "Agent instruction",
+                "confidence_score": 0.020227732
+              },
+              {
+                "topic": "Callback",
+                "confidence_score": 0.02225863
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It is expected to be delivered by April 3. The previous agent instructed me to call back if the charge still appeared.",
+            "start_word": 12,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Request package delivery location",
+                "confidence_score": 0.0030154232
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.20362754
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Chicago?",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.011744949035346508
+          },
+          {
+            "text": "It is expected to be delivered by April 3. The previous agent instructed me to call back if the charge still appeared.",
+            "start_word": 12,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.4891221523284912
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.3213950234490472
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:31.377700+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_d9ab875e",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me the status of my package? It's expected to arrive by October. I'm willing to hold while you verify the record, and I have my ID number updated."
+  },
+  "request_id": "01a1b292-6bec-70e0-b65d-c80b10aa0c94",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-6bec-70e0-b65d-c80b10aa0c94",
+      "created": "2026-11-06T20:35:02.949Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my ID number updated.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.7606007
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.15761907
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify the record, and I have my ID number updated.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request update",
+                "confidence_score": 0.00062262046
+              },
+              {
+                "intent": "Hold",
+                "confidence_score": 0.35503
+              },
+              {
+                "intent": "Verify record",
+                "confidence_score": 0.30143154
+              },
+              {
+                "intent": "Update id number",
+                "confidence_score": 0.7024611
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package? It's expected to arrive by October. I'm willing to hold while you verify the record, and I have my ID number updated.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.20423512160778048
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.20423511358407828
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:03.015814+00:00"
+}

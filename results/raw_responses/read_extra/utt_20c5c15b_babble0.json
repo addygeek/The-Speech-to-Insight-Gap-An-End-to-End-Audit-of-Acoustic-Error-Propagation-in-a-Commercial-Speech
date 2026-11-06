@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_20c5c15b",
+    "text_source": "transcript_babble0",
+    "text": "Noticed that my card ending in 401421 was owed $75 to the client. Kindly send the revised confirmation to the email address you have on file."
+  },
+  "request_id": "01a1b292-04df-7e43-8052-006b471bdfdc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-04df-7e43-8052-006b471bdfdc",
+      "created": "2026-11-06T20:34:36.611Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to the email address you have on file.",
+            "start_word": 13,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Card payment",
+                "confidence_score": 0.13895941
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Kindly send the revised confirmation to the email address you have on file.",
+            "start_word": 13,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Notify card debt",
+                "confidence_score": 0.0054314598
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.02018881
+              },
+              {
+                "intent": "Ensure email address",
+                "confidence_score": 0.010033492
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Noticed that my card ending in 401421 was owed $75 to the client.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.5865033268928528
+          },
+          {
+            "text": "Kindly send the revised confirmation to the email address you have on file.",
+            "start_word": 13,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09076577425003052
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.27865372282086
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:36.664628+00:00"
+}

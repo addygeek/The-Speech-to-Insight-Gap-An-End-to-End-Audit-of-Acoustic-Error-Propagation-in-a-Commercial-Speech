@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_fd5be015",
+    "text_source": "reference",
+    "text": "Where is my package going to Austin? It should arrive by March 12. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b252-9011-7923-830d-f4f6f285e859",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-9011-7923-830d-f4f6f285e859",
+      "created": "2026-11-06T19:25:19.257Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9357279
+              },
+              {
+                "topic": "Support communication",
+                "confidence_score": 0.034965757
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Retrieve package from austin",
+                "confidence_score": 8.420918e-05
+              },
+              {
+                "intent": "Contact support for similar problem",
+                "confidence_score": 0.039430365
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.020518068224191666
+          },
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.35807639360427856
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.26037459219655684
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:19.336291+00:00"
+}

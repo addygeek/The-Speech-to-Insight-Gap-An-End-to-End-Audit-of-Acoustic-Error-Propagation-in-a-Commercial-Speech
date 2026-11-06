@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_be2d5170",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me where my package is heading to Austin? It's expected to arrive by March 12. I'd attempted to use the website twice, but it didn't save the changes to my account."
+  },
+  "request_id": "01a1b256-1d8c-73e1-a417-6906e36265a3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-1d8c-73e1-a417-6906e36265a3",
+      "created": "2026-11-06T19:29:10.821Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. I'd attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 11,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package location",
+                "confidence_score": 0.15640475
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.13223088
+              },
+              {
+                "topic": "Account management",
+                "confidence_score": 0.10592271
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. I'd attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 11,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Request information",
+                "confidence_score": 0.009716256
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package is heading to Austin?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04838225990533829
+          },
+          {
+            "text": "It's expected to arrive by March 12. I'd attempted to use the website twice, but it didn't save the changes to my account.",
+            "start_word": 11,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.48389819264411926
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.33535482717114823
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:10.913290+00:00"
+}

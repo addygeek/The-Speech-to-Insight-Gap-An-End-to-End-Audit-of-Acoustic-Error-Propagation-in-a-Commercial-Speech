@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_43abb9c9",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Denver on July 1? I need this settled before the end of the business day to hear a problem. Where is my"
+  },
+  "request_id": "01a1b292-1334-7e50-917f-6a9bc1157df1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-1334-7e50-917f-6a9bc1157df1",
+      "created": "2026-11-06T20:34:40.133Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day to hear a problem.",
+            "start_word": 10,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.9257291
+              },
+              {
+                "topic": "Business day issue",
+                "confidence_score": 0.06816887
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day to hear a problem.",
+            "start_word": 10,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.54942346
+              },
+              {
+                "intent": "Clarify problem",
+                "confidence_score": 0.024320511
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Denver on July 1?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.10645630210638046
+          },
+          {
+            "text": "I need this settled before the end of the business day to hear a problem. Where is my",
+            "start_word": 10,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.801243782043457
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5547062658494518
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:40.619528+00:00"
+}

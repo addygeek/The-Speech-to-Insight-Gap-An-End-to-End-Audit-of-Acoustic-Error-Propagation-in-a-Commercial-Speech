@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_b2cbed50",
+    "text_source": "transcript_babble0",
+    "text": "I was charged $8 twice on my card ending with 4043. To the last agent I spoke with, ask me to call back on my interstate show. This"
+  },
+  "request_id": "01a1b292-15aa-7690-b34a-90f234a38c91",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-15aa-7690-b34a-90f234a38c91",
+      "created": "2026-11-06T20:34:40.810Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "To the last agent I spoke with, ask me to call back on my interstate show.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Charge twice",
+                "confidence_score": 0.0005496802
+              },
+              {
+                "topic": "Car transaction",
+                "confidence_score": 0.0033955688
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.142435
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "To the last agent I spoke with, ask me to call back on my interstate show.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.09055284
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $8 twice on my card ending with 4043. To the last agent I spoke with, ask me to call back on my interstate show. This",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6100972890853882
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6100972493489584
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:40.863159+00:00"
+}

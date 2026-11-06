@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_e58c887c",
+    "text_source": "transcript_babble0",
+    "text": "My Internet has been done since 9AM, and my class works from. I already tried the website twice, and it would not save you dollars from my account."
+  },
+  "request_id": "01a1b292-07b1-71e0-8ee1-6fdd1c730a45",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-07b1-71e0-8ee1-6fdd1c730a45",
+      "created": "2026-11-06T20:34:37.362Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save you dollars from my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet usage",
+                "confidence_score": 0.18984124
+              },
+              {
+                "topic": "Saving money",
+                "confidence_score": 0.50323987
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save you dollars from my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Evaluate internet usage",
+                "confidence_score": 0.21812716
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been done since 9AM, and my class works from.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04359384998679161
+          },
+          {
+            "text": "I already tried the website twice, and it would not save you dollars from my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6228039860725403
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3595266342163086
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:37.425218+00:00"
+}

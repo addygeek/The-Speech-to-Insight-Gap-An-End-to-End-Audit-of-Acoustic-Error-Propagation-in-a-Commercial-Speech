@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_570727ee",
+    "text_source": "transcript_phonebabble",
+    "text": "Where is my package going to Boxlight? It should arrive by June 21. Please do not transfer me again unless the next person can actually change the booking order."
+  },
+  "request_id": "01a1b293-0d9f-7c53-a77e-e5ce9830f0d1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0d9f-7c53-a77e-e5ce9830f0d1",
+      "created": "2026-11-06T20:35:44.369Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking order.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.29244745
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking order.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Requesting to change order",
+                "confidence_score": 5.8496746e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boxlight? It should arrive by June 21.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03689546138048172
+          },
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking order.",
+            "start_word": 13,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.9189180731773376
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.503848580753102
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:44.423169+00:00"
+}

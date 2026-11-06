@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_f9f0a3da",
+    "text_source": "reference",
+    "text": "Thank you Alex Chen, the support team in Denver was excellent today. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b255-f76e-70c3-8521-44f3c1353209",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-f76e-70c3-8521-44f3c1353209",
+      "created": "2026-11-06T19:29:01.128Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Denver support team",
+                "confidence_score": 0.016955612
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.024933096
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.4420945
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.6664585
+              },
+              {
+                "intent": "Check record",
+                "confidence_score": 0.62514764
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Alex Chen, the support team in Denver was excellent today. I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.6343412399291992
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.6343412126813616
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:01.215110+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_9192a5de",
+    "text_source": "transcript_phone",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $75. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b291-f09d-7f12-9071-d4be2b81161f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-f09d-7f12-9071-d4be2b81161f",
+      "created": "2026-11-06T20:34:31.731Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.8356941
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.28269145
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Notify about refund",
+                "confidence_score": 1.2557425e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.034367144107818604
+          },
+          {
+            "text": "I do not want to cancel my order for $75. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7569849491119385
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.574365224593725
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:31.793870+00:00"
+}

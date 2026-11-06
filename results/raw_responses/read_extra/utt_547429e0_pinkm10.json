@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_547429e0",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is. I do not want to cancel the order for $8 for success. And we do settle the book on the fifteenth day for my travel tomorrow morning."
+  },
+  "request_id": "01a1b292-2db4-72e1-b4c9-7c71c10a2281",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2db4-72e1-b4c9-7c71c10a2281",
+      "created": "2026-11-06T20:34:47.076Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "And we do settle the book on the fifteenth day for my travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.92472935
+              },
+              {
+                "topic": "Payment",
+                "confidence_score": 0.06422069
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "And we do settle the book on the fifteenth day for my travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Negotiate book date",
+                "confidence_score": 0.00012962379
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is. I do not want to cancel the order for $8 for success.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": -0.04724235460162163
+          },
+          {
+            "text": "And we do settle the book on the fifteenth day for my travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.6724216341972351
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2925989892747667
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:47.139527+00:00"
+}

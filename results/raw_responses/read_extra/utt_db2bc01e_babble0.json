@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_db2bc01e",
+    "text_source": "transcript_babble0",
+    "text": "Thank you, Sam Patel. Our support team in Seattle was excellent today. Please do not transfer me again unless the next person with action will change it for now."
+  },
+  "request_id": "01a1b292-4863-7fe3-9b02-99bb5aaffa5c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-4863-7fe3-9b02-99bb5aaffa5c",
+      "created": "2026-11-06T20:34:53.765Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person with action will change it for now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.6117288
+              },
+              {
+                "topic": "Transfer",
+                "confidence_score": 0.50717926
+              },
+              {
+                "topic": "Action change",
+                "confidence_score": 0.113313824
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person with action will change it for now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Request to change support team",
+                "confidence_score": 0.044673823
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Sam Patel. Our support team in Seattle was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6659294366836548
+          },
+          {
+            "text": "Please do not transfer me again unless the next person with action will change it for now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7267080545425415
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.0900738034929548
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:53.824455+00:00"
+}

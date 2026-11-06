@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_1790f499",
+    "text_source": "transcript_babble0",
+    "text": "I want to schedule an appointment with doctor Alex Chaney for June 21. It is at 02:15 o'clock. Previous agent I talked to told me to call back after charge Please cancel."
+  },
+  "request_id": "01a1b293-33b1-7951-b380-2ba6ede97202",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-33b1-7951-b380-2ba6ede97202",
+      "created": "2026-11-06T20:35:53.994Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Previous agent I talked to told me to call back after charge Please cancel.",
+            "start_word": 18,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.47469103
+              },
+              {
+                "topic": "Doctor's appointment",
+                "confidence_score": 0.010921592
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Previous agent I talked to told me to call back after charge Please cancel.",
+            "start_word": 18,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.48903742
+              },
+              {
+                "intent": "Cancel appointment",
+                "confidence_score": 0.97590667
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Alex Chaney for June 21. It is at 02:15 o'clock.",
+            "start_word": 0,
+            "end_word": 17,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06362937390804291
+          },
+          {
+            "text": "Previous agent I talked to told me to call back after charge Please cancel.",
+            "start_word": 18,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7793341875076294
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2447719108767626
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:54.048277+00:00"
+}

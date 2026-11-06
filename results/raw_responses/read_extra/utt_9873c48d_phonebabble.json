@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_9873c48d",
+    "text_source": "transcript_phonebabble",
+    "text": "Thank you, Maria Santos. The support team in Boston was excellent today. Do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b293-aa86-7e82-b4ee-49d0a8a97bd7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-aa86-7e82-b4ee-49d0a8a97bd7",
+      "created": "2026-11-06T20:36:24.384Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Boston support team",
+                "confidence_score": 0.013881172
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.97540444
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.5036474
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Maria Santos. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.6613755226135254
+          },
+          {
+            "text": "Do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.6268714666366577
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.03677091454014634
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:24.447174+00:00"
+}

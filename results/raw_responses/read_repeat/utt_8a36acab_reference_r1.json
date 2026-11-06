@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_8a36acab",
+    "text_source": "reference",
+    "text": "Hi, my name is Alex Chen. I do not want to cancel my order for $45.99. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b251-28ed-7b32-b7ba-0171beddce3f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-28ed-7b32-b7ba-0171beddce3f",
+      "created": "2026-11-06T19:23:46.632Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.4290129
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Inform absence",
+                "confidence_score": 0.0017505119
+              },
+              {
+                "intent": "Express displeasure",
+                "confidence_score": 0.0014456935
+              },
+              {
+                "intent": "Offer to call",
+                "confidence_score": 0.0006161859
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04006285220384598
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.7038379907608032
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5512429750882663
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:46.715438+00:00"
+}

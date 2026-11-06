@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_4ed11aa6",
+    "text_source": "reference",
+    "text": "Can you tell me the location of my package heading to Seattle? It's expected to be delivered by June 21. I'm using my mobile phone to call since I'm not at my home office currently."
+  },
+  "request_id": "01a1b251-273b-7e03-baf3-7dacba813580",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-273b-7e03-baf3-7dacba813580",
+      "created": "2026-11-06T19:23:45.488Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm not at my home office currently.",
+            "start_word": 20,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.41683334
+              },
+              {
+                "topic": "Delivery location",
+                "confidence_score": 0.006189353
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm using my mobile phone to call since I'm not at my home office currently.",
+            "start_word": 20,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.032767437
+              },
+              {
+                "intent": "Use mobile phone for call",
+                "confidence_score": 0.11966024
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Seattle? It's expected to be delivered by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": 0.029282331466674805
+          },
+          {
+            "text": "I'm using my mobile phone to call since I'm not at my home office currently.",
+            "start_word": 20,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.5206310153007507
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2206782861189409
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:45.570280+00:00"
+}

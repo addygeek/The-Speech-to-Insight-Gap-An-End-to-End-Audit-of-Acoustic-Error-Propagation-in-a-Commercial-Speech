@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_000f35c5",
+    "text_source": "transcript_babble0",
+    "text": "Where is my cap rate going? In Seattle? It should arrive by March 12. I can wait on the line while she"
+  },
+  "request_id": "01a1b293-7996-7113-901e-7773d592d9f6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7996-7113-901e-7773d592d9f6",
+      "created": "2026-11-06T20:36:12.080Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 24,
+        "output_tokens": 24
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 24,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 24,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "In Seattle?",
+            "start_word": 6,
+            "end_word": 7,
+            "topics": [
+              {
+                "topic": "Cap rate",
+                "confidence_score": 0.9678624
+              },
+              {
+                "topic": "Seattle",
+                "confidence_score": 0.28703484
+              },
+              {
+                "topic": "Arrival",
+                "confidence_score": 0.6360341
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "In Seattle?",
+            "start_word": 6,
+            "end_word": 7,
+            "intents": [
+              {
+                "intent": "Check cap rate",
+                "confidence_score": 0.38779598
+              },
+              {
+                "intent": "Arrive by march 12, Wait on line",
+                "confidence_score": 0.19279405
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.6348996
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my cap rate going? In Seattle?",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "neutral",
+            "sentiment_score": -0.032473959028720856
+          },
+          {
+            "text": "It should arrive by March 12. I can wait on the line while she",
+            "start_word": 8,
+            "end_word": 21,
+            "sentiment": "positive",
+            "sentiment_score": 0.46358123421669006
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.25689156850179035
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:12.134306+00:00"
+}

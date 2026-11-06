@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_bc0f86e3",
+    "text_source": "transcript_clean",
+    "text": "Where is my package going to Seattle? It should arrive by April 3. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b255-3455-79c0-8dd9-6e35971b7d39",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-3455-79c0-8dd9-6e35971b7d39",
+      "created": "2026-11-06T19:28:11.147Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Packaging delivery",
+                "confidence_score": 1.6081085e-05
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request package location",
+                "confidence_score": 0.0752376
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.30845842
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Seattle?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.028140395879745483
+          },
+          {
+            "text": "It should arrive by April 3. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.3841894567012787
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.27778173262073147
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:11.226834+00:00"
+}

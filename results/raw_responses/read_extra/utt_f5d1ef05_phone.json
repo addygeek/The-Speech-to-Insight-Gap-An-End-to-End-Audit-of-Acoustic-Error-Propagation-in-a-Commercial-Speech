@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_f5d1ef05",
+    "text_source": "transcript_phone",
+    "text": "Hello. I'm Taylor Brooks. I want to take my order of $250. I'm reaching out from my mobile as I'm currently away from my home office."
+  },
+  "request_id": "01a1b292-cf30-71c2-a5e9-a90dfdd07cbe",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-cf30-71c2-a5e9-a90dfdd07cbe",
+      "created": "2026-11-06T20:35:28.402Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Ordering",
+                "confidence_score": 0.16809721
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Place order",
+                "confidence_score": 0.11652808
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Taylor Brooks. I want to take my order of $250.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": 0.19309523701667783
+          },
+          {
+            "text": "I'm reaching out from my mobile as I'm currently away from my home office.",
+            "start_word": 12,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.4506622552871704
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1374829266522382
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:28.454278+00:00"
+}

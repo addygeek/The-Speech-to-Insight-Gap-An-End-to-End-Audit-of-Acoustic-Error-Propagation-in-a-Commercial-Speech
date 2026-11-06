@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_208daa74",
+    "text_source": "reference",
+    "text": "Where is my package going to Boston? It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b254-f71b-72b2-aeeb-d559e82c8b9f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-f71b-72b2-aeeb-d559e82c8b9f",
+      "created": "2026-11-06T19:27:56.008Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 2
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.43022466
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.4902424
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": []
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Boston?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.07006815075874329
+          },
+          {
+            "text": "It should arrive by March 12. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.6938111186027527
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5328451587307838
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:56.089572+00:00"
+}

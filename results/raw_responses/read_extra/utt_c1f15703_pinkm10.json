@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_c1f15703",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my cafeteria? Should arrive by October 6. I'm calling from my mother's home because I have to wait for my daughter."
+  },
+  "request_id": "01a1b292-5c65-7630-93b2-0044729a4532",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-5c65-7630-93b2-0044729a4532",
+      "created": "2026-11-06T20:34:58.958Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Should arrive by October 6. I'm calling from my mother's home because I have to wait for my daughter.",
+            "start_word": 4,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Cafeteria",
+                "confidence_score": 0.98628056
+              },
+              {
+                "topic": "Arrival",
+                "confidence_score": 0.18485531
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Should arrive by October 6. I'm calling from my mother's home because I have to wait for my daughter.",
+            "start_word": 4,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Locate cafeteria",
+                "confidence_score": 0.18159288
+              },
+              {
+                "intent": "Wait for daughter",
+                "confidence_score": 0.68564796
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my cafeteria?",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": -0.12277233600616456
+          },
+          {
+            "text": "Should arrive by October 6. I'm calling from my mother's home because I have to wait for my daughter.",
+            "start_word": 4,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.5182269811630249
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.42893077481177544
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:59.010102+00:00"
+}

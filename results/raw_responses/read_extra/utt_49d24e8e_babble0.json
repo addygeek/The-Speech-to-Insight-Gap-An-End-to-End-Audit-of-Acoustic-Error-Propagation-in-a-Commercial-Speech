@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_49d24e8e",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Austin on June 21? Please do not transfer me again unless the next time I can actually change my booking."
+  },
+  "request_id": "01a1b291-f488-7fc1-ac38-bec54d01c903",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-f488-7fc1-ac38-bec54d01c903",
+      "created": "2026-11-06T20:34:32.418Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next time I can actually change my booking.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.45680287
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next time I can actually change my booking.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.36803117
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.8357613
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on June 21?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.286295086145401
+          },
+          {
+            "text": "Please do not transfer me again unless the next time I can actually change my booking.",
+            "start_word": 10,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.8964557647705078
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6650155166099811
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:32.469120+00:00"
+}

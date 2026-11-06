@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_7f49da77",
+    "text_source": "reference",
+    "text": "Could you modify my flight to Austin for March 12? Please email the new confirmation to the address you have. I would prefer not to be transferred again unless the next representative can change the booking."
+  },
+  "request_id": "01a1b256-ca75-7582-a50d-cac145f91927",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-ca75-7582-a50d-cac145f91927",
+      "created": "2026-11-06T19:29:55.009Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I would prefer not to be transferred again unless the next representative can change the booking.",
+            "start_word": 20,
+            "end_word": 35,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.9581667
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.2362287
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I would prefer not to be transferred again unless the next representative can change the booking.",
+            "start_word": 20,
+            "end_word": 35,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.17639947
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.13919163
+              },
+              {
+                "intent": "Change reservation",
+                "confidence_score": 0.0035499784
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Austin for March 12? Please email the new confirmation to the address you have.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": -0.12060774862766266
+          },
+          {
+            "text": "I would prefer not to be transferred again unless the next representative can change the booking.",
+            "start_word": 20,
+            "end_word": 35,
+            "sentiment": "negative",
+            "sentiment_score": -0.8380603194236755
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4434614181518554
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:55.102286+00:00"
+}

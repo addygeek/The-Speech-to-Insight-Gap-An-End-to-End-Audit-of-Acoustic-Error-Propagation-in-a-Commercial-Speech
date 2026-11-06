@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "reverb",
+    "utterance_id": "utt_7c399b82",
+    "text_source": "transcript_reverb",
+    "text": "I need to book an appointment with doctor Taylor Brooks on March 12 at 09:30AM. I need to settle before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b293-ade7-79e3-8f68-c34c82fa9aa7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-ade7-79e3-8f68-c34c82fa9aa7",
+      "created": "2026-11-06T20:36:25.352Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.8305739
+              },
+              {
+                "topic": "Travel plans",
+                "confidence_score": 0.08358076
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.5067063
+              },
+              {
+                "intent": "Settlement before business day",
+                "confidence_score": 0.077401504
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Taylor Brooks on March 12 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13238470256328583
+          },
+          {
+            "text": "I need to settle before the end of the business day because I travel tomorrow morning.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.5702369809150696
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3335600930291253
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:25.405575+00:00"
+}

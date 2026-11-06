@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_105cf03f",
+    "text_source": "transcript_pinkm10",
+    "text": "I was charged $120 twice on my card and paid 4,400. This is the second time I have contacted support about the same problem."
+  },
+  "request_id": "01a1b291-a2e2-7652-b260-b26e3392b000",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a2e2-7652-b260-b26e3392b000",
+      "created": "2026-11-06T20:34:11.534Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem.",
+            "start_word": 11,
+            "end_word": 23,
+            "topics": [
+              {
+                "topic": "Support",
+                "confidence_score": 0.17683448
+              },
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.30139834
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem.",
+            "start_word": 11,
+            "end_word": 23,
+            "intents": [
+              {
+                "intent": "Report card issue",
+                "confidence_score": 0.021404888
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.1683411
+              },
+              {
+                "intent": "Suggest payment increase",
+                "confidence_score": 1.9612273e-07
+              },
+              {
+                "intent": "Report billing issue",
+                "confidence_score": 0.08147277
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $120 twice on my card and paid 4,400. This is the second time I have contacted support about the same problem.",
+            "start_word": 0,
+            "end_word": 23,
+            "sentiment": "negative",
+            "sentiment_score": -0.7114020586013794
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7114020380480536
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:11.597696+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_1790f499",
+    "text_source": "transcript_pinkm5",
+    "text": "I want to schedule an appointment with doctor Alex Chen for June 21 at 02:15PM. The previous agent I talked to told me to call back if the tour is removed."
+  },
+  "request_id": "01a1b293-332b-7891-bc47-b8b76476d476",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-332b-7891-bc47-b8b76476d476",
+      "created": "2026-11-06T20:35:54.017Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 16
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the tour is removed.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.7482941
+              },
+              {
+                "topic": "Doctor alex chen",
+                "confidence_score": 0.635903
+              },
+              {
+                "topic": "Agent callback",
+                "confidence_score": 0.083153814
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the tour is removed.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alex chen",
+                "confidence_score": 0.16255267
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.06402225
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Alex Chen for June 21 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2502281665802002
+          },
+          {
+            "text": "The previous agent I talked to told me to call back if the tour is removed.",
+            "start_word": 15,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.8384827971458435
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.27941500174032674
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:54.081280+00:00"
+}

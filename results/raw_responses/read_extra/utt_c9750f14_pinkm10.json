@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_c9750f14",
+    "text_source": "transcript_pinkm10",
+    "text": "I want to schedule an appointment with doctor George Lee for April 3 at 09:30AM. Please refrain from transferring me again unless the next representative can schedule an automatic"
+  },
+  "request_id": "01a1b293-c72d-7bf0-80a8-ab8ec4151008",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-c72d-7bf0-80a8-ab8ec4151008",
+      "created": "2026-11-06T20:36:32.064Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor George Lee for April 3 at 09:30AM.",
+            "start_word": 1,
+            "end_word": 15,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.47385168
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor George Lee for April 3 at 09:30AM.",
+            "start_word": 1,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor gilee",
+                "confidence_score": 0.015939152
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor George Lee for April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.00320122460834682
+          },
+          {
+            "text": "Please refrain from transferring me again unless the next representative can schedule an automatic",
+            "start_word": 15,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.8563781976699829
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.38974936349051337
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:32.126710+00:00"
+}

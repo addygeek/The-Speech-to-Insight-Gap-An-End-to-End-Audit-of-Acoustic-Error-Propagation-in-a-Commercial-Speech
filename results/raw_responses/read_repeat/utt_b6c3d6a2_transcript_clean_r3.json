@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_b6c3d6a2",
+    "text_source": "transcript_clean",
+    "text": "Please cancel my order for $75 placed yesterday. Please send the updated confirmation to the same email address you have on file. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b253-8db6-79d1-85b5-f7b09af85836",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b253-8db6-79d1-85b5-f7b09af85836",
+      "created": "2026-11-06T19:26:23.337Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 22,
+            "end_word": 36,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.95473856
+              },
+              {
+                "topic": "Updated confirmation",
+                "confidence_score": 0.008353125
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 22,
+            "end_word": 36,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.82494986
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.5427117
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.97230065
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "negative",
+            "sentiment_score": -0.6720330715179443
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 8,
+            "end_word": 21,
+            "sentiment": "neutral",
+            "sentiment_score": -0.32937800884246826
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 22,
+            "end_word": 36,
+            "sentiment": "negative",
+            "sentiment_score": -0.7343467473983765
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5725088352110328
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:26:23.420279+00:00"
+}

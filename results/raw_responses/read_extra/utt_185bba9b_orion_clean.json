@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_185bba9b",
+    "text_source": "transcript_orion_clean",
+    "text": "Thank you, Jordan Lee. The support team in Boston was excellent today. I already tried the website twice, and it would not save the change under my account."
+  },
+  "request_id": "01a1b29d-a896-7e40-a592-9334fb172404",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-a896-7e40-a592-9334fb172404",
+      "created": "2026-11-06T20:47:19.293Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.16028525
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Provide support",
+                "confidence_score": 0.011638541
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.17767337
+              },
+              {
+                "intent": "Save change",
+                "confidence_score": 0.01994113
+              },
+              {
+                "intent": "Reject action",
+                "confidence_score": 5.887804e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Jordan Lee. The support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8070806860923767
+          },
+          {
+            "text": "I already tried the website twice, and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.3004700839519501
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.20296206618800308
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:19.346134+00:00"
+}

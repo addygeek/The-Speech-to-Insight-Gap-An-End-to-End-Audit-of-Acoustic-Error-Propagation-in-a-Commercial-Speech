@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_1cfb02b8",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $35.99 today. I can wait on the line while we check the records, and I'll be on the end of the day."
+  },
+  "request_id": "01a1b292-4f2e-7841-81d6-b33b1770dded",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-4f2e-7841-81d6-b33b1770dded",
+      "created": "2026-11-06T20:34:55.458Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while we check the records, and I'll be on the end of the day.",
+            "start_word": 7,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.6247778
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while we check the records, and I'll be on the end of the day.",
+            "start_word": 7,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.85971695
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $35.99 today. I can wait on the line while we check the records, and I'll be on the end of the day.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7476523518562317
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7476523428252249
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:55.518182+00:00"
+}

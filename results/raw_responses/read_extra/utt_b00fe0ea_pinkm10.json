@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_b00fe0ea",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my traffic going to Denver? It should arrive by 06/07/2030. Please send me updated confirmation to place email address you have on file."
+  },
+  "request_id": "01a1b291-88e0-78d1-8b47-4a074af2c02a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-88e0-78d1-8b47-4a074af2c02a",
+      "created": "2026-11-06T20:34:04.709Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to place email address you have on file.",
+            "start_word": 12,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Traffic",
+                "confidence_score": 0.7540619
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.6591314
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation to place email address you have on file.",
+            "start_word": 12,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Confirm arrival time",
+                "confidence_score": 0.019986307
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my traffic going to Denver?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": -0.030452832579612732
+          },
+          {
+            "text": "It should arrive by 06/07/2030.",
+            "start_word": 7,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.3730084300041199
+          },
+          {
+            "text": "Please send me updated confirmation to place email address you have on file.",
+            "start_word": 12,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": 0.31839829683303833
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.24825116991996765
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:04.761300+00:00"
+}

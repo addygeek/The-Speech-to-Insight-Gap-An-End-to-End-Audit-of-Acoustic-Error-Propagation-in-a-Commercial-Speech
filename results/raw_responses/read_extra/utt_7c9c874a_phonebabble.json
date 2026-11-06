@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_7c9c874a",
+    "text_source": "transcript_phonebabble",
+    "text": "Hello. I'm Alex Chen. I do not wish to cancel my order of $250. A previous agent told me to call back to be charged for late."
+  },
+  "request_id": "01a1b293-0fa4-70c2-9842-9701c5c3cbfa",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0fa4-70c2-9842-9701c5c3cbfa",
+      "created": "2026-11-06T20:35:44.845Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "A previous agent told me to call back to be charged for late.",
+            "start_word": 14,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.76343787
+              },
+              {
+                "topic": "Late charges",
+                "confidence_score": 0.574172
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "A previous agent told me to call back to be charged for late.",
+            "start_word": 14,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.3397564
+              },
+              {
+                "intent": "Contact agent",
+                "confidence_score": 0.006737147
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03717852011322975
+          },
+          {
+            "text": "I do not wish to cancel my order of $250. A previous agent told me to call back to be charged for late.",
+            "start_word": 4,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7991383075714111
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5963948567708334
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:44.906899+00:00"
+}

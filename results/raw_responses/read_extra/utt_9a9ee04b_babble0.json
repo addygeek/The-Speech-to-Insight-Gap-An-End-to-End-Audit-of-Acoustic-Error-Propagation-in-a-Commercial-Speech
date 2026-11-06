@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_9a9ee04b",
+    "text_source": "transcript_babble0",
+    "text": "Hi. Where is my package going to Denver? It should arrive by March 12. Please send please send me updated confirmation. Can you say anything? I don't know how much is"
+  },
+  "request_id": "01a1b293-dea6-7d73-bab9-e2b1e260fab7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-dea6-7d73-bab9-e2b1e260fab7",
+      "created": "2026-11-06T20:36:37.781Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can you say anything?",
+            "start_word": 21,
+            "end_word": 24,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.7513732
+              },
+              {
+                "topic": "Delivery confirmation",
+                "confidence_score": 0.06384602
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can you say anything?",
+            "start_word": 21,
+            "end_word": 24,
+            "intents": [
+              {
+                "intent": "Verify package arrival and confirm package details",
+                "confidence_score": 1.3517501e-07
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. Where is my package going to Denver?",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0947030708193779
+          },
+          {
+            "text": "It should arrive by March 12. Please send please send me updated confirmation.",
+            "start_word": 8,
+            "end_word": 20,
+            "sentiment": "positive",
+            "sentiment_score": 0.3844694197177887
+          },
+          {
+            "text": "Can you say anything?",
+            "start_word": 21,
+            "end_word": 24,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05371909961104393
+          },
+          {
+            "text": "I don't know how much is",
+            "start_word": 25,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.49305248260498047
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.07172373178842906
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:37.835814+00:00"
+}

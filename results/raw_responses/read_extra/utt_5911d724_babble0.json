@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_5911d724",
+    "text_source": "transcript_babble0",
+    "text": "Hello. I'm Alex Chen. I do not wish to cancel my order of $8 to $10. Please refrain from transferring me again. Our next representative will truly modify the"
+  },
+  "request_id": "01a1b291-de89-7e82-a19e-551d0b360ced",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-de89-7e82-a19e-551d0b360ced",
+      "created": "2026-11-06T20:34:26.628Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again.",
+            "start_word": 16,
+            "end_word": 21,
+            "topics": [
+              {
+                "topic": "Customer order modification",
+                "confidence_score": 0.0013056345
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again.",
+            "start_word": 16,
+            "end_word": 21,
+            "intents": [
+              {
+                "intent": "Reschedule order",
+                "confidence_score": 0.097772636
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.01848854683339596
+          },
+          {
+            "text": "I do not wish to cancel my order of $8 to $10. Please refrain from transferring me again. Our next representative will truly modify the",
+            "start_word": 4,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7183243036270142
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5545881059434679
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:26.683485+00:00"
+}

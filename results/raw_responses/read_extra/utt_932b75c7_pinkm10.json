@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_932b75c7",
+    "text_source": "transcript_pinkm10",
+    "text": "I would like to schedule an appointment with Doctor Sam Hotel on March 12 at 02:15PM. The previous agent I talked to advised me to call again if the call remains difficult."
+  },
+  "request_id": "01a1b292-7be2-79d1-843d-377427cf557e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7be2-79d1-843d-377427cf557e",
+      "created": "2026-11-06T20:35:07.029Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to advised me to call again if the call remains difficult.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.37164912
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to advised me to call again if the call remains difficult.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.33475345
+              },
+              {
+                "intent": "Request call",
+                "confidence_score": 0.013326587
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Doctor Sam Hotel on March 12 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.6142323613166809
+          },
+          {
+            "text": "The previous agent I talked to advised me to call again if the call remains difficult.",
+            "start_word": 16,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.8017712831497192
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.05650618829225239
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:07.094330+00:00"
+}

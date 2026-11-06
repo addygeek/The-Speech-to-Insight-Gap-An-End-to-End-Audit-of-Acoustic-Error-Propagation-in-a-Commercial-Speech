@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_577b064f",
+    "text_source": "transcript_clean",
+    "text": "Hi. My name is Alex Chen. I do not want to cancel my order for $120. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b256-ae9e-77e0-bcb0-b8be8a1d4205",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-ae9e-77e0-bcb0-b8be8a1d4205",
+      "created": "2026-11-06T19:29:48.043Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 29
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.40094298
+              },
+              {
+                "topic": "Record check",
+                "confidence_score": 0.14185932
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.91311437
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Notify customer about unavailability",
+                "confidence_score": 0.0037995796
+              },
+              {
+                "intent": "Inform about check record",
+                "confidence_score": 0.0069079637
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.20308942
+              },
+              {
+                "intent": "Inform about unavailability of account number",
+                "confidence_score": 0.0021231826
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06781218200922012
+          },
+          {
+            "text": "I do not want to cancel my order for $120.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.7387875318527222
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 16,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07699453085660934
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.16356258857540967
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:48.127243+00:00"
+}

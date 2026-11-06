@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_9dcd1794",
+    "text_source": "transcript_babble0",
+    "text": "I need to book an appointment with doctor Andrea Santos. I already tried the website twice, and it did not save the change of the"
+  },
+  "request_id": "01a1b293-0a23-7153-84ea-527cd3ac236d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0a23-7153-84ea-527cd3ac236d",
+      "created": "2026-11-06T20:35:43.668Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Andrea Santos.",
+            "start_word": 1,
+            "end_word": 10,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.47559172
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.16889733
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Andrea Santos.",
+            "start_word": 1,
+            "end_word": 10,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor antonio santos",
+                "confidence_score": 0.011545277
+              },
+              {
+                "intent": "Resolve website issues",
+                "confidence_score": 0.0036293436
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Andrea Santos.",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2350001484155655
+          },
+          {
+            "text": "I already tried the website twice, and it did not save the change of the",
+            "start_word": 10,
+            "end_word": 24,
+            "sentiment": "negative",
+            "sentiment_score": -0.8153464198112488
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5551911715803475
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:44.176825+00:00"
+}

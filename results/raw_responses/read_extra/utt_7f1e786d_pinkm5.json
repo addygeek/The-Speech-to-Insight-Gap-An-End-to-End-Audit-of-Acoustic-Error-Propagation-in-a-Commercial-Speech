@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_7f1e786d",
+    "text_source": "transcript_pinkm5",
+    "text": "Where is my package going to Austin? It should arrive by April 3. I already tried the website twice, and it would not claim the change under my account."
+  },
+  "request_id": "01a1b292-cb6a-7f22-8af1-535a1e436b0a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-cb6a-7f22-8af1-535a1e436b0a",
+      "created": "2026-11-06T20:35:27.319Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I already tried the website twice, and it would not claim the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.91652066
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.30153346
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. I already tried the website twice, and it would not claim the change under my account.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Reporting package status",
+                "confidence_score": 9.328023e-05
+              },
+              {
+                "intent": "Requesting website usage",
+                "confidence_score": 0.0025219973
+              },
+              {
+                "intent": "Refusing change",
+                "confidence_score": 0.10664616
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin? It should arrive by April 3. I already tried the website twice, and it would not claim the change under my account.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.03731517866253853
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.03731517866253853
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:28.009782+00:00"
+}

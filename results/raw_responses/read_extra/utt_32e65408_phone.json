@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_32e65408",
+    "text_source": "transcript_phone",
+    "text": "My Internet has been down since 02:15PM, and I cannot work from Seattle. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b292-7858-7ae0-8257-8568fd0c2bfb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7858-7ae0-8257-8568fd0c2bfb",
+      "created": "2026-11-06T20:35:06.096Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.31126
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.1205698
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Fix internet downtime",
+                "confidence_score": 0.018072136
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Seattle.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7279860377311707
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13472537696361542
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4085379869509966
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:06.161908+00:00"
+}

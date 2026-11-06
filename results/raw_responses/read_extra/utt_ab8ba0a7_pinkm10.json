@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_ab8ba0a7",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor William Lee on March 12 at 11AM. This is the second time I have contact support about the COVID problem this week."
+  },
+  "request_id": "01a1b291-daa8-7aa2-8c63-a5a02cd21ee0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-daa8-7aa2-8c63-a5a02cd21ee0",
+      "created": "2026-11-06T20:34:25.817Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contact support about the COVID problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.9236859
+              },
+              {
+                "topic": "Covid problem",
+                "confidence_score": 0.8855921
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contact support about the COVID problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor william lee",
+                "confidence_score": 0.15187661
+              },
+              {
+                "intent": "Contact support for covid problem",
+                "confidence_score": 0.3355045
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor William Lee on March 12 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.01740807294845581
+          },
+          {
+            "text": "This is the second time I have contact support about the COVID problem this week.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.5862019658088684
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.30993063790457587
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:25.871718+00:00"
+}

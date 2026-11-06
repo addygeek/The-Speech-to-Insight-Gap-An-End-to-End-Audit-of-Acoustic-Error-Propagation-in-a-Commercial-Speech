@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "orion_harsh",
+    "utterance_id": "utt_0040cbaf",
+    "text_source": "transcript_orion_harsh",
+    "text": "What is the status of my package heading to Denver? It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand."
+  },
+  "request_id": "01a1b29d-73eb-7832-9234-87eb0f07b050",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-73eb-7832-9234-87eb0f07b050",
+      "created": "2026-11-06T20:47:05.855Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 14
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand.",
+            "start_word": 10,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.7045673
+              },
+              {
+                "topic": "Denver",
+                "confidence_score": 0.21239382
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.95024174
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand.",
+            "start_word": 10,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.34333307
+              },
+              {
+                "intent": "Handle details",
+                "confidence_score": 0.0058782496
+              },
+              {
+                "intent": "Confirm account number",
+                "confidence_score": 0.030685695
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package heading to Denver? It is expected by April 3. I'm willing to hold while you look up the details, and I have my account number on hand.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.16546334326267242
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1654633375314566
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:05.910672+00:00"
+}

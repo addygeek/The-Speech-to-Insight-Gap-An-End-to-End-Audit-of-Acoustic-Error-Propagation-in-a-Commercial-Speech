@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_40cb6c8b",
+    "text_source": "transcript_babble0",
+    "text": "Can you tell me where my package for Boston is? It's supposed to reach there by December. I kindly ask not to be transferred again unless we can exchange it, and I can't the time."
+  },
+  "request_id": "01a1b292-bc84-72f2-911a-a804c0b751e9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-bc84-72f2-911a-a804c0b751e9",
+      "created": "2026-11-06T20:35:23.643Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 45
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 45,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I kindly ask not to be transferred again unless we can exchange it, and I can't the time.",
+            "start_word": 17,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.4448391
+              },
+              {
+                "topic": "Boston delivery",
+                "confidence_score": 0.07032933
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I kindly ask not to be transferred again unless we can exchange it, and I can't the time.",
+            "start_word": 17,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Retrieve package information",
+                "confidence_score": 0.0065980093
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me where my package for Boston is? It's supposed to reach there by December.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "neutral",
+            "sentiment_score": -0.02072759158909321
+          },
+          {
+            "text": "I kindly ask not to be transferred again unless we can exchange it, and I can't the time.",
+            "start_word": 17,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.8221399188041687
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.44814749823676214
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:23.719345+00:00"
+}

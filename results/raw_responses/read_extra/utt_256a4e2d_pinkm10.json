@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_256a4e2d",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $19.01 for the day. The last agent I spoke with has to call back."
+  },
+  "request_id": "01a1b292-8e60-7bc3-af7d-46115a80d64c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-8e60-7bc3-af7d-46115a80d64c",
+      "created": "2026-11-06T20:35:11.847Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 23,
+        "output_tokens": 23
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 23,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 23,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with has to call back.",
+            "start_word": 9,
+            "end_word": 18,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.27334863
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with has to call back.",
+            "start_word": 9,
+            "end_word": 18,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.4148817
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.9423463
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $19.01 for the day. The last agent I spoke with has to call back.",
+            "start_word": 0,
+            "end_word": 18,
+            "sentiment": "negative",
+            "sentiment_score": -0.8999143242835999
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8999142854110055
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:11.910170+00:00"
+}

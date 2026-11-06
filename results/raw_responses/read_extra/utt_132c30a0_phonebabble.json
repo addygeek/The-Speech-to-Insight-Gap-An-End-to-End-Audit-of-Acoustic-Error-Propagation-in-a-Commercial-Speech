@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_132c30a0",
+    "text_source": "transcript_phonebabble",
+    "text": "I was charged $250 twice on my card ending in 4429. This is the second time I have contacted support about the same problem that we've been"
+  },
+  "request_id": "01a1b291-733b-7563-91e4-da93f59e0bad",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-733b-7563-91e4-da93f59e0bad",
+      "created": "2026-11-06T20:33:59.170Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4429.",
+            "start_word": 1,
+            "end_word": 11,
+            "topics": [
+              {
+                "topic": "Card issue",
+                "confidence_score": 0.034919567
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4429.",
+            "start_word": 1,
+            "end_word": 11,
+            "intents": [
+              {
+                "intent": "Request support and resolve card issue",
+                "confidence_score": 0.0010812093
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250 twice on my card ending in 4429. This is the second time I have contacted support about the same problem that we've been",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7281534671783447
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7281534671783447
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:33:59.222948+00:00"
+}

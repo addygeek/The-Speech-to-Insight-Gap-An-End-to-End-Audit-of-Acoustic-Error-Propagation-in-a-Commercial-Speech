@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_a9a39b6e",
+    "text_source": "reference",
+    "text": "Can you change my flight to Seattle on October 5? I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b256-960a-7c31-9f90-83bf232a0c8c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-960a-7c31-9f90-83bf232a0c8c",
+      "created": "2026-11-06T19:29:41.861Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.647807
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.12976569
+              },
+              {
+                "topic": "Home office",
+                "confidence_score": 0.99615073
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.42549843
+              },
+              {
+                "intent": "Call from mobile phone",
+                "confidence_score": 0.49422255
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Seattle on October 5?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02732188068330288
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6642773747444153
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.40194662686052
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:41.954387+00:00"
+}

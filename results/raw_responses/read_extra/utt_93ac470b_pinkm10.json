@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_93ac470b",
+    "text_source": "transcript_pinkm10",
+    "text": "Please cancel my order for $35 yesterday. I need to settle before the end of the business day because I travel tomorrow morning. I already tried the website right, and it does not take."
+  },
+  "request_id": "01a1b292-7270-7d91-9835-a9a850d057e1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7270-7d91-9835-a9a850d057e1",
+      "created": "2026-11-06T20:35:04.807Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website right, and it does not take.",
+            "start_word": 23,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.80796707
+              },
+              {
+                "topic": "Settlement",
+                "confidence_score": 0.1775288
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website right, and it does not take.",
+            "start_word": 23,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6275716
+              },
+              {
+                "intent": "Pay before business day",
+                "confidence_score": 0.006845759
+              },
+              {
+                "intent": "Attempt website",
+                "confidence_score": 0.00063848525
+              },
+              {
+                "intent": "Set up meeting",
+                "confidence_score": 0.0004943384
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $35 yesterday. I need to settle before the end of the business day because I travel tomorrow morning. I already tried the website right, and it does not take.",
+            "start_word": 0,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.7418628334999084
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7418628491853413
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:04.982501+00:00"
+}

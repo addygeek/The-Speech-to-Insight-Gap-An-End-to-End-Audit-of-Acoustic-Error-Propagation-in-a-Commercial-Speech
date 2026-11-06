@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_f771b9d7",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor on April 3 at 09:30AM. I'm calling from my mobile phone because I have a."
+  },
+  "request_id": "01a1b292-9450-7b71-ae3e-a62b6b3944a4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-9450-7b71-ae3e-a62b6b3944a4",
+      "created": "2026-11-06T20:35:13.361Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I have a.",
+            "start_word": 13,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.28504658
+              },
+              {
+                "topic": "Doctor",
+                "confidence_score": 0.37012535
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm calling from my mobile phone because I have a.",
+            "start_word": 13,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.78436226
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09341147541999816
+          },
+          {
+            "text": "I'm calling from my mobile phone because I have a.",
+            "start_word": 13,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.4207850098609924
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.24125757525044103
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:13.419337+00:00"
+}

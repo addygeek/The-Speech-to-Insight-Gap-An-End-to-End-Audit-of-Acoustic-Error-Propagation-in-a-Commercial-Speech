@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_3775d7fb",
+    "text_source": "reference",
+    "text": "My internet has been down since 9:30 AM and I cannot work from Denver. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b250-b3c3-7982-9ce3-642869b406b6",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-b3c3-7982-9ce3-642869b406b6",
+      "created": "2026-11-06T19:23:16.287Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 14,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.23688926
+              },
+              {
+                "topic": "Communication",
+                "confidence_score": 0.25458956
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 14,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Request and send updated confirmation",
+                "confidence_score": 0.010883727
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 9:30 AM and I cannot work from Denver.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "negative",
+            "sentiment_score": -0.7985271215438843
+          },
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 14,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2399880290031433
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5282662914645287
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:16.370069+00:00"
+}

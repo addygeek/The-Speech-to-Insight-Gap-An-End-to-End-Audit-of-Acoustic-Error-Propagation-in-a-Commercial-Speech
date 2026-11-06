@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_99444166",
+    "text_source": "transcript_babble0",
+    "text": "I appreciate your help, Dorothy. The Denver support team is outstanding today. I attempted to use the website twice, but it failed to save the changes to my plan."
+  },
+  "request_id": "01a1b291-d7ce-74e2-9dc5-622ce1d608de",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-d7ce-74e2-9dc5-622ce1d608de",
+      "created": "2026-11-06T20:34:24.925Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to use the website twice, but it failed to save the changes to my plan.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Denver support",
+                "confidence_score": 0.31844288
+              },
+              {
+                "topic": "Website usage",
+                "confidence_score": 0.5224875
+              },
+              {
+                "topic": "Plan changes",
+                "confidence_score": 0.9369712
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to use the website twice, but it failed to save the changes to my plan.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Report technical issue",
+                "confidence_score": 0.00013175646
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I appreciate your help, Dorothy. The Denver support team is outstanding today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.831579864025116
+          },
+          {
+            "text": "I attempted to use the website twice, but it failed to save the changes to my plan.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2323250025510788
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.2370447831995347
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:24.988505+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_7c6c3ace",
+    "text_source": "transcript_babble0",
+    "text": "Could you please modify my flight to Denver on April 3? I need to arrange the date and visit as I am traveling to Nashville in Texas."
+  },
+  "request_id": "01a1b291-7fa6-79f2-a76c-5ea6df8ccf55",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7fa6-79f2-a76c-5ea6df8ccf55",
+      "created": "2026-11-06T20:34:02.381Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need to arrange the date and visit as I am traveling to Nashville in Texas.",
+            "start_word": 11,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.92173916
+              },
+              {
+                "topic": "Date and visit",
+                "confidence_score": 0.015070446
+              },
+              {
+                "topic": "Transportation",
+                "confidence_score": 0.5114342
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to arrange the date and visit as I am traveling to Nashville in Texas.",
+            "start_word": 11,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.65241796
+              },
+              {
+                "intent": "Arrange visit",
+                "confidence_score": 0.5201126
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Denver on April 3?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": -0.11573638767004012
+          },
+          {
+            "text": "I need to arrange the date and visit as I am traveling to Nashville in Texas.",
+            "start_word": 11,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.3582890033721924
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2579224027436355
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:02.436306+00:00"
+}

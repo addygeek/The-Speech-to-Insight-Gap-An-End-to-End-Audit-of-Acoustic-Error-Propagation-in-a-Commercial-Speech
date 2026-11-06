@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_60a78303",
+    "text_source": "transcript_babble0",
+    "text": "Can you change my flight to Austin on March? I need to go get a plane. Please send me updated confirmation of the same email address you have on file. This is the second time I have contacted my colleague about the same problem with my"
+  },
+  "request_id": "01a1b293-3bdc-77b3-ac61-a6047c8a1e57",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-3bdc-77b3-ac61-a6047c8a1e57",
+      "created": "2026-11-06T20:35:56.255Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 51,
+        "output_tokens": 51
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 51,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 51,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation of the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.96964085
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.46778482
+              },
+              {
+                "topic": "Email",
+                "confidence_score": 0.19038282
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send me updated confirmation of the same email address you have on file.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Change flight",
+                "confidence_score": 0.67944074
+              },
+              {
+                "intent": "Receive confirmation",
+                "confidence_score": 0.26244015
+              },
+              {
+                "intent": "Contact colleague",
+                "confidence_score": 0.5315446
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you change my flight to Austin on March? I need to go get a plane. Please send me updated confirmation of the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02313433773815632
+          },
+          {
+            "text": "This is the second time I have contacted my colleague about the same problem with my",
+            "start_word": 30,
+            "end_word": 45,
+            "sentiment": "negative",
+            "sentiment_score": -0.6216490268707275
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.19179344177246097
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:56.308704+00:00"
+}

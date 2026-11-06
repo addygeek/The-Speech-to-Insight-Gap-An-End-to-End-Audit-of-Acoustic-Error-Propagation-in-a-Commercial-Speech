@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_9192a5de",
+    "text_source": "transcript_babble5",
+    "text": "Hi. My name is Sam Patel. I do not want to cancel my order for $75. The last agent I spoke with asked me a callback if the card was still showing."
+  },
+  "request_id": "01a1b291-eed6-7c81-a037-0b154d681a12",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-eed6-7c81-a037-0b154d681a12",
+      "created": "2026-11-06T20:34:30.971Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me a callback if the card was still showing.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.77701753
+              },
+              {
+                "topic": "Callback request",
+                "confidence_score": 0.7709518
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me a callback if the card was still showing.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.12599611
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.87713355
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.02693154290318489
+          },
+          {
+            "text": "I do not want to cancel my order for $75. The last agent I spoke with asked me a callback if the card was still showing.",
+            "start_word": 6,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7422552704811096
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5691882610321045
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:31.032001+00:00"
+}

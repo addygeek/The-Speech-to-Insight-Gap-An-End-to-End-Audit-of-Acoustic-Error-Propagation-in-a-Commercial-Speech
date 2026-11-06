@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_a46bd421",
+    "text_source": "reference",
+    "text": "Since 9:30 AM, my internet has been out, making it impossible to work from Austin. The previous agent I talked to suggested calling back if the charge remains visible."
+  },
+  "request_id": "01a1b250-0b31-73d3-8a18-db2a2fa5e5db",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-0b31-73d3-8a18-db2a2fa5e5db",
+      "created": "2026-11-06T19:22:33.358Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to suggested calling back if the charge remains visible.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.6325745
+              },
+              {
+                "topic": "Service disruption",
+                "confidence_score": 0.03427179
+              },
+              {
+                "topic": "Agent suggestion",
+                "confidence_score": 0.079097144
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to suggested calling back if the charge remains visible.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Check availability",
+                "confidence_score": 0.019997966
+              },
+              {
+                "intent": "Request callback",
+                "confidence_score": 0.03709539
+              },
+              {
+                "intent": "Express confusion",
+                "confidence_score": 0.043510474
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 9:30 AM, my internet has been out, making it impossible to work from Austin. The previous agent I talked to suggested calling back if the charge remains visible.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7191502451896667
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7191502162388392
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:33.436199+00:00"
+}

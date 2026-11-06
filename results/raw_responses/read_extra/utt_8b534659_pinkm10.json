@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_8b534659",
+    "text_source": "transcript_pinkm10",
+    "text": "Can you tell me the status of my package for this afternoon? It's expected to arrive by March 12. The last representative I spoke to is."
+  },
+  "request_id": "01a1b293-5e88-7582-ab8c-388ac5528bf0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-5e88-7582-ab8c-388ac5528bf0",
+      "created": "2026-11-06T20:36:05.022Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to is.",
+            "start_word": 12,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.60145813
+              },
+              {
+                "topic": "Arrival date",
+                "confidence_score": 0.42089647
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected to arrive by March 12. The last representative I spoke to is.",
+            "start_word": 12,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Request package status",
+                "confidence_score": 0.13622095
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package for this afternoon? It's expected to arrive by March 12. The last representative I spoke to is.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14822226762771606
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1482222557067871
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:05.085515+00:00"
+}

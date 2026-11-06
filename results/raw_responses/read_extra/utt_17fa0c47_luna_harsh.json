@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_17fa0c47",
+    "text_source": "transcript_luna_harsh",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $250. I already tried the website twice, and it would not save the change under my"
+  },
+  "request_id": "01a1b29d-a554-7033-a9db-c4267ef919db",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-a554-7033-a9db-c4267ef919db",
+      "created": "2026-11-06T20:47:18.512Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I do not want to cancel my order for $250.",
+            "start_word": 6,
+            "end_word": 15,
+            "topics": [
+              {
+                "topic": "Customer complaint",
+                "confidence_score": 0.0020402656
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My name is Maria Santos. I do not want to cancel my order for $250.",
+            "start_word": 1,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Save change",
+                "confidence_score": 0.085026495
+              }
+            ]
+          },
+          {
+            "text": "I do not want to cancel my order for $250.",
+            "start_word": 6,
+            "end_word": 15,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.31250665
+              },
+              {
+                "intent": "Try website",
+                "confidence_score": 0.817699
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06517650932073593
+          },
+          {
+            "text": "I do not want to cancel my order for $250. I already tried the website twice, and it would not save the change under my",
+            "start_word": 6,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7739922404289246
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5471898671743032
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:18.565775+00:00"
+}

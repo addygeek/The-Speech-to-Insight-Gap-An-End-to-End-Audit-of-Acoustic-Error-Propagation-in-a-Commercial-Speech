@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_9493b329",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $75. Am calling from my mobile phone because I I put on a"
+  },
+  "request_id": "01a1b292-ff4e-78b2-bb85-9a4e9e29be99",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-ff4e-78b2-bb85-9a4e9e29be99",
+      "created": "2026-11-06T20:35:40.664Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 20,
+        "output_tokens": 20
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 20,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 20,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75.",
+            "start_word": 1,
+            "end_word": 6,
+            "topics": [
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.1741504
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75.",
+            "start_word": 1,
+            "end_word": 6,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.27273792
+              },
+              {
+                "intent": "Call from mobile phone",
+                "confidence_score": 0.6995121
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75. Am calling from my mobile phone because I I put on a",
+            "start_word": 0,
+            "end_word": 17,
+            "sentiment": "negative",
+            "sentiment_score": -0.8626824617385864
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8626824378967285
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:40.727251+00:00"
+}

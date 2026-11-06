@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_11f7d590",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $75 placed yesterday. This is the second time I have contacted support about the same balance sheet. I need this settled before the end of the business day because I travel smaller than 40."
+  },
+  "request_id": "01a1b293-29ec-7df3-912a-b51abb793726",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-29ec-7df3-912a-b51abb793726",
+      "created": "2026-11-06T20:35:51.517Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel smaller than 40.",
+            "start_word": 22,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.76008314
+              },
+              {
+                "topic": "Balance sheet dispute",
+                "confidence_score": 0.10756799
+              },
+              {
+                "topic": "Business day resolution",
+                "confidence_score": 0.34852955
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of the business day because I travel smaller than 40.",
+            "start_word": 22,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.57389134
+              },
+              {
+                "intent": "Contact support",
+                "confidence_score": 0.88307077
+              },
+              {
+                "intent": "Receive balance sheet settlement",
+                "confidence_score": 0.020426141
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $75 placed yesterday. This is the second time I have contacted support about the same balance sheet. I need this settled before the end of the business day because I travel smaller than 40.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.7117498517036438
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7117498530897983
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:52.016689+00:00"
+}

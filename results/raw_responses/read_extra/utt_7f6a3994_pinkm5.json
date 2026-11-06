@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_7f6a3994",
+    "text_source": "transcript_pinkm5",
+    "text": "My Internet has been down since 02:15PM, and I cannot work in Chicago. I can wait on the line while you check the record, and I do have my account number ready."
+  },
+  "request_id": "01a1b293-2f06-7ed1-967f-6f28e4022126",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-2f06-7ed1-967f-6f28e4022126",
+      "created": "2026-11-06T20:35:53.135Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 28
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.32148105
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.023905836
+              },
+              {
+                "topic": "Communication",
+                "confidence_score": 0.28094026
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Notify internet downtime",
+                "confidence_score": 0.018176068
+              },
+              {
+                "intent": "Offer help to wait on line",
+                "confidence_score": 8.301494e-05
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.28449655
+              },
+              {
+                "intent": "Express inability to work in chicago",
+                "confidence_score": 0.06318079
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work in Chicago.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7406375408172607
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have my account number ready.",
+            "start_word": 13,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1735072880983353
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.43525969676482373
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:53.190603+00:00"
+}

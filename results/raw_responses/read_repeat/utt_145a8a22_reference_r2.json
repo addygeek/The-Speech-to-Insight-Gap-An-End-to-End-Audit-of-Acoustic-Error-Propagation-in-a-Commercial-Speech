@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_145a8a22",
+    "text_source": "reference",
+    "text": "My internet has been down since 9:30 AM and I cannot work from Austin. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b255-8374-7330-ad91-5378a764a52f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-8374-7330-ad91-5378a764a52f",
+      "created": "2026-11-06T19:28:31.280Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 14,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.46790808
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 14,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.44866636
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 9:30 AM and I cannot work from Austin. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.8596165180206299
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8596164818966028
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:31.364706+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_1ceab89b",
+    "text_source": "transcript_babble0",
+    "text": "I'd like to schedule an appointment with doctor George from the for March 12 at 09:30AM. Please refrain from transferring me and get to the next representative to modify the"
+  },
+  "request_id": "01a1b291-989e-7292-bcb7-8fecb5b7ef2b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-989e-7292-bcb7-8fecb5b7ef2b",
+      "created": "2026-11-06T20:34:09.031Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 12
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 19
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor George from the for March 12 at 09:30AM.",
+            "start_word": 1,
+            "end_word": 16,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.55366546
+              },
+              {
+                "topic": "Doctor greet",
+                "confidence_score": 0.076936826
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor George from the for March 12 at 09:30AM.",
+            "start_word": 1,
+            "end_word": 16,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor george",
+                "confidence_score": 0.03760646
+              },
+              {
+                "intent": "Refuse transfer",
+                "confidence_score": 0.025837108
+              },
+              {
+                "intent": "Request representative to modify",
+                "confidence_score": 0.091577046
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I'd like to schedule an appointment with doctor George from the for March 12 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "neutral",
+            "sentiment_score": 0.15907612442970276
+          },
+          {
+            "text": "Please refrain from transferring me and get to the next representative to modify the",
+            "start_word": 16,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8635224103927612
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2554908443141628
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:09.095603+00:00"
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_877c2dfb",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Alice Chen. I do not want to cancel my order for 200 and dollars. I can wait on the line once you check the record, and I do have my account under the record."
+  },
+  "request_id": "01a1b291-bb0e-7621-b0f2-4e4b0e12e4de",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-bb0e-7621-b0f2-4e4b0e12e4de",
+      "created": "2026-11-06T20:34:17.665Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line once you check the record, and I do have my account under the record.",
+            "start_word": 18,
+            "end_word": 37,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.5402924
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line once you check the record, and I do have my account under the record.",
+            "start_word": 18,
+            "end_word": 37,
+            "intents": [
+              {
+                "intent": "Check record",
+                "confidence_score": 0.13368987
+              },
+              {
+                "intent": "Wait on line",
+                "confidence_score": 0.65520316
+              },
+              {
+                "intent": "Have account",
+                "confidence_score": 0.112373166
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Alice Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05840838700532913
+          },
+          {
+            "text": "I do not want to cancel my order for 200 and dollars.",
+            "start_word": 6,
+            "end_word": 17,
+            "sentiment": "negative",
+            "sentiment_score": -0.7501020431518555
+          },
+          {
+            "text": "I can wait on the line once you check the record, and I do have my account under the record.",
+            "start_word": 18,
+            "end_word": 37,
+            "sentiment": "neutral",
+            "sentiment_score": 0.11118531227111816
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.15902284134265987
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:17.728633+00:00"
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_387a60ab",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor Rio Santos on October 5 at 02:18PM. I already tried the website flight, and it would not change overnight."
+  },
+  "request_id": "01a1b292-c8eb-7100-9c5e-516711d3f9aa",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-c8eb-7100-9c5e-516711d3f9aa",
+      "created": "2026-11-06T20:35:26.843Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 15
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website flight, and it would not change overnight.",
+            "start_word": 15,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Appointment Booking",
+                "confidence_score": 0.0006973116
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website flight, and it would not change overnight.",
+            "start_word": 15,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor rio santos",
+                "confidence_score": 0.09953519
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Rio Santos on October 5 at 02:18PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0031293807551264763
+          },
+          {
+            "text": "I already tried the website flight, and it would not change overnight.",
+            "start_word": 15,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6799299120903015
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.27009429931640627
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:26.897921+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_efdfbff9",
+    "text_source": "reference",
+    "text": "Please cancel my order for $250.00 placed yesterday. Please send the updated confirmation to the same email address you have on file. The last agent I spoke with asked me to call back if the charge was still showing."
+  },
+  "request_id": "01a1b256-6bb4-77d3-931d-19ea066bff3e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-6bb4-77d3-931d-19ea066bff3e",
+      "created": "2026-11-06T19:29:31.613Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 22,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.9348398
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.26672873
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 22,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.77891666
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.57745534
+              },
+              {
+                "intent": "Check charge",
+                "confidence_score": 0.010119356
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $250.00 placed yesterday. Please send the updated confirmation to the same email address you have on file. The last agent I spoke with asked me to call back if the charge was still showing.",
+            "start_word": 0,
+            "end_word": 38,
+            "sentiment": "negative",
+            "sentiment_score": -0.647179126739502
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.647179126739502
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:31.705005+00:00"
+}

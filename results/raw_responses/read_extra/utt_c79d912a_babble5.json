@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_c79d912a",
+    "text_source": "transcript_babble5",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $75. Do not transfer me again unless the next person can actually change the company."
+  },
+  "request_id": "01a1b291-7b71-72a2-93e2-8abeb59022e1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-7b71-72a2-93e2-8abeb59022e1",
+      "created": "2026-11-06T20:34:01.355Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change the company.",
+            "start_word": 16,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.75968134
+              },
+              {
+                "topic": "Company change",
+                "confidence_score": 0.6561086
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Do not transfer me again unless the next person can actually change the company.",
+            "start_word": 16,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.3004218
+              },
+              {
+                "intent": "Change company",
+                "confidence_score": 0.9758814
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.015055583789944649
+          },
+          {
+            "text": "I do not want to cancel my order for $75. Do not transfer me again unless the next person can actually change the company.",
+            "start_word": 6,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8402274250984192
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.60906982421875
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:01.912176+00:00"
+}

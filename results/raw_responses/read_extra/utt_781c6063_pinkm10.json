@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_781c6063",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Maria Sanchez. I do not want to cancel my order for $206. I am calling from my mobile phone because I would like to make a monthly payment."
+  },
+  "request_id": "01a1b293-372c-7b00-97b5-9085f740af2a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-372c-7b00-97b5-9085f740af2a",
+      "created": "2026-11-06T20:35:54.870Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I do not want to cancel my order for $206. I am calling from my mobile phone because I would like to make a monthly payment.",
+            "start_word": 6,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Mobile phone payment",
+                "confidence_score": 0.25893247
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I do not want to cancel my order for $206. I am calling from my mobile phone because I would like to make a monthly payment.",
+            "start_word": 6,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Make payment",
+                "confidence_score": 0.0034552892
+              },
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6367839
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Sanchez. I do not want to cancel my order for $206. I am calling from my mobile phone because I would like to make a monthly payment.",
+            "start_word": 0,
+            "end_word": 31,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2335214465856552
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.23352143571183487
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:54.922230+00:00"
+}

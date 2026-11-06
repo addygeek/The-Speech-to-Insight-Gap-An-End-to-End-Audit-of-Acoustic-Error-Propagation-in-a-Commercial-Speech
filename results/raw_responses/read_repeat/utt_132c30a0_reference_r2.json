@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_132c30a0",
+    "text_source": "reference",
+    "text": "I was charged $250.00 twice on my card ending in 4421. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b250-0803-73a1-a2a2-60b141d076bd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-0803-73a1-a2a2-60b141d076bd",
+      "created": "2026-11-06T19:22:32.537Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 11,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Card support",
+                "confidence_score": 0.21374308
+              },
+              {
+                "topic": "Charge",
+                "confidence_score": 0.004785782
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 11,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Reporting assistance",
+                "confidence_score": 4.8709135e-05
+              },
+              {
+                "intent": "Reporting charge",
+                "confidence_score": 0.033993267
+              },
+              {
+                "intent": "Reporting issue",
+                "confidence_score": 0.009898531
+              },
+              {
+                "intent": "Providing information",
+                "confidence_score": 0.046197705
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I was charged $250.00 twice on my card ending in 4421. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.714628279209137
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7146282811318675
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:32.615272+00:00"
+}

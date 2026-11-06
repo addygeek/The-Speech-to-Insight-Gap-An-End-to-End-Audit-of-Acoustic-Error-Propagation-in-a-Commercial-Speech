@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_ecedd1ed",
+    "text_source": "transcript_pinkm10",
+    "text": "Hi. My name is Jordan. I do not want to cancel my order for $8.50. This is the second time I have contacted you about the."
+  },
+  "request_id": "01a1b292-3c6a-7080-bb80-53d293b19212",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-3c6a-7080-bb80-53d293b19212",
+      "created": "2026-11-06T20:34:50.912Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted you about the.",
+            "start_word": 15,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.6109235
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted you about the.",
+            "start_word": 15,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Resolve order issue",
+                "confidence_score": 0.025883302
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Jordan.",
+            "start_word": 0,
+            "end_word": 4,
+            "sentiment": "neutral",
+            "sentiment_score": 0.01223741378635168
+          },
+          {
+            "text": "I do not want to cancel my order for $8.50. This is the second time I have contacted you about the.",
+            "start_word": 5,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.6582803726196289
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5160493561715791
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:50.975237+00:00"
+}

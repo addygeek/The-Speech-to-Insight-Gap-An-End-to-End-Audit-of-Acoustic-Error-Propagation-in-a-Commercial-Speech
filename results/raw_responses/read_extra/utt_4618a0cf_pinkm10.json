@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_4618a0cf",
+    "text_source": "transcript_pinkm10",
+    "text": "I would like to cancel my $25 order that I placed yesterday. I need this resolved by the. Please don't cancel me again unless the next day is."
+  },
+  "request_id": "01a1b292-ebb1-79e0-9bee-927bc7abc038",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-ebb1-79e0-9bee-927bc7abc038",
+      "created": "2026-11-06T20:35:35.790Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please don't cancel me again unless the next day is.",
+            "start_word": 18,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Cancellation request",
+                "confidence_score": 0.030704865
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please don't cancel me again unless the next day is.",
+            "start_word": 18,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.6031774
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my $25 order that I placed yesterday. I need this resolved by the. Please don't cancel me again unless the next day is.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7822466492652893
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7822466457591337
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:35.854615+00:00"
+}

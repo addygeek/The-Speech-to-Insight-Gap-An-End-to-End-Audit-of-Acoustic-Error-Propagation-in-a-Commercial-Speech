@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_7c9c874a",
+    "text_source": "reference",
+    "text": "Hello, I\u2019m Alex Chen. I do not wish to cancel my order of $250.00. The previous agent told me to call back if the charge remained."
+  },
+  "request_id": "01a1b252-2e03-77c0-9c29-f0d00b277a4c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-2e03-77c0-9c29-f0d00b277a4c",
+      "created": "2026-11-06T19:24:53.447Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent told me to call back if the charge remained.",
+            "start_word": 14,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.011451814
+              },
+              {
+                "topic": "Customer service",
+                "confidence_score": 0.42381984
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent told me to call back if the charge remained.",
+            "start_word": 14,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.24116524
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.501237
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I\u2019m Alex Chen.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05240406468510628
+          },
+          {
+            "text": "I do not wish to cancel my order of $250.00. The previous agent told me to call back if the charge remained.",
+            "start_word": 4,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7504010200500488
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5669027056012835
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:54.022133+00:00"
+}

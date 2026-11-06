@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_a534fb50",
+    "text_source": "reference",
+    "text": "Thank you Sam Patel, the support team in Boston was excellent today. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b254-7437-7fd2-b3a4-c4774d22d7c8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-7437-7fd2-b3a4-c4774d22d7c8",
+      "created": "2026-11-06T19:27:21.897Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Boston support",
+                "confidence_score": 0.03206324
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.8306813
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Expressing absence",
+                "confidence_score": 0.06702477
+              },
+              {
+                "intent": "Requesting call",
+                "confidence_score": 0.060872804
+              },
+              {
+                "intent": "Reporting absence",
+                "confidence_score": 0.02551812
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Sam Patel, the support team in Boston was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8721576929092407
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 12,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.15151916444301605
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.31378850069912995
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:21.977157+00:00"
+}

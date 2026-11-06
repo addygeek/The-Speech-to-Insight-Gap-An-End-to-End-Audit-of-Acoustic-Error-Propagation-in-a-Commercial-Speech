@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_cdab6497",
+    "text_source": "transcript_babble5",
+    "text": "My card ending in 4,421 hectares has charged $250 two times. I attempted to update my account through the website twice, but it did not save the changes."
+  },
+  "request_id": "01a1b291-e3f9-7322-be3d-f4f1761f5325",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-e3f9-7322-be3d-f4f1761f5325",
+      "created": "2026-11-06T20:34:28.163Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to update my account through the website twice, but it did not save the changes.",
+            "start_word": 11,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Card charges",
+                "confidence_score": 0.07167355
+              },
+              {
+                "topic": "Account update",
+                "confidence_score": 0.32678604
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to update my account through the website twice, but it did not save the changes.",
+            "start_word": 11,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Update account",
+                "confidence_score": 0.30976918
+              },
+              {
+                "intent": "Resolve issue",
+                "confidence_score": 0.022282232
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4,421 hectares has charged $250 two times. I attempted to update my account through the website twice, but it did not save the changes.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.7527483701705933
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7527483803885323
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:28.650813+00:00"
+}

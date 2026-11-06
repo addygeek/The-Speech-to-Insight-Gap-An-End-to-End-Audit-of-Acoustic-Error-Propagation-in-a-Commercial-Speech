@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_71e112cd",
+    "text_source": "reference",
+    "text": "Since 2:15 PM, my internet has been out, preventing me from working in Austin. I request not to be transferred again unless the next representative can truly alter the booking."
+  },
+  "request_id": "01a1b252-3641-7800-8bca-63f429782c38",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-3641-7800-8bca-63f429782c38",
+      "created": "2026-11-06T19:24:55.939Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 14
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I request not to be transferred again unless the next representative can truly alter the booking.",
+            "start_word": 14,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet outage",
+                "confidence_score": 0.9123588
+              },
+              {
+                "topic": "Request to be transferred",
+                "confidence_score": 0.29466015
+              },
+              {
+                "topic": "Changing booking",
+                "confidence_score": 0.24876809
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I request not to be transferred again unless the next representative can truly alter the booking.",
+            "start_word": 14,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Request to be transferred",
+                "confidence_score": 0.35882956
+              },
+              {
+                "intent": "Request to be transferred unless a representative changes booking",
+                "confidence_score": 2.7455493e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 2:15 PM, my internet has been out, preventing me from working in Austin. I request not to be transferred again unless the next representative can truly alter the booking.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.8075122237205505
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.8075122317752322
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:56.019285+00:00"
+}

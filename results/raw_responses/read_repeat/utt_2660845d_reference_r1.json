@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_2660845d",
+    "text_source": "reference",
+    "text": "Could you modify my flight to Chicago on April 3? The previous representative I talked to instructed me to call again if the fee was still appearing."
+  },
+  "request_id": "01a1b251-3046-74f1-90d9-d44eff2826a0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-3046-74f1-90d9-d44eff2826a0",
+      "created": "2026-11-06T19:23:48.242Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 30
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 30,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous representative I talked to instructed me to call again if the fee was still appearing.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.83925736
+              },
+              {
+                "topic": "Fee",
+                "confidence_score": 0.023048613
+              },
+              {
+                "topic": "Communication",
+                "confidence_score": 0.08554375
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous representative I talked to instructed me to call again if the fee was still appearing.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.7834729
+              },
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.18717901
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you modify my flight to Chicago on April 3?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.026382671669125557
+          },
+          {
+            "text": "The previous representative I talked to instructed me to call again if the fee was still appearing.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7873108386993408
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5083038330078125
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:48.318195+00:00"
+}

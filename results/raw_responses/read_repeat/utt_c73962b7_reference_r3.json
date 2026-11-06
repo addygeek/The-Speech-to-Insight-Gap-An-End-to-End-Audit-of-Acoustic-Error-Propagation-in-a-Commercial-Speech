@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_c73962b7",
+    "text_source": "reference",
+    "text": "Hi, my name is Taylor Brooks. I do not want to cancel my order for $8.50. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a1b252-1561-7992-92ed-2b380ef68b14",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-1561-7992-92ed-2b380ef68b14",
+      "created": "2026-11-06T19:24:46.555Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.7894914
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.37247244
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 16,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.31637606
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi, my name is Taylor Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.07023666054010391
+          },
+          {
+            "text": "I do not want to cancel my order for $8.50. I already tried the website twice and it would not save the change under my account.",
+            "start_word": 6,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7685448527336121
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5749798799172426
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:47.105665+00:00"
+}

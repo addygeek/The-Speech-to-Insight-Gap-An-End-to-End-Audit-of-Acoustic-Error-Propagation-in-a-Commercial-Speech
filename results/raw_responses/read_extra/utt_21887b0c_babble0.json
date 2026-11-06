@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_21887b0c",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package going today? It should arrive by October. I changed I already tried the website twice, and it's been not funny to change. Going to package. Have"
+  },
+  "request_id": "01a1b293-35b0-7fb1-ac52-ae73c15f3560",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-35b0-7fb1-ac52-ae73c15f3560",
+      "created": "2026-11-06T20:35:54.718Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 18
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Going to package.",
+            "start_word": 26,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.43863302
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.619336
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Going to package.",
+            "start_word": 26,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Report package delivery issue",
+                "confidence_score": 0.0020317358
+              },
+              {
+                "intent": "Change website",
+                "confidence_score": 0.24182738
+              },
+              {
+                "intent": "Relay previous attempts",
+                "confidence_score": 0.0010385147
+              },
+              {
+                "intent": "Report package location",
+                "confidence_score": 0.042276554
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going today? It should arrive by October.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08415774255990982
+          },
+          {
+            "text": "I changed I already tried the website twice, and it's been not funny to change.",
+            "start_word": 11,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7513405680656433
+          },
+          {
+            "text": "Going to package.",
+            "start_word": 26,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.26780375838279724
+          },
+          {
+            "text": "Have",
+            "start_word": 29,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.34685492515563965
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3945808152894716
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:54.776339+00:00"
+}

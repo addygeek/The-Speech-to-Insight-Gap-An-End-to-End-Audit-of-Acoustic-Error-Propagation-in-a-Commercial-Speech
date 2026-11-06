@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_ed6d6e55",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the status of my package heading to Austin? It is scheduled for arrival by June 21. Please avoid transferring me again unless the next representative can modify the booking."
+  },
+  "request_id": "01a1b256-7d8b-7750-832a-600ca37681f8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-7d8b-7750-832a-600ca37681f8",
+      "created": "2026-11-06T19:29:35.394Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 20,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Package status",
+                "confidence_score": 0.9238245
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.0064342055
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 20,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Request status of package",
+                "confidence_score": 0.0038545395
+              },
+              {
+                "intent": "Reschedule package arrival",
+                "confidence_score": 0.00039086925
+              },
+              {
+                "intent": "Avoid moving to another representative",
+                "confidence_score": 0.0045393533
+              },
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.0633093
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package heading to Austin? It is scheduled for arrival by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": -0.031493544578552246
+          },
+          {
+            "text": "Please avoid transferring me again unless the next representative can modify the booking.",
+            "start_word": 20,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.8885853290557861
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.3923742896632144
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:35.982130+00:00"
+}

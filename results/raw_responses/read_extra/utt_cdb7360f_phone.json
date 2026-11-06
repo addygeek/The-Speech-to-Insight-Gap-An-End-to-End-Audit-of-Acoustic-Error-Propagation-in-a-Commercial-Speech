@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "phone",
+    "utterance_id": "utt_cdb7360f",
+    "text_source": "transcript_phone",
+    "text": "Hi. My name is Maria Santos. I do not want to cancel my order for $19.40. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b292-7e7b-7f80-a87b-983672d6d443",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7e7b-7f80-a87b-983672d6d443",
+      "created": "2026-11-06T20:35:07.677Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 41
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 41,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.057067055
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.25467962
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Maria Santos.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.033623356372117996
+          },
+          {
+            "text": "I do not want to cancel my order for $19.40. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.695330023765564
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.517536535495665
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:08.170165+00:00"
+}

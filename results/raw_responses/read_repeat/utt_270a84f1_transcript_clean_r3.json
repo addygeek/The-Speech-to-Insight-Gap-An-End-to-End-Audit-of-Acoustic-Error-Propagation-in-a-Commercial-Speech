@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_270a84f1",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Taylor Brooks on March 12 at 09:30AM. Please do not transfer me again unless the next person can actually change the booking."
+  },
+  "request_id": "01a1b254-866a-76b2-9daf-93e1ccd14dc8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-866a-76b2-9daf-93e1ccd14dc8",
+      "created": "2026-11-06T19:27:27.274Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.47919333
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Request to change booking",
+                "confidence_score": 0.00013323908
+              },
+              {
+                "intent": "Request to not be transferred",
+                "confidence_score": 0.006696921
+              },
+              {
+                "intent": "Request to change booking",
+                "confidence_score": 0.042745437
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Taylor Brooks on March 12 at 09:30AM. Please do not transfer me again unless the next person can actually change the booking.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.6408911943435669
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6408911524592219
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:27.352691+00:00"
+}

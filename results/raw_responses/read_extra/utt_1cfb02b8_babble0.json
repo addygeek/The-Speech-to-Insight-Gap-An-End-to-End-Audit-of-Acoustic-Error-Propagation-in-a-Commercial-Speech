@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_1cfb02b8",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $45.99. Already got it. I can wait on my line when you've checked out, and I do have my account number."
+  },
+  "request_id": "01a1b292-52f9-7823-bd1c-0ae76f41c9c9",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-52f9-7823-bd1c-0ae76f41c9c9",
+      "created": "2026-11-06T20:34:56.673Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Already got it. I can wait on my line when you've checked out, and I do have my account number.",
+            "start_word": 6,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.5533444
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Already got it. I can wait on my line when you've checked out, and I do have my account number.",
+            "start_word": 6,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.7857568
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45.99. Already got it.",
+            "start_word": 0,
+            "end_word": 8,
+            "sentiment": "negative",
+            "sentiment_score": -0.7005785703659058
+          },
+          {
+            "text": "I can wait on my line when you've checked out, and I do have my account number.",
+            "start_word": 9,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.04434024915099144
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.24048162909115064
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:56.736996+00:00"
+}

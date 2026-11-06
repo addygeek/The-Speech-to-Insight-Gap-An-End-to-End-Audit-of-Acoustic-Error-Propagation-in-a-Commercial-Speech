@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_8a1d92c8",
+    "text_source": "reference",
+    "text": "My card ending in 4421 was billed $120.00 two times. I attempted to update my account on the website twice, but it wouldn\u2019t save the changes."
+  },
+  "request_id": "01a1b251-5b5d-7683-9e13-324cac19ae75",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-5b5d-7683-9e13-324cac19ae75",
+      "created": "2026-11-06T19:23:59.517Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I attempted to update my account on the website twice, but it wouldn\u2019t save the changes.",
+            "start_word": 10,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Card billing",
+                "confidence_score": 0.13999118
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.49104887
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I attempted to update my account on the website twice, but it wouldn\u2019t save the changes.",
+            "start_word": 10,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Update account",
+                "confidence_score": 0.25888556
+              },
+              {
+                "intent": "Save changes",
+                "confidence_score": 0.8327969
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 was billed $120.00 two times. I attempted to update my account on the website twice, but it wouldn\u2019t save the changes.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "negative",
+            "sentiment_score": -0.7590076327323914
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7590076222139246
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:59.600572+00:00"
+}

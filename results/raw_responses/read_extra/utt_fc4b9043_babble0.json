@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_fc4b9043",
+    "text_source": "transcript_babble0",
+    "text": "My Internet has been down since 09:30AM, and I cannot work in Boston. I can wait on the line while I check the record, and I do have my account on my record."
+  },
+  "request_id": "01a1b293-8c83-7f22-b7dc-dc6eac357c33",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-8c83-7f22-b7dc-dc6eac357c33",
+      "created": "2026-11-06T20:36:16.713Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I can wait on the line while I check the record, and I do have my account on my record.",
+            "start_word": 13,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Internet technical issues",
+                "confidence_score": 0.0010583954
+              },
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.009259929
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I can wait on the line while I check the record, and I do have my account on my record.",
+            "start_word": 13,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Fix connectivity issue",
+                "confidence_score": 0.008422535
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 09:30AM, and I cannot work in Boston.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7528463006019592
+          },
+          {
+            "text": "I can wait on the line while I check the record, and I do have my account on my record.",
+            "start_word": 13,
+            "end_word": 32,
+            "sentiment": "neutral",
+            "sentiment_score": -0.21113547682762143
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4549054145812989
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:17.416699+00:00"
+}

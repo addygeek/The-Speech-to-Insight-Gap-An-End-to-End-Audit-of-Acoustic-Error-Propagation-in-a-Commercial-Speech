@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_9c79b1bc",
+    "text_source": "transcript_phonebabble",
+    "text": "My Internet has been down since 11AM, and I cannot work from office. Is the second time I have contacted support about the same problem in China."
+  },
+  "request_id": "01a1b293-0688-70e2-89c7-20deda21bfa7",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-0688-70e2-89c7-20deda21bfa7",
+      "created": "2026-11-06T20:35:42.679Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Is the second time I have contacted support about the same problem in China.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.5682108
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.6962898
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Is the second time I have contacted support about the same problem in China.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Address internet downtime",
+                "confidence_score": 0.04190253
+              },
+              {
+                "intent": "Request support on china problem",
+                "confidence_score": 0.0006322251
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 11AM, and I cannot work from office. Is the second time I have contacted support about the same problem in China.",
+            "start_word": 0,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.6949442028999329
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.694944208318537
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:42.732588+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_56897007",
+    "text_source": "transcript_babble0",
+    "text": "I would like to cancel my order for $120. Like to place you on the line while you verify the deadline, and I have my account number as well."
+  },
+  "request_id": "01a1b292-3f79-7be0-ad07-b71147d2ce8d",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-3f79-7be0-ad07-b71147d2ce8d",
+      "created": "2026-11-06T20:34:51.506Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Like to place you on the line while you verify the deadline, and I have my account number as well.",
+            "start_word": 9,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.08926983
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Like to place you on the line while you verify the deadline, and I have my account number as well.",
+            "start_word": 9,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.63847905
+              },
+              {
+                "intent": "Place on line",
+                "confidence_score": 0.9373752
+              },
+              {
+                "intent": "Verify deadline",
+                "confidence_score": 0.86305934
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.7754115
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order for $120. Like to place you on the line while you verify the deadline, and I have my account number as well.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.6973044872283936
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6973044655539773
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:51.572801+00:00"
+}

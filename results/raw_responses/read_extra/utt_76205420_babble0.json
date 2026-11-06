@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_76205420",
+    "text_source": "transcript_babble0",
+    "text": "My Internet has been down since 02:15PM, and I cannot work on CI. I already tried my website twice, and I did not see the change on my account."
+  },
+  "request_id": "01a1b291-e796-7273-9902-c419ddae65a4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-e796-7273-9902-c419ddae65a4",
+      "created": "2026-11-06T20:34:29.193Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 21
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried my website twice, and I did not see the change on my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.38823366
+              },
+              {
+                "topic": "Account issues",
+                "confidence_score": 0.52241474
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried my website twice, and I did not see the change on my account.",
+            "start_word": 13,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Report internet problem",
+                "confidence_score": 0.04139877
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.40093705
+              },
+              {
+                "intent": "Explain website malfunction",
+                "confidence_score": 5.460218e-06
+              },
+              {
+                "intent": "Report website issue",
+                "confidence_score": 0.25661904
+              },
+              {
+                "intent": "Report account issue",
+                "confidence_score": 0.18154727
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work on CI. I already tried my website twice, and I did not see the change on my account.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7441933155059814
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.744193309062236
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:29.246213+00:00"
+}

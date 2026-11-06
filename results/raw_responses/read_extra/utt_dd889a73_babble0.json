@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_dd889a73",
+    "text_source": "transcript_babble0",
+    "text": "Please cancel my order for $45.99. I did yesterday. I already tried the website twice, and I would not see your claim. But we still need deposit it. I need this settled before the end of day because I travel tomorrow."
+  },
+  "request_id": "01a1b293-6f88-7c50-b597-3d7ac2e007b4",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-6f88-7c50-b597-3d7ac2e007b4",
+      "created": "2026-11-06T20:36:09.336Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 49,
+        "output_tokens": 49
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 49,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 49,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of day because I travel tomorrow.",
+            "start_word": 28,
+            "end_word": 40,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.3122342
+              },
+              {
+                "topic": "Website issues",
+                "confidence_score": 0.55693436
+              },
+              {
+                "topic": "Deposit",
+                "confidence_score": 0.15492499
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settled before the end of day because I travel tomorrow.",
+            "start_word": 28,
+            "end_word": 40,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.7282408
+              },
+              {
+                "intent": "Deposit money",
+                "confidence_score": 0.19268647
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Please cancel my order for $45.99. I did yesterday. I already tried the website twice, and I would not see your claim. But we still need deposit it. I need this settled before the end of day because I travel tomorrow.",
+            "start_word": 0,
+            "end_word": 40,
+            "sentiment": "negative",
+            "sentiment_score": -0.6149150729179382
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6149150692686742
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:09.389998+00:00"
+}

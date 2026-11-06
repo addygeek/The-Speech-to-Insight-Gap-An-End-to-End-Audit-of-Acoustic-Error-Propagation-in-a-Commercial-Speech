@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_b167ee5a",
+    "text_source": "reference",
+    "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b254-a392-7f50-b1f0-8a82cadb1001",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-a392-7f50-b1f0-8a82cadb1001",
+      "created": "2026-11-06T19:27:34.917Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 21
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.22991289
+              },
+              {
+                "topic": "Remote work",
+                "confidence_score": 0.3828354
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 1,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Report internet downtime",
+                "confidence_score": 0.45907912
+              }
+            ]
+          },
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 14,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Communicate from mobile phone",
+                "confidence_score": 0.0048140227
+              },
+              {
+                "intent": "Apologize for absence from home office",
+                "confidence_score": 0.0015480064
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 2:15 PM and I cannot work from Seattle. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 0,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7505042552947998
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7505042693194222
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:34.995665+00:00"
+}

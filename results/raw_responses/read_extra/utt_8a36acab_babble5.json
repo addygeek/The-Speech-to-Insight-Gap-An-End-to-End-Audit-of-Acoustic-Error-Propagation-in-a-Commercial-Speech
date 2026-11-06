@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_8a36acab",
+    "text_source": "transcript_babble5",
+    "text": "Hi. My name is Alex Chen. I do not want to cancel my order for $45.99. I am calling from my mobile phone because I am away from my home office right now."
+  },
+  "request_id": "01a1b292-4dd8-74d2-bcd2-cd0f935e4b21",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-4dd8-74d2-bcd2-cd0f935e4b21",
+      "created": "2026-11-06T20:34:55.175Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 13
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.29536673
+              },
+              {
+                "topic": "Mobile phone",
+                "confidence_score": 0.88157535
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 16,
+            "end_word": 32,
+            "intents": [
+              {
+                "intent": "Notify about mobile phone",
+                "confidence_score": 0.0032991907
+              },
+              {
+                "intent": "Apologize for delivery",
+                "confidence_score": 2.1855385e-06
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Alex Chen.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.03700774163007736
+          },
+          {
+            "text": "I do not want to cancel my order for $45.99. I am calling from my mobile phone because I am away from my home office right now.",
+            "start_word": 6,
+            "end_word": 32,
+            "sentiment": "negative",
+            "sentiment_score": -0.6994255185127258
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.548362291776217
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:55.240648+00:00"
+}

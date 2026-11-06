@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_5e847db0",
+    "text_source": "transcript_babble0",
+    "text": "I need to book an appointment to leave. Can't afford to leave on April 3 at I already tried the website advice, and it did not save the change under my account."
+  },
+  "request_id": "01a1b291-a91f-7c30-9dbd-c1c34916c880",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-a91f-7c30-9dbd-c1c34916c880",
+      "created": "2026-11-06T20:34:13.063Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Can't afford to leave on April 3 at I already tried the website advice, and it did not save the change under my account.",
+            "start_word": 8,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.78060853
+              },
+              {
+                "topic": "Website advice",
+                "confidence_score": 0.5724008
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Can't afford to leave on April 3 at I already tried the website advice, and it did not save the change under my account.",
+            "start_word": 8,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.36059368
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment to leave.",
+            "start_word": 0,
+            "end_word": 7,
+            "sentiment": "neutral",
+            "sentiment_score": -0.24314631521701813
+          },
+          {
+            "text": "Can't afford to leave on April 3 at I already tried the website advice, and it did not save the change under my account.",
+            "start_word": 8,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.7822133898735046
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6510889207994616
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:13.116592+00:00"
+}

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_2a348451",
+    "text_source": "reference",
+    "text": "Since 9:30 AM, my internet has been out, preventing me from working in Austin. I'm willing to hold while you verify my account, and I have my account number available."
+  },
+  "request_id": "01a1b255-2bde-72c3-b9fc-d065d446d55e",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b255-2bde-72c3-b9fc-d065d446d55e",
+      "created": "2026-11-06T19:28:09.367Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 19
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my account, and I have my account number available.",
+            "start_word": 14,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.047662646
+              },
+              {
+                "topic": "Work in austin",
+                "confidence_score": 0.08391887
+              },
+              {
+                "topic": "Account verification",
+                "confidence_score": 0.052828554
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.036950946
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.6858684
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm willing to hold while you verify my account, and I have my account number available.",
+            "start_word": 14,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Verify account",
+                "confidence_score": 0.22974977
+              },
+              {
+                "intent": "Provide account number",
+                "confidence_score": 0.5085584
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Since 9:30 AM, my internet has been out, preventing me from working in Austin.",
+            "start_word": 0,
+            "end_word": 13,
+            "sentiment": "negative",
+            "sentiment_score": -0.6164171695709229
+          },
+          {
+            "text": "I'm willing to hold while you verify my account, and I have my account number available.",
+            "start_word": 14,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.0007713563973084092
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.30070136143611026
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:28:09.444862+00:00"
+}

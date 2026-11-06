@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_b3c75e83",
+    "text_source": "reference",
+    "text": "Where is my package going to Austin? It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b254-4383-75f2-b50f-169a5d68f052",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-4383-75f2-b50f-169a5d68f052",
+      "created": "2026-11-06T19:27:09.300Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Package",
+                "confidence_score": 0.15746166
+              },
+              {
+                "topic": "Business day",
+                "confidence_score": 0.45366287
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 7,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Ensure package location and completion before the business day",
+                "confidence_score": 1.6492951e-10
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin? It should arrive by October 5. I need this settled before the end of the business day because I travel tomorrow morning.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1567426472902298
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.1567426496936429
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:09.382454+00:00"
+}

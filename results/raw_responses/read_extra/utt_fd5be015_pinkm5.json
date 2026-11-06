@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_fd5be015",
+    "text_source": "transcript_pinkm5",
+    "text": "Where is my package going to Austin? It should arrive by March 12. This is the second time I have contacted support about the same problem with you."
+  },
+  "request_id": "01a1b293-53e9-79b0-9259-ab9a434cac66",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-53e9-79b0-9259-ab9a434cac66",
+      "created": "2026-11-06T20:36:02.302Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem with you.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9128257
+              },
+              {
+                "topic": "Support for package delivery",
+                "confidence_score": 0.004423984
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem with you.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Check package arrival",
+                "confidence_score": 0.004250864
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Austin?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.016934465616941452
+          },
+          {
+            "text": "It should arrive by March 12. This is the second time I have contacted support about the same problem with you.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.3938562572002411
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2878457346270161
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:02.358439+00:00"
+}

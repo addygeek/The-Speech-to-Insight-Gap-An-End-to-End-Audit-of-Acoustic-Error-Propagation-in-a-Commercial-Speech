@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_8bc95dd0",
+    "text_source": "reference",
+    "text": "What is the status of my package heading to Boston? It's supposed to be delivered by June 21. I must have this resolved by the end of the business day since I leave tomorrow morning."
+  },
+  "request_id": "01a1b254-58f0-7c72-acfc-a5cd31cefef3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b254-58f0-7c72-acfc-a5cd31cefef3",
+      "created": "2026-11-06T19:27:15.000Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 16
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I must have this resolved by the end of the business day since I leave tomorrow morning.",
+            "start_word": 18,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.75459146
+              },
+              {
+                "topic": "Business day resolution",
+                "confidence_score": 0.9324451
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I must have this resolved by the end of the business day since I leave tomorrow morning.",
+            "start_word": 18,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Check package status",
+                "confidence_score": 0.29472426
+              },
+              {
+                "intent": "Report package delivery status",
+                "confidence_score": 0.007626804
+              },
+              {
+                "intent": "Resolve package issue",
+                "confidence_score": 0.3825942
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "What is the status of my package heading to Boston? It's supposed to be delivered by June 21.",
+            "start_word": 0,
+            "end_word": 17,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09141291677951811
+          },
+          {
+            "text": "I must have this resolved by the end of the business day since I leave tomorrow morning.",
+            "start_word": 18,
+            "end_word": 34,
+            "sentiment": "negative",
+            "sentiment_score": -0.4709736406803131
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.26221523284912107
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:27:15.074555+00:00"
+}

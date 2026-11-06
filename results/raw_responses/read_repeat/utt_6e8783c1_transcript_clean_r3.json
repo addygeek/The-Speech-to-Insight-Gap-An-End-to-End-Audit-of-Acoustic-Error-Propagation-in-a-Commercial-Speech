@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_6e8783c1",
+    "text_source": "transcript_clean",
+    "text": "My card ending in 4421 had a double charge of $75. The last representative I talked to told me to reach out again if the charge remains on my account."
+  },
+  "request_id": "01a1b251-ef12-7622-ad22-b25f285d3e2f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b251-ef12-7622-ad22-b25f285d3e2f",
+      "created": "2026-11-06T19:24:36.765Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 22
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told me to reach out again if the charge remains on my account.",
+            "start_word": 11,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Card charge",
+                "confidence_score": 0.15353237
+              },
+              {
+                "topic": "Account status",
+                "confidence_score": 0.59580076
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative I talked to told me to reach out again if the charge remains on my account.",
+            "start_word": 11,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Requesting account status",
+                "confidence_score": 0.00010373332
+              },
+              {
+                "intent": "Discussing double charge",
+                "confidence_score": 0.024918603
+              },
+              {
+                "intent": "Recommending call",
+                "confidence_score": 0.00020122643
+              },
+              {
+                "intent": "Requesting callback",
+                "confidence_score": 0.010345398
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My card ending in 4421 had a double charge of $75. The last representative I talked to told me to reach out again if the charge remains on my account.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7921572327613831
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7921572004045759
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:36.849470+00:00"
+}

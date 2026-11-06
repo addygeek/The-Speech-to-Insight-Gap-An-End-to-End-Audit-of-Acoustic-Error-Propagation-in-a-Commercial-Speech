@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble5",
+    "utterance_id": "utt_e6bca3b4",
+    "text_source": "transcript_babble5",
+    "text": "Thank you, Taylor Brooks. The support team in Seattle was excellent. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b292-7986-7e80-9f80-f2b9265b0ac3",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-7986-7e80-9f80-f2b9265b0ac3",
+      "created": "2026-11-06T20:35:06.392Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 11,
+            "end_word": 25,
+            "topics": [
+              {
+                "topic": "Support team",
+                "confidence_score": 0.51254326
+              },
+              {
+                "topic": "Problem",
+                "confidence_score": 0.21358769
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 11,
+            "end_word": 25,
+            "intents": [
+              {
+                "intent": "Support team",
+                "confidence_score": 0.0027852098
+              },
+              {
+                "intent": "Report problem",
+                "confidence_score": 0.30286604
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you, Taylor Brooks. The support team in Seattle was excellent.",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "positive",
+            "sentiment_score": 0.7902694940567017
+          },
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 11,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05030709132552147
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3971644341945648
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:06.886842+00:00"
+}

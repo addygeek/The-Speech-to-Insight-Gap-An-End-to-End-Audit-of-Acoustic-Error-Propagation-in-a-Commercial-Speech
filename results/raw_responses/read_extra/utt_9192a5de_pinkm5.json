@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_9192a5de",
+    "text_source": "transcript_pinkm5",
+    "text": "Hi. My name is Sam Patel. I do not want to get to my order for $75. The last agent I spoke with asked me to call back if the card is still showing."
+  },
+  "request_id": "01a1b291-eeaa-7b02-830c-430c26058cf8",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-eeaa-7b02-830c-430c26058cf8",
+      "created": "2026-11-06T20:34:30.847Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 8
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the card is still showing.",
+            "start_word": 17,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Ordering issue",
+                "confidence_score": 0.04824696
+              },
+              {
+                "topic": "Agent communication",
+                "confidence_score": 0.06337977
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last agent I spoke with asked me to call back if the card is still showing.",
+            "start_word": 17,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Request call back",
+                "confidence_score": 0.03347402
+              },
+              {
+                "intent": "Report card issue",
+                "confidence_score": 0.34432217
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Sam Patel.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2124519944190979
+          },
+          {
+            "text": "I do not want to get to my order for $75. The last agent I spoke with asked me to call back if the card is still showing.",
+            "start_word": 6,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.7918044924736023
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.6614501953125
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:30.903526+00:00"
+}

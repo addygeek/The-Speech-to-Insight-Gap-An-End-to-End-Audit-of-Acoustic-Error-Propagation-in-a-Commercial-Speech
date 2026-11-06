@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_adde505b",
+    "text_source": "transcript_pinkm5",
+    "text": "Where is my package going to Chicago? It should arrive by April 3. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b291-fb1d-7cd3-9d79-0c2c44fd5119",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-fb1d-7cd3-9d79-0c2c44fd5119",
+      "created": "2026-11-06T20:34:33.943Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.9114993
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.33343142
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by April 3. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Update package arrival",
+                "confidence_score": 0.013969246
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago?",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.034236468374729156
+          },
+          {
+            "text": "It should arrive by April 3. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 7,
+            "end_word": 27,
+            "sentiment": "negative",
+            "sentiment_score": -0.3565352261066437
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.25569088228287234
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:34.008959+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_cd129871",
+    "text_source": "reference",
+    "text": "Thank you Alex Chen, the support team in Chicago was excellent today. I already tried the website twice and it would not save the change under my account."
+  },
+  "request_id": "01a1b250-a31f-7201-bded-0cc7dffd3210",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-a31f-7201-bded-0cc7dffd3210",
+      "created": "2026-11-06T19:23:11.884Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.41713494
+              },
+              {
+                "topic": "Support team",
+                "confidence_score": 0.20280881
+              },
+              {
+                "topic": "Account issues",
+                "confidence_score": 0.072931446
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Improve website apologies",
+                "confidence_score": 3.1566697e-07
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Thank you Alex Chen, the support team in Chicago was excellent today.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "positive",
+            "sentiment_score": 0.8601555824279785
+          },
+          {
+            "text": "I already tried the website twice and it would not save the change under my account.",
+            "start_word": 12,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.2932370603084564
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.22764991944836033
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:11.958341+00:00"
+}

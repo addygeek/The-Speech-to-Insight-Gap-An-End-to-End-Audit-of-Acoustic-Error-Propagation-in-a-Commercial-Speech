@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_f16a446f",
+    "text_source": "transcript_babble0",
+    "text": "I would like to schedule an appointment with doctor Alex Chen on October 5 at 09:30AM. I'm willing to hold while you verify the record. I can help my company. Please bear with me."
+  },
+  "request_id": "01a1b293-b3ee-7780-99d4-55f14dffa55b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-b3ee-7780-99d4-55f14dffa55b",
+      "created": "2026-11-06T20:36:26.837Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please bear with me.",
+            "start_word": 30,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.84518343
+              },
+              {
+                "topic": "Record verification",
+                "confidence_score": 0.4479696
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please bear with me.",
+            "start_word": 30,
+            "end_word": 33,
+            "intents": [
+              {
+                "intent": "Schedule appointment with doctor alex chen",
+                "confidence_score": 0.1860088
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with doctor Alex Chen on October 5 at 09:30AM. I'm willing to hold while you verify the record. I can help my company.",
+            "start_word": 0,
+            "end_word": 29,
+            "sentiment": "positive",
+            "sentiment_score": 0.5244724154472351
+          },
+          {
+            "text": "Please bear with me.",
+            "start_word": 30,
+            "end_word": 33,
+            "sentiment": "neutral",
+            "sentiment_score": 0.22304530441761017
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.4894227316213209
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:26.890930+00:00"
+}

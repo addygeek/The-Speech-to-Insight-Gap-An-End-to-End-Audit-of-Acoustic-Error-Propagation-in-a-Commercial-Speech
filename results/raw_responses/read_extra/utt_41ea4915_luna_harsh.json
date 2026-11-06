@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_41ea4915",
+    "text_source": "transcript_luna_harsh",
+    "text": "I want to schedule an appointment with doctor Sam Patel on October 5 at 11AM. Please avoid transferring me again unless the next representative can truly modify the booking."
+  },
+  "request_id": "01a1b29e-06b9-7a12-bcdc-a9a226b0b563",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29e-06b9-7a12-bcdc-a9a226b0b563",
+      "created": "2026-11-06T20:47:43.564Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Doctor sam patel",
+                "confidence_score": 8.018061e-05
+              },
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.6021749
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Update appointment with doctor sam patel",
+                "confidence_score": 1.6648493e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Sam Patel on October 5 at 11AM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14095471799373627
+          },
+          {
+            "text": "Please avoid transferring me again unless the next representative can truly modify the booking.",
+            "start_word": 15,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.9215074181556702
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5200803484235491
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:43.618713+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_a74d12d8",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is our package for? It should arrive by March 12. I already tried the website twice, and you do not see it."
+  },
+  "request_id": "01a1b291-ecf1-7a22-8b10-322bbb52455c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-ecf1-7a22-8b10-322bbb52455c",
+      "created": "2026-11-06T20:34:30.324Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 26
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 26,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and you do not see it.",
+            "start_word": 5,
+            "end_word": 22,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.3831341
+              },
+              {
+                "topic": "Website issue",
+                "confidence_score": 0.29376346
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and you do not see it.",
+            "start_word": 5,
+            "end_word": 22,
+            "intents": [
+              {
+                "intent": "Order package",
+                "confidence_score": 0.047658704
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is our package for?",
+            "start_word": 0,
+            "end_word": 4,
+            "sentiment": "neutral",
+            "sentiment_score": -0.08079743385314941
+          },
+          {
+            "text": "It should arrive by March 12. I already tried the website twice, and you do not see it.",
+            "start_word": 5,
+            "end_word": 22,
+            "sentiment": "negative",
+            "sentiment_score": -0.5003348588943481
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4035185300386869
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:30.376165+00:00"
+}

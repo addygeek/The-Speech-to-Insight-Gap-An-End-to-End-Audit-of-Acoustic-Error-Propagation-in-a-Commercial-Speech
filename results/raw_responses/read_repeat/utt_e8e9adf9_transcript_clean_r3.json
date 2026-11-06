@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_e8e9adf9",
+    "text_source": "transcript_clean",
+    "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 09:30AM. Please send the updated confirmation to the same email address you have on file."
+  },
+  "request_id": "01a1b252-feac-7c41-88aa-b478baca75dd",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-feac-7c41-88aa-b478baca75dd",
+      "created": "2026-11-06T19:25:46.316Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 15,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.67558545
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.8355849
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 15,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.5944641
+              },
+              {
+                "intent": "Send confirmation",
+                "confidence_score": 0.90517753
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor Jordan Lee on April 3 at 09:30AM. Please send the updated confirmation to the same email address you have on file.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09668487310409546
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.09668486959793988
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:25:46.401057+00:00"
+}

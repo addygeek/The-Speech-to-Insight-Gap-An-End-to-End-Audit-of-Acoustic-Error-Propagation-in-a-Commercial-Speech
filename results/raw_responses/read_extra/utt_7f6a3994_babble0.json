@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_7f6a3994",
+    "text_source": "transcript_babble0",
+    "text": "My Internet has been down since 02:15PM, and I cannot work from Chicago. I can wait on the line while you check the record, and I do have a charter"
+  },
+  "request_id": "01a1b293-2ffc-75c1-b10e-b98f0e180860",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-2ffc-75c1-b10e-b98f0e180860",
+      "created": "2026-11-06T20:35:53.240Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 37
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 9
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 37,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Chicago.",
+            "start_word": 1,
+            "end_word": 13,
+            "topics": [
+              {
+                "topic": "Internet downtime",
+                "confidence_score": 0.28482032
+              },
+              {
+                "topic": "Chicago",
+                "confidence_score": 0.11399955
+              },
+              {
+                "topic": "Charter",
+                "confidence_score": 0.56759185
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Chicago.",
+            "start_word": 1,
+            "end_word": 13,
+            "intents": [
+              {
+                "intent": "Report internet issue",
+                "confidence_score": 0.017751714
+              },
+              {
+                "intent": "Cancel work from chicago",
+                "confidence_score": 0.031779345
+              },
+              {
+                "intent": "Obtain charter",
+                "confidence_score": 0.007141356
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My Internet has been down since 02:15PM, and I cannot work from Chicago.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.7703120112419128
+          },
+          {
+            "text": "I can wait on the line while you check the record, and I do have a charter",
+            "start_word": 13,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": -0.18513426184654236
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.46981533153637034
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:53.304356+00:00"
+}

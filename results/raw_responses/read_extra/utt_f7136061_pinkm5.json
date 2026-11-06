@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "pinkm5",
+    "utterance_id": "utt_f7136061",
+    "text_source": "transcript_pinkm5",
+    "text": "Could you please modify my flight to Denver for October 5? I'm happy to hold on the line as you look at my record, and I have my account number available."
+  },
+  "request_id": "01a1b292-9c14-7243-ab30-a08870b84e5a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-9c14-7243-ab30-a08870b84e5a",
+      "created": "2026-11-06T20:35:15.153Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm happy to hold on the line as you look at my record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Flight modification",
+                "confidence_score": 0.6565083
+              },
+              {
+                "topic": "Account number",
+                "confidence_score": 0.66918385
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm happy to hold on the line as you look at my record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Modify flight",
+                "confidence_score": 0.37425247
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you please modify my flight to Denver for October 5?",
+            "start_word": 0,
+            "end_word": 10,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1037112921476364
+          },
+          {
+            "text": "I'm happy to hold on the line as you look at my record, and I have my account number available.",
+            "start_word": 11,
+            "end_word": 30,
+            "sentiment": "positive",
+            "sentiment_score": 0.7174289226531982
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.5128563774956597
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:15.214235+00:00"
+}

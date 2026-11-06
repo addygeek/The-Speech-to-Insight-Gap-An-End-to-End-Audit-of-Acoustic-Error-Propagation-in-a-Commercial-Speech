@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_1790f499",
+    "text_source": "transcript_phonebabble",
+    "text": "I want to schedule an appointment with doctor Alice Chen for June 21 at 02:15PM. The previous agent I talked to told me to call back if the charge remains."
+  },
+  "request_id": "01a1b293-34ac-7ed1-82fc-c81690ec1097",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-34ac-7ed1-82fc-c81690ec1097",
+      "created": "2026-11-06T20:35:54.414Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 36
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 5
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 36,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the charge remains.",
+            "start_word": 15,
+            "end_word": 29,
+            "topics": [
+              {
+                "topic": "Doctor appointment scheduling",
+                "confidence_score": 0.0072673704
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The previous agent I talked to told me to call back if the charge remains.",
+            "start_word": 15,
+            "end_word": 29,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.4517565
+              },
+              {
+                "intent": "Call back",
+                "confidence_score": 0.79140264
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I want to schedule an appointment with doctor Alice Chen for June 21 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 14,
+            "sentiment": "neutral",
+            "sentiment_score": 0.2702486217021942
+          },
+          {
+            "text": "The previous agent I talked to told me to call back if the charge remains.",
+            "start_word": 15,
+            "end_word": 29,
+            "sentiment": "negative",
+            "sentiment_score": -0.7924478054046631
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.23158025741577148
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:54.470407+00:00"
+}

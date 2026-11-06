@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_4713fe28",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Jordan Lee. Hi. My name do not want to cancel my order for $9 and 44. It should allow you I am calling from my mobile phone. I'm currently trying to wait for my current office right now."
+  },
+  "request_id": "01a1b293-7b14-7b83-870c-0fd4e17b9869",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-7b14-7b83-870c-0fd4e17b9869",
+      "created": "2026-11-06T20:36:12.316Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 50
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 50,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm currently trying to wait for my current office right now.",
+            "start_word": 31,
+            "end_word": 41,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.21747905
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "My name do not want to cancel my order for $9 and 44. It should allow you I am calling from my mobile phone. I'm currently trying to wait for my current office right now.",
+            "start_word": 7,
+            "end_word": 41,
+            "intents": [
+              {
+                "intent": "Request to not cancel order",
+                "confidence_score": 0.023827482
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Jordan Lee. Hi.",
+            "start_word": 0,
+            "end_word": 6,
+            "sentiment": "neutral",
+            "sentiment_score": 0.06098015978932381
+          },
+          {
+            "text": "My name do not want to cancel my order for $9 and 44.",
+            "start_word": 7,
+            "end_word": 19,
+            "sentiment": "negative",
+            "sentiment_score": -0.39566004276275635
+          },
+          {
+            "text": "It should allow you I am calling from my mobile phone.",
+            "start_word": 20,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": 0.17249207198619845
+          },
+          {
+            "text": "I'm currently trying to wait for my current office right now.",
+            "start_word": 31,
+            "end_word": 41,
+            "sentiment": "negative",
+            "sentiment_score": -0.4917450249195099
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.19487926483154297
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:12.378457+00:00"
+}

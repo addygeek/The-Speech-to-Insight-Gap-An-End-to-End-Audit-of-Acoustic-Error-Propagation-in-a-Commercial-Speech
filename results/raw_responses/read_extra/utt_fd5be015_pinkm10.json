@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_fd5be015",
+    "text_source": "transcript_pinkm10",
+    "text": "Where is my traffic going to the hospital? It should arrive by March 12. This is the second time I have contacted the store about 15,000."
+  },
+  "request_id": "01a1b293-53f2-7353-adb7-9fc6d727b0e1",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-53f2-7353-adb7-9fc6d727b0e1",
+      "created": "2026-11-06T20:36:02.263Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Where is my traffic going to the hospital?",
+            "start_word": 1,
+            "end_word": 8,
+            "topics": [
+              {
+                "topic": "Hospital traffic",
+                "confidence_score": 0.85687137
+              },
+              {
+                "topic": "Hospital arrival",
+                "confidence_score": 0.06170306
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Where is my traffic going to the hospital?",
+            "start_word": 1,
+            "end_word": 8,
+            "intents": [
+              {
+                "intent": "Identify traffic destination",
+                "confidence_score": 0.00944226
+              },
+              {
+                "intent": "Identify store contact",
+                "confidence_score": 0.005852281
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my traffic going to the hospital? It should arrive by March 12. This is the second time I have contacted the store about 15,000.",
+            "start_word": 0,
+            "end_word": 25,
+            "sentiment": "neutral",
+            "sentiment_score": -0.14888420701026917
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.1488842142039332
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:02.326725+00:00"
+}

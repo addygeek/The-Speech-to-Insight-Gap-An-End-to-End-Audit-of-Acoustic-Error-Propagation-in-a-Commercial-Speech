@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_8680947f",
+    "text_source": "transcript_clean",
+    "text": "Could you alter my flight to Seattle for October 5? I require this resolved by the close of business today since I have to travel tomorrow morning."
+  },
+  "request_id": "01a1b250-841b-7343-94db-5ca14df39c08",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-841b-7343-94db-5ca14df39c08",
+      "created": "2026-11-06T19:23:03.780Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 29
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 29,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I require this resolved by the close of business today since I have to travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Flight change",
+                "confidence_score": 0.12815356
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I require this resolved by the close of business today since I have to travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Change flight to san diego",
+                "confidence_score": 0.059029967
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Could you alter my flight to Seattle for October 5?",
+            "start_word": 0,
+            "end_word": 9,
+            "sentiment": "neutral",
+            "sentiment_score": -0.06707952171564102
+          },
+          {
+            "text": "I require this resolved by the close of business today since I have to travel tomorrow morning.",
+            "start_word": 10,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.5459202527999878
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.36429102667446794
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:23:03.859370+00:00"
+}

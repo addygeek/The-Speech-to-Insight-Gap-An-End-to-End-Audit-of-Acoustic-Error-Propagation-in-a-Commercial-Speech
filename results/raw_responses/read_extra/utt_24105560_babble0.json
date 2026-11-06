@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_24105560",
+    "text_source": "transcript_babble0",
+    "text": "I saw a duplicate charge of $19. Can move on the line when you verify the record."
+  },
+  "request_id": "01a1b291-91a0-7aa3-9221-5c422c2ecace",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-91a0-7aa3-9221-5c422c2ecace",
+      "created": "2026-11-06T20:34:07.216Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 20,
+        "output_tokens": 20
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 20,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 20,
+        "output_tokens": 8
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I saw a duplicate charge of $19. Can move on the line when you verify the record.",
+            "start_word": 1,
+            "end_word": 17,
+            "topics": [
+              {
+                "topic": "Duplicate charge",
+                "confidence_score": 0.21743387
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I saw a duplicate charge of $19. Can move on the line when you verify the record.",
+            "start_word": 1,
+            "end_word": 17,
+            "intents": [
+              {
+                "intent": "Verify record",
+                "confidence_score": 0.05067787
+              },
+              {
+                "intent": "Move on",
+                "confidence_score": 0.23518983
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I saw a duplicate charge of $19. Can move on the line when you verify the record.",
+            "start_word": 0,
+            "end_word": 16,
+            "sentiment": "negative",
+            "sentiment_score": -0.5881531834602356
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5881531715393067
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:07.267819+00:00"
+}

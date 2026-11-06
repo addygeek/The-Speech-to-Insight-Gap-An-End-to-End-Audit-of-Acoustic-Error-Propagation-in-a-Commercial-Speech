@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "phonebabble",
+    "utterance_id": "utt_526e8635",
+    "text_source": "transcript_phonebabble",
+    "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21. Previous agent advised me to call back if you're charging a notice."
+  },
+  "request_id": "01a1b292-2c95-7b21-ad89-876434af4cfb",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2c95-7b21-ad89-876434af4cfb",
+      "created": "2026-11-06T20:34:46.789Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 11
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Previous agent advised me to call back if you're charging a notice.",
+            "start_word": 20,
+            "end_word": 31,
+            "topics": [
+              {
+                "topic": "Package arrival",
+                "confidence_score": 0.2239852
+              },
+              {
+                "topic": "Notification",
+                "confidence_score": 0.028954094
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Previous agent advised me to call back if you're charging a notice.",
+            "start_word": 20,
+            "end_word": 31,
+            "intents": [
+              {
+                "intent": "Confirm package location",
+                "confidence_score": 0.030889506
+              },
+              {
+                "intent": "Call back regarding notice",
+                "confidence_score": 0.009704537
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the location of my package heading to Austin? It is expected to arrive by June 21.",
+            "start_word": 0,
+            "end_word": 19,
+            "sentiment": "neutral",
+            "sentiment_score": 0.0010903688380494714
+          },
+          {
+            "text": "Previous agent advised me to call back if you're charging a notice.",
+            "start_word": 20,
+            "end_word": 31,
+            "sentiment": "negative",
+            "sentiment_score": -0.8652034401893616
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.376524900778746
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:46.889283+00:00"
+}

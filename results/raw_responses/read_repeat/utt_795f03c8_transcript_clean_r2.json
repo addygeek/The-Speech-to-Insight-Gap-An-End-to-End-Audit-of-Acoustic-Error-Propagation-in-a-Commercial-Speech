@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 2,
+    "utterance_id": "utt_795f03c8",
+    "text_source": "transcript_clean",
+    "text": "Can you tell me the status of my package headed to Chicago? It's expected by March 12. I've reached out to support regarding this issue twice this week."
+  },
+  "request_id": "01a1b250-538f-79b3-9d85-c2d412ccbc5a",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b250-538f-79b3-9d85-c2d412ccbc5a",
+      "created": "2026-11-06T19:22:51.443Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 34
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 34,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's expected by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 12,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.6684859
+              },
+              {
+                "topic": "Support",
+                "confidence_score": 0.71968037
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's expected by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 12,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Update package status",
+                "confidence_score": 0.2046033
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Can you tell me the status of my package headed to Chicago? It's expected by March 12. I've reached out to support regarding this issue twice this week.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.046070195734500885
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.046070197049309224
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:22:51.521708+00:00"
+}

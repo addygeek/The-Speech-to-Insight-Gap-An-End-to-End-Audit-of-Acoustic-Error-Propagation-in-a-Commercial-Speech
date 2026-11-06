@@ -1,0 +1,114 @@
+{
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_pairs": 1827,
+  "groups": {
+    "noise_floor_reference": {
+      "items": 600,
+      "intent": {
+        "string_disagreement": 0.6216666666666667,
+        "semantic_disagreement": {
+          "mean": 0.36,
+          "lo": 0.3233333333333333,
+          "hi": 0.39666666666666667
+        },
+        "string_disagree_pairs": 373,
+        "unjudged_pairs": 0,
+        "paraphrase_fraction": {
+          "mean": 0.42091152815013405,
+          "lo": 0.3699731903485255,
+          "hi": 0.4692359249329755
+        },
+        "mean_lexical_overlap": 0.20835673858462062
+      },
+      "topic": {
+        "string_disagreement": 0.8033333333333333,
+        "semantic_disagreement": {
+          "mean": 0.31166666666666665,
+          "lo": 0.2733333333333333,
+          "hi": 0.3516666666666667
+        },
+        "string_disagree_pairs": 482,
+        "unjudged_pairs": 0,
+        "paraphrase_fraction": {
+          "mean": 0.6120331950207469,
+          "lo": 0.5684647302904564,
+          "hi": 0.6535269709543569
+        },
+        "mean_lexical_overlap": 0.45558287378826795
+      }
+    },
+    "reference_vs_clean": {
+      "items": 600,
+      "intent": {
+        "string_disagreement": 0.605,
+        "semantic_disagreement": {
+          "mean": 0.37166666666666665,
+          "lo": 0.3333333333333333,
+          "hi": 0.41
+        },
+        "string_disagree_pairs": 363,
+        "unjudged_pairs": 0,
+        "paraphrase_fraction": {
+          "mean": 0.3856749311294766,
+          "lo": 0.3333333333333333,
+          "hi": 0.4380165289256198
+        },
+        "mean_lexical_overlap": 0.21224364860728495
+      },
+      "topic": {
+        "string_disagreement": 0.795,
+        "semantic_disagreement": {
+          "mean": 0.33666666666666667,
+          "lo": 0.29833333333333334,
+          "hi": 0.375
+        },
+        "string_disagree_pairs": 477,
+        "unjudged_pairs": 0,
+        "paraphrase_fraction": {
+          "mean": 0.5765199161425576,
+          "lo": 0.5345911949685535,
+          "hi": 0.6184486373165619
+        },
+        "mean_lexical_overlap": 0.445907109429122
+      }
+    },
+    "clean_vs_harsh_same_transcript": {
+      "items": 495,
+      "intent": {
+        "string_disagreement": 0.604040404040404,
+        "semantic_disagreement": {
+          "mean": 0.3717171717171717,
+          "lo": 0.3292929292929293,
+          "hi": 0.4161616161616162
+        },
+        "string_disagree_pairs": 299,
+        "unjudged_pairs": 0,
+        "paraphrase_fraction": {
+          "mean": 0.38461538461538464,
+          "lo": 0.3311036789297659,
+          "hi": 0.4414715719063545
+        },
+        "mean_lexical_overlap": 0.21236263736263736
+      },
+      "topic": {
+        "string_disagreement": 0.795959595959596,
+        "semantic_disagreement": {
+          "mean": 0.3292929292929293,
+          "lo": 0.28888888888888886,
+          "hi": 0.3717171717171717
+        },
+        "string_disagree_pairs": 394,
+        "unjudged_pairs": 0,
+        "paraphrase_fraction": {
+          "mean": 0.5862944162436549,
+          "lo": 0.5380710659898477,
+          "hi": 0.6345177664974619
+        },
+        "mean_lexical_overlap": 0.4613044879542341
+      }
+    }
+  },
+  "human_agreement": {
+    "labeled": 0
+  }
+}

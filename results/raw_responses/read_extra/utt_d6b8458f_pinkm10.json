@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "condition": "pinkm10",
+    "utterance_id": "utt_d6b8458f",
+    "text_source": "transcript_pinkm10",
+    "text": "I need to book an appointment with doctor on October 5 at 09:30AM. I already tried the website twice, and it was not going to change overnight."
+  },
+  "request_id": "01a1b293-837f-7e31-881a-004f300f7c32",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-837f-7e31-881a-004f300f7c32",
+      "created": "2026-11-06T20:36:14.455Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 33
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 6
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 33,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it was not going to change overnight.",
+            "start_word": 13,
+            "end_word": 26,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.49769273
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already tried the website twice, and it was not going to change overnight.",
+            "start_word": 13,
+            "end_word": 26,
+            "intents": [
+              {
+                "intent": "Book appointment",
+                "confidence_score": 0.55183834
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor on October 5 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "neutral",
+            "sentiment_score": -0.09911725670099258
+          },
+          {
+            "text": "I already tried the website twice, and it was not going to change overnight.",
+            "start_word": 13,
+            "end_word": 26,
+            "sentiment": "negative",
+            "sentiment_score": -0.7531413435935974
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.41621985579981946
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:14.507987+00:00"
+}

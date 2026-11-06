@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "orion_clean",
+    "utterance_id": "utt_08ef66d1",
+    "text_source": "transcript_orion_clean",
+    "text": "I would like to schedule an appointment with Doctor. Taylor Brooks on April 3 at 09:30AM. It's important that this is resolved before the end of the business day as I am traveling tomorrow morning."
+  },
+  "request_id": "01a1b29d-8415-74b0-9276-1ea93626f5dc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-8415-74b0-9276-1ea93626f5dc",
+      "created": "2026-11-06T20:47:10.054Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 44
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 44,
+        "output_tokens": 12
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "It's important that this is resolved before the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 34,
+            "topics": [
+              {
+                "topic": "Appointment scheduling",
+                "confidence_score": 0.6076767
+              },
+              {
+                "topic": "Business day resolution",
+                "confidence_score": 0.70802766
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "It's important that this is resolved before the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Schedule appointment",
+                "confidence_score": 0.15739197
+              },
+              {
+                "intent": "Resolve issue before business day",
+                "confidence_score": 0.51773274
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to schedule an appointment with Doctor. Taylor Brooks on April 3 at 09:30AM.",
+            "start_word": 0,
+            "end_word": 15,
+            "sentiment": "positive",
+            "sentiment_score": 0.6017525792121887
+          },
+          {
+            "text": "It's important that this is resolved before the end of the business day as I am traveling tomorrow morning.",
+            "start_word": 16,
+            "end_word": 34,
+            "sentiment": "neutral",
+            "sentiment_score": 0.14157873392105105
+          }
+        ],
+        "average": {
+          "sentiment": "positive",
+          "sentiment_score": 0.3716656511480158
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:10.107352+00:00"
+}

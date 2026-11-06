@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_1bc6b904",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package going to Chicago? It should arrive by October. I was out by Please do not transfer me again unless my next person can actually change their booking."
+  },
+  "request_id": "01a1b293-d324-7931-820a-b1501f0891cc",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b293-d324-7931-820a-b1501f0891cc",
+      "created": "2026-11-06T20:36:34.797Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 35
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 35,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I was out by Please do not transfer me again unless my next person can actually change their booking.",
+            "start_word": 12,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.6099758
+              },
+              {
+                "topic": "Booking change",
+                "confidence_score": 0.13895859
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I was out by Please do not transfer me again unless my next person can actually change their booking.",
+            "start_word": 12,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Change booking",
+                "confidence_score": 0.546684
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago? It should arrive by October.",
+            "start_word": 0,
+            "end_word": 11,
+            "sentiment": "neutral",
+            "sentiment_score": -0.017949603497982025
+          },
+          {
+            "text": "I was out by Please do not transfer me again unless my next person can actually change their booking.",
+            "start_word": 12,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7841092348098755
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.4776453290666853
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:36:34.850391+00:00"
+}

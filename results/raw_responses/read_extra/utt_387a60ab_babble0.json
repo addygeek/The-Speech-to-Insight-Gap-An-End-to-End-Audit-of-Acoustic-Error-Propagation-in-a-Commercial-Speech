@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_387a60ab",
+    "text_source": "transcript_babble0",
+    "text": "I need to book an appointment with doctor and three of the doctors on October 5 at 02:15PM. So I already tried the blood by my wife, and it did not save the change."
+  },
+  "request_id": "01a1b292-c989-7b43-8006-7dc0f3ae9dee",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-c989-7b43-8006-7dc0f3ae9dee",
+      "created": "2026-11-06T20:35:27.009Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 40
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 40,
+        "output_tokens": 17
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "So I already tried the blood by my wife, and it did not save the change.",
+            "start_word": 18,
+            "end_word": 33,
+            "topics": [
+              {
+                "topic": "Appointment booking",
+                "confidence_score": 0.71886206
+              },
+              {
+                "topic": "Blood by wife",
+                "confidence_score": 0.014684965
+              },
+              {
+                "topic": "Saving change",
+                "confidence_score": 0.1349966
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor and three of the doctors on October 5 at 02:15PM. So I already tried the blood by my wife, and it did not save the change.",
+            "start_word": 1,
+            "end_word": 34,
+            "intents": [
+              {
+                "intent": "Book appointment with doctor and three doctors on october 5th",
+                "confidence_score": 8.228996e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I need to book an appointment with doctor and three of the doctors on October 5 at 02:15PM.",
+            "start_word": 0,
+            "end_word": 17,
+            "sentiment": "neutral",
+            "sentiment_score": -0.057130180299282074
+          },
+          {
+            "text": "So I already tried the blood by my wife, and it did not save the change.",
+            "start_word": 18,
+            "end_word": 33,
+            "sentiment": "negative",
+            "sentiment_score": -0.8186006546020508
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.39979190826416017
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:27.064366+00:00"
+}

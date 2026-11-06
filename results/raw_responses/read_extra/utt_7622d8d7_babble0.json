@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_7622d8d7",
+    "text_source": "transcript_babble0",
+    "text": "I would like to cancel my order of $8.50 that I used yesterday. Kindly send the updated confirmation to the email address. Need this resolved by the end of the business day. I already talked to let you know."
+  },
+  "request_id": "01a1b292-6087-7070-a2bc-30894f62c64c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-6087-7070-a2bc-30894f62c64c",
+      "created": "2026-11-06T20:35:00.099Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 46
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 13
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 46,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I already talked to let you know.",
+            "start_word": 32,
+            "end_word": 38,
+            "topics": [
+              {
+                "topic": "Cancellation",
+                "confidence_score": 0.25538594
+              },
+              {
+                "topic": "Confirmation",
+                "confidence_score": 0.31476694
+              },
+              {
+                "topic": "Resolving",
+                "confidence_score": 0.03653558
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I already talked to let you know.",
+            "start_word": 32,
+            "end_word": 38,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.45659304
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "I would like to cancel my order of $8.50 that I used yesterday.",
+            "start_word": 0,
+            "end_word": 12,
+            "sentiment": "negative",
+            "sentiment_score": -0.676581621170044
+          },
+          {
+            "text": "Kindly send the updated confirmation to the email address. Need this resolved by the end of the business day. I already talked to let you know.",
+            "start_word": 13,
+            "end_word": 38,
+            "sentiment": "neutral",
+            "sentiment_score": -0.13016334176063538
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.32022188020789105
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:00.157929+00:00"
+}

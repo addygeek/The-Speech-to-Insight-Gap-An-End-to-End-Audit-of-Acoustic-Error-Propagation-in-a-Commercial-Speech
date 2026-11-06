@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "repeat": 3,
+    "utterance_id": "utt_9c79b1bc",
+    "text_source": "reference",
+    "text": "My internet has been down since 11:00 AM and I cannot work from Austin. This is the second time I have contacted support about the same problem this week."
+  },
+  "request_id": "01a1b252-2279-7ce1-ae1e-35519f501ce0",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b252-2279-7ce1-ae1e-35519f501ce0",
+      "created": "2026-11-06T19:24:49.983Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 32
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 32,
+        "output_tokens": 6
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 14,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Internet connectivity",
+                "confidence_score": 0.4649395
+              },
+              {
+                "topic": "Support communication",
+                "confidence_score": 0.02909242
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "This is the second time I have contacted support about the same problem this week.",
+            "start_word": 14,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Communicate technical difficulties",
+                "confidence_score": 0.001720509
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "My internet has been down since 11:00 AM and I cannot work from Austin. This is the second time I have contacted support about the same problem this week.",
+            "start_word": 0,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7463957667350769
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.7463957667350769
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:24:50.855763+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "condition": "luna_harsh",
+    "utterance_id": "utt_330aff80",
+    "text_source": "transcript_luna_harsh",
+    "text": "Hello. I'm Sam Patel. I do not wish to cancel my order of $250. Please refrain from transferring me again unless the next representative can truly notify the booking."
+  },
+  "request_id": "01a1b29d-e55c-7c21-992b-31c3605ed89c",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b29d-e55c-7c21-992b-31c3605ed89c",
+      "created": "2026-11-06T20:47:34.989Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 38
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 11
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 38,
+        "output_tokens": 7
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can truly notify the booking.",
+            "start_word": 14,
+            "end_word": 28,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.77328426
+              },
+              {
+                "topic": "Transferring",
+                "confidence_score": 0.2656686
+              },
+              {
+                "topic": "Removing",
+                "confidence_score": 0.0033216132
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Please refrain from transferring me again unless the next representative can truly notify the booking.",
+            "start_word": 14,
+            "end_word": 28,
+            "intents": [
+              {
+                "intent": "Restrict from transferring",
+                "confidence_score": 6.564876e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Sam Patel.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.034477222710847855
+          },
+          {
+            "text": "I do not wish to cancel my order of $250. Please refrain from transferring me again unless the next representative can truly notify the booking.",
+            "start_word": 4,
+            "end_word": 28,
+            "sentiment": "negative",
+            "sentiment_score": -0.7319113612174988
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5503982744718853
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:47:35.048603+00:00"
+}

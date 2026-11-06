@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_f5d1ef05",
+    "text_source": "transcript_babble0",
+    "text": "Hello. I'm Kayla Brooke. Want to take my order up to $250. I'm reaching out for my little girl. Here. I will wait for ten minutes to go, and I"
+  },
+  "request_id": "01a1b292-ce32-7e40-b3fa-76eccd5ef2be",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-ce32-7e40-b3fa-76eccd5ef2be",
+      "created": "2026-11-06T20:35:28.122Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 4
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 4
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I'm reaching out for my little girl. Here.",
+            "start_word": 12,
+            "end_word": 19,
+            "topics": [
+              {
+                "topic": "Ordering",
+                "confidence_score": 0.38096017
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I'm reaching out for my little girl.",
+            "start_word": 12,
+            "end_word": 18,
+            "intents": [
+              {
+                "intent": "Place order",
+                "confidence_score": 0.3645477
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello. I'm Kayla Brooke.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.1784105747938156
+          },
+          {
+            "text": "Want to take my order up to $250. I'm reaching out for my little girl.",
+            "start_word": 4,
+            "end_word": 18,
+            "sentiment": "positive",
+            "sentiment_score": 0.5961591005325317
+          },
+          {
+            "text": "Here. I will wait for ten minutes to go, and I",
+            "start_word": 19,
+            "end_word": 29,
+            "sentiment": "neutral",
+            "sentiment_score": 0.08138866722583771
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": 0.33140861156374907
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:35:28.174863+00:00"
+}

@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_547429e0",
+    "text_source": "transcript_babble0",
+    "text": "Hi. My name is Kayla Brooks. I do not want to cancel my order for $8.70. I need this settlement once I need my business day because I travel tomorrow morning."
+  },
+  "request_id": "01a1b292-2edc-7582-bc39-a8d5a45cf13f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b292-2edc-7582-bc39-a8d5a45cf13f",
+      "created": "2026-11-06T20:34:47.246Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 39
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 10
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 39,
+        "output_tokens": 10
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "I need this settlement once I need my business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.92674303
+              },
+              {
+                "topic": "Settlement",
+                "confidence_score": 0.28918
+              },
+              {
+                "topic": "Business day travel",
+                "confidence_score": 0.9527938
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "I need this settlement once I need my business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Request a settlement",
+                "confidence_score": 0.0027975405
+              },
+              {
+                "intent": "Travel tomorrow morning",
+                "confidence_score": 0.37748188
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hi. My name is Kayla Brooks.",
+            "start_word": 0,
+            "end_word": 5,
+            "sentiment": "neutral",
+            "sentiment_score": 0.09574861079454422
+          },
+          {
+            "text": "I do not want to cancel my order for $8.70.",
+            "start_word": 6,
+            "end_word": 15,
+            "sentiment": "negative",
+            "sentiment_score": -0.6879629492759705
+          },
+          {
+            "text": "I need this settlement once I need my business day because I travel tomorrow morning.",
+            "start_word": 16,
+            "end_word": 30,
+            "sentiment": "neutral",
+            "sentiment_score": -0.1641831398010254
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.2721272493020082
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:47.303464+00:00"
+}

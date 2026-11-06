@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "condition": "babble0",
+    "utterance_id": "utt_adde505b",
+    "text_source": "transcript_babble0",
+    "text": "Where is my package going to Chicago? Thank you for your by April 3. This is the second time I have contacted the court about the same problem."
+  },
+  "request_id": "01a1b291-fbfe-7e13-bd6f-587ccb10202b",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b291-fbfe-7e13-bd6f-587ccb10202b",
+      "created": "2026-11-06T20:34:34.187Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 31
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 31,
+        "output_tokens": 9
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "Thank you for your by April 3. This is the second time I have contacted the court about the same problem.",
+            "start_word": 7,
+            "end_word": 27,
+            "topics": [
+              {
+                "topic": "Package delivery",
+                "confidence_score": 0.80225575
+              },
+              {
+                "topic": "Court case",
+                "confidence_score": 0.6477809
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "Thank you for your by April 3. This is the second time I have contacted the court about the same problem.",
+            "start_word": 7,
+            "end_word": 27,
+            "intents": [
+              {
+                "intent": "Seek court assistance regarding package delivery",
+                "confidence_score": 2.9241326e-05
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Where is my package going to Chicago? Thank you for your by April 3. This is the second time I have contacted the court about the same problem.",
+            "start_word": 0,
+            "end_word": 27,
+            "sentiment": "neutral",
+            "sentiment_score": -0.12012272328138351
+          }
+        ],
+        "average": {
+          "sentiment": "neutral",
+          "sentiment_score": -0.12012272496377269
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T20:34:34.240437+00:00"
+}

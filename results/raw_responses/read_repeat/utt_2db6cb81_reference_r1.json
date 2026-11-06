@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "repeat": 1,
+    "utterance_id": "utt_2db6cb81",
+    "text_source": "reference",
+    "text": "Hello, I\u2019m Maria Santos. I do not wish to cancel my order valued at $19.40. The last representative I talked to instructed me to reach out again if the charge persisted."
+  },
+  "request_id": "01a1b256-5b17-7881-aff6-ec764190de5f",
+  "params": {
+    "language": "en",
+    "sentiment": "true",
+    "intents": "true",
+    "topics": "true"
+  },
+  "response": {
+    "metadata": {
+      "request_id": "01a1b256-5b17-7881-aff6-ec764190de5f",
+      "created": "2026-11-06T19:29:27.275Z",
+      "language": "en",
+      "sentiment_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 43
+      },
+      "topics_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 7
+      },
+      "intents_info": {
+        "model_uuid": "80ab3179-d113-4254-bd6b-4a2f96498695",
+        "input_tokens": 43,
+        "output_tokens": 5
+      }
+    },
+    "results": {
+      "topics": {
+        "segments": [
+          {
+            "text": "The last representative I talked to instructed me to reach out again if the charge persisted.",
+            "start_word": 15,
+            "end_word": 30,
+            "topics": [
+              {
+                "topic": "Order cancellation",
+                "confidence_score": 0.6821323
+              },
+              {
+                "topic": "Representative communication",
+                "confidence_score": 0.3880269
+              }
+            ]
+          }
+        ]
+      },
+      "intents": {
+        "segments": [
+          {
+            "text": "The last representative I talked to instructed me to reach out again if the charge persisted.",
+            "start_word": 15,
+            "end_word": 30,
+            "intents": [
+              {
+                "intent": "Cancel order",
+                "confidence_score": 0.23709232
+              }
+            ]
+          }
+        ]
+      },
+      "sentiments": {
+        "segments": [
+          {
+            "text": "Hello, I\u2019m Maria Santos.",
+            "start_word": 0,
+            "end_word": 3,
+            "sentiment": "neutral",
+            "sentiment_score": 0.05588438734412193
+          },
+          {
+            "text": "I do not wish to cancel my order valued at $19.40. The last representative I talked to instructed me to reach out again if the charge persisted.",
+            "start_word": 4,
+            "end_word": 30,
+            "sentiment": "negative",
+            "sentiment_score": -0.7296574115753174
+          }
+        ],
+        "average": {
+          "sentiment": "negative",
+          "sentiment_score": -0.5469732062761173
+        }
+      }
+    }
+  },
+  "timestamp_utc": "2026-11-06T19:29:27.366806+00:00"
+}
