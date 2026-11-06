@@ -59,7 +59,7 @@ def _pair_key(kind: str, a: str, b: str) -> tuple[str, str, str]:
     return kind, left, right
 
 
-def judge_pairs(cfg: ExperimentConfig, pairs: list[tuple[str, str, str]]) -> dict[tuple[str, str, str], bool]:
+def judge_pairs(cfg: ExperimentConfig, pairs: list[tuple[str, str, str]], model: str = JUDGE_MODEL) -> dict[tuple[str, str, str], bool]:
     """Judge unique (kind, a, b) pairs. Returns same/different per pair; pairs the judge failed on are dropped."""
     unique = sorted(set(pairs))
     prompts, index = [], []
@@ -72,7 +72,7 @@ def judge_pairs(cfg: ExperimentConfig, pairs: list[tuple[str, str, str]]) -> dic
             index.append(chunk)
     logger.info("judge batches: %s (%s unique pairs)", len(prompts), len(unique))
     out: dict[tuple[str, str, str], bool] = {}
-    for chunk, answer in zip(index, map_batches(cfg, prompts, JUDGE_MODEL, 0.0)):
+    for chunk, answer in zip(index, map_batches(cfg, prompts, model, 0.0)):
         for item in answer.get("answers", []):
             try:
                 out[chunk[int(item["id"])]] = bool(item["same"])
@@ -152,6 +152,7 @@ def analyze_semantic(cfg: ExperimentConfig, split: str | None = "full", repeats:
 
     _write_human_sample(cfg, sample_rows)
     result["human_agreement"] = human_agreement(cfg)
+    result["cross_judge_agreement"] = cross_judge_agreement(cfg)
     out = cfg.results_dir / "semantic_match.json"
     out.write_text(json.dumps(result, indent=2, default=float), encoding="utf-8")
     logger.info("Wrote %s", out)
@@ -206,3 +207,27 @@ def human_agreement(cfg: ExperimentConfig) -> dict[str, Any]:
         "judge_human_accuracy": sum(a == b for a, b in zip(human, judge)) / len(human),
         "judge_human_kappa": cohen_kappa(human, judge),
     }
+
+
+CROSS_JUDGES = ("anthropic/claude-haiku-5.5", "google/gemini-3.7-flash")
+
+
+def cross_judge_agreement(cfg: ExperimentConfig) -> dict[str, Any]:
+    """Agreement of other models with the main judge on the 100-pair sample. Model-vs-model, not a human check."""
+    path = cfg.results_dir / "human_label_sample.csv"
+    if not path.is_file():
+        return {}
+    with path.open(encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    pairs = [_pair_key("intent", r["a"], r["b"]) for r in rows]
+    base = [int(r["judge_same"]) for r in rows]
+    out: dict[str, Any] = {}
+    for model in CROSS_JUDGES:
+        verdict = judge_pairs(cfg, pairs, model)
+        kept = [(b, int(verdict[p])) for b, p in zip(base, pairs) if p in verdict]
+        if len(kept) < 10:
+            out[model] = {"answered": len(kept)}
+            continue
+        x, y = [k[0] for k in kept], [k[1] for k in kept]
+        out[model] = {"answered": len(kept), "agreement": sum(a == b for a, b in kept) / len(kept), "kappa": cohen_kappa(x, y), "paraphrase_fraction": sum(y) / len(y)}
+    return out

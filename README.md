@@ -192,8 +192,10 @@ Added after peer review. Run with `--live`; every result is cached under `result
 | Harsher conditions (pink to -10 dB, babble, reverb, telephone codec) | `python -m src extra-conditions --live --items 300` | `results/conditions_extra.json` | WER 0.376 at -10 dB pink and 0.328 at 0 dB babble. Intent 77.6%, topics 92.5%, sentiment 5.4% at -10 dB. |
 | Two more TTS voices | `python -m src second-voice --live` | `results/conditions_extra.json` | Same robustness and floor as the main voice. |
 | Semantic judge for intent and topics | `python -m src followup-analysis` | `results/semantic_match.json` | 38.5-42.1% of intent disagreements are paraphrases; semantic intent disagreement is 36.0% on identical text. Judge not yet validated by humans: label `results/human_label_sample.csv` per `data/annotation-guide.md`. |
-| LLM labeler at temperature 0 and 1 | `python -m src followup-analysis` | `results/llm_stability.json` | gpt-4o-mini intent changes 7.7% at T=0 and 38.3% at T=1. |
+| LLM labelers at temperature 0 and 1 | `python -m src followup-analysis` | `results/llm_stability.json` | Intent strings change 7.7-45%, but meaning only 3-15%, against 36% for the endpoint on identical text. |
 | Route and escalate action | `python -m src followup-analysis` | `results/actions.json` | Same-text route changes 27.1%; 45.3% at -10 dB pink noise. |
+
+Two other models (Claude Haiku 5.5, Gemini 3.7 Flash) agree with the main judge on 84% and 87% of the 100-pair sample (kappa 0.67, 0.74); that is not a human check.
 
 Not done: human speech, a second ASR vendor, and the human validation of the judge.
 

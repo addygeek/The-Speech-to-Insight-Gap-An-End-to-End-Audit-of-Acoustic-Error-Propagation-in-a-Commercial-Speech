@@ -31,6 +31,15 @@ def _post(base: str, key: str, body: dict[str, Any]) -> httpx.Response:
     return httpx.post(f"{base}/chat/completions", headers={"Authorization": f"Bearer {key}"}, json=body, timeout=90.0)
 
 
+def _strip_fence(text: str) -> str:
+    """Some models wrap the JSON in a markdown code fence even when asked for a JSON object."""
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1] if "\n" in text else ""
+        text = text.rsplit("```", 1)[0]
+    return text.strip()
+
+
 def chat_json(cfg: ExperimentConfig, prompt: str, model: str = JUDGE_MODEL, temperature: float = 0.0, tag: str = "") -> dict[str, Any]:
     """Return the parsed JSON object the model answers with. `tag` separates cache entries for deliberate repeats."""
     path = _cache_file(cfg, model, temperature, prompt, tag)
@@ -51,7 +60,7 @@ def chat_json(cfg: ExperimentConfig, prompt: str, model: str = JUDGE_MODEL, temp
         },
     )
     resp.raise_for_status()
-    parsed = json.loads(resp.json()["choices"][0]["message"]["content"])
+    parsed = json.loads(_strip_fence(resp.json()["choices"][0]["message"]["content"]))
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(parsed), encoding="utf-8")
     return parsed
